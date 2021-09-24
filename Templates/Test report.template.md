@@ -20,6 +20,7 @@ Inspect closely that variables have correct values!
 - [ ] Title {{title}} to file
 - [ ] Vault path {{vault_path}} to file
 - [ ] Workspace {{workspace}} to file
+- No need to preview *Character encoding test*.
 
 ## 1.2 Execute shell commands
 Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
@@ -35,6 +36,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] Title {{title}} to file
 - [ ] Vault path {{vault_path}} to file
 - [ ] Workspace {{workspace}} to file
+- [ ] Character encoding test: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
