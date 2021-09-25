@@ -43,7 +43,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
-2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{title}}`. The command does not need to actually do anything.
+2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{title}}`. The command does not need to actually do anything. No need to assign an alias (yet).
 3. [ ] Check that the settings view shows a preview for this shell command, e.g. *echo TestResults*.
 4. [ ] Define an alias for the command, e.g. *Echo test*.
 5. [ ] Check that the settings view shows the alias text instead of *Command #*.
