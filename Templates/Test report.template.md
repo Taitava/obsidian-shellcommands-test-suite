@@ -8,7 +8,7 @@ Test date and start time: **{{date:YYYY-MM-DD HH:mm}}**
 # [[1. Preview and execute shell commands]]
 ## 1.1. Preview shell commands
 Inspect closely that variables have correct values!
-- [ ] Clipboard {{clipboard}} to file
+- [ ] Clipboard {{clipboard}} to file: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file
 - [ ] File name {{file_name}} to file
 - [ ] Absolute file path {{file_path:absolute}} to file
@@ -16,7 +16,7 @@ Inspect closely that variables have correct values!
 - [ ] Folder name {{folder_name}} to file
 - [ ] Absolute folder path {{folder_path:absolute}} to file
 - [ ] Relative folder path {{folder_path:relative}} to file
-- [ ] Selection {{selection}} to file
+- [ ] Selection {{selection}} to file: (You can select this text: TESTSELECTION).
 - [ ] Title {{title}} to file
 - [ ] Vault path {{vault_path}} to file
 - [ ] Workspace {{workspace}} to file
@@ -26,7 +26,7 @@ Inspect closely that variables have correct values!
 
 ## 1.2 Execute shell commands
 Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
-- [ ] Clipboard {{clipboard}} to file
+- [ ] Clipboard {{clipboard}} to file: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file
 - [ ] File name {{file_name}} to file
 - [ ] Absolute file path {{file_path:absolute}} to file. If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked.
@@ -34,7 +34,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] Folder name {{folder_name}} to file
 - [ ] Absolute folder path {{folder_path:absolute}} to file. **Same check** as with *Absolute file path* above.
 - [ ] Relative folder path {{folder_path:relative}} to file
-- [ ] Selection {{selection}} to file
+- [ ] Selection {{selection}} to file: (You can select this text: TESTSELECTION).
 - [ ] Title {{title}} to file
 - [ ] Vault path {{vault_path}} to file
 - [ ] Workspace {{workspace}} to file
