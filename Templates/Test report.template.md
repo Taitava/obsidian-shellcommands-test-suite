@@ -84,6 +84,7 @@ This setting should be on by default.
 
 # Clean up
 - [ ] Execute FINISH TEST command, which will add your test results to the bottom of this file.
+- [ ] Remove the *(incomplete)* mark from this file's name.
 
 # Results
 %% Needs to have an empty line below the Results heading. Otherwise test results will start at the same line with the heading.%%
