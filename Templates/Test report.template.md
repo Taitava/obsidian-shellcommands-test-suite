@@ -66,8 +66,7 @@ Go to shell commands settings and follow the below instructions to test each of 
 3. - [ ] *Sandbox*. Execute the command and ensure that the result in [[TestResults]] is an absolute path to *Sandbox*.
 4. - [ ] (An empty value, so that we refer to the vault's root folder.) Execute the command and ensure that the result in [[TestResults]] is an absolute path to this vault's root folder.
 5. - [ ] On Windows: *C:\WINDOWS\Temp*. On Linux: */tmp*. On Mac: I'm not sure, maybe */tmp* too. (We need to test an absolute directory too. This test should not write anything in the working directory, but still use a temporary folder just in case. The test does write into a file in the Sandbox folder, but should not write elsewhere regardless of what the working directory happens to be). Execute the command and ensure that the result in [[TestResults]] is an absolute path to the aforementioned temp folder.
-6. [ ] After you have run the *Test working directory* with all of the above situations, check that [[TestResults]] contains the correct absolute paths.
-7. [ ] Finally, make sure that you change *Working directory* back to *Sandbox*.
+6. [ ] Finally, make sure that you change *Working directory* back to *Sandbox*.
 
 ## Error message duration
 The default value of *Error message duration* is 20 seconds.
