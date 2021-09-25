@@ -20,7 +20,9 @@ Inspect closely that variables have correct values!
 - [ ] Title {{title}} to file
 - [ ] Vault path {{vault_path}} to file
 - [ ] Workspace {{workspace}} to file
-- No need to preview *Character encoding test*.
+- No need to preview these:
+	- *Character encoding test*.
+	- *Test to ignore error code*
 
 ## 1.2 Execute shell commands
 Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
@@ -37,6 +39,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] Vault path {{vault_path}} to file
 - [ ] Workspace {{workspace}} to file
 - [ ] Character encoding test: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
+- [ ] *Test to ignore error code*: This command should do absolutely nothing. It tries to change directory (`cd`) to *NonExistingFolder*, which fails with error code `1` (on Windows at least, not sure about the code on other platforms). The command is defined to ignore error code `1`. Tick this checkbox if nothing happened during the execution, but do not tick, if you saw an error message popping up.
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
