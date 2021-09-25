@@ -19,7 +19,7 @@
     "2": {
       "shell_command": "echo Clipboard: {{clipboard}} >> TestResults.md",
       "alias": "Clipboard {{clipboard}} to file",
-      "confirm_execution": true,
+      "confirm_execution": false,
       "ignore_error_codes": []
     },
     "3": {
