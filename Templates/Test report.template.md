@@ -83,7 +83,7 @@ This setting should be on by default.
 
 # Clean up
 - [ ] Execute FINISH TEST command, which will add your test results to the bottom of this file.
-- [ ] Remove the *(incomplete)* mark from this file's name.
+- [ ] Remove the *(incomplete)* mark from this file's name. **Do not rename before you have executed the *FINISH TEST* command!**
 - [ ] Check with Git that the only changes made in this vault/repository is your newly added report file. Other files - if edited(/created) - should have returned to their original states at this point.
 
 # Results

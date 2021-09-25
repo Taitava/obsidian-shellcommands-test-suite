@@ -89,7 +89,7 @@
       "ignore_error_codes": []
     },
     "14": {
-      "shell_command": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}}.md\" & break > TestResults.md",
+      "shell_command": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md",
       "alias": "FINISH TEST",
       "confirm_execution": true,
       "ignore_error_codes": []
