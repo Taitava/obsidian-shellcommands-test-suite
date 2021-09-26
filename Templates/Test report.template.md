@@ -83,8 +83,14 @@ This setting should be on by default.
 
 # Clean up
 - [ ] Execute FINISH TEST command, which will add your test results to the bottom of this file.
-- [ ] Remove the *(incomplete)* mark from this file's name. **Do not rename before you have executed the *FINISH TEST* command!**
-- [ ] Add the following to the file name: *ok* if **all** tests were succesful, or *FAILED* if even just one test failed.
+- Edit the name of this file:
+	- [ ] Remove the *(incomplete)* mark.
+	- [ ] Add operating system/platform name (without a version), e.g *Windows*, *Linux* or *Mac*.
+	- [ ] Add *ok* if **all** tests were succesful, or *FAILED* if even just one test failed.
+	- **Do not rename before you have executed the *FINISH TEST* command!**
+	- Examples of a final file name:
+		- *2021-09-26 Windows ok.md*
+		- *2021-09-26 Linux FAILED.md*
 - [ ] Check with Git that the only changes made in this vault/repository is your newly added report file. Other files - if edited(/created) - should have returned to their original states at this point.
 
 # Results
