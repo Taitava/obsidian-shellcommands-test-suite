@@ -17,73 +17,73 @@
       "confirm_execution": false
     },
     "2": {
-      "shell_command": "echo Clipboard: {{clipboard}} >> TestResults.md",
+      "shell_command": "echo \"Clipboard: {{clipboard}}\" >> TestResults.md",
       "alias": "Clipboard {{clipboard}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "3": {
-      "shell_command": "echo Date and time: {{date:YYYY-MM-DD HH:mm:ss}} >> TestResults.md",
+      "shell_command": "echo \"Date and time: {{date:YYYY-MM-DD HH:mm:ss}}\" >> TestResults.md",
       "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "4": {
-      "shell_command": "echo File name: {{file_name}} >> TestResults.md",
+      "shell_command": "echo \"File name:{{file_name}}\" >> TestResults.md",
       "alias": "File name {{file_name}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "5": {
-      "shell_command": "echo Absolute file path: {{file_path:absolute}} >> TestResults.md",
+      "shell_command": "echo \"Absolute file path: {{file_path:absolute}}\" >> TestResults.md",
       "alias": "Absolute file path {{file_path:absolute}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "6": {
-      "shell_command": "echo Relative file path: {{file_path:relative}} >> TestResults.md",
+      "shell_command": "echo \"Relative file path: {{file_path:relative}}\" >> TestResults.md",
       "alias": "Relative file path {{file_path:relative}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "7": {
-      "shell_command": "echo Folder name: {{folder_name}} >> TestResults.md",
+      "shell_command": "echo \"Folder name: {{folder_name}}\" >> TestResults.md",
       "alias": "Folder name {{folder_name}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "8": {
-      "shell_command": "echo Absolute folder path: {{folder_path:absolute}} >> TestResults.md",
+      "shell_command": "echo \"Absolute folder path: {{folder_path:absolute}}\" >> TestResults.md",
       "alias": "Absolute folder path {{folder_path:absolute}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "9": {
-      "shell_command": "echo Relative folder path: {{folder_path:relative}} >> TestResults.md",
+      "shell_command": "echo \"Relative folder path: {{folder_path:relative}}\" >> TestResults.md",
       "alias": "Relative folder path {{folder_path:relative}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "10": {
-      "shell_command": "echo Selection: {{selection}} >> TestResults.md",
+      "shell_command": "echo \"Selection: {{selection}}\" >> TestResults.md",
       "alias": "Selection {{selection}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "11": {
-      "shell_command": "echo Title: {{title}} >> TestResults.md",
+      "shell_command": "echo \"Title: {{title}}\" >> TestResults.md",
       "alias": "Title {{title}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "12": {
-      "shell_command": "echo Vault path: {{vault_path}} >> TestResults.md",
+      "shell_command": "echo \"Vault path: {{vault_path}}\" >> TestResults.md",
       "alias": "Vault path {{vault_path}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
     },
     "13": {
-      "shell_command": "echo Workspace: {{workspace}} >> TestResults.md",
+      "shell_command": "echo \"Workspace: {{workspace}}\" >> TestResults.md",
       "alias": "Workspace {{workspace}} to file",
       "confirm_execution": false,
       "ignore_error_codes": []
@@ -107,7 +107,7 @@
       "ignore_error_codes": []
     },
     "17": {
-      "shell_command": "echo Test non-ASCII characters: Å Ä Ö >> TestResults.md",
+      "shell_command": "echo \"Test non-ASCII characters: Å Ä Ö\" >> TestResults.md",
       "alias": "Character encoding test",
       "confirm_execution": false,
       "ignore_error_codes": []
