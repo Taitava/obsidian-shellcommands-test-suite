@@ -117,7 +117,8 @@
       "alias": "Test to ignore error code",
       "confirm_execution": false,
       "ignore_error_codes": [
-        1
+        1,
+        2
       ]
     }
   },
