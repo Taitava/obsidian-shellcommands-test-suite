@@ -96,7 +96,7 @@
     },
     "15": {
       "shell_command": "echo Working directory: %cd% >> \"{{vault_path}}\\Sandbox\\TestResults.md\"",
-      "alias": "Test working directory",
+      "alias": "Test working directory (Windows)",
       "ignore_error_codes": [],
       "confirm_execution": false
     },
@@ -120,6 +120,12 @@
         1,
         2
       ]
+    },
+    "19": {
+      "shell_command": "echo Working directory: `pwd` >> \"{{vault_path}}/Sandbox/TestResults.md\"",
+      "alias": "Test working directory (Linux)",
+      "confirm_execution": false,
+      "ignore_error_codes": []
     }
   },
   "error_message_duration": 20,
