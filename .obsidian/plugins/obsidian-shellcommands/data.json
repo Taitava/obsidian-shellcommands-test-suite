@@ -90,7 +90,7 @@
     },
     "14": {
       "shell_command": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md",
-      "alias": "FINISH TEST",
+      "alias": "FINISH TEST (Windows)",
       "confirm_execution": true,
       "ignore_error_codes": []
     },
@@ -125,6 +125,12 @@
       "shell_command": "echo Working directory: `pwd` >> \"{{vault_path}}/Sandbox/TestResults.md\"",
       "alias": "Test working directory (Linux)",
       "confirm_execution": false,
+      "ignore_error_codes": []
+    },
+    "20": {
+      "shell_command": "cat TestResults.md >> \"../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\" && echo \"\" > TestResults.md",
+      "alias": "FINISH TEST (Linux)",
+      "confirm_execution": true,
       "ignore_error_codes": []
     }
   },
