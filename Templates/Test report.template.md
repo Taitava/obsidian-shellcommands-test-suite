@@ -29,7 +29,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] *Clipboard {{clipboard}} to file*: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] *Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file*
 - [ ] *File name {{file_name}} to file*
-- [ ] *Absolute file path {{file_path:absolute}} to file*: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked.
+- [ ] *Absolute file path {{file_path:absolute}} to file*: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
 - [ ] *Relative file path {{file_path:relative}} to file*
 - [ ] *Folder name {{folder_name}} to file*
 - [ ] *Absolute folder path {{folder_path:absolute}} to file*: **Same check** as with *Absolute file path* above.
