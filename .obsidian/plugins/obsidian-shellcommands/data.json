@@ -128,7 +128,7 @@
       "ignore_error_codes": []
     },
     "20": {
-      "shell_command": "cat TestResults.md >> \"../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\" && echo \"\" > TestResults.md",
+      "shell_command": "cat TestResults.md >> \"../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\" && echo -n \"\" > TestResults.md",
       "alias": "FINISH TEST (Linux)",
       "confirm_execution": true,
       "ignore_error_codes": []
