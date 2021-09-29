@@ -132,6 +132,12 @@
       "alias": "FINISH TEST (Linux)",
       "confirm_execution": true,
       "ignore_error_codes": []
+    },
+    "21": {
+      "shell_command": "",
+      "alias": "Test empty shell command",
+      "confirm_execution": false,
+      "ignore_error_codes": []
     }
   },
   "error_message_duration": 20,
