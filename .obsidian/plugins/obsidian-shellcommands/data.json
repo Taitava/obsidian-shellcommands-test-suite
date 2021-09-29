@@ -144,6 +144,12 @@
       "alias": "Git pull (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": []
+    },
+    "23": {
+      "shell_command": "",
+      "alias": "Test empty command",
+      "confirm_execution": false,
+      "ignore_error_codes": []
     }
   },
   "error_message_duration": 20,
