@@ -25,6 +25,14 @@
     }
   ],
   "graph:open": [],
+  "obsidian-shellcommands:shell-command-17": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
   "open-with-default-app:show": [
     {
       "modifiers": [
@@ -32,6 +40,23 @@
         "Mod"
       ],
       "key": "F"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-21": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-22": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
     }
   ]
 }
