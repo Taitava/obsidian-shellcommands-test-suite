@@ -8,109 +8,199 @@
       "confirm_execution": false,
       "ignore_error_codes": [
         259
-      ]
+      ],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "1": {
       "shell_command": "start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login",
       "alias": "Git Bash (No need to test)",
       "ignore_error_codes": [],
-      "confirm_execution": false
+      "confirm_execution": false,
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "2": {
       "shell_command": "echo \"Clipboard: {{clipboard}}\" >> TestResults.md",
       "alias": "Clipboard {{clipboard}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "3": {
       "shell_command": "echo \"Date and time: {{date:YYYY-MM-DD HH:mm:ss}}\" >> TestResults.md",
       "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "4": {
       "shell_command": "echo \"File name:{{file_name}}\" >> TestResults.md",
       "alias": "File name {{file_name}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "5": {
       "shell_command": "echo \"Absolute file path: {{file_path:absolute}}\" >> TestResults.md",
       "alias": "Absolute file path {{file_path:absolute}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "6": {
       "shell_command": "echo \"Relative file path: {{file_path:relative}}\" >> TestResults.md",
       "alias": "Relative file path {{file_path:relative}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "7": {
       "shell_command": "echo \"Folder name: {{folder_name}}\" >> TestResults.md",
       "alias": "Folder name {{folder_name}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "8": {
       "shell_command": "echo \"Absolute folder path: {{folder_path:absolute}}\" >> TestResults.md",
       "alias": "Absolute folder path {{folder_path:absolute}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "9": {
       "shell_command": "echo \"Relative folder path: {{folder_path:relative}}\" >> TestResults.md",
       "alias": "Relative folder path {{folder_path:relative}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "10": {
       "shell_command": "echo \"Selection: {{selection}}\" >> TestResults.md",
       "alias": "Selection {{selection}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "11": {
       "shell_command": "echo \"Title: {{title}}\" >> TestResults.md",
       "alias": "Title {{title}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "12": {
       "shell_command": "echo \"Vault path: {{vault_path}}\" >> TestResults.md",
       "alias": "Vault path {{vault_path}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "13": {
       "shell_command": "echo \"Workspace: {{workspace}}\" >> TestResults.md",
       "alias": "Workspace {{workspace}} to file",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "14": {
       "shell_command": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md",
       "alias": "FINISH TEST (Windows)",
       "confirm_execution": true,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "15": {
       "shell_command": "echo Working directory: %cd% >> \"{{vault_path}}\\Sandbox\\TestResults.md\"",
       "alias": "Test working directory (Windows)",
       "ignore_error_codes": [],
-      "confirm_execution": false
+      "confirm_execution": false,
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "16": {
       "shell_command": "cd NonExistingFolder",
       "alias": "Doomed to eternal failure",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "17": {
       "shell_command": "echo \"Test non-ASCII characters: Å Ä Ö\" >> TestResults.md",
       "alias": "Character encoding test",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "18": {
       "shell_command": "cd NonExistingFolder",
@@ -119,39 +209,70 @@
       "ignore_error_codes": [
         1,
         2
-      ]
+      ],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "19": {
       "shell_command": "echo Working directory: `pwd` >> \"{{vault_path}}/Sandbox/TestResults.md\"",
       "alias": "Test working directory (Linux)",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "20": {
       "shell_command": "cat TestResults.md >> \"../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\" && echo -n \"\" > TestResults.md",
       "alias": "FINISH TEST (Linux)",
       "confirm_execution": true,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "21": {
       "shell_command": "xfce4-terminal",
       "alias": "Terminal (Linux) (No need to test)",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "22": {
       "shell_command": "git pull",
       "alias": "Git pull (No need to test)",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     },
     "23": {
       "shell_command": "",
       "alias": "Test empty command",
       "confirm_execution": false,
-      "ignore_error_codes": []
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   },
   "error_message_duration": 20,
-  "commands": []
+  "commands": [],
+  "notification_message_duration": 10
 }
