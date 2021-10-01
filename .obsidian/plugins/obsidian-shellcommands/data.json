@@ -270,9 +270,20 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "24": {
+      "shell_command": "echo \"Tags: {{tags:, }}\" >> TestResults.md",
+      "alias": "Tags {{tags:, }} to file",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   },
   "error_message_duration": 20,
-  "commands": [],
-  "notification_message_duration": 10
+  "notification_message_duration": 10,
+  "commands": []
 }

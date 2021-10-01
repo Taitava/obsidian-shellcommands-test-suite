@@ -1,3 +1,8 @@
+---
+tags:
+  - frontmatter-tag
+---
+
 # BASIC INFORMATION
 Test author: **YOUR_NAME/NICK/LINK_HERE**
 Operating system: **OS_name_here OS_version_here**
@@ -17,6 +22,7 @@ Inspect closely that variables have correct values!
 - [ ] *Absolute folder path {{folder_path:absolute}} to file*
 - [ ] *Relative folder path {{folder_path:relative}} to file*
 - [ ] *Selection {{selection}} to file*: (You can select this text: TESTSELECTION).
+- [ ] *Tags {{tags}} to file* #inline-tag
 - [ ] *Title {{title}} to file*
 - [ ] *Vault path {{vault_path}} to file*
 - [ ] *Workspace {{workspace}} to file*
@@ -36,6 +42,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] *Absolute folder path {{folder_path:absolute}} to file*: **Same check** as with *Absolute file path* above.
 - [ ] *Relative folder path {{folder_path:relative}} to file*
 - [ ] *Selection {{selection}} to file*: (You can select this text: TESTSELECTION).
+- [ ] *Tags {{tags}} to file*
 - [ ] *Title {{title}} to file*
 - [ ] *Vault path {{vault_path}} to file*
 - [ ] *Workspace {{workspace}} to file*
