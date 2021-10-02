@@ -109,6 +109,7 @@ This setting should be on by default.
 - [ ] Execute FINISH TEST command, which will add your test results to the bottom of this file.
 - Edit the name of this file:
 	- [ ] Remove the *(incomplete)* mark.
+	- [ ] Add the version number of Shell commands in parenthesis, e.g. *(0.5.0)*.
 	- [ ] Add operating system/platform name (without a version), e.g *Windows*, *Linux* or *Mac*.
 	- [ ] Add *ok* if **all** tests were succesful, or *FAILED* if even just one test failed.
 	- **Do not rename before you have executed the *FINISH TEST* command!**
