@@ -239,7 +239,7 @@
       "output_channel_order": "stdout-first"
     },
     "21": {
-      "shell_command": "xfce4-terminal",
+      "shell_command": "cd \"{{vault_path}}\" && xfce4-terminal",
       "alias": "Terminal in test suite folder (Linux) (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
