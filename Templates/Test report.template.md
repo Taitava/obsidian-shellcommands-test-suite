@@ -83,7 +83,13 @@ The default value of *Error message duration* is 20 seconds.
 2. [ ] Change *Error message duration* to 1 second, execute the same command again and see that the error message shows up, but disappears quicly.
 3. [ ] Change *Error message duration* back to the default value.
 
-## 3.3. Preview variables in command palette
+## 3.3. Notification message duration
+The default value of *Notification message duration* is 10 seconds.
+1. [ ] Execute the command *Hello world!*. It just echoes *Hello world!* in a notification balloon. See that the notification message shows up and is visible around 10 seconds.
+2. [ ] Change *Notification message duration* to 1 second, execute the same command again and see that the notification message shows up, but disappears quicly.
+3. [ ] Change *Notification message duration* back to the default value.
+
+## 3.4. Preview variables in command palette
 This setting should be on by default.
 1. [ ] Open up command palette, type *execute* and check quickly that all commands that start with *Shell commands: Execute:* have parsed all their possible variables (= there are no `{{`/`}}` structures visible). Exception: Some variables cannot be parsed in every situation, such as `{{selection}}` when the active pane is not in edit mode, or `{{file_name}}` when the focus is on graph view. It's ok if these exceptional variables are not parsed, but you should check that most variables are parsed.
 2. [ ] Go to shell command settings, and turn *Preview variables in command palette* off.
