@@ -69,7 +69,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 
 # [[3. Miscellaneous settings]]
 Go to shell commands settings and follow the below instructions to test each of these settings:
-## Working directory
+## 3.1. Working directory
 1. [ ] At the beginning, *Working directory* should be *Sandbox*. If it's not, change it.
 2. Go through the following values for *Working directory* and run a shell command named *Test working directory* (this will insert working directories into [[TestResults]]):
 3. - [ ] *Sandbox*. Execute the command and ensure that the result in [[TestResults]] is an absolute path to *Sandbox*.
@@ -77,20 +77,20 @@ Go to shell commands settings and follow the below instructions to test each of 
 5. - [ ] On Windows: *C:\WINDOWS\Temp*. On Linux: */tmp*. On Mac: I'm not sure, maybe */tmp* too. (We need to test an absolute directory too. This test should not write anything in the working directory, but still use a temporary folder just in case. The test does write into a file in the Sandbox folder, but should not write elsewhere regardless of what the working directory happens to be). Execute the command and ensure that the result in [[TestResults]] is an absolute path to the aforementioned temp folder.
 6. [ ] Finally, make sure that you change *Working directory* back to *Sandbox*.
 
-## Error message duration
+## 3.2. Error message duration
 The default value of *Error message duration* is 20 seconds.
 1. [ ] Execute the command *Doomed to eternal failure*. It just executes *cd NonExistingFolder*, which throws an error: *Command failed: cd NonExistingFolder*. See that the error message shows up and is visible around 20 seconds.
 2. [ ] Change *Error message duration* to 1 second, execute the same command again and see that the error message shows up, but disappears quicly.
 3. [ ] Change *Error message duration* back to the default value.
 
-## Preview variables in command palette
+## 3.3. Preview variables in command palette
 This setting should be on by default.
 1. [ ] Open up command palette, type *execute* and check quickly that all commands that start with *Shell commands: Execute:* have parsed all their possible variables (= there are no `{{`/`}}` structures visible). Exception: Some variables cannot be parsed in every situation, such as `{{selection}}` when the active pane is not in edit mode, or `{{file_name}}` when the focus is on graph view. It's ok if these exceptional variables are not parsed, but you should check that most variables are parsed.
 2. [ ] Go to shell command settings, and turn *Preview variables in command palette* off.
 3. [ ] Open up command palette again, type *execute* and check quickly that all commands that start with *Shell commands: Execute:* have variable names visible, meaning that `{{`/`}}` structures should be visible.
 4. [ ] Go to shell command settings, and turn *Preview variables in command palette* back on.
 
-# Clean up
+# 4. Clean up
 - [ ] Execute FINISH TEST command, which will add your test results to the bottom of this file.
 - Edit the name of this file:
 	- [ ] Remove the *(incomplete)* mark.
@@ -102,5 +102,5 @@ This setting should be on by default.
 		- *2021-09-26 Linux FAILED.md*
 - [ ] Check with Git that the only changes made in this vault/repository is your newly added report file. Other files - if edited(/created) - should have returned to their original states at this point.
 
-# Results
+# 5. Results
 %% Needs to have an empty line below the Results heading. Otherwise test results will start at the same line with the heading.%%
