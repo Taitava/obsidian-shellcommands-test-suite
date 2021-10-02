@@ -240,7 +240,7 @@
     },
     "21": {
       "shell_command": "xfce4-terminal",
-      "alias": "Terminal (Linux) (No need to test)",
+      "alias": "Terminal in test suite folder (Linux) (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -303,9 +303,15 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "27": {
+      "shell_command": "cd \"{{vault_path}}/.obsidian/plugins/obsidian-shellcommands\" && xfce4-terminal",
+      "alias": "Terminal in plugin folder (Linux) (No need to test)",
+      "confirm_execution": false,
+      "ignore_error_codes": []
     }
   },
   "error_message_duration": 20,
-  "notification_message_duration": 10,
-  "commands": []
+  "commands": [],
+  "notification_message_duration": 10
 }

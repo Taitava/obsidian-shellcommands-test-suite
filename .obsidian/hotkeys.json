@@ -83,5 +83,14 @@
       "key": "Y"
     }
   ],
-  "file-explorer:new-file": []
+  "file-explorer:new-file": [],
+  "obsidian-shellcommands:shell-command-27": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ]
 }
