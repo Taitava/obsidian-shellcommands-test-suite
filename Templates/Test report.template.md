@@ -1,4 +1,5 @@
 ---
+test_suite_version: 0.5.0
 tags:
   - frontmatter-tag
 ---
