@@ -1,3 +1,5 @@
 # Ignore everything related to plugins.
-*
-# obsidian-shellcommands/data.json is already in git, so it won't be ignored.
+/*
+# Un-ignore obsidian-shellcommands/data.json
+!/obsidian-shellcommands/data.json
+
