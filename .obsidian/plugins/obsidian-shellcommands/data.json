@@ -314,6 +314,17 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "28": {
+      "shell_command": "echo \"This goes to stderr\" >&2",
+      "alias": "Test output to stderr, with exit code 0",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   },
   "error_message_duration": 20,

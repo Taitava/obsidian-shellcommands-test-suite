@@ -55,6 +55,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 	- This command inserts the following text to a currently active file, at caret position: *Text output test*. Be sure to have this **test report file** active and in **edit mode**. Check that a text insertion/replacement process succeeds:
 	- [ ] Place the caret after the colon and execute the command to see how *inserting* works: 
 	- [ ] Select some word in this sentence and execute the command to see how *replacing* works.
+- [ ] *Test output to stderr, with exit code 0*: This command should give the following output to an error balloon: *[0]: This goes to stderr*. Pay attention to the **[0]** part! It should not be *[null]*, and the number should not be anything else than zero. This command uses exit code 0, which indicates that the command actually succeeded, but it has the twist that even when the command succeeded, it directed its output to *stderr* instead of the normal *stdout*. SC should be able to differentiate error output despite of an exit code 0 that indicates a succeeded shell command execution.
 
 
 
