@@ -91,13 +91,13 @@ Go to shell commands settings and follow the below instructions to test each of 
 ## 3.2. Error message duration
 The default value of *Error message duration* is 20 seconds.
 1. [ ] Execute the command *Doomed to eternal failure*. It just executes *cd NonExistingFolder*, which throws an error: *Command failed: cd NonExistingFolder*. See that the error message shows up and is visible around 20 seconds.
-2. [ ] Change *Error message duration* to 1 second, execute the same command again and see that the error message shows up, but disappears quicly.
+2. [ ] Change *Error message duration* to 1 second, execute the same command again and see that the error message shows up, but disappears quickly.
 3. [ ] Change *Error message duration* back to the default value.
 
 ## 3.3. Notification message duration
 The default value of *Notification message duration* is 10 seconds.
 1. [ ] Execute the command *Hello world!*. It just echoes *Hello world!* in a notification balloon. See that the notification message shows up and is visible around 10 seconds.
-2. [ ] Change *Notification message duration* to 1 second, execute the same command again and see that the notification message shows up, but disappears quicly.
+2. [ ] Change *Notification message duration* to 1 second, execute the same command again and see that the notification message shows up, but disappears quickly.
 3. [ ] Change *Notification message duration* back to the default value.
 
 ## 3.4. Preview variables in command palette
@@ -113,7 +113,7 @@ This setting should be on by default.
 	- [ ] Remove the *(incomplete)* mark.
 	- [ ] Add the version number of Shell commands in parenthesis, e.g. *(0.5.0)*.
 	- [ ] Add operating system/platform name (without a version), e.g *Windows*, *Linux* or *Mac*.
-	- [ ] Add *ok* if **all** tests were succesful, or *FAILED* if even just one test failed.
+	- [ ] Add *ok* if **all** tests were successful, or *FAILED* if even just one test failed.
 	- **Do not rename before you have executed the *FINISH TEST* command!**
 	- Examples of a final file name:
 		- *2021-09-26 Windows ok.md*
