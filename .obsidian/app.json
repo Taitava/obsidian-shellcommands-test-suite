@@ -1,5 +1,19 @@
 {
   "alwaysUpdateLinks": true,
   "promptDelete": false,
-  "spellcheck": true
+  "spellcheck": true,
+  "spellcheckDictionary": [
+    "frontmatter",
+    "TestResults",
+    "md",
+    "ss",
+    "stderr",
+    "stdout",
+    "NonExistingFolder",
+    "Ctrl",
+    "Cmd",
+    "tmp",
+    "cd",
+    "ok"
+  ]
 }
