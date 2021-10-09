@@ -90,7 +90,7 @@ Go to shell commands settings and follow the below instructions to test each of 
 
 ## 3.2. Error message duration
 The default value of *Error message duration* is 20 seconds.
-1. [ ] Execute the command *Doomed to eternal failure*. It just executes *cd NonExistingFolder*, which throws an error: *Command failed: cd NonExistingFolder*. See that the error message shows up and is visible around 20 seconds.
+1. [ ] Execute the command *Doomed to eternal failure*. It just executes *cd NonExistingFolder*, which throws an error that the folder does not exist. See that the error message shows up and is visible around 20 seconds.
 2. [ ] Change *Error message duration* to 1 second, execute the same command again and see that the error message shows up, but disappears quickly.
 3. [ ] Change *Error message duration* back to the default value.
 
