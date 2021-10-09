@@ -15,19 +15,19 @@ Test date and start time: **{{date:YYYY-MM-DD HH:mm}}**
 # [[1. Preview and execute shell commands]]
 ## 1.1. Preview shell commands
 Inspect closely that variables have correct values!
-- [ ] *Clipboard {{clipboard}} to file*: (You can copy this to clipboard: TESTCLIPBOARD).
-- [ ] *Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file*
-- [ ] *File name {{file_name}} to file*
-- [ ] *Absolute file path {{file_path:absolute}} to file*
-- [ ] *Relative file path {{file_path:relative}} to file*
-- [ ] *Folder name {{folder_name}} to file*
-- [ ] *Absolute folder path {{folder_path:absolute}} to file*
-- [ ] *Relative folder path {{folder_path:relative}} to file*
-- [ ] *Selection {{selection}} to file*: (You can select this text: TESTSELECTION).
-- [ ] *Tags {{tags}} to file* #inline-tag
-- [ ] *Title {{title}} to file*
-- [ ] *Vault path {{vault_path}} to file*
-- [ ] *Workspace {{workspace}} to file*
+- [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
+- [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
+- [ ] **File name {{file_name}} to file**
+- [ ] **Absolute file path {{file_path:absolute}} to file**
+- [ ] **Relative file path {{file_path:relative}} to file**
+- [ ] **Folder name {{folder_name}} to file**
+- [ ] **Absolute folder path {{folder_path:absolute}} to file**
+- [ ] **Relative folder path {{folder_path:relative}} to file**
+- [ ] **Selection {{selection}} to file**: (You can select this text: TESTSELECTION).
+- [ ] **Tags {{tags}} to file** #inline-tag
+- [ ] **Title {{title}} to file**
+- [ ] **Vault path {{vault_path}} to file**
+- [ ] **Workspace {{workspace}} to file**
 - No need to preview these:
 	- *Character encoding test*.
 	- *Test to ignore error code*
@@ -35,27 +35,27 @@ Inspect closely that variables have correct values!
 
 ## 1.2 Execute shell commands
 Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
-- [ ] *Clipboard {{clipboard}} to file*: (You can copy this to clipboard: TESTCLIPBOARD).
-- [ ] *Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file*
-- [ ] *File name {{file_name}} to file*
-- [ ] *Absolute file path {{file_path:absolute}} to file*: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
-- [ ] *Relative file path {{file_path:relative}} to file*
-- [ ] *Folder name {{folder_name}} to file*
-- [ ] *Absolute folder path {{folder_path:absolute}} to file*: **Same check** as with *Absolute file path* above.
-- [ ] *Relative folder path {{folder_path:relative}} to file*
-- [ ] *Selection {{selection}} to file*: (You can select this text: TESTSELECTION).
-- [ ] *Tags {{tags}} to file*. #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
-- [ ] *Title {{title}} to file*
-- [ ] *Vault path {{vault_path}} to file*
-- [ ] *Workspace {{workspace}} to file*
-- [ ] *Character encoding test*: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
-- [ ] *Test to ignore error code*: This command should do absolutely nothing. It tries to change directory (`cd`) to *NonExistingFolder*, which fails with error code `1` (on Windows), or `2` (on Linux) . I'm not sure about the code on Mac. The command is defined to ignore error codes `1` and `2`. Tick this checkbox if nothing happened during the execution, but do not tick, if you saw an error message popping up.
-- [ ] *Test empty shell command*: This one should always give an error message saying: *The shell command is empty*. If it  does not give an error message at all, **or if the message is different**, comment here and do not check the box. If the error message was correct, tick this checkbox.
-- [ ] *Test output insertion*:
+- [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
+- [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
+- [ ] **File name {{file_name}} to file**
+- [ ] **Absolute file path {{file_path:absolute}} to file**: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
+- [ ] **Relative file path {{file_path:relative}} to file**
+- [ ] **Folder name {{folder_name}} to file**
+- [ ] **Absolute folder path {{folder_path:absolute}} to file**: **Same check** as with *Absolute file path* above.
+- [ ] **Relative folder path {{folder_path:relative}} to file**
+- [ ] **Selection {{selection}} to file**: (You can select this text: TESTSELECTION).
+- [ ] **Tags {{tags}} to file**. #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
+- [ ] **Title {{title}} to file**
+- [ ] **Vault path {{vault_path}} to file**
+- [ ] **Workspace {{workspace}} to file**
+- [ ] **Character encoding test**: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
+- [ ] **Test to ignore error code**: This command should do absolutely nothing. It tries to change directory (`cd`) to *NonExistingFolder*, which fails with error code `1` (on Windows), or `2` (on Linux) . I'm not sure about the code on Mac. The command is defined to ignore error codes `1` and `2`. Tick this checkbox if nothing happened during the execution, but do not tick, if you saw an error message popping up.
+- [ ] **Test empty shell command**: This one should always give an error message saying: *The shell command is empty*. If it  does not give an error message at all, **or if the message is different**, comment here and do not check the box. If the error message was correct, tick this checkbox.
+- [ ] **Test output insertion**:
 	- This command inserts the following text to a currently active file, at caret position: *Text output test*. Be sure to have this **test report file** active and in **edit mode**. Check that a text insertion/replacement process succeeds:
 	- [ ] Place the caret after the colon and execute the command to see how *inserting* works: 
 	- [ ] Select some word in this sentence and execute the command to see how *replacing* works.
-- [ ] *Test output to stderr, with exit code 0*: This command should give the following output to an error balloon: *[0]: This goes to stderr*. Pay attention to the **[0]** part! It should not be *[null]*, and the number should not be anything else than zero. This command uses exit code 0, which indicates that the command actually succeeded, but it has the twist that even when the command succeeded, it directed its output to *stderr* instead of the normal *stdout*. SC should be able to differentiate error output despite of an exit code 0 that indicates a succeeded shell command execution.
+- [ ] **Test output to stderr, with exit code 0**: This command should give the following output to an error balloon: *[0]: This goes to stderr*. Pay attention to the **[0]** part! It should not be *[null]*, and the number should not be anything else than zero. This command uses exit code 0, which indicates that the command actually succeeded, but it has the twist that even when the command succeeded, it directed its output to *stderr* instead of the normal *stdout*. SC should be able to differentiate error output despite of an exit code 0 that indicates a succeeded shell command execution.
 
 
 
@@ -80,7 +80,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 Go to shell commands settings and follow the below instructions to test each of these settings:
 ## 3.1. Working directory
 1. [ ] At the beginning, *Working directory* should be *Sandbox*. If it's not, change it.
-2. Go through the following values for *Working directory* and run a shell command named *Test working directory* (this will insert working directories into [[TestResults]]):
+2. Go through the following values for *Working directory* and run a shell command named **Test working directory** (this will insert working directories into [[TestResults]]):
 3. - [ ] *Sandbox*. Execute the command and ensure that the result in [[TestResults]] is an absolute path to *Sandbox*.
 4. - [ ] (An empty value, so that we refer to the vault's root folder.) Execute the command and ensure that the result in [[TestResults]] is an absolute path to this vault's root folder.
 5. - [ ] On Windows: *C:\WINDOWS\Temp*. On Linux: */tmp*. On Mac: I'm not sure, maybe */tmp* too. (We need to test an absolute directory too. This test should not write anything in the working directory, but still use a temporary folder just in case. The test does write into a file in the Sandbox folder, but should not write elsewhere regardless of what the working directory happens to be). Execute the command and ensure that the result in [[TestResults]] is an absolute path to the aforementioned temp folder.
@@ -90,13 +90,13 @@ Go to shell commands settings and follow the below instructions to test each of 
 
 ## 3.2. Error message duration
 The default value of *Error message duration* is 20 seconds.
-1. [ ] Execute the command *Doomed to eternal failure*. It just executes *cd NonExistingFolder*, which throws an error that the folder does not exist. See that the error message shows up and is visible around 20 seconds.
+1. [ ] Execute the command **Doomed to eternal failure**. It just executes *cd NonExistingFolder*, which throws an error that the folder does not exist. See that the error message shows up and is visible around 20 seconds.
 2. [ ] Change *Error message duration* to 1 second, execute the same command again and see that the error message shows up, but disappears quickly.
 3. [ ] Change *Error message duration* back to the default value.
 
 ## 3.3. Notification message duration
 The default value of *Notification message duration* is 10 seconds.
-1. [ ] Execute the command *Hello world!*. It just echoes *Hello world!* in a notification balloon. See that the notification message shows up and is visible around 10 seconds.
+1. [ ] Execute the command **Hello world!**. It just echoes *Hello world!* in a notification balloon. See that the notification message shows up and is visible around 10 seconds.
 2. [ ] Change *Notification message duration* to 1 second, execute the same command again and see that the notification message shows up, but disappears quickly.
 3. [ ] Change *Notification message duration* back to the default value.
 
@@ -108,7 +108,7 @@ This setting should be on by default.
 4. [ ] Go to shell command settings, and turn *Preview variables in command palette* back on.
 
 # 4. Clean up
-- [ ] Execute FINISH TEST command, which will add your test results to the bottom of this file.
+- [ ] Execute **FINISH TEST** command, which will add your test results to the bottom of this file.
 - Edit the name of this file:
 	- [ ] Remove the *(incomplete)* mark.
 	- [ ] Add the version number of Shell commands in parenthesis, e.g. *(0.5.0)*.
