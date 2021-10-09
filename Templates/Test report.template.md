@@ -28,10 +28,6 @@ Inspect closely that variables have correct values!
 - [ ] **Title {{title}} to file**
 - [ ] **Vault path {{vault_path}} to file**
 - [ ] **Workspace {{workspace}} to file**
-- No need to preview these:
-	- *Character encoding test*.
-	- *Test to ignore error code*
-	- *Test empty shell command*
 
 ## 1.2 Execute shell commands
 Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
