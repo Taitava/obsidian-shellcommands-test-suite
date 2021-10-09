@@ -358,6 +358,17 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "33": {
+      "shell_command": "echo \"Multiline output\" && echo \"hides earlier lines.\" && echo \"Only the last line is permanently displayed on the status bar.\"",
+      "alias": "Test output to status bar",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "status-bar",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   },
   "error_message_duration": 20,
