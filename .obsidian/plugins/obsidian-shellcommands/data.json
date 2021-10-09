@@ -325,6 +325,39 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "29": {
+      "shell_command": "echo \"TEXT TO TOP\"",
+      "alias": "Test output to top",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "current-file-top",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "31": {
+      "shell_command": "echo. && echo \"TEXT TO BOTTOM\"",
+      "alias": "Test output to bottom (Windows)",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "current-file-bottom",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "32": {
+      "shell_command": "echo \"\\nTEXT TO BOTTOM\"",
+      "alias": "Test output to bottom (Linux)",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "current-file-bottom",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   },
   "error_message_duration": 20,

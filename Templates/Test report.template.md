@@ -52,6 +52,8 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 	- [ ] Place the caret after the colon and execute the command to see how *inserting* works: 
 	- [ ] Select some word in this sentence and execute the command to see how *replacing* works.
 - [ ] **Test output to stderr, with exit code 0**: This command should give the following output to an error balloon: *[0]: This goes to stderr*. Pay attention to the **[0]** part! It should not be *[null]*, and the number should not be anything else than zero. This command uses exit code 0, which indicates that the command actually succeeded, but it has the twist that even when the command succeeded, it directed its output to *stderr* instead of the normal *stdout*. SC should be able to differentiate error output despite of an exit code 0 that indicates a succeeded shell command execution.
+- [ ] **Test output to top**: Make sure [[TestResults]] file is open and active! This command will insert *TEXT TO TOP* to the currently active file.
+- [ ] **Test output to bottom**: Make sure [[TestResults]] file is open and active! This command will insert *TEXT TO BOTTOM* to the currently active file.
 
 
 
