@@ -49,7 +49,7 @@
       "output_channel_order": "stdout-first"
     },
     "4": {
-      "shell_command": "echo \"File name:{{file_name}}\" >> TestResults.md",
+      "shell_command": "echo \"File name: {{file_name}}\" >> TestResults.md",
       "alias": "File name {{file_name}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
