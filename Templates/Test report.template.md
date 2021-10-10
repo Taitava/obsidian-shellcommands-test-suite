@@ -108,6 +108,7 @@ This setting should be on by default.
 2. [ ] Go to shell command settings, and turn *Preview variables in command palette* off.
 3. [ ] Open up command palette again, type *execute* and check quickly that all commands that start with *Shell commands: Execute:* have variable names visible, meaning that `{{`/`}}` structures should be visible.
 4. [ ] Go to shell command settings, and turn *Preview variables in command palette* back on.
+- [ ] In the settings panel, pay attention to scrolling. SC's settings panel should remember the last scroll position when reopened. Tick this checkbox if it did remember. Exception: the scroll position is forgotten when Obsidian is restarted.
 
 # 4. Clean up
 - [ ] Execute **FINISH TEST** command, which will add your test results to the bottom of this file.
