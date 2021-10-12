@@ -1,5 +1,5 @@
 ---
-test_suite_version: 0.5.1
+test_suite_version: 0.6.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
