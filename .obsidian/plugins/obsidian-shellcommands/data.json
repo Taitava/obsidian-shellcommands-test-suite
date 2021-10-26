@@ -1,9 +1,11 @@
 {
+  "default_shells": {
+    "darwin": "/bin/bash"
+  },
   "working_directory": "Sandbox",
   "preview_variables_in_command_palette": true,
   "shell_commands": {
     "0": {
-      "shell_command": "git-gui",
       "alias": "Git GUI (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [
@@ -13,10 +15,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "git-gui"
+      },
+      "shells": {}
     },
     "1": {
-      "shell_command": "start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login",
       "alias": "Git Bash (No need to test)",
       "ignore_error_codes": [],
       "confirm_execution": false,
@@ -24,10 +29,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login"
+      },
+      "shells": {}
     },
     "2": {
-      "shell_command": "echo \"Clipboard: {{clipboard}}\" >> TestResults.md",
       "alias": "Clipboard {{clipboard}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -35,10 +43,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Clipboard: {{clipboard}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "3": {
-      "shell_command": "echo \"Date and time: {{date:YYYY-MM-DD HH:mm:ss}}\" >> TestResults.md",
       "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -46,10 +57,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Date and time: {{date:YYYY-MM-DD HH:mm:ss}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "4": {
-      "shell_command": "echo \"File name: {{file_name}}\" >> TestResults.md",
       "alias": "File name {{file_name}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -57,10 +71,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"File name: {{file_name}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "5": {
-      "shell_command": "echo \"Absolute file path: {{file_path:absolute}}\" >> TestResults.md",
       "alias": "Absolute file path {{file_path:absolute}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -68,10 +85,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Absolute file path: {{file_path:absolute}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "6": {
-      "shell_command": "echo \"Relative file path: {{file_path:relative}}\" >> TestResults.md",
       "alias": "Relative file path {{file_path:relative}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -79,10 +99,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Relative file path: {{file_path:relative}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "7": {
-      "shell_command": "echo \"Folder name: {{folder_name}}\" >> TestResults.md",
       "alias": "Folder name {{folder_name}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -90,10 +113,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Folder name: {{folder_name}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "8": {
-      "shell_command": "echo \"Absolute folder path: {{folder_path:absolute}}\" >> TestResults.md",
       "alias": "Absolute folder path {{folder_path:absolute}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -101,10 +127,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Absolute folder path: {{folder_path:absolute}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "9": {
-      "shell_command": "echo \"Relative folder path: {{folder_path:relative}}\" >> TestResults.md",
       "alias": "Relative folder path {{folder_path:relative}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -112,10 +141,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Relative folder path: {{folder_path:relative}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "10": {
-      "shell_command": "echo \"Selection: {{selection}}\" >> TestResults.md",
       "alias": "Selection {{selection}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -123,10 +155,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Selection: {{selection}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "11": {
-      "shell_command": "echo \"Title: {{title}}\" >> TestResults.md",
       "alias": "Title {{title}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -134,10 +169,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Title: {{title}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "12": {
-      "shell_command": "echo \"Vault path: {{vault_path}}\" >> TestResults.md",
       "alias": "Vault path {{vault_path}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -145,10 +183,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Vault path: {{vault_path}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "13": {
-      "shell_command": "echo \"Workspace: {{workspace}}\" >> TestResults.md",
       "alias": "Workspace {{workspace}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -156,10 +197,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Workspace: {{workspace}}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "14": {
-      "shell_command": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md",
       "alias": "FINISH TEST (Windows)",
       "confirm_execution": true,
       "ignore_error_codes": [],
@@ -167,10 +211,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md"
+      },
+      "shells": {}
     },
     "15": {
-      "shell_command": "echo Working directory: %cd% >> \"{{vault_path}}\\Sandbox\\TestResults.md\"",
       "alias": "Test working directory (Windows)",
       "ignore_error_codes": [],
       "confirm_execution": false,
@@ -178,10 +225,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo Working directory: %cd% >> \"{{vault_path}}\\Sandbox\\TestResults.md\""
+      },
+      "shells": {}
     },
     "16": {
-      "shell_command": "cd NonExistingFolder",
       "alias": "Doomed to eternal failure",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -189,10 +239,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "cd NonExistingFolder"
+      },
+      "shells": {}
     },
     "17": {
-      "shell_command": "echo \"Test non-ASCII characters: Å Ä Ö\" >> TestResults.md",
       "alias": "Character encoding test",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -200,10 +253,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Test non-ASCII characters: Å Ä Ö\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "18": {
-      "shell_command": "cd NonExistingFolder",
       "alias": "Test to ignore error code",
       "confirm_execution": false,
       "ignore_error_codes": [
@@ -214,10 +270,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "cd NonExistingFolder"
+      },
+      "shells": {}
     },
     "19": {
-      "shell_command": "echo Working directory: `pwd` >> \"{{vault_path}}/Sandbox/TestResults.md\"",
       "alias": "Test working directory (Linux)",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -225,10 +284,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo Working directory: `pwd` >> \"{{vault_path}}/Sandbox/TestResults.md\""
+      },
+      "shells": {}
     },
     "20": {
-      "shell_command": "cat TestResults.md >> \"../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\" && echo -n \"\" > TestResults.md",
       "alias": "FINISH TEST (Linux)",
       "confirm_execution": true,
       "ignore_error_codes": [],
@@ -236,10 +298,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "cat TestResults.md >> \"../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\" && echo -n \"\" > TestResults.md"
+      },
+      "shells": {}
     },
     "21": {
-      "shell_command": "cd \"{{vault_path}}\" && xfce4-terminal",
       "alias": "Terminal in test suite folder (Linux) (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -247,10 +312,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "cd \"{{vault_path}}\" && xfce4-terminal"
+      },
+      "shells": {}
     },
     "22": {
-      "shell_command": "git pull",
       "alias": "Git pull (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -258,10 +326,13 @@
         "stdout": "notification",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "git pull"
+      },
+      "shells": {}
     },
     "23": {
-      "shell_command": "",
       "alias": "Test empty command",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -269,10 +340,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "shells": {},
+      "platform_specific_commands": {
+        "default": ""
+      }
     },
     "24": {
-      "shell_command": "echo \"Tags: {{tags:, }}\" >> TestResults.md",
       "alias": "Tags {{tags:, }} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -280,10 +354,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Tags: {{tags:, }}\" >> TestResults.md"
+      },
+      "shells": {}
     },
     "25": {
-      "shell_command": "echo \"Hello world!\"",
       "alias": "Hello world!",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -291,10 +368,13 @@
         "stdout": "notification",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Hello world!\""
+      },
+      "shells": {}
     },
     "26": {
-      "shell_command": "echo \"Text output test\"",
       "alias": "Test output insertion",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -302,10 +382,13 @@
         "stdout": "current-file-caret",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Text output test\""
+      },
+      "shells": {}
     },
     "27": {
-      "shell_command": "cd \"{{vault_path}}/.obsidian/plugins/obsidian-shellcommands\" && xfce4-terminal",
       "alias": "Terminal in plugin folder (Linux) (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -313,10 +396,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "cd \"{{vault_path}}/.obsidian/plugins/obsidian-shellcommands\" && xfce4-terminal"
+      },
+      "shells": {}
     },
     "28": {
-      "shell_command": "echo \"This goes to stderr\" >&2",
       "alias": "Test output to stderr, with exit code 0",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -324,10 +410,13 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"This goes to stderr\" >&2"
+      },
+      "shells": {}
     },
     "29": {
-      "shell_command": "echo \"TEXT TO TOP\"",
       "alias": "Test output to top",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -335,10 +424,13 @@
         "stdout": "current-file-top",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"TEXT TO TOP\""
+      },
+      "shells": {}
     },
     "31": {
-      "shell_command": "echo. && echo \"TEXT TO BOTTOM\"",
       "alias": "Test output to bottom (Windows)",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -346,10 +438,13 @@
         "stdout": "current-file-bottom",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo. && echo \"TEXT TO BOTTOM\""
+      },
+      "shells": {}
     },
     "32": {
-      "shell_command": "echo \"\\nTEXT TO BOTTOM\"",
       "alias": "Test output to bottom (Linux)",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -357,10 +452,13 @@
         "stdout": "current-file-bottom",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"\\nTEXT TO BOTTOM\""
+      },
+      "shells": {}
     },
     "33": {
-      "shell_command": "echo \"Multiline output\" && echo \"hides earlier lines.\" && echo \"Only the last line is permanently displayed on the status bar.\"",
       "alias": "Test output to status bar",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -368,10 +466,13 @@
         "stdout": "status-bar",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Multiline output\" && echo \"hides earlier lines.\" && echo \"Only the last line is permanently displayed on the status bar.\""
+      },
+      "shells": {}
     },
     "34": {
-      "shell_command": "echo \"Hello clipboard!\"",
       "alias": "Test output to clipboard",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -379,7 +480,11 @@
         "stdout": "clipboard",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Hello clipboard!\""
+      },
+      "shells": {}
     }
   },
   "error_message_duration": 20,
