@@ -1,5 +1,6 @@
 ---
-test_suite_version: 0.6.0
+# Do not change these values during testing.
+test_suite_version: 0.7.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
