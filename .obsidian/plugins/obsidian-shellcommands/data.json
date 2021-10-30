@@ -1,4 +1,5 @@
 {
+  "settings_version": "0.7.0",
   "default_shells": {},
   "working_directory": "Sandbox",
   "preview_variables_in_command_palette": true,
