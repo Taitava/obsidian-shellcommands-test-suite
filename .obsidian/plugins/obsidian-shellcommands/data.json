@@ -1,7 +1,5 @@
 {
-  "default_shells": {
-    "darwin": "/bin/bash"
-  },
+  "default_shells": {},
   "working_directory": "Sandbox",
   "preview_variables_in_command_palette": true,
   "shell_commands": {
