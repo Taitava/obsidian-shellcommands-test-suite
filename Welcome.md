@@ -7,8 +7,13 @@ This Obsidian vault is designed to be stored in a [Git](https://git-scm.com) rep
 
 This note offers short guidance on how to get started with testing. I will first introduce you the folder structure of this vault (it aims to be simple), and then point you towards the actual testing process and deeper instructions.
 
-# Currently only supported on Windows
-The test suite will be first developed to work on Windows flawlessly, and then I'll figure out how to make Linux and Mac versions of the test suite. So currently: do not try to perform these tests on any other operating system than Windows!
+# Currently only supported on Windows and Linux
+The test suite will be first developed to work on Windows and Linux flawlessly, and then I'll figure out how to make a Mac version of the test suite.
+
+# Uses CMD.EXE, PowerShell, Bash and Zsh
+**On Windows**: Most commands are executed using [PowerShell Core](https://github.com/PowerShell/PowerShell), but also [PowerShell 5](https://en.wikipedia.org/wiki/PowerShell) and [CMD.EXE](https://en.wikipedia.org/wiki/Cmd.exe) are used for some commands. Please have all of these installed if you are testing on Windows!
+
+**On Linux and Macintosh**: Most commands are executed using [Bash](https://en.wikipedia.org/wiki/Bash), but also [Zsh (Z shell)](https://en.wikipedia.org/wiki/Z_shell) is used for some commands. Please have both of these installed if you are testing on Linux or Mac!
 
 # Reports you make and submit will be public
 This is a public repository and so your report will be publicly available in the internet, too, if you have decided to make one. If you do not want your report to be published, please contact me, and we can agree what details can be published, or agree to only publish the version informations: Operating system name and version, Obsidian version, and Shell commands version, without other information. These three version details are the minimun that are needed in order that it's possible to indicate that the plugin has been tested on a specific operating system.
