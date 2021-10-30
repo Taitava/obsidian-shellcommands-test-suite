@@ -16,7 +16,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "git-gui"
+        "default": "",
+        "win32": "git-gui"
       },
       "shells": {}
     },
@@ -30,7 +31,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login"
+        "default": "",
+        "win32": "start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login"
       },
       "shells": {}
     },
@@ -203,7 +205,7 @@
       "shells": {}
     },
     "14": {
-      "alias": "FINISH TEST (Windows)",
+      "alias": "FINISH TEST",
       "confirm_execution": true,
       "ignore_error_codes": [],
       "output_channels": {
@@ -212,12 +214,14 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md"
+        "default": "",
+        "linux": "cat TestResults.md >> \"../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\" && echo -n \"\" > TestResults.md",
+        "win32": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md"
       },
       "shells": {}
     },
     "15": {
-      "alias": "Test working directory (Windows)",
+      "alias": "Test working directory",
       "ignore_error_codes": [],
       "confirm_execution": false,
       "output_channels": {
@@ -226,7 +230,9 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo Working directory: %cd% >> \"{{vault_path}}\\Sandbox\\TestResults.md\""
+        "default": "",
+        "linux": "echo Working directory: `pwd` >> \"{{vault_path}}/Sandbox/TestResults.md\"",
+        "win32": "echo Working directory: %cd% >> \"{{vault_path}}\\Sandbox\\TestResults.md\""
       },
       "shells": {}
     },
@@ -275,36 +281,8 @@
       },
       "shells": {}
     },
-    "19": {
-      "alias": "Test working directory (Linux)",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo Working directory: `pwd` >> \"{{vault_path}}/Sandbox/TestResults.md\""
-      },
-      "shells": {}
-    },
-    "20": {
-      "alias": "FINISH TEST (Linux)",
-      "confirm_execution": true,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "cat TestResults.md >> \"../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\" && echo -n \"\" > TestResults.md"
-      },
-      "shells": {}
-    },
     "21": {
-      "alias": "Terminal in test suite folder (Linux) (No need to test)",
+      "alias": "Terminal in test suite folder (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -313,7 +291,9 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "cd \"{{vault_path}}\" && xfce4-terminal"
+        "default": "",
+        "linux": "cd \"{{vault_path}}\" && xfce4-terminal",
+        "win32": "wt.exe -d \"{{vault_path}}\""
       },
       "shells": {}
     },
@@ -388,7 +368,7 @@
       "shells": {}
     },
     "27": {
-      "alias": "Terminal in plugin folder (Linux) (No need to test)",
+      "alias": "Terminal in plugin folder (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -397,7 +377,9 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "cd \"{{vault_path}}/.obsidian/plugins/obsidian-shellcommands\" && xfce4-terminal"
+        "default": "",
+        "linux": "cd \"{{vault_path}}/.obsidian/plugins/obsidian-shellcommands\" && xfce4-terminal",
+        "win32": "wt.exe -d \"{{vault_path}}\\.obsidian\\plugins\\obsidian-shellcommands\""
       },
       "shells": {}
     },
@@ -430,7 +412,7 @@
       "shells": {}
     },
     "31": {
-      "alias": "Test output to bottom (Windows)",
+      "alias": "Test output to bottom",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -439,21 +421,9 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo. && echo \"TEXT TO BOTTOM\""
-      },
-      "shells": {}
-    },
-    "32": {
-      "alias": "Test output to bottom (Linux)",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "current-file-bottom",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"\\nTEXT TO BOTTOM\""
+        "default": "",
+        "linux": "echo \"\\nTEXT TO BOTTOM\"",
+        "win32": "echo. && echo \"TEXT TO BOTTOM\""
       },
       "shells": {}
     },
