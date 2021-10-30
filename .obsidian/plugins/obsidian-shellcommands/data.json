@@ -1,5 +1,6 @@
 {
   "settings_version": "0.7.0",
+  "debug": true,
   "default_shells": {
     "win32": "pwsh.exe",
     "linux": "/bin/bash",
