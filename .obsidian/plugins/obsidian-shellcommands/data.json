@@ -1,6 +1,10 @@
 {
   "settings_version": "0.7.0",
-  "default_shells": {},
+  "default_shells": {
+    "win32": "pwsh.exe",
+    "linux": "/bin/bash",
+    "darwin": "/bin/bash"
+  },
   "working_directory": "Sandbox",
   "preview_variables_in_command_palette": true,
   "shell_commands": {
@@ -454,6 +458,108 @@
         "default": "echo \"Hello clipboard!\""
       },
       "shells": {}
+    },
+    "35": {
+      "platform_specific_commands": {
+        "default": "",
+        "win32": "echo \"Windows command version executed.\" >> TestResults.md",
+        "linux": "echo \"Linux command version executed.\" >> TestResults.md",
+        "darwin": "echo \"Macintosh command version executed.\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Test operating system specific command",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "36": {
+      "platform_specific_commands": {
+        "default": "",
+        "win32": "echo %COMSPEC% >> TestResults.md"
+      },
+      "shells": {
+        "win32": "CMD.EXE"
+      },
+      "alias": "Test Windows shell: CMD",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "37": {
+      "platform_specific_commands": {
+        "default": "",
+        "win32": "\"PS5 version: \", $PSVersionTable.PSVersion.Major -join \"\" >> TestResults.md"
+      },
+      "shells": {
+        "win32": "PowerShell.exe"
+      },
+      "alias": "Test Windows shell: PowerShell 5",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "38": {
+      "platform_specific_commands": {
+        "default": "",
+        "win32": "\"PSCore version: \", $PSVersionTable.PSVersion.Major -join \"\" >> TestResults.md"
+      },
+      "shells": {
+        "win32": "pwsh.exe"
+      },
+      "alias": "Test Windows shell: PowerShell Core",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "39": {
+      "platform_specific_commands": {
+        "default": "",
+        "linux": "echo \"Linux shell should be Bash: $SHELL\" >> TestResults.md"
+      },
+      "shells": {
+        "linux": "/bin/bash"
+      },
+      "alias": "Test Linux shell: Bash",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "40": {
+      "platform_specific_commands": {
+        "default": "",
+        "linux": "echo \"Linux shell should be Zsh: $SHELL\" >> TestResults.md"
+      },
+      "shells": {
+        "linux": "/bin/zsh"
+      },
+      "alias": "Test Linux shell: Zsh",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   },
   "error_message_duration": 20,

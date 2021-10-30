@@ -18,7 +18,7 @@ Test date and start time: **{{date:YYYY-MM-DD HH:mm}}**
 Inspect closely that variables have correct values!
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
-- [ ] **File name {{file_name}} to file**
+- [ ] **File name {{file_name}} to file**:  Check that the preview of the command shows escape characters (\` or \\ depending on your OS/shell) in front of spaces, dashes and dots in the file name. This ensures that escaping special characters works correctly. You'll see same escape characters with other commands, too.
 - [ ] **Absolute file path {{file_path:absolute}} to file**
 - [ ] **Relative file path {{file_path:relative}} to file**
 - [ ] **Folder name {{folder_name}} to file**
@@ -34,7 +34,7 @@ Inspect closely that variables have correct values!
 Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
-- [ ] **File name {{file_name}} to file**
+- [ ] **File name {{file_name}} to file**: Check that the file name does not contain any escape characters like: \` or \\.
 - [ ] **Absolute file path {{file_path:absolute}} to file**: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
 - [ ] **Relative file path {{file_path:relative}} to file**
 - [ ] **Folder name {{folder_name}} to file**
@@ -111,7 +111,22 @@ This setting should be on by default.
 4. [ ] Go to shell command settings, and turn *Preview variables in command palette* back on.
 - [ ] In the settings panel, pay attention to scrolling. SC's settings panel should remember the last scroll position when reopened. Tick this checkbox if it did remember. Exception: the scroll position is forgotten when Obsidian is restarted.
 
-# 4. Clean up
+# 4. Operating system specific commands
+- [ ] **Test operating system specific command**: This test will ensure that a shell command can run a correct version of it in each operating system. It should output one of these depending on your current OS. If it gives a wrong text, do not tick this checkbox.
+	- *Windows command version executed.*
+	- *Linux command version executed.*
+	- *Macintosh command version executed.*
+
+For the next tests, you need to **only run commands that are designed for your operating system**. For those tests that are not meant for your current operating system, ~~strike them through~~ by `~~surrounding them with tildes~~` and do not tick checkboxes.
+- Windows:
+	- [ ] **Test Windows shell: CMD**: This command is executed explicitly with CMD, and it should output an absolute path to *cmd.exe* file.
+	- [ ] **Test Windows shell: PowerShell 5**: Uses explicitly PowerShell and it's old version 5. Should output *PS5 version: 5*, if the last version number is something else than *5*, then something is wrong. (PowerShell 5 might output strange extra characters that look like big dots. Just ignore them, the problem is known.)
+	- [ ] **Test Windows shell: PowerShell Core**: Uses explicitly PowerShell and it's new version 6 or 7 (or even greater in the future). Should output *PSCore version: 6* (or 7 or above), if the last version number is *5*, then something is wrong.
+- Linux:
+	- [ ] **Test Linux shell: Bash**: Uses explicitly Bash and it should output an absolute path to a Bash binary file.
+	- [ ] **Test Linux shell: Zsh**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
+
+# 5. Clean up
 - [ ] Execute **FINISH TEST** command, which will add your test results to the bottom of this file.
 - Edit the name of this file:
 	- [ ] Remove the *(incomplete)* mark.
@@ -124,5 +139,5 @@ This setting should be on by default.
 		- *2021-09-26 Linux FAILED.md*
 - [ ] Check with Git that the only changes made in this vault/repository is your newly added report file. Other files - if edited(/created) - should have returned to their original states at this point.
 
-# 5. Results
+# 6. Results
 %% Needs to have an empty line below the Results heading. Otherwise test results will start at the same line with the heading.%%
