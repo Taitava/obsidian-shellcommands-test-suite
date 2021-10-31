@@ -26,7 +26,7 @@ Inspect closely that variables have correct values!
 - [ ] **Relative folder path {{folder_path:relative}} to file**
 - [ ] **Selection {{selection}} to file**: (You can select this text: TESTSELECTION).
 - [ ] **Tags {{tags}} to file** #inline-tag
-- [ ] **Title {{title}} to file**
+- [ ] **Title {{title }} to file**
 - [ ] **Vault path {{vault_path}} to file**
 - [ ] **Workspace {{workspace}} to file**
 
@@ -42,7 +42,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Relative folder path {{folder_path:relative}} to file**
 - [ ] **Selection {{selection}} to file**: (You can select this text: TESTSELECTION).
 - [ ] **Tags {{tags}} to file**. #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
-- [ ] **Title {{title}} to file**
+- [ ] **Title {{title }} to file**
 - [ ] **Vault path {{vault_path}} to file**
 - [ ] **Workspace {{workspace}} to file**
 - [ ] **Character encoding test**: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
@@ -64,8 +64,8 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
-2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{title}}`. The command does not need to actually do anything. No need to assign an alias (yet).
-3. [ ] Check that the settings view shows a preview for this shell command, e.g. *echo TestResults*.
+2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{file_name}}`. The command does not need to actually do anything. No need to assign an alias (yet).
+3. [ ] Check that the settings view shows a preview for this shell command, e.g. *echo TestResults.md*.
 4. [ ] Define an alias for the command, e.g. *Echo test*.
 5. [ ] Check that the settings view shows the alias text instead of *Command #*.
 6. [ ] Go to *Hotkeys* settings and search for this new shell command (make sure it can be found there).
