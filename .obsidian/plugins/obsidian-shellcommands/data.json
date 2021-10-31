@@ -564,5 +564,6 @@
     "darwin": "/bin/bash"
   },
   "error_message_duration": 20,
-  "notification_message_duration": 10
+  "notification_message_duration": 10,
+  "output_channel_clipboard_also_outputs_to_notification": true
 }
