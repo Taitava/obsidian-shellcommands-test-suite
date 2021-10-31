@@ -1,13 +1,6 @@
 {
   "settings_version": "0.7.0",
   "debug": true,
-  "default_shells": {
-    "win32": "pwsh.exe",
-    "linux": "/bin/bash",
-    "darwin": "/bin/bash"
-  },
-  "working_directory": "Sandbox",
-  "preview_variables_in_command_palette": true,
   "shell_commands": {
     "0": {
       "alias": "Git GUI (No need to test)",
@@ -562,6 +555,13 @@
       },
       "output_channel_order": "stdout-first"
     }
+  },
+  "preview_variables_in_command_palette": true,
+  "working_directory": "Sandbox",
+  "default_shells": {
+    "win32": "pwsh.exe",
+    "linux": "/bin/bash",
+    "darwin": "/bin/bash"
   },
   "error_message_duration": 20,
   "notification_message_duration": 10
