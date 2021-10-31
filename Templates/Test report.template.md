@@ -58,7 +58,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Test output to status bar**: Check that status bar will contain output text. Hover over the status bar with mouse and ensure that more output lines pop up.
 - [ ] **Test output to clipboard**: After running the command, paste clipboard content here: 
 	- The pasted content should be *Hello clipboard!*. If it's something else, write a comment and do not tick the checkbox.
-	- A notification balloon should also appear, telling what was copied to the clipboard. If it does not appear or the content if wrong, write a comment and do not tick the checkbox.
+	- A notification balloon should also appear, telling what was copied to the clipboard. If it does not appear or the content is wrong, write a comment and do not tick the checkbox.
 
 
 
