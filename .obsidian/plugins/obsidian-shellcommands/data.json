@@ -538,7 +538,7 @@
     "39": {
       "platform_specific_commands": {
         "default": "",
-        "linux": "echo \"Linux shell should be Bash: $SHELL\" >> TestResults.md"
+        "linux": "echo \"Linux shell should be Bash: \"$(readlink /proc/$$/exe) >> TestResults.md"
       },
       "shells": {
         "linux": "/bin/bash"
@@ -555,7 +555,7 @@
     "40": {
       "platform_specific_commands": {
         "default": "",
-        "linux": "echo \"Linux shell should be Zsh: $SHELL\" >> TestResults.md"
+        "linux": "echo \"Linux shell should be Zsh: \"$(readlink /proc/$$/exe) >> TestResults.md"
       },
       "shells": {
         "linux": "/bin/zsh"
