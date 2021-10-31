@@ -44,7 +44,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Clipboard: {{clipboard}}\" >> TestResults.md"
+        "default": "echo \"Clipboard: \"{{clipboard}} >> TestResults.md",
+        "win32": "echo \"Clipboard: {{clipboard}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -58,7 +59,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Date and time: {{date:YYYY-MM-DD HH:mm:ss}}\" >> TestResults.md"
+        "default": "echo \"Date and time: \"{{date:YYYY-MM-DD HH:mm:ss}} >> TestResults.md",
+        "win32": "echo \"Date and time: {{date:YYYY-MM-DD HH:mm:ss}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -72,7 +74,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"File name: {{file_name}}\" >> TestResults.md"
+        "default": "echo \"File name: \"{{file_name}} >> TestResults.md",
+        "win32": "echo \"File name: {{file_name}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -86,7 +89,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Absolute file path: {{file_path:absolute}}\" >> TestResults.md"
+        "default": "echo \"Absolute file path: \"{{file_path:absolute}} >> TestResults.md",
+        "win32": "echo \"Absolute file path: {{file_path:absolute}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -100,7 +104,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Relative file path: {{file_path:relative}}\" >> TestResults.md"
+        "default": "echo \"Relative file path: \"{{file_path:relative}} >> TestResults.md",
+        "win32": "echo \"Relative file path: {{file_path:relative}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -114,7 +119,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Folder name: {{folder_name}}\" >> TestResults.md"
+        "default": "echo \"Folder name: \"{{folder_name}} >> TestResults.md",
+        "win32": "echo \"Folder name: {{folder_name}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -128,7 +134,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Absolute folder path: {{folder_path:absolute}}\" >> TestResults.md"
+        "default": "echo \"Absolute folder path: \"{{folder_path:absolute}} >> TestResults.md",
+        "win32": "echo \"Absolute folder path: {{folder_path:absolute}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -142,7 +149,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Relative folder path: {{folder_path:relative}}\" >> TestResults.md"
+        "default": "echo \"Relative folder path: \"{{folder_path:relative}} >> TestResults.md",
+        "win32": "echo \"Relative folder path: {{folder_path:relative}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -156,7 +164,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Selection: {{selection}}\" >> TestResults.md"
+        "default": "echo \"Selection: \"{{selection}} >> TestResults.md",
+        "win32": "echo \"Selection: {{selection}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -170,7 +179,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Title: {{title}}\" >> TestResults.md"
+        "default": "echo \"Title: \"{{title}} >> TestResults.md",
+        "win32": "echo \"Title: {{title}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -184,7 +194,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Vault path: {{vault_path}}\" >> TestResults.md"
+        "default": "echo \"Vault path: \"{{vault_path}} >> TestResults.md",
+        "win32": "echo \"Vault path: {{vault_path}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -198,7 +209,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Workspace: {{workspace}}\" >> TestResults.md"
+        "default": "echo \"Workspace: \"{{workspace}} >> TestResults.md",
+        "win32": "echo \"Workspace: {{workspace}}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -213,7 +225,7 @@
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
-        "linux": "cat TestResults.md >> \"../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\" && echo -n \"\" > TestResults.md",
+        "linux": "cat TestResults.md >> \"../Performed tests/\"{{date:YYYY-MM-DD}}\" (incomplete).md\" && echo -n \"\" > TestResults.md",
         "win32": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md"
       },
       "shells": {}
@@ -229,7 +241,7 @@
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
-        "linux": "echo Working directory: `pwd` >> \"{{vault_path}}/Sandbox/TestResults.md\"",
+        "linux": "echo Working directory: `pwd` >> {{vault_path}}\"/Sandbox/TestResults.md\"",
         "win32": "echo Working directory: %cd% >> \"{{vault_path}}\\Sandbox\\TestResults.md\""
       },
       "shells": {}
@@ -290,7 +302,7 @@
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
-        "linux": "cd \"{{vault_path}}\" && xfce4-terminal",
+        "linux": "cd {{vault_path}} && xfce4-terminal",
         "win32": "wt.exe -d \"{{vault_path}}\""
       },
       "shells": {}
@@ -333,7 +345,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Tags: {{tags:, }}\" >> TestResults.md"
+        "default": "echo \"Tags: \"{{tags:, }} >> TestResults.md",
+        "win32": "echo \"Tags: {{tags:, }}\" >> TestResults.md"
       },
       "shells": {}
     },
@@ -361,7 +374,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Text output test\""
+        "default": "echo \"Text output test\"",
+        "linux": "echo -n \"Text output test\""
       },
       "shells": {}
     },
@@ -376,7 +390,7 @@
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
-        "linux": "cd \"{{vault_path}}/.obsidian/plugins/obsidian-shellcommands\" && xfce4-terminal",
+        "linux": "cd {{vault_path}}/.obsidian/plugins/obsidian-shellcommands && xfce4-terminal",
         "win32": "wt.exe -d \"{{vault_path}}\\.obsidian\\plugins\\obsidian-shellcommands\""
       },
       "shells": {}
