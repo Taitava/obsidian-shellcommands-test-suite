@@ -568,6 +568,20 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "41": {
+      "platform_specific_commands": {
+        "default": "git status --short"
+      },
+      "shells": {},
+      "alias": "Git status (no need to test)",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "status-bar",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   },
   "preview_variables_in_command_palette": true,
