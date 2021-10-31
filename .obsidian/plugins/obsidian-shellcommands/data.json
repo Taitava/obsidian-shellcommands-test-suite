@@ -32,7 +32,9 @@
         "default": "",
         "win32": "start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login"
       },
-      "shells": {}
+      "shells": {
+        "win32": "CMD.EXE"
+      }
     },
     "2": {
       "alias": "Clipboard {{clipboard}} to file",
