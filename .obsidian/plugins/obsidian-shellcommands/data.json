@@ -585,8 +585,7 @@
       },
       "output_channel_order": "stdout-first"
     },
-    "35": {
-      "shell_command": "echo \"Test $& variable: {{date:$&}}\" >> TestResults.md",
+    "42": {
       "alias": "Test $& variable",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -594,7 +593,10 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "platform_specific_commands": {
+        "default": "echo \"Test $& variable: {{date:$&}}\" >> TestResults.md"
+      }
     }
   },
   "preview_variables_in_command_palette": true,
