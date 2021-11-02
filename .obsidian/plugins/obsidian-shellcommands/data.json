@@ -584,6 +584,17 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "35": {
+      "shell_command": "echo \"Test $& variable: {{date:$&}}\" >> TestResults.md",
+      "alias": "Test $& variable",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   },
   "preview_variables_in_command_palette": true,
