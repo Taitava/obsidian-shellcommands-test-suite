@@ -1,5 +1,5 @@
 ---
-test_suite_version: 0.6.0
+test_suite_version: 0.6.1
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -58,6 +58,9 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Test output to clipboard**: After running the command, paste clipboard content here: 
 	- The pasted content should be *Hello clipboard!*. If it's something else, write a comment and do not tick the checkbox.
 	- A notification balloon should also appear, telling what was copied to the clipboard. If it does not appear or the content if wrong, write a comment and do not tick the checkbox.
+- [ ] **Test \$& variable**: Symbol pair `$&` has caused problems in variable parsing when they appear in the variable's value (and some other `$` combinations too). Outputs:
+	- `Test $& variable: $&` when the test is correct. (Tick the checkbox).
+	- `Test $& variable: {{ date:$&}}` when the test fails. Do not tick, leave a comment.
 
 
 
