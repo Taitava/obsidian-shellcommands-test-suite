@@ -595,8 +595,9 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Test $& variable: {{date:$&}}\" >> TestResults.md"
-      }
+        "default": "echo \"Test $& variable: {{!passthrough:$&}}\" >> TestResults.md"
+      },
+      "shells": {}
     }
   },
   "preview_variables_in_command_palette": true,

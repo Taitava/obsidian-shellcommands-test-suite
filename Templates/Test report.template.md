@@ -61,7 +61,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 	- A notification balloon should also appear, telling what was copied to the clipboard. If it does not appear or the content is wrong, write a comment and do not tick the checkbox.
 - [ ] **Test \$& variable**: Symbol pair `$&` has caused problems in variable parsing when they appear in the variable's value (and some other `$` combinations too). Outputs:
 	- `Test $& variable: $&` when the test is correct. (Tick the checkbox).
-	- `Test $& variable: {{ date:$&}}` when the test fails. Do not tick, leave a comment.
+	- `Test $& variable: {{!passthrough:$&}}` when the test fails. Do not tick, leave a comment.
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
