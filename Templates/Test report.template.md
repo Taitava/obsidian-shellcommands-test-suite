@@ -62,6 +62,12 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Test \$& variable**: Symbol pair `$&` has caused problems in variable parsing when they appear in the variable's value (and some other `$` combinations too). Outputs:
 	- `Test $& variable: $&` when the test is correct. (Tick the checkbox).
 	- `Test $& variable: {{!passthrough:$&}}` when the test fails. Do not tick, leave a comment.
+- [ ] **Escaping test 1**: This command tests a wide range of special characters that should be escaped. Two things are tested: **a)** The special characters should not do anything special, they should not prevent the test from outputting all the characters; **b)** When the characters are output to [[TestResults]], they should be presented there **without** any escaping characters (`\` or `` ` ``), with the exception that `\` and `` ` `` do appear in the result as individual test characters - they just should not appear in fron of every other special character.
+	- Wrong output: ``Escaping test 1: \<\>\,\.\-\;\:\§\+\´\½\!\'\"\#\¤\%\&\/\(\)\=\?\`\@\`\£\$\€\{\[\]\}\\\\\¨\^\~\*\å\ä\ö\*`` (a shell should remove the escape characters).
+	- Wrong, if the command tried to do something strange.
+	- Correct output: ``Escaping test 1: 
+<>,.-;:§+´½!'"#¤%&/()=?`@`£$€{[]}\\¨^~*åäö*``
+- [ ] **Escaping test 2**: This command tests actually the same thing as *Escaping test 1*, but it focuses more on to test that an escaped `>>` symbol pair does not cause output to be written into [[TestResults]]. So, unlike many other tests, this test **should not output anything to TestResults.md**. Instead, the test is passed, if it creates a notification balloon saying: *This should NOT be written to TestResults.md!!! >> TestResults.md*.
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).

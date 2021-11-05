@@ -598,6 +598,34 @@
         "default": "echo \"Test $& variable: {{!passthrough:$&}}\" >> TestResults.md"
       },
       "shells": {}
+    },
+    "43": {
+      "platform_specific_commands": {
+        "default": "echo \"Escaping test 1: \"{{passthrough:<>,.-;:§+´½!'\"#¤%&/()=?`@`£$€{[]}\\\\¨^~*åäö*}} >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Escaping test 1",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "44": {
+      "platform_specific_commands": {
+        "default": "echo \"This should NOT be written to TestResults.md!!!\" {{passthrough:>>}} TestResults.md"
+      },
+      "shells": {},
+      "alias": "Escaping test 2",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   },
   "preview_variables_in_command_palette": true,
