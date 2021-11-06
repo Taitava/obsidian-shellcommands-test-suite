@@ -409,7 +409,9 @@
       "platform_specific_commands": {
         "default": "echo \"This goes to stderr\" >&2"
       },
-      "shells": {}
+      "shells": {
+        "win32": "CMD.EXE"
+      }
     },
     "29": {
       "alias": "Test output to top",
