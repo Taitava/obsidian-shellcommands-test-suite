@@ -7,8 +7,8 @@ This Obsidian vault is designed to be stored in a [Git](https://git-scm.com) rep
 
 This note offers short guidance on how to get started with testing. I will first introduce you the folder structure of this vault (it aims to be simple), and then point you towards the actual testing process and deeper instructions.
 
-# Currently only supported on Windows and Linux
-The test suite will be first developed to work on Windows and Linux flawlessly, and then I'll figure out how to make a Mac version of the test suite.
+# Best supported on Windows and Linux, Mac support in development
+The test suite works currently really well on Windows 10 and Linux (particularly Xubuntu 20.04). Mac should be now supported in theory, too, but as I do not own a Macintosh, I cannot be certain. But if the Linux commands work ok on Mac, things should work.
 
 # Uses CMD.EXE, PowerShell, Bash and Zsh
 **On Windows**: Most commands are executed using [PowerShell Core](https://github.com/PowerShell/PowerShell), but also [PowerShell 5](https://en.wikipedia.org/wiki/PowerShell) and [CMD.EXE](https://en.wikipedia.org/wiki/Cmd.exe) are used for some commands. Please have all of these installed if you are testing on Windows!
