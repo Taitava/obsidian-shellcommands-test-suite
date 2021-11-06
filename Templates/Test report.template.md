@@ -11,7 +11,7 @@ Test author: **YOUR_NAME/NICK/LINK_HERE**
 Operating system: **OS_name_here OS_version_here**
 Obsidian version: **Obsidian_version_here**
 Shell commands version: **Shell commands version here**
-Test date and start time: **{{date:YYYY-MM-DD HH:mm}}**
+Test date: **{{date:YYYY-MM-DD}}**
 
 # [[1. Preview and execute shell commands]]
 ## 1.1. Preview shell commands
