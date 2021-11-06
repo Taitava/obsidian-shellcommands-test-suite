@@ -226,8 +226,7 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "",
-        "linux": "cat TestResults.md >> \"../Performed tests/\"{{date:YYYY-MM-DD}}\" (incomplete).md\" && echo -n \"\" > TestResults.md",
+        "default": "cat TestResults.md >> \"../Performed tests/\"{{date:YYYY-MM-DD}}\" (incomplete).md\" && echo -n \"\" > TestResults.md",
         "win32": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md"
       },
       "shells": {
@@ -244,8 +243,7 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "",
-        "linux": "echo Working directory: `pwd` >> {{vault_path}}\"/Sandbox/TestResults.md\"",
+        "default": "echo Working directory: `pwd` >> {{vault_path}}\"/Sandbox/TestResults.md\"",
         "win32": "echo Working directory: $pwd.Path >> \"{{vault_path}}\\Sandbox\\TestResults.md\""
       },
       "shells": {}
@@ -378,8 +376,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Text output test\"",
-        "linux": "echo -n \"Text output test\""
+        "default": "echo -n \"Text output test\"",
+        "win32": "echo \"Text output test\""
       },
       "shells": {}
     },
@@ -439,8 +437,7 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "",
-        "linux": "echo -e \"\\nTEXT TO BOTTOM\"",
+        "default": "echo -e \"\\nTEXT TO BOTTOM\"",
         "win32": "echo. && echo TEXT TO BOTTOM"
       },
       "shells": {
