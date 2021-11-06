@@ -546,12 +546,13 @@
     "39": {
       "platform_specific_commands": {
         "default": "",
-        "linux": "echo \"Linux shell should be Bash: \"$(readlink /proc/$$/exe) >> TestResults.md"
+        "linux": "echo \"Linux shell should be Bash: \"$(readlink /proc/$$/exe) >> TestResults.md",
+        "darwin": "echo \"Macintosh shell should be Bash: \"$(readlink /proc/$$/exe) >> TestResults.md"
       },
       "shells": {
         "linux": "/bin/bash"
       },
-      "alias": "Test Linux shell: Bash",
+      "alias": "Test Linux/Mac shell: Bash",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -563,12 +564,13 @@
     "40": {
       "platform_specific_commands": {
         "default": "",
-        "linux": "echo \"Linux shell should be Zsh: \"$(readlink /proc/$$/exe) >> TestResults.md"
+        "linux": "echo \"Linux shell should be Zsh: \"$(readlink /proc/$$/exe) >> TestResults.md",
+        "darwin": "echo \"Macintosh shell should be Zsh: \"$(readlink /proc/$$/exe) >> TestResults.md"
       },
       "shells": {
         "linux": "/bin/zsh"
       },
-      "alias": "Test Linux shell: Zsh",
+      "alias": "Test Linux/Mac shell: Zsh",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -636,12 +638,13 @@
     "45": {
       "platform_specific_commands": {
         "default": "",
-        "linux": "echo \"Linux shell should be Dash: \"$(readlink /proc/$$/exe) >> TestResults.md"
+        "linux": "echo \"Linux shell should be Dash: \"$(readlink /proc/$$/exe) >> TestResults.md",
+        "darwin": "echo \"Macintosh shell should be Dash: \"$(readlink /proc/$$/exe) >> TestResults.md"
       },
       "shells": {
         "linux": "/bin/dash"
       },
-      "alias": "Test Linux shell: Dash",
+      "alias": "Test Linux/Mac shell: Dash",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {

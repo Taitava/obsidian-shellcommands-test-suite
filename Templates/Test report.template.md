@@ -129,10 +129,10 @@ For the next tests, you need to **only run commands that are designed for your o
 	- [ ] **Test Windows shell: CMD**: This command is executed explicitly with CMD, and it should output an absolute path to *cmd.exe* file.
 	- [ ] **Test Windows shell: PowerShell 5**: Uses explicitly PowerShell and it's old version 5. Should output *PS5 version: 5*, if the last version number is something else than *5*, then something is wrong. (PowerShell 5 might output strange extra characters that look like big dots. Just ignore them, the problem is known.)
 	- [ ] **Test Windows shell: PowerShell Core**: Uses explicitly PowerShell and it's new version 6 or 7 (or even greater in the future). Should output *PSCore version: 6* (or 7 or above), if the last version number is *5*, then something is wrong.
-- Linux:
-	- [ ] **Test Linux shell: Bash**: Uses explicitly Bash and it should output an absolute path to a Bash binary file.
-	- [ ] **Test Linux shell: Dash**: Uses explicitly Dash and it should output an absolute path to a Dash binary file.
-	- [ ] **Test Linux shell: Zsh**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
+- Linux / Macintosh:
+	- [ ] **Test Linux/Mac shell: Bash**: Uses explicitly Bash and it should output an absolute path to a Bash binary file.
+	- [ ] **Test Linux/Mac shell: Dash**: Uses explicitly Dash and it should output an absolute path to a Dash binary file.
+	- [ ] **Test Linux/Mac shell: Zsh**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
 
 # 5. Clean up
 - [ ] Execute **FINISH TEST** command, which will add your test results to the bottom of this file.
