@@ -493,7 +493,7 @@
     "36": {
       "platform_specific_commands": {
         "default": "",
-        "win32": "echo %COMSPEC% >> TestResults.md"
+        "win32": "echo Windows shell should be CMD: %COMSPEC% >> TestResults.md"
       },
       "shells": {
         "win32": "CMD.EXE"
