@@ -437,9 +437,11 @@
       "platform_specific_commands": {
         "default": "",
         "linux": "echo -e \"\\nTEXT TO BOTTOM\"",
-        "win32": "echo. && echo \"TEXT TO BOTTOM\""
+        "win32": "echo. && echo TEXT TO BOTTOM"
       },
-      "shells": {}
+      "shells": {
+        "win32": "CMD.EXE"
+      }
     },
     "33": {
       "alias": "Test output to status bar",
