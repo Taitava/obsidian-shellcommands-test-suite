@@ -24,7 +24,7 @@ Inspect closely that variables have correct values!
 - [ ] **Folder name {{folder_name}} to file**
 - [ ] **Absolute folder path {{folder_path:absolute}} to file**
 - [ ] **Relative folder path {{folder_path:relative}} to file**
-- [ ] **Selection {{selection}} to file**: (You can select this text: TESTSELECTION).
+- [ ] **Selection {{selection}} to file**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
 - [ ] **Tags {{tags}} to file** #inline-tag
 - [ ] **Title {{title }} to file**
 - [ ] **Vault path {{vault_path}} to file**
@@ -40,7 +40,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Folder name {{folder_name}} to file**
 - [ ] **Absolute folder path {{folder_path:absolute}} to file**: **Same check** as with *Absolute file path* above.
 - [ ] **Relative folder path {{folder_path:relative}} to file**
-- [ ] **Selection {{selection}} to file**: (You can select this text: TESTSELECTION).
+- [ ] **Selection {{selection}} to file**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
 - [ ] **Tags {{tags}} to file**. #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
 - [ ] **Title {{title }} to file**
 - [ ] **Vault path {{vault_path}} to file**
