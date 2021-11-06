@@ -6,35 +6,32 @@
         "type": "split",
         "children": [
           {
-            "id": "3e4a89179528ee05",
-            "type": "leaf",
-            "dimension": 31.474358974358974,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Things to test/1. Preview and execute shell commands.md",
-                "mode": "source"
-              }
-            }
-          },
-          {
-            "id": "a390b77c6408367b",
-            "type": "leaf",
-            "dimension": 44.80769230769231,
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/Test.template.md",
-                "mode": "preview"
-              },
-              "pinned": true
-            }
-          },
-          {
             "id": "49420b5c3c28134d",
             "type": "leaf",
-            "dimension": 23.717948717948715,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "preview"
+              }
+            },
+            "group": "e744efb067268c2e"
+          },
+          {
+            "id": "1bb67c731294e552",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source"
+              }
+            },
+            "group": "e744efb067268c2e"
+          },
+          {
+            "id": "61fbfe8ae383fa39",
+            "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
@@ -88,44 +85,12 @@
       "right": {
         "id": "799a4a9ad9055dc8",
         "type": "split",
-        "children": [
-          {
-            "id": "b8595700a48a835b",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f7e9b88d2f8945a2",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "Sandbox/TestResults.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "176e7e35eb1ccbf0",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              }
-            ]
-          }
-        ],
+        "children": [],
         "direction": "horizontal",
         "width": 300,
         "collapsed": true
       },
-      "active": "49420b5c3c28134d"
+      "active": "1bb67c731294e552"
     }
   },
   "active": "MyWorkspace"
