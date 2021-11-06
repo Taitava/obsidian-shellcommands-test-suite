@@ -131,6 +131,7 @@ For the next tests, you need to **only run commands that are designed for your o
 	- [ ] **Test Windows shell: PowerShell Core**: Uses explicitly PowerShell and it's new version 6 or 7 (or even greater in the future). Should output *PSCore version: 6* (or 7 or above), if the last version number is *5*, then something is wrong.
 - Linux:
 	- [ ] **Test Linux shell: Bash**: Uses explicitly Bash and it should output an absolute path to a Bash binary file.
+	- [ ] **Test Linux shell: Dash**: Uses explicitly Dash and it should output an absolute path to a Dash binary file.
 	- [ ] **Test Linux shell: Zsh**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
 
 # 5. Clean up
