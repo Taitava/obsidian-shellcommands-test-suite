@@ -230,7 +230,9 @@
         "linux": "cat TestResults.md >> \"../Performed tests/\"{{date:YYYY-MM-DD}}\" (incomplete).md\" && echo -n \"\" > TestResults.md",
         "win32": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md"
       },
-      "shells": {}
+      "shells": {
+        "win32": "CMD.EXE"
+      }
     },
     "15": {
       "alias": "Test working directory",
