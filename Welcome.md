@@ -13,7 +13,7 @@ The test suite will be first developed to work on Windows and Linux flawlessly, 
 # Uses CMD.EXE, PowerShell, Bash and Zsh
 **On Windows**: Most commands are executed using [PowerShell Core](https://github.com/PowerShell/PowerShell), but also [PowerShell 5](https://en.wikipedia.org/wiki/PowerShell) and [CMD.EXE](https://en.wikipedia.org/wiki/Cmd.exe) are used for some commands. Please have all of these installed if you are testing on Windows!
 
-**On Linux and Macintosh**: Most commands are executed using [Bash](https://en.wikipedia.org/wiki/Bash), but also [Zsh (Z shell)](https://en.wikipedia.org/wiki/Z_shell) is used for some commands. Please have both of these installed if you are testing on Linux or Mac!
+**On Linux and Macintosh**: Most commands are executed using [Bash](https://en.wikipedia.org/wiki/Bash), but also [Zsh (Z shell)](https://en.wikipedia.org/wiki/Z_shell) and [Dash](https://en.wikipedia.org/wiki/Almquist_shell#dash) are used for some commands. It would be nice if you have these installed if you are testing on Linux or Mac, but if not, you can skip the particular tests that require these. Only Bash is mandatory.
 
 # Reports you make and submit will be public
 This is a public repository and so your report will be publicly available in the internet, too, if you have decided to make one. If you do not want your report to be published, please contact me, and we can agree what details can be published, or agree to only publish the version informations: Operating system name and version, Obsidian version, and Shell commands version, without other information. These three version details are the minimun that are needed in order that it's possible to indicate that the plugin has been tested on a specific operating system.
