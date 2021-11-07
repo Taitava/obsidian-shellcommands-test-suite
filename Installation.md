@@ -79,9 +79,17 @@ You can customise all appearance related settings, as `appearance.json` settings
 5. Click *Use*.
 
 ## 2.5. Install shell commands plugin
-#TODO: Tell shortly about differences between stable and beta versions.
-### 2.5.1 Install a public, stable version
-#TODO
+Testing can happen on two kinds of versions of the *Shell commands* plugin:
+- **Stable** versions are available in the Obsidian's community plugins list and upgrading to them (or installing them) is easy.
+- **Beta testing** versions are feature upgrades that still need more testing before they will be released as *stable* versions. They cannot be upgraded to (or installed) in the community plugins list, because they are **not** meant for serial use. Anybody can test them, but they need to know that they are testing something that has a higher risk to break things.
+
+You need to decide, what kind of version of SC you will install. Beta installation has more work, and there is not always beta versions available for testing.
+
+Whatever version you pick, you do not need to create your own shell commands. This test vault contains already predefined shell commands that can be used for testing.
+
+### 2.5.1 Install a stable version
+For installing a stable version, please see the installation instructions provided in [SC's README.md file](https://github.com/Taitava/obsidian-shellcommands#installation--usage). You can start from heading *Installation & usage*.
 
 ### 2.5.2 Install a beta testing version
-#TODO
+
+An installation guide for beta versions is available at [SC's GitHub Discussions section](https://github.com/Taitava/obsidian-shellcommands/discussions/98). You can start from the heading *1.1. Installing BRAT and using it to install a beta version of SC*.
