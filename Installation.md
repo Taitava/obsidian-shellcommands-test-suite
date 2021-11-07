@@ -63,7 +63,20 @@ Now you should have [[Welcome]] note visible in both a preview and editor pane, 
 Now the installation continues with installing (an optional) theme and *Shell commands* plugin.
 
 ## 2.4. Optional: Install *Red Graphite* theme
-#TODO
+
+![[Obsidian-Red graphite theme.png]]
+
+If you want to use this kind of mostly light background theme with dark sidebars, I can highly recommend you to install *Red Graphite*. It doesn't really matter, what theme you are using with this test vault. 
+
+You can customise all appearance related settings, as `appearance.json` settings file is not stored in Git, to allow users to be able to define the layout based on their opinions.
+
+1. Open Obsidian settings, and click the *Appearance* tab.
+2. Change *Base theme* from *Dark* to *Light*.
+	![[Obsidian-Theme settings.png]]
+3. Under *Themes*, click the *Manage* button.
+4. Under *Community themes*, type `red` in the search field.
+	![[Obsidian-Community themes search.png]]
+5. Click *Use*.
 
 ## 2.5. Install shell commands plugin
 #TODO: Tell shortly about differences between stable and beta versions.
