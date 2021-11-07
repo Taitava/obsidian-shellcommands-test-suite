@@ -30,7 +30,7 @@ This link starts a download automatically, but it also offers you a few choices 
 2. Click the green *Code* button.
 3. Click *SSH*.
 4. Click the copy icon.
-	![[GitHub-get repository URL.png]]
+	![[_images/Installation/GitHub-get repository URL.png]]
 5. Basically, you should now have the following in your clipboard: `git@github.com:Taitava/obsidian-shellcommands-test-suite.git`
 
 ## 2.2. Clone the repository
@@ -41,30 +41,30 @@ You need to decide in which directory you'll want to store the test vault. If yo
 4. In the terminal, go to the `Shell commands test suite` directory (you can use the `cd` command).
 5. In the next command, there will be an easily forgotten dot `.` (separated by a space) at the end of the command. Pay close attention to include it in the command
 6. Clone the test suite repository by executing the following command: `git clone git@github.com:Taitava/obsidian-shellcommands-test-suite.git .` and do remember the space and dot ` .` at the end! The dot tells Git to clone into the current directory. If you forget the dot, Git will create a new folder named *obsidian-shellcommands-test-suite* in your `Shell commands test suite` folder.
-	![[Git clone command.png]]
+	![[_images/Installation/Git clone command.png]]
 7. You should now have this vault's files in the `Shell commands test suite` folder. Getting stuff from GitHub onto your machine is this easy. You can check what files your folder contains by issuing the `ls` command in the terminal (works in most Linux/Mac systems and in Windows PowerShell).
-	![[Ls command.png]]
+	![[_images/Installation/Ls command.png]]
 1. (You don't need to do this now, but I'll mention this shortly: If you later want to update your copy of the test suite - meaning to download possible new changes from GitHub - you can execute the command `git pull`. It will update your local files to have all the newest changes (unless you have modified the files locally)).
 
 ## 2.3 Open the vault in Obsidian
 1. Launch Obsidian.
-	- (If another Obsidian vault opens up, click *Open another vault* ![[Open another vault icon.png]] icon near the bottom left corner).
+	- (If another Obsidian vault opens up, click *Open another vault* ![[_images/Installation/Obsidian 0.12.19/Open another vault icon.png]] icon near the bottom left corner).
 2. Click an *Open* button at *Open folder as vault*.
-	![[Open folder as vault.png]]
+	![[_images/Installation/Obsidian 0.12.19/Open folder as vault.png]]
 3. Locate the `Shell commands test suite` folder.
-	![[Locate Shell commands test suite folder.png]]
-4. Click the *Manage workspaces* ![[Manage workspaces icon.png]] icon on the left.
+	![[_images/Installation/Locate Shell commands test suite folder.png]]
+4. Click the *Manage workspaces* ![[_images/Installation/Obsidian 0.12.19/Manage workspaces icon.png]] icon on the left.
 5. Click *Load* next to *MyWorkspace*.
 
 Now you should have [[Welcome]] note visible in both a preview and editor pane, and [[TestResults]] in a third pane. (You don't need to edit the [[Welcome]] note, but you'll need both editor and preview panes when you start to do testing, and you have a [[Test report file]] open).
 
-![[Welcome note visible.png]]
+![[_images/Installation/Obsidian 0.12.19/Welcome note visible.png]]
 
 Now the installation continues with installing (an optional) theme and *Shell commands* plugin.
 
 ## 2.4. Optional: Install *Red Graphite* theme
 
-![[Red graphite theme.png]]
+![[_images/Installation/Obsidian 0.12.19/Red graphite theme.png]]
 
 If you want to use this kind of mostly light background theme with dark sidebars, I can highly recommend you to install *Red Graphite*. It doesn't really matter, what theme you are using with this test vault. 
 
@@ -72,10 +72,10 @@ You can customise all appearance related settings, as `appearance.json` settings
 
 1. Open Obsidian settings, and click the *Appearance* tab.
 2. Change *Base theme* from *Dark* to *Light*.
-	![[Theme settings.png]]
+	![[_images/Installation/Obsidian 0.12.19/Theme settings.png]]
 3. Under *Themes*, click the *Manage* button.
 4. Under *Community themes*, type `red` in the search field.
-	![[Community themes search.png]]
+	![[_images/Installation/Obsidian 0.12.19/Community themes search.png]]
 5. Click *Use*.
 
 ## 2.5. Install shell commands plugin

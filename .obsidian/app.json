@@ -22,5 +22,6 @@
     "workspaces",
     "customise"
   ],
-  "attachmentFolderPath": "_images"
+  "attachmentFolderPath": "_images",
+  "newLinkFormat": "relative"
 }
