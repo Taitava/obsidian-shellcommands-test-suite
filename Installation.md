@@ -93,3 +93,6 @@ For installing a stable version, please see the installation instructions provid
 ### 2.5.2 Install a beta testing version
 
 An installation guide for beta versions is available at [SC's GitHub Discussions section](https://github.com/Taitava/obsidian-shellcommands/discussions/98). You can start from the heading *1.1. Installing BRAT and using it to install a beta version of SC*.
+
+# 3. Done
+After all installations are done, you can start testing as per instructions written in [[Welcome.md]].
