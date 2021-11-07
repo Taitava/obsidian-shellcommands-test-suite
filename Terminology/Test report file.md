@@ -1,0 +1,2 @@
+# Test report file
+A file that will be generated for you when you hit the *Open today's daily note* icon on the left sidebar in Obsidian. This file contains step by step tasks for performing tests. It's also a place for you to write comments about what you have encountered during your test.
