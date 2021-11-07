@@ -48,23 +48,23 @@ You need to decide in which directory you'll want to store the test vault. If yo
 
 ## 2.3 Open the vault in Obsidian
 1. Launch Obsidian.
-	- (If another Obsidian vault opens up, click *Open another vault* ![[Obsidian-open another vault icon.png]] icon near the bottom left corner).
+	- (If another Obsidian vault opens up, click *Open another vault* ![[Open another vault icon.png]] icon near the bottom left corner).
 2. Click an *Open* button at *Open folder as vault*.
-	![[Obsidian-open folder as vault.png]]
+	![[Open folder as vault.png]]
 3. Locate the `Shell commands test suite` folder.
 	![[Locate Shell commands test suite folder.png]]
-4. Click the *Manage workspaces* ![[Obsidian-manage workspaces icon.png]] icon on the left.
+4. Click the *Manage workspaces* ![[Manage workspaces icon.png]] icon on the left.
 5. Click *Load* next to *MyWorkspace*.
 
 Now you should have [[Welcome]] note visible in both a preview and editor pane, and [[TestResults]] in a third pane. (You don't need to edit the [[Welcome]] note, but you'll need both editor and preview panes when you start to do testing, and you have a [[Test report file]] open).
 
-![[Obsidian-Welcome note visible.png]]
+![[Welcome note visible.png]]
 
 Now the installation continues with installing (an optional) theme and *Shell commands* plugin.
 
 ## 2.4. Optional: Install *Red Graphite* theme
 
-![[Obsidian-Red graphite theme.png]]
+![[Red graphite theme.png]]
 
 If you want to use this kind of mostly light background theme with dark sidebars, I can highly recommend you to install *Red Graphite*. It doesn't really matter, what theme you are using with this test vault. 
 
@@ -72,10 +72,10 @@ You can customise all appearance related settings, as `appearance.json` settings
 
 1. Open Obsidian settings, and click the *Appearance* tab.
 2. Change *Base theme* from *Dark* to *Light*.
-	![[Obsidian-Theme settings.png]]
+	![[Theme settings.png]]
 3. Under *Themes*, click the *Manage* button.
 4. Under *Community themes*, type `red` in the search field.
-	![[Obsidian-Community themes search.png]]
+	![[Community themes search.png]]
 5. Click *Use*.
 
 ## 2.5. Install shell commands plugin
