@@ -124,7 +124,7 @@ This setting should be on by default.
 	- *Linux command version executed.*
 	- *Macintosh command version executed.*
 
-For the next tests, you need to **only run commands that are designed for your operating system**. For those tests that are not meant for your current operating system, ~~strike them through~~ by `~~surrounding them with tildes~~` and do not tick checkboxes.
+For the next tests, you need to **only run commands that are designed for your operating system**. For those tests that are not meant for your current operating system, just delete them.
 - Windows:
 	- [ ] **Test Windows shell: CMD**: This command is executed explicitly with CMD, and it should output an absolute path to *cmd.exe* file.
 	- [ ] **Test Windows shell: PowerShell 5**: Uses explicitly PowerShell and it's old version 5. Should output *PS5 version: 5*, if the last version number is something else than *5*, then something is wrong. (PowerShell 5 might output strange extra characters that look like big dots. Just ignore them, the problem is known.)
