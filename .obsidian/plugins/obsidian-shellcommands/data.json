@@ -259,20 +259,6 @@
       },
       "shells": {}
     },
-    "16": {
-      "alias": "Doomed to eternal failure",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "cd NonExistingFolder"
-      },
-      "shells": {}
-    },
     "17": {
       "alias": "Character encoding test",
       "confirm_execution": false,
@@ -360,20 +346,6 @@
       "platform_specific_commands": {
         "default": "echo \"Tags: \"{{tags:, }} >> TestResults.md",
         "win32": "echo \"Tags: {{tags:, }}\" >> TestResults.md"
-      },
-      "shells": {}
-    },
-    "25": {
-      "alias": "Hello world!",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Hello world!\""
       },
       "shells": {}
     },
