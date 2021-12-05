@@ -20,7 +20,8 @@
     "Linnanvirta",
     "shellcommands",
     "workspaces",
-    "customise"
+    "customise",
+    "autocomplete"
   ],
   "attachmentFolderPath": "_images",
   "newLinkFormat": "relative"
