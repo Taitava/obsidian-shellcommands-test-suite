@@ -1,0 +1,4 @@
+"Test suite related":
+  ">> TestResults.md": "Redirect output to the temporary test result file."
+  "TestResults.md": "The temporary test result file."
+  "echo ": ""
