@@ -649,6 +649,20 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "47": {
+      "platform_specific_commands": {
+        "default": "echo \"YAML test: A1. \"{{yaml_value:yaml_test1.first_item}}\" A2. \"{{yaml_value:yaml_test1.middle_item.inner_item}}\" A3. \"{{yaml_value:yaml_test1.last_item}}\" B) first: \"{{yaml_value:yaml_test2.0}}\" B) second: \"{{yaml_value:yaml_test2.1}}\" B) last: \"{{yaml_value:yaml_test2.-1}}\" B) count: \"{{yaml_value:yaml_test2.length}}  >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Test YAML value",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   }
 }
