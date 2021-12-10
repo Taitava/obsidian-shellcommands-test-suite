@@ -663,6 +663,20 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "48": {
+      "platform_specific_commands": {
+        "default": "echo \"Caret position: \"{{caret_position}}\" (line: \"{{caret_position:line}}\", column:\"{{caret_position:column}}\")\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Caret position {{caret_position}} to file",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   }
 }

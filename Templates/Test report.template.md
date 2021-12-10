@@ -25,6 +25,7 @@ Test date: **{{date:YYYY-MM-DD}}**
 # [[1. Preview and execute shell commands]]
 ## 1.1. Preview shell commands
 Inspect closely that variables have correct values!
+- [ ] **Caret position {{caret_position}} to file**
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
 - [ ] **File name {{file_name}} to file**:  Check that the preview of the command shows escape characters (\` or \\ depending on your OS/shell) in front of spaces, dashes and dots in the file name. This ensures that escaping special characters works correctly. You'll see same escape characters with other commands, too.
@@ -41,6 +42,7 @@ Inspect closely that variables have correct values!
 
 ## 1.2 Execute shell commands
 Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
+- [ ] **Caret position {{caret_position}} to file**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
 - [ ] **File name {{file_name}} to file**: Check that the file name does not contain any escape characters like: \` or \\.
