@@ -654,7 +654,7 @@
       "platform_specific_commands": {
         "default": "",
         "win32": "explorer {{vault_path}}\"\\.obsidian\\plugins\\obsidian-shellcommands\"",
-        "linux": "xdg-open {{vault_path}}\"\\.obsidian\\plugins\\obsidian-shellcommands\""
+        "linux": "xdg-open {{vault_path}}\"/.obsidian/plugins/obsidian-shellcommands\""
       },
       "shells": {},
       "alias": "Open the plugin folder in system explorer",
