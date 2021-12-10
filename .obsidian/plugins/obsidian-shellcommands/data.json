@@ -41,7 +41,7 @@
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
-        "win32": "start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login"
+        "win32": "cd .. && start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login"
       },
       "shells": {
         "win32": "CMD.EXE"
