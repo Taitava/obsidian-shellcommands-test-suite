@@ -21,7 +21,8 @@
     "shellcommands",
     "workspaces",
     "customise",
-    "autocomplete"
+    "autocomplete",
+    "yaml"
   ],
   "attachmentFolderPath": "_images",
   "newLinkFormat": "relative"
