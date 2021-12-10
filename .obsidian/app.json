@@ -21,7 +21,10 @@
     "shellcommands",
     "workspaces",
     "customise",
-    "autocomplete"
+    "autocomplete",
+    "jarkko",
+    "tietokannat",
+    "MyWorkspace"
   ],
   "attachmentFolderPath": "_images",
   "newLinkFormat": "relative"
