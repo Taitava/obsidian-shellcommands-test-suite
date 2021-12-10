@@ -123,7 +123,22 @@ For the next tests, you need to **only run commands that are designed for your o
 	- [ ] **Test Linux/Mac shell: Dash**: Uses explicitly Dash and it should output an absolute path to a Dash binary file.
 	- [ ] **Test Linux/Mac shell: Zsh**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
 
-# 5. Clean up
+# 5. When there is no settings file
+This section will test that the plugin works correctly when no `data.json` settings file exist. The plugin should load default settings.
+
+1. [ ] Execute the command **Open the plugin folder in system explorer**.
+2. [ ] Make sure with git that there are no uncommitted changes to `.obsidian/plugins/obsidian-shellcommand/data.json`.
+3. [ ] Rename `data.json` to `disabled-data.json`.
+4. [ ] Restart Obsidian by pressing Ctrl/Cmd + R.
+5. [ ] Make sure the plugin loads correctly:
+	- [ ] The settings modal shows *Shell commands* in the left side list.
+	- [ ] There are no shell commands at all shown in the plugin's settings view.
+6. [ ] If the plugin created a new `data.json` file, delete it. If it didn't create it, it's ok, just tick this checkbox.
+7. [ ] Rename `disabled-data.json` back to `data.json`.
+8. [ ] Restart Obsidian again.
+9. [ ] Ensure that the settings now have the normal list of shell commands.
+
+# 6. Clean up
 - [ ] Execute **FINISH TEST** command, which will add your test results to the bottom of this file.
 - Edit the name of this file:
 	- [ ] Remove the *(incomplete)* mark.
@@ -137,5 +152,5 @@ For the next tests, you need to **only run commands that are designed for your o
 		- *2021-11-06 (0.7.0-beta1) Linux ok.md*
 - [ ] Check with Git that the only changes made in this vault/repository is your newly added report file. Other files - if edited(/created) - should have returned to their original states at this point.
 
-# 6. Results
+# 7. Results
 %% Needs to have an empty line below the Results heading. Otherwise test results will start at the same line with the heading.%%

@@ -649,6 +649,22 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
+    },
+    "47": {
+      "platform_specific_commands": {
+        "default": "",
+        "win32": "explorer {{vault_path}}\"\\.obsidian\\plugins\\obsidian-shellcommands\"",
+        "linux": "xdg-open {{vault_path}}\"\\.obsidian\\plugins\\obsidian-shellcommands\""
+      },
+      "shells": {},
+      "alias": "Open the plugin folder in system explorer",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
     }
   }
 }
