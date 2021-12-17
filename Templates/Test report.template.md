@@ -28,6 +28,7 @@ Inspect closely that variables have correct values!
 - [ ] **Caret position {{caret_position}} to file**
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
+- [ ] **File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file**
 - [ ] **File name {{file_name}} to file**:  Check that the preview of the command shows escape characters (\` or \\ depending on your OS/shell) in front of spaces, dashes and dots in the file name. This ensures that escaping special characters works correctly. You'll see same escape characters with other commands, too.
 - [ ] **Absolute file path {{file_path:absolute}} to file**
 - [ ] **Relative file path {{file_path:relative}} to file**
@@ -45,6 +46,8 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Caret position {{caret_position}} to file**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
+- [ ] **File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file**: The result should be: *File extension: with dot: 
+.md / no dot: md*
 - [ ] **File name {{file_name}} to file**: Check that the file name does not contain any escape characters like: \` or \\.
 - [ ] **Absolute file path {{file_path:absolute}} to file**: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
 - [ ] **Relative file path {{file_path:relative}} to file**
