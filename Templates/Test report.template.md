@@ -84,6 +84,12 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Escaping test 2**: This command tests actually the same thing as *Escaping test 1*, but it focuses more on to test that an escaped `>>` symbol pair does not cause output to be written into [[TestResults]]. So, unlike many other tests, this test **should not output anything to TestResults.md**. Instead, the test is passed, if it creates a notification balloon saying: *This should NOT be written to TestResults.md!!! >> TestResults.md*.
 - [ ] **Test YAML value**: Should output the following to [[TestResults]]: `YAML test: A1. 
 first_value A2. inner_value A3. last_value B) first: first-item B) second: second-item B) last: last-item B) count: 3` . If even a single difference is found, leave a comment and do not tick the checkbox.
+- [ ] **Test three newlines**: Should output the following:
+	> Before three newlines.
+	> After three newlines.
+	
+	But so that there are two empty lines between them (three newlines make two empty lines).
+	
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
