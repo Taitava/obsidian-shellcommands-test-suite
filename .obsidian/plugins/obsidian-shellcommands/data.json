@@ -666,7 +666,8 @@
     },
     "48": {
       "platform_specific_commands": {
-        "default": "echo \"Caret position: \"{{caret_position}}\" (line: \"{{caret_position:line}}\", column:\"{{caret_position:column}}\")\" >> TestResults.md"
+        "default": "echo \"Caret position: \"{{caret_position}}\" (line: \"{{caret_position:line}}\", column:\"{{caret_position:column}}\")\" >> TestResults.md",
+        "win32": "echo \"Caret position: {{caret_position}} (line: {{caret_position:line}}, column:{{caret_position:column}})\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Caret position {{caret_position}} to file",
