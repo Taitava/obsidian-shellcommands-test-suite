@@ -691,21 +691,6 @@
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first"
-    },
-    "50": {
-      "platform_specific_commands": {
-        "default": "echo -e \"Before three newlines.{{newline:3}}After three newlines.\" >> TestResults.md",
-        "win32": "echo \"Before three newlines.{{newline:3}}After three newlines.\" >> TestResults.md"
-      },
-      "shells": {},
-      "alias": "Test three newlines",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first"
     }
   }
 }
