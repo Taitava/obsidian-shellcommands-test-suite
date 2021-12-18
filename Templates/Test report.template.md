@@ -1,9 +1,18 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.8.0
+test_suite_version: 0.9.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
+yaml_test1:
+  first_item: first_value
+  middle_item:
+    inner_item: inner_value
+  last_item: last_value
+yaml_test2:
+  - first-item
+  - second-item
+  - last-item
 ---
 
 # BASIC INFORMATION
@@ -16,8 +25,10 @@ Test date: **{{date:YYYY-MM-DD}}**
 # [[1. Preview and execute shell commands]]
 ## 1.1. Preview shell commands
 Inspect closely that variables have correct values!
+- [ ] **Caret position {{caret_position}} to file**
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
+- [ ] **File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file**
 - [ ] **File name {{file_name}} to file**:  Check that the preview of the command shows escape characters (\` or \\ depending on your OS/shell) in front of spaces, dashes and dots in the file name. This ensures that escaping special characters works correctly. You'll see same escape characters with other commands, too.
 - [ ] **Absolute file path {{file_path:absolute}} to file**
 - [ ] **Relative file path {{file_path:relative}} to file**
@@ -32,8 +43,11 @@ Inspect closely that variables have correct values!
 
 ## 1.2 Execute shell commands
 Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
+- [ ] **Caret position {{caret_position}} to file**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
+- [ ] **File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file**: The result should be: *File extension: with dot: 
+.md / no dot: md*
 - [ ] **File name {{file_name}} to file**: Check that the file name does not contain any escape characters like: \` or \\.
 - [ ] **Absolute file path {{file_path:absolute}} to file**: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
 - [ ] **Relative file path {{file_path:relative}} to file**
@@ -68,6 +82,9 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 	- Correct output: ``Escaping test 1: 
 <>,.-;:§+´½!'"#¤%&/()=?`@`£$€{[]}\\¨^~*åäö*``
 - [ ] **Escaping test 2**: This command tests actually the same thing as *Escaping test 1*, but it focuses more on to test that an escaped `>>` symbol pair does not cause output to be written into [[TestResults]]. So, unlike many other tests, this test **should not output anything to TestResults.md**. Instead, the test is passed, if it creates a notification balloon saying: *This should NOT be written to TestResults.md!!! >> TestResults.md*.
+- [ ] **Test YAML value**: Should output the following to [[TestResults]]: `YAML test: A1. 
+first_value A2. inner_value A3. last_value B) first: first-item B) second: second-item B) last: last-item B) count: 3` . If even a single difference is found, leave a comment and do not tick the checkbox.
+	
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).

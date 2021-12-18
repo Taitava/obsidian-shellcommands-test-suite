@@ -41,7 +41,7 @@
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
-        "win32": "start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login"
+        "win32": "cd .. && start \"\" \"%PROGRAMFILES%\\Git\\bin\\sh.exe\" --login"
       },
       "shells": {
         "win32": "CMD.EXE"
@@ -651,6 +651,49 @@
       "output_channel_order": "stdout-first"
     },
     "47": {
+      "platform_specific_commands": {
+        "default": "echo \"YAML test: A1. \"{{yaml_value:yaml_test1.first_item}}\" A2. \"{{yaml_value:yaml_test1.middle_item.inner_item}}\" A3. \"{{yaml_value:yaml_test1.last_item}}\" B) first: \"{{yaml_value:yaml_test2.0}}\" B) second: \"{{yaml_value:yaml_test2.1}}\" B) last: \"{{yaml_value:yaml_test2.-1}}\" B) count: \"{{yaml_value:yaml_test2.length}}  >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Test YAML value",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "48": {
+      "platform_specific_commands": {
+        "default": "echo \"Caret position: \"{{caret_position}}\" (line: \"{{caret_position:line}}\", column:\"{{caret_position:column}}\")\" >> TestResults.md",
+        "win32": "echo \"Caret position: {{caret_position}} (line: {{caret_position:line}}, column:{{caret_position:column}})\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Caret position {{caret_position}} to file",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "49": {
+      "platform_specific_commands": {
+        "default": "echo \"File extension: with dot: \"{{file_extension:with-dot}}\" / no dot: \"{{file_extension:no-dot}} >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first"
+    },
+    "50": {
       "platform_specific_commands": {
         "default": "",
         "win32": "explorer {{vault_path}}\"\\.obsidian\\plugins\\obsidian-shellcommands\"",

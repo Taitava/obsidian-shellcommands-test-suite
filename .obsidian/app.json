@@ -27,5 +27,6 @@
     "MyWorkspace"
   ],
   "attachmentFolderPath": "_images",
-  "newLinkFormat": "relative"
+  "newLinkFormat": "relative",
+  "readableLineLength": true
 }
