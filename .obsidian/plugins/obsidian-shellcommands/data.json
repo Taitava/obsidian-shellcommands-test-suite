@@ -28,7 +28,9 @@
         "default": "",
         "win32": "git-gui"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "1": {
       "alias": "Git Bash (No need to test)",
@@ -45,7 +47,9 @@
       },
       "shells": {
         "win32": "CMD.EXE"
-      }
+      },
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "2": {
       "alias": "Clipboard {{clipboard}} to file",
@@ -60,7 +64,9 @@
         "default": "echo \"Clipboard: \"{{clipboard}} >> TestResults.md",
         "win32": "echo \"Clipboard: {{clipboard}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "3": {
       "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file",
@@ -75,7 +81,9 @@
         "default": "echo \"Date and time: \"{{date:YYYY-MM-DD HH:mm:ss}} >> TestResults.md",
         "win32": "echo \"Date and time: {{date:YYYY-MM-DD HH:mm:ss}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "4": {
       "alias": "File name {{file_name}} to file",
@@ -90,7 +98,9 @@
         "default": "echo \"File name: \"{{file_name}} >> TestResults.md",
         "win32": "echo \"File name: {{file_name}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "5": {
       "alias": "Absolute file path {{file_path:absolute}} to file",
@@ -105,7 +115,9 @@
         "default": "echo \"Absolute file path: \"{{file_path:absolute}} >> TestResults.md",
         "win32": "echo \"Absolute file path: {{file_path:absolute}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "6": {
       "alias": "Relative file path {{file_path:relative}} to file",
@@ -120,7 +132,9 @@
         "default": "echo \"Relative file path: \"{{file_path:relative}} >> TestResults.md",
         "win32": "echo \"Relative file path: {{file_path:relative}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "7": {
       "alias": "Folder name {{folder_name}} to file",
@@ -135,7 +149,9 @@
         "default": "echo \"Folder name: \"{{folder_name}} >> TestResults.md",
         "win32": "echo \"Folder name: {{folder_name}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "8": {
       "alias": "Absolute folder path {{folder_path:absolute}} to file",
@@ -150,7 +166,9 @@
         "default": "echo \"Absolute folder path: \"{{folder_path:absolute}} >> TestResults.md",
         "win32": "echo \"Absolute folder path: {{folder_path:absolute}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "9": {
       "alias": "Relative folder path {{folder_path:relative}} to file",
@@ -165,7 +183,9 @@
         "default": "echo \"Relative folder path: \"{{folder_path:relative}} >> TestResults.md",
         "win32": "echo \"Relative folder path: {{folder_path:relative}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "10": {
       "alias": "Selection {{selection}} to file",
@@ -180,7 +200,9 @@
         "default": "echo \"Selection: \"{{selection}} >> TestResults.md",
         "win32": "echo \"Selection: {{selection}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "11": {
       "alias": "Title {{title}} to file",
@@ -195,7 +217,9 @@
         "default": "echo \"Title: \"{{title}} >> TestResults.md",
         "win32": "echo \"Title: {{title}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "12": {
       "alias": "Vault path {{vault_path}} to file",
@@ -210,7 +234,9 @@
         "default": "echo \"Vault path: \"{{vault_path}} >> TestResults.md",
         "win32": "echo \"Vault path: {{vault_path}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "13": {
       "alias": "Workspace {{workspace}} to file",
@@ -225,7 +251,9 @@
         "default": "echo \"Workspace: \"{{workspace}} >> TestResults.md",
         "win32": "echo \"Workspace: {{workspace}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "14": {
       "alias": "FINISH TEST",
@@ -242,7 +270,9 @@
       },
       "shells": {
         "win32": "CMD.EXE"
-      }
+      },
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "15": {
       "alias": "Test working directory",
@@ -257,7 +287,9 @@
         "default": "echo Working directory: `pwd` >> {{vault_path}}\"/Sandbox/TestResults.md\"",
         "win32": "echo Working directory: $pwd.Path >> \"{{vault_path}}\\Sandbox\\TestResults.md\""
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "17": {
       "alias": "Character encoding test",
@@ -271,7 +303,9 @@
       "platform_specific_commands": {
         "default": "echo \"Test non-ASCII characters: Å Ä Ö\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "18": {
       "alias": "Test to ignore error code",
@@ -288,7 +322,9 @@
       "platform_specific_commands": {
         "default": "cd NonExistingFolder"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "21": {
       "alias": "Terminal in test suite folder (No need to test)",
@@ -304,7 +340,9 @@
         "linux": "cd {{vault_path}} && xfce4-terminal",
         "win32": "wt.exe -d \"{{vault_path}}\""
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "22": {
       "alias": "Git pull (No need to test)",
@@ -318,7 +356,9 @@
       "platform_specific_commands": {
         "default": "git pull"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "23": {
       "alias": "Test empty command",
@@ -332,7 +372,9 @@
       "shells": {},
       "platform_specific_commands": {
         "default": ""
-      }
+      },
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "24": {
       "alias": "Tags {{tags:, }} to file",
@@ -347,7 +389,9 @@
         "default": "echo \"Tags: \"{{tags:, }} >> TestResults.md",
         "win32": "echo \"Tags: {{tags:, }}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "26": {
       "alias": "Test output insertion",
@@ -362,7 +406,9 @@
         "default": "echo -n \"Text output test\"",
         "win32": "echo \"Text output test\""
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "27": {
       "alias": "Terminal in plugin folder (No need to test)",
@@ -378,7 +424,9 @@
         "linux": "cd {{vault_path}}/.obsidian/plugins/obsidian-shellcommands && xfce4-terminal",
         "win32": "wt.exe -d \"{{vault_path}}\\.obsidian\\plugins\\obsidian-shellcommands\""
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "28": {
       "alias": "Test output to stderr, with exit code 0",
@@ -394,7 +442,9 @@
       },
       "shells": {
         "win32": "CMD.EXE"
-      }
+      },
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "29": {
       "alias": "Test output to top",
@@ -408,7 +458,9 @@
       "platform_specific_commands": {
         "default": "echo \"TEXT TO TOP\""
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "31": {
       "alias": "Test output to bottom",
@@ -425,7 +477,9 @@
       },
       "shells": {
         "win32": "CMD.EXE"
-      }
+      },
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "33": {
       "alias": "Test output to status bar",
@@ -439,7 +493,9 @@
       "platform_specific_commands": {
         "default": "echo \"Multiline output\" && echo \"hides earlier lines.\" && echo \"Only the last line is permanently displayed on the status bar.\""
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "34": {
       "alias": "Test output to clipboard",
@@ -453,7 +509,9 @@
       "platform_specific_commands": {
         "default": "echo \"Hello clipboard!\""
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "35": {
       "platform_specific_commands": {
@@ -470,7 +528,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "36": {
       "platform_specific_commands": {
@@ -487,7 +547,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "37": {
       "platform_specific_commands": {
@@ -504,7 +566,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "38": {
       "platform_specific_commands": {
@@ -521,7 +585,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "39": {
       "platform_specific_commands": {
@@ -539,7 +605,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "40": {
       "platform_specific_commands": {
@@ -557,7 +625,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "41": {
       "platform_specific_commands": {
@@ -571,7 +641,9 @@
         "stdout": "status-bar",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "42": {
       "alias": "Test $& variable",
@@ -585,7 +657,9 @@
       "platform_specific_commands": {
         "default": "echo \"Test $& variable: {{!passthrough:$&}}\" >> TestResults.md"
       },
-      "shells": {}
+      "shells": {},
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "43": {
       "platform_specific_commands": {
@@ -599,7 +673,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "44": {
       "platform_specific_commands": {
@@ -613,7 +689,9 @@
         "stdout": "notification",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "45": {
       "platform_specific_commands": {
@@ -631,7 +709,9 @@
         "stdout": "notification",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "46": {
       "platform_specific_commands": {
@@ -648,7 +728,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "47": {
       "platform_specific_commands": {
@@ -662,7 +744,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "48": {
       "platform_specific_commands": {
@@ -677,7 +761,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "49": {
       "platform_specific_commands": {
@@ -691,7 +777,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     },
     "50": {
       "platform_specific_commands": {
@@ -707,7 +795,9 @@
         "stdout": "ignore",
         "stderr": "notification"
       },
-      "output_channel_order": "stdout-first"
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     }
   }
 }
