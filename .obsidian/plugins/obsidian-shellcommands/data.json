@@ -946,6 +946,22 @@
         }
       },
       "command_palette_availability": "disabled"
+    },
+    "58": {
+      "platform_specific_commands": {
+        "default": "echo \"MODAL OUTPUT\""
+      },
+      "shells": {},
+      "alias": "Test output to modal",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "modal",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled"
     }
   }
 }
