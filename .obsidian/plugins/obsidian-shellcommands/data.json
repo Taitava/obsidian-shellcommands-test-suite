@@ -843,8 +843,8 @@
     },
     "53": {
       "platform_specific_commands": {
-        "default": "echo \"Event: After switching the active pane: \"{{date:HH:MM:ss}}",
-        "win32": "echo \"Event: After switching the active pane: {{date:HH:MM:ss}}\""
+        "default": "echo \"Event: After switching the active pane: \"{{date:HH:mm:ss}}",
+        "win32": "echo \"Event: After switching the active pane: {{date:HH:mm:ss}}\""
       },
       "shells": {},
       "alias": "Event: After switching the active pane",
