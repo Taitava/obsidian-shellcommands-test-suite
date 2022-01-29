@@ -1,6 +1,6 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.9.0
+test_suite_version: 0.10.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -140,7 +140,21 @@ For the next tests, you need to **only run commands that are designed for your o
 	- [ ] **Test Linux/Mac shell: Dash**: Uses explicitly Dash and it should output an absolute path to a Dash binary file.
 	- [ ] **Test Linux/Mac shell: Zsh**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
 
-# 5. When there is no settings file
+# 5. Events
+There a a few shell commands defined for testing events. They are excluded from the command palette, so they cannot be executed the normal way. Some of them have already been executed a few times by the time you'll reach this section. The only thing that these commands do, is echoing text to a notification balloon or to the status bar - they do not write anything to files.
+
+Check each one of the the following tests whose message you've already seen during this test session:
+1. [ ] *Event: After Obsidian starts*: Displayed every time Obsidian is started/restarted.
+2. [ ] *Event: After switching the active pane*: Displayed every time you switch between files and other panes. As this happens very often, the message is displayed on the status bar, not in a notification balloon! For this reason, the message also includes the time, so that you know that it has been executed recently.
+3. [ ] *Event: Every 180 seconds*: This message is displayed every 180 seconds.
+
+These require you to do something manually to see them executing:
+1. [ ] *Event: Before Obsidian quits*: Displayed **really shortly** every time you close Obsidian. It might be hard to notice this message because Obsidian might quit before the message gets displayed.
+2. [ ] *Event: File menu*: In the left navigation menu, click a *file* with the right button of your mouse. You should see an option named *Event: File menu:* with a file name there. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
+3. [ ] Event: *Folder menu*: In the left navigation menu, click a *folder* with the right button of your mouse. You should see an option named *Event: Folder menu:* with a folder name there. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
+4. [ ] *Event: Editor menu*: In the editor, click text with the right button of your mouse. You should see an option named *Event: Editor menu*. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
+
+# 6. When there is no settings file
 This section will test that the plugin works correctly when no `data.json` settings file exist. The plugin should load default settings.
 
 1. [ ] Execute the command **Open the plugin folder in system explorer**.
@@ -155,7 +169,7 @@ This section will test that the plugin works correctly when no `data.json` setti
 8. [ ] Restart Obsidian again.
 9. [ ] Ensure that the settings now have the normal list of shell commands.
 
-# 6. Clean up
+# 7. Clean up
 - [ ] Execute **FINISH TEST** command, which will add your test results to the bottom of this file.
 - Edit the name of this file:
 	- [ ] Remove the *(incomplete)* mark.

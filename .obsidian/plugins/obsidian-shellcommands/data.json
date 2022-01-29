@@ -798,6 +798,154 @@
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled"
+    },
+    "51": {
+      "platform_specific_commands": {
+        "default": "echo \"Event: After Obsidian starts\""
+      },
+      "shells": {},
+      "alias": "Event: After Obsidian starts",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "on-layout-ready": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled"
+    },
+    "52": {
+      "platform_specific_commands": {
+        "default": "echo \"Event: Before Obsidian quits\""
+      },
+      "shells": {
+        "win32": "CMD.EXE"
+      },
+      "alias": "Event: Before Obsidian quits",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "on-quit": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled"
+    },
+    "53": {
+      "platform_specific_commands": {
+        "default": "echo \"Event: After switching the active pane: \"{{date:HH:MM:ss}}",
+        "win32": "echo \"Event: After switching the active pane: {{date:HH:MM:ss}}\""
+      },
+      "shells": {},
+      "alias": "Event: After switching the active pane",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "status-bar",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "on-active-leaf-changed": {
+          "enabled": true
+        },
+        "every-n-seconds": {
+          "enabled": false,
+          "seconds": 60
+        }
+      },
+      "command_palette_availability": "disabled"
+    },
+    "54": {
+      "platform_specific_commands": {
+        "default": "echo \"Event: Every 180 seconds\""
+      },
+      "shells": {},
+      "alias": "Event: Every 180 seconds",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "every-n-seconds": {
+          "enabled": true,
+          "seconds": 180
+        }
+      },
+      "command_palette_availability": "disabled"
+    },
+    "55": {
+      "platform_specific_commands": {
+        "default": "echo \"Event: File menu: \"{{event_file_name}}"
+      },
+      "shells": {},
+      "alias": "Event: File menu: {{event_file_name}}",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "file-menu": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled"
+    },
+    "56": {
+      "platform_specific_commands": {
+        "default": "echo \"Event: Folder menu: \"{{event_folder_name}}"
+      },
+      "shells": {},
+      "alias": "Event: Folder menu: {{event_folder_name}}",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "folder-menu": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled"
+    },
+    "57": {
+      "platform_specific_commands": {
+        "default": "echo \"Event: Editor menu\""
+      },
+      "shells": {},
+      "alias": "Event: Editor menu",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "editor-menu": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled"
     }
   }
 }
