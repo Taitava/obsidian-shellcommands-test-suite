@@ -30,7 +30,7 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "unlisted"
     },
     "1": {
       "alias": "Git Bash (No need to test)",
@@ -49,7 +49,7 @@
         "win32": "CMD.EXE"
       },
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "unlisted"
     },
     "2": {
       "alias": "Clipboard {{clipboard}} to file",
@@ -342,7 +342,7 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "unlisted"
     },
     "22": {
       "alias": "Git pull (No need to test)",
@@ -358,7 +358,7 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "unlisted"
     },
     "23": {
       "alias": "Test empty command",
@@ -426,7 +426,7 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "unlisted"
     },
     "28": {
       "alias": "Test output to stderr, with exit code 0",
@@ -643,7 +643,7 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "unlisted"
     },
     "42": {
       "alias": "Test $& variable",
