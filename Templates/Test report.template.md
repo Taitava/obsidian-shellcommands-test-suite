@@ -190,5 +190,5 @@ This section will test that the plugin works correctly when no `data.json` setti
 		- *2021-11-06 (0.7.0-beta1) Linux ok.md*
 - [ ] Check with Git that the only changes made in this vault/repository is your newly added report file. Other files - if edited(/created) - should have returned to their original states at this point.
 
-# 7. Results
+# 8. Results
 %% Needs to have an empty line below the Results heading. Otherwise test results will start at the same line with the heading.%%
