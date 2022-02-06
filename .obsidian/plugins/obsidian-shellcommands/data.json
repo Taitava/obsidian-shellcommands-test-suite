@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.8.0",
+  "settings_version": "0.10.0",
   "debug": true,
   "preview_variables_in_command_palette": true,
   "show_autocomplete_menu": true,
