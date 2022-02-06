@@ -94,21 +94,22 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
-2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{file_name}}`. The command does not need to actually do anything. No need to assign an alias (yet).
+2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{file_name}}`. The command does not need to actually do anything.
 3. [ ] When typing a variable name, use an [autocomplete menu](https://publish.obsidian.md/shellcommands/Variables/Autocomplete/Autocomplete) to do it and check that the menu works correctly.
 4. [ ] Check that the settings view shows a preview for this shell command, e.g. *echo TestResults.md*.
 5. [ ] Define an alias for the command, e.g. *Echo test*.
-6. [ ] Check that the settings view shows the alias text instead of *Command #*.
-7. [ ] Go to *Hotkeys* settings and search for this new shell command (make sure it can be found there).
-8. [ ] Define the following hotkey for the new shell command: Ctrl/Cmd + M.
-9. [ ] Restart Obsidian by pressing Ctrl/Cmd + R (a custom hotkey defined in this test vault). This is to make sure that all settings are stored and loaded correctly.
-10. [ ] Go to shell command settings again and check that the new command still exists.
-11. [ ] Check that the shell command should display the following hotkey text below the command field: *Ctrl + M* (if you are on Windows/Linux) or *Cmd + M* (if you are on Mac). Pay attention that the *Ctrl*/*Cmd* part must be correct according to your operating system!
-12. [ ] Click the delete command button to open a confirmation window.
-13. [ ] Check that the confirmation window displays correctly the command's name and alias.
-14. [ ] Click *Yes, delete* and ensure that the command was really deleted.
-15. [ ] Restart Obsidian again by pressing Ctrl/Cmd + R.
-16. [ ] Go to shell command settings again and check that the new command does not exists any more.
+6. [ ] When you opened the modal for defining the alias, the alias field should have been focused automatically.
+7. [ ] Check that the settings view shows the alias text instead of *Command #*.
+8. [ ] Go to *Hotkeys* settings and search for this new shell command (make sure it can be found there).
+9. [ ] Define the following hotkey for the new shell command: Ctrl/Cmd + M.
+10. [ ] Restart Obsidian by pressing Ctrl/Cmd + R (a custom hotkey defined in this test vault). This is to make sure that all settings are stored and loaded correctly.
+11. [ ] Go to shell command settings again and check that the new command still exists.
+12. [ ] Check that the shell command should display the following hotkey text below the command field: *Ctrl + M* (if you are on Windows/Linux) or *Cmd + M* (if you are on Mac). Pay attention that the *Ctrl*/*Cmd* part must be correct according to your operating system!
+13. [ ] Click the delete command button to open a confirmation window.
+14. [ ] Check that the confirmation window displays correctly the command's name and alias.
+15. [ ] Click *Yes, delete* and ensure that the command was really deleted.
+16. [ ] Restart Obsidian again by pressing Ctrl/Cmd + R.
+17. [ ] Go to shell command settings again and check that the new command does not exists any more.
 
 # [[3. Miscellaneous settings]]
 Go to shell commands settings and follow the below instructions to test each of these settings:
