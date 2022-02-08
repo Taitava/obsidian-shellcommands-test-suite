@@ -638,7 +638,7 @@
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
-        "stdout": "status-bar",
+        "stdout": "modal",
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first",
