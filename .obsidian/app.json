@@ -30,5 +30,6 @@
   "newLinkFormat": "relative",
   "readableLineLength": true,
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "showLineNumber": true
 }
