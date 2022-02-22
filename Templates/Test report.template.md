@@ -173,6 +173,12 @@ These require you to do something manually to see them executing:
 3. [ ] Event: *Folder menu*: In the left navigation menu, click a *folder* with the right button of your mouse. You should see an option named *Event: Folder menu:* with a folder name there. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
 4. [ ] *Event: Editor menu*: In the editor, click text with the right button of your mouse. You should see an option named *Event: Editor menu*. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
 
+Finally:
+- [ ] Go to settings and turn *Enable events* off in the *Events* tab.
+- [ ] Try to switch panes. See that *Event: After switching the active pane* should **not** work.
+- [ ] Switch the setting back on.
+- [ ] Check that *Event: After switching the active pane* now **works**.
+
 # 6. When there is no settings file
 This section will test that the plugin works correctly when no `data.json` settings file exist. The plugin should load default settings.
 
