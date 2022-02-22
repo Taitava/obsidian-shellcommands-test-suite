@@ -85,12 +85,12 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - **Test output using Open a file 3**: Keep the previously opened pane focused! This opens [[Welcome.md]] again, this time with three selections:
 	- [ ] Line 1 is selected completely. I.e. *Welcome!* is selected.
 	- [ ] Line 4 contains a selection between columns 6 to 10. I.e. *test* is selected.
-	- [ ] Line 4 also starts a selection 10 columns the end of the line, and the selection extens to line 6, column 5. I.e. *improved*, two newlines and *This* are selected.
+	- [ ] Line 4 also starts a selection 10 columns before the end of the line, and the selection extens to line 6, column 5. I.e. *improved*, two newlines and *This* are selected.
 	- The above-mentioned  selected texts might be slightly inaccurate in case the content of [[Welcome.md]] changes after writing this test.
 - **Test output using Open a file 4**: Keep the previously opened pane focused! This opens and creates a new file named *A file that did not exist before.md* in the *Sandbox* folder.
 	- [ ] Before executing the command, make sure the file **does not exist**.
 	- [ ] Execute the command and make sure the file creation succeeds.
-	- [ ] Finally delete the file.
+	- [ ] Finally delete the file. You can now close the newly created tab, it's not needed anymore.
 - [ ] **Test \$& variable**: Symbol pair `$&` has caused problems in variable parsing when they appear in the variable's value (and some other `$` combinations too). Outputs:
 	- `Test $& variable: $&` when the test is correct. (Tick the checkbox).
 	- `Test $& variable: {{!passthrough:$&}}` when the test fails. Do not tick, leave a comment.
