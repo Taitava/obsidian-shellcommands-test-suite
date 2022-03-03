@@ -1,6 +1,6 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.11.0
+test_suite_version: 0.11.1
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -94,6 +94,9 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Test \$& variable**: Symbol pair `$&` has caused problems in variable parsing when they appear in the variable's value (and some other `$` combinations too). Outputs:
 	- `Test $& variable: $&` when the test is correct. (Tick the checkbox).
 	- `Test $& variable: {{!passthrough:$&}}` when the test fails. Do not tick, leave a comment.
+- [ ] **Two 🐓 emojis**: This test should output two 🐓 emojis correctly. The first one has been written directly in the shell command, while the second one comes via a `{{passthrough:🐓}}` variable, which might break the emoji if variable parsing regular expressions fail. [Relates to bug #171](https://github.com/Taitava/obsidian-shellcommands/issues/171)
+	- Incorrect result: `🐓��`
+	- Correct result: 🐓🐓
 - [ ] **Escaping test 1**: This command tests a wide range of special characters that should be escaped. Two things are tested: **a)** The special characters should not do anything special, they should not prevent the test from outputting all the characters; **b)** When the characters are output to [[TestResults]], they should be presented there **without** any escaping characters (`\` or `` ` ``), with the exception that `\` and `` ` `` do appear in the result as individual test characters - they just should not appear in fron of every other special character.
 	- Wrong output: ``Escaping test 1: \<\>\,\.\-\;\:\§\+\´\½\!\'\"\#\¤\%\&\/\(\)\=\?\`\@\`\£\$\€\{\[\]\}\\\\\¨\^\~\*\å\ä\ö\*`` (a shell should remove the escape characters).
 	- Wrong, if the command tried to do something strange.
