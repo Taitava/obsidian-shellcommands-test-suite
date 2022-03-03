@@ -81,7 +81,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 	- *Open a file* does not need to be tested here.
 	- [ ] *Clipboard*
 - [ ] **Test output using Open a file 1**: This opens [[Welcome.md]] file in a new pane. Check that the file opens **and** that a new pane is created.
-- [ ] **Test output using Open a file 2**: Keep the previously opened pane focused! This opens [[README.md]] file in a new pane and places the caret on line 2, column 3. Make sure the file opens in the current pane (which previously had [[Welcome.md]] open) **and** that the caret is placed in the mentioned position.
+- [ ] **Test output using Open a file 2**: Keep the previously opened pane focused! This opens [[README.md]] file and places the caret on line 2, column 3. Make sure the file opens in the current pane (which previously had [[Welcome.md]] open) **and** that the caret is placed in the mentioned position.
 - **Test output using Open a file 3**: Keep the previously opened pane focused! This opens [[Welcome.md]] again, this time with three selections:
 	- [ ] Line 1 is selected completely. I.e. *Welcome!* is selected.
 	- [ ] Line 4 contains a selection between columns 6 to 10. I.e. *test* is selected.
