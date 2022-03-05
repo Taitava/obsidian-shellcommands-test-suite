@@ -1069,7 +1069,7 @@
     "65": {
       "platform_specific_commands": {
         "default": "echo -n {{file_path:relative}}\\:; cat caret_position.txt",
-        "win32": "WriteHost {{file_path:relative}}\\: -NoNewLine; type caret_position.txt"
+        "win32": "Write-Host {{file_path:relative}}`: -NoNewLine; type caret_position.txt"
       },
       "shells": {},
       "alias": "Restore caret position",
