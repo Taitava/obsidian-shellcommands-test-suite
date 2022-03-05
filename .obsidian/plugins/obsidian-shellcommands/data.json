@@ -1045,6 +1045,47 @@
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled"
+    },
+    "64": {
+      "platform_specific_commands": {
+        "default": "echo {{caret_position}} > caret_position.txt"
+      },
+      "shells": {},
+      "alias": "Remember caret position",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "on-quit": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled"
+    },
+    "65": {
+      "platform_specific_commands": {
+        "default": "echo -n {{file_path:relative}}\\:; cat caret_position.txt",
+        "win32": "WriteHost {{file_path:relative}}\\: -NoNewLine; type caret_position.txt"
+      },
+      "shells": {},
+      "alias": "Restore caret position",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "open-files",
+        "stderr": "ignore"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "on-layout-ready": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled"
     }
   }
 }
