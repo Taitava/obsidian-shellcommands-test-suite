@@ -1206,8 +1206,92 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {}
+    },
+    "66": {
+      "platform_specific_commands": {
+        "default": "echo \"Day of week: \"{{date:dddd}} >> TestResults.md && echo \"Prompt mandatory field: \"{{_mandatory_field}} >> TestResults.md && echo \"Prompt field with a default value: \"{{_field_with_default_value}} >> TestResults.md && echo \"Prompt optional field: \"{{_optional_field}} >> TestResults.md && echo \"Prompt field using variables: \"{{_field_using_variables}} >> TestResults.md",
+        "win32": "echo \"Day of week: {{date:dddd}}\" >> TestResults.md && echo \"Prompt mandatory field: {{_mandatory_field}}\" >> TestResults.md && echo \"Prompt field with a default value: {{_field_with_default_value}}\" >> TestResults.md && echo \"Prompt optional field: {{_optional_field}}\" >> TestResults.md && echo \"Prompt field using variables: {{_field_using_variables}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Test custom variables and a prompt",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "ikn3ruchpq"
+        }
+      ],
+      "variable_default_values": {}
     }
   },
-  "prompts": [],
-  "custom_variables": []
+  "prompts": [
+    {
+      "id": "ikn3ruchpq",
+      "title": "Test prompt {{date:YYYY-MM-DD}}",
+      "description": "Description for the test prompt.\n\nMake sure each of these description sentences appear on separate lines, with empty lines in-between.\n\nEnsure that the shell command preview below contains: Day of week: {{date:dddd}}",
+      "preview_shell_command": true,
+      "fields": [
+        {
+          "label": "Mandatory field",
+          "description": "1. Try to submit the prompt without filling this, ensure an error message is shown saying that this field must be filled. 2. Type value: example",
+          "default_value": "",
+          "target_variable_id": "isv01gr33c",
+          "required": true
+        },
+        {
+          "label": "Field with a default value",
+          "description": "Leave as-is.",
+          "default_value": "Default",
+          "target_variable_id": "4pw77r1izt",
+          "required": true
+        },
+        {
+          "label": "Optional field",
+          "description": "Leave empty.",
+          "default_value": "",
+          "target_variable_id": "a8hvq53otu",
+          "required": false
+        },
+        {
+          "label": "Field using variables",
+          "description": "Check that the value is the current year by default, and then add {{file_name}} to the end (using the file_name variable).",
+          "default_value": "{{date:YYYY}} ",
+          "target_variable_id": "zecw45agxe",
+          "required": true
+        }
+      ],
+      "execute_button_text": "Submit the values"
+    }
+  ],
+  "custom_variables": [
+    {
+      "id": "isv01gr33c",
+      "name": "mandatory_field",
+      "description": "User should set this to 'example'."
+    },
+    {
+      "id": "4pw77r1izt",
+      "name": "field_with_default_value",
+      "description": "This should become 'Default'."
+    },
+    {
+      "id": "a8hvq53otu",
+      "name": "optional_field",
+      "description": "This should become an empty string."
+    },
+    {
+      "id": "zecw45agxe",
+      "name": "field_using_variables",
+      "description": ""
+    }
+  ]
 }

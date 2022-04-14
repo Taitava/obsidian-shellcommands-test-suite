@@ -1,6 +1,6 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.11.1
+test_suite_version: 0.12.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -182,7 +182,30 @@ Finally:
 - [ ] Switch the setting back on.
 - [ ] Check that *Event: After switching the active pane* now **works**.
 
-# 6. When there is no settings file
+# 6. Prompts
+Execute the command **Test custom variables and a prompt**. A prompt will appear to ask a few values.
+
+Check the following things in the prompt:
+1. [ ] The prompt's description shows a week day name instead of `{{date:dddd}}`.
+2. [ ] The shell command preview text shows a week day name instead of `{{date:dddd}}`.
+3. [ ] The shell command preview text shows inputted values correctly when you type them. Also, the current field's value is bolded in the shell command.
+4. [ ] The shell command preview text shows variable names correctly when you click the small toggle icon. Also, the current field's variable name is bolded in the shell command.
+5. [ ] *Field using variables* shows the currently active file's name in it's description text.
+6. [ ] *Field using variables* has the current year as its default value when the prompt is opened.
+7. [ ] Try to submit the prompt values **without** inputting a value to *Mandatory field*. The submission should be **prevented** with an error message requiring the field to be filled.
+8. [ ] After the error message, fill the field and check that submitting the prompt works ok.
+9. [ ] Check that a result similar to the following was written to [[TestResults.md]]:
+	```
+	Day of week: Thursday
+	Prompt mandatory field: example
+	Prompt field with a default value: Default
+	Prompt optional field: 
+	Prompt field using variables: 2022 TestResults.md
+	```
+	Ensure the first line contains a day of week, the second line contains *example*, the third line contains *Default*, the fourth line doesn't contain anything after the colon `:`, and the last line contains the current year and a file name.
+10. [ ] Check that the *Custom variables* pane lists the values of custom variables relevant to the four fields of the prompt. Make sure the values are the same as in the output to [[TestResults.md]].
+
+# 7. When there is no settings file
 This section will test that the plugin works correctly when no `data.json` settings file exist. The plugin should load default settings.
 
 1. [ ] Execute the command **Open the plugin folder in system explorer**.
@@ -197,7 +220,7 @@ This section will test that the plugin works correctly when no `data.json` setti
 8. [ ] Restart Obsidian again.
 9. [ ] Ensure that the settings now have the normal list of shell commands.
 
-# 7. Clean up
+# 8. Clean up
 - [ ] Execute **FINISH TEST** command, which will add your test results to the bottom of this file.
 - Edit the name of this file:
 	- [ ] Remove the *(incomplete)* mark.
@@ -211,5 +234,5 @@ This section will test that the plugin works correctly when no `data.json` setti
 		- *2021-11-06 (0.7.0-beta1) Linux ok.md*
 - [ ] Check with Git that the only changes made in this vault/repository is your newly added report file. Other files - if edited(/created) - should have returned to their original states at this point.
 
-# 8. Results
+# 9. Results
 %% Needs to have an empty line below the Results heading. Otherwise test results will start at the same line with the heading.%%
