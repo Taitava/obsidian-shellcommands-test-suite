@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.11.0",
+  "settings_version": "0.12.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -32,7 +32,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "unlisted"
+      "command_palette_availability": "unlisted",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "1": {
       "alias": "Git Bash (No need to test)",
@@ -51,7 +53,9 @@
         "win32": "CMD.EXE"
       },
       "events": {},
-      "command_palette_availability": "unlisted"
+      "command_palette_availability": "unlisted",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "2": {
       "alias": "Clipboard {{clipboard}} to file",
@@ -68,7 +72,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "3": {
       "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file",
@@ -85,7 +91,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "4": {
       "alias": "File name {{file_name}} to file",
@@ -102,7 +110,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "5": {
       "alias": "Absolute file path {{file_path:absolute}} to file",
@@ -119,7 +129,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "6": {
       "alias": "Relative file path {{file_path:relative}} to file",
@@ -136,7 +148,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "7": {
       "alias": "Folder name {{folder_name}} to file",
@@ -153,7 +167,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "8": {
       "alias": "Absolute folder path {{folder_path:absolute}} to file",
@@ -170,7 +186,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "9": {
       "alias": "Relative folder path {{folder_path:relative}} to file",
@@ -187,7 +205,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "10": {
       "alias": "Selection {{selection}} to file",
@@ -204,7 +224,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "11": {
       "alias": "Title {{title}} to file",
@@ -221,7 +243,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "12": {
       "alias": "Vault path {{vault_path}} to file",
@@ -238,7 +262,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "13": {
       "alias": "Workspace {{workspace}} to file",
@@ -255,7 +281,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "14": {
       "alias": "FINISH TEST",
@@ -274,7 +302,9 @@
         "win32": "CMD.EXE"
       },
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "15": {
       "alias": "Test working directory",
@@ -291,7 +321,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "17": {
       "alias": "Character encoding test",
@@ -307,7 +339,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "18": {
       "alias": "Test to ignore error code",
@@ -326,7 +360,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "21": {
       "alias": "Terminal in test suite folder (No need to test)",
@@ -344,7 +380,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "unlisted"
+      "command_palette_availability": "unlisted",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "22": {
       "alias": "Git pull (No need to test)",
@@ -360,7 +398,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "unlisted"
+      "command_palette_availability": "unlisted",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "23": {
       "alias": "Test empty command",
@@ -376,7 +416,9 @@
         "default": ""
       },
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "24": {
       "alias": "Tags {{tags:, }} to file",
@@ -393,7 +435,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "26": {
       "alias": "Test output insertion",
@@ -410,7 +454,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "27": {
       "alias": "Terminal in plugin folder (No need to test)",
@@ -428,7 +474,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "unlisted"
+      "command_palette_availability": "unlisted",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "28": {
       "alias": "Test output to stderr, with exit code 0",
@@ -446,7 +494,9 @@
         "win32": "CMD.EXE"
       },
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "29": {
       "alias": "Test output to top",
@@ -462,7 +512,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "31": {
       "alias": "Test output to bottom",
@@ -481,7 +533,9 @@
         "win32": "CMD.EXE"
       },
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "33": {
       "alias": "Test output to status bar",
@@ -497,7 +551,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "34": {
       "alias": "Test output to clipboard",
@@ -513,7 +569,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "35": {
       "platform_specific_commands": {
@@ -532,7 +590,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "36": {
       "platform_specific_commands": {
@@ -551,7 +611,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "37": {
       "platform_specific_commands": {
@@ -570,7 +632,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "38": {
       "platform_specific_commands": {
@@ -589,7 +653,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "39": {
       "platform_specific_commands": {
@@ -609,7 +675,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "40": {
       "platform_specific_commands": {
@@ -629,7 +697,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "41": {
       "platform_specific_commands": {
@@ -645,7 +715,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "unlisted"
+      "command_palette_availability": "unlisted",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "42": {
       "alias": "Test $& variable",
@@ -661,7 +733,9 @@
       },
       "shells": {},
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "43": {
       "platform_specific_commands": {
@@ -677,7 +751,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "44": {
       "platform_specific_commands": {
@@ -693,7 +769,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "45": {
       "platform_specific_commands": {
@@ -713,7 +791,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "46": {
       "platform_specific_commands": {
@@ -732,7 +812,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "47": {
       "platform_specific_commands": {
@@ -748,7 +830,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "48": {
       "platform_specific_commands": {
@@ -765,7 +849,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "49": {
       "platform_specific_commands": {
@@ -781,7 +867,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "50": {
       "platform_specific_commands": {
@@ -799,7 +887,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "51": {
       "platform_specific_commands": {
@@ -819,7 +909,9 @@
           "enabled": true
         }
       },
-      "command_palette_availability": "disabled"
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "52": {
       "platform_specific_commands": {
@@ -841,7 +933,9 @@
           "enabled": true
         }
       },
-      "command_palette_availability": "disabled"
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "53": {
       "platform_specific_commands": {
@@ -866,7 +960,9 @@
           "seconds": 60
         }
       },
-      "command_palette_availability": "disabled"
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "54": {
       "platform_specific_commands": {
@@ -887,7 +983,9 @@
           "seconds": 180
         }
       },
-      "command_palette_availability": "disabled"
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "55": {
       "platform_specific_commands": {
@@ -907,7 +1005,9 @@
           "enabled": true
         }
       },
-      "command_palette_availability": "disabled"
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "56": {
       "platform_specific_commands": {
@@ -927,7 +1027,9 @@
           "enabled": true
         }
       },
-      "command_palette_availability": "disabled"
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "57": {
       "platform_specific_commands": {
@@ -947,7 +1049,9 @@
           "enabled": true
         }
       },
-      "command_palette_availability": "disabled"
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "58": {
       "platform_specific_commands": {
@@ -963,7 +1067,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "59": {
       "platform_specific_commands": {
@@ -979,7 +1085,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "60": {
       "platform_specific_commands": {
@@ -995,7 +1103,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "61": {
       "platform_specific_commands": {
@@ -1011,7 +1121,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "62": {
       "platform_specific_commands": {
@@ -1027,7 +1139,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "63": {
       "platform_specific_commands": {
@@ -1044,7 +1158,9 @@
       },
       "output_channel_order": "stdout-first",
       "events": {},
-      "command_palette_availability": "enabled"
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "64": {
       "platform_specific_commands": {
@@ -1064,7 +1180,9 @@
           "enabled": true
         }
       },
-      "command_palette_availability": "disabled"
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     },
     "65": {
       "platform_specific_commands": {
@@ -1085,7 +1203,11 @@
           "enabled": true
         }
       },
-      "command_palette_availability": "disabled"
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
-  }
+  },
+  "prompts": [],
+  "custom_variables": []
 }
