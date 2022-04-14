@@ -76,10 +76,24 @@
       "right": {
         "id": "799a4a9ad9055dc8",
         "type": "split",
-        "children": [],
+        "children": [
+          {
+            "id": "395607bc5aefba14",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "7ccdf52e48ec9929",
+                "type": "leaf",
+                "state": {
+                  "type": "SC-custom-variables-view",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
         "direction": "horizontal",
-        "width": 300,
-        "collapsed": true
+        "width": 300
       },
       "active": "1bb67c731294e552"
     }
