@@ -186,8 +186,8 @@ Finally:
 Execute the command **Test custom variables and a prompt**. A prompt will appear to ask a few values.
 
 Check the following things in the prompt:
-1. [ ] The prompt's description shows a week day name instead of `{{date:dddd}}`.
-2. [ ] The shell command preview text shows a week day name instead of `{{date:dddd}}`.
+1. [ ] The prompt's description shows a week day name instead of `{ {date:dddd}}`.
+2. [ ] The shell command preview text shows a week day name instead of `{ {date:dddd}}`.
 3. [ ] The shell command preview text shows inputted values correctly when you type them. Also, the current field's value is bolded in the shell command.
 4. [ ] The shell command preview text shows variable names correctly when you click the small toggle icon. Also, the current field's variable name is bolded in the shell command.
 5. [ ] *Field using variables* shows the currently active file's name in it's description text.
