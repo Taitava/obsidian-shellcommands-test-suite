@@ -855,7 +855,8 @@
     },
     "49": {
       "platform_specific_commands": {
-        "default": "echo \"File extension: with dot: \"{{file_extension:with-dot}}\" / no dot: \"{{file_extension:no-dot}} >> TestResults.md"
+        "default": "echo \"File extension: with dot: \"{{file_extension:with-dot}}\" / no dot: \"{{file_extension:no-dot}} >> TestResults.md",
+        "win32": "echo \"File extension: with dot: {{file_extension:with-dot}} / no dot: {{file_extension:no-dot}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file",
