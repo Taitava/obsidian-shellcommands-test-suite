@@ -193,7 +193,8 @@ Finally:
 - [ ] Switch the setting back on.
 - [ ] Check that *Event: After switching the active pane* now **works**.
 
-# 6. Prompts
+# 6. Prompts and custom variables
+## 6.1. Prompts
 Execute the command **Test custom variables and a prompt**. A prompt will appear to ask a few values.
 
 Check the following things in the prompt:
@@ -215,6 +216,14 @@ Check the following things in the prompt:
 	```
 	Ensure the first line contains a day of week, the second line contains *example*, the third line contains *Default*, the fourth line doesn't contain anything after the colon `:`, and the last line contains the current year and a file name.
 10. [ ] Check that the *Custom variables* pane lists the values of custom variables relevant to the four fields of the prompt. Make sure the values are the same as in the output to [[TestResults.md]].
+
+## 6.2. Custom variables (via Shell commands URI)
+1. *Test Shell commands URI*: This shell command is excluded from Obsidian's command palette, so it can only be executed via the following URI link: [Test Shell commands URI](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=76&_uri_custom_variable_1=Hello&_uri_custom_variable_2=world!). After clicking it, [[TestResults.md]] should have the following new lines:
+	- [ ] *Custom variable 1: Hello*
+	- [ ] *Custom variable 2: world!*
+2. Test setting custom variables via a link without executing a shell command. Click [this link](obsidian://shell-commands?_uri_custom_variable_1=Variable%20values%20set&_uri_custom_variable_2=without%20executing%20anything). Check from the *Custom variables* pane that the following variables have the following values:
+	- [ ] *Custom variable 1: Variable values set*
+	- [ ] *Custom variable 2: without executing anything*
 
 # 7. When there is no settings file
 This section will test that the plugin works correctly when no `data.json` settings file exist. The plugin should load default settings.
