@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.12.0",
+  "settings_version": "0.13.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -9,6 +9,10 @@
     "win32": "pwsh.exe",
     "linux": "/bin/bash",
     "darwin": "/bin/bash"
+  },
+  "environment_variable_path_augmentations": {
+    "win32": "WindowsExtraPath1\n{{!environment:Path}}\nWindowsExtraPath2",
+    "linux": "LinuxAndMacExtraPath"
   },
   "error_message_duration": 20,
   "notification_message_duration": 10,
@@ -1447,6 +1451,25 @@
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "77": {
+      "platform_specific_commands": {
+        "default": "echo \"PATH (Linux/macOS): \"$PATH",
+        "win32": "echo \"PATH (Windows): \"$Env:Path"
+      },
+      "shells": {},
+      "alias": "Test PATH additions",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "modal",
+        "stderr": "modal"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {}
     }
