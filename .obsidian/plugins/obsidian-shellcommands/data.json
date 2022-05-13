@@ -1430,6 +1430,25 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {}
+    },
+    "76": {
+      "platform_specific_commands": {
+        "default": "echo \"Custom variable 1: \"{{_uri_custom_variable_1}} >> TestResults.md && \"Custom variable 2: \"{{_uri_custom_variable_2}} >> TestResults.md",
+        "win32": "echo \"Custom variable 1: {{_uri_custom_variable_1}}\" >> TestResults.md && \"Custom variable 2: {{_uri_custom_variable_2}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Test Shell commands URI",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   },
   "prompts": [
@@ -1491,6 +1510,16 @@
       "id": "zecw45agxe",
       "name": "field_using_variables",
       "description": ""
+    },
+    {
+      "id": "ojzjfapyot",
+      "name": "uri_custom_variable_1",
+      "description": "Used in Shell commands URI testing."
+    },
+    {
+      "id": "nbwu2szvx5",
+      "name": "uri_custom_variable_2",
+      "description": "Used in Shell commands URI testing."
     }
   ]
 }
