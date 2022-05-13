@@ -28,7 +28,7 @@
   ],
   "attachmentFolderPath": "_images",
   "newLinkFormat": "relative",
-  "readableLineLength": true,
+  "readableLineLength": false,
   "legacyEditor": false,
   "livePreview": true,
   "showLineNumber": true
