@@ -1232,6 +1232,204 @@
         }
       ],
       "variable_default_values": {}
+    },
+    "67": {
+      "platform_specific_commands": {
+        "default": "echo \"New file created: {{event_file_name}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Event: File created",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "file-created": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "68": {
+      "platform_specific_commands": {
+        "default": "echo \"New folder created: {{event_folder_name}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Event: Folder created",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "folder-created": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "69": {
+      "platform_specific_commands": {
+        "default": "echo \"File deleted: {{event_file_name}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Event: File deleted",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "file-deleted": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "70": {
+      "platform_specific_commands": {
+        "default": "echo \"Folder deleted: {{event_folder_name}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Event: Folder deleted",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "folder-deleted": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "71": {
+      "platform_specific_commands": {
+        "default": "echo \"File content modified: {{event_file_name}}\""
+      },
+      "shells": {},
+      "alias": "Event: File content modified",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "file-modified": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "72": {
+      "platform_specific_commands": {
+        "default": "echo \"File moved from {{event_old_file_path:relative}} to {{event_file_path:relative}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Event: File moved",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "file-moved": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "73": {
+      "platform_specific_commands": {
+        "default": "echo \"Folder moved from {{event_old_folder_path:relative}} to {{event_folder_path:relative}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Event: Folder moved",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "folder-moved": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "74": {
+      "platform_specific_commands": {
+        "default": "echo \"File renamed from {{event_old_file_name}} to {{event_file_name}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Event: File renamed",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "file-renamed": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "75": {
+      "platform_specific_commands": {
+        "default": "echo \"Folder renamed from {{event_old_folder_name}} to {{event_folder_name}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Event: Folder renamed",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {
+        "folder-renamed": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   },
   "prompts": [

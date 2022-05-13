@@ -175,6 +175,17 @@ These require you to do something manually to see them executing:
 2. [ ] *Event: File menu*: In the left navigation menu, click a *file* with the right button of your mouse. You should see an option named *Event: File menu:* with a file name there. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
 3. [ ] Event: *Folder menu*: In the left navigation menu, click a *folder* with the right button of your mouse. You should see an option named *Event: Folder menu:* with a folder name there. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
 4. [ ] *Event: Editor menu*: In the editor, click text with the right button of your mouse. You should see an option named *Event: Editor menu*. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
+5. [ ] *Event: File created*: Create a new file in *Sandbox*. It will first have the name *Untitled.md*. [[TestResults.md]] should now have a new line saying: *New file created: Untitled.md*.
+6. [ ] *Event: File renamed*: Give the new file another name: *NewNote.md*. [[TestResults.md]] should now have a new line saying: *File renamed from Untitled.md to NewNote.md*.
+7. [ ] *Event: File content modified*: Write something into the *NewNote.md* file. You should see a notification balloon popping up: *File content modified: NewNote.md*.
+8. [ ] *Event: Folder created*: Create a new folder in *Sandbox*. It will first have the name *Untitled*. [[TestResults.md]] should now have a new line saying: *New file created: Untitled*.
+9. [ ] *Event: Folder renamed*: Give the new folder another name: *NewFolder*. [[TestResults.md]] should now have a new line saying: *Folder renamed from Untitled to NewFolder*.
+10. [ ] *Event: File moved*: Move *NewNote.md* to *NewFolder*. [[TestResults.md]] should now have a new line saying: *File moved from Sandbox\NewNote.md to Sandbox\NewFolder\NewNote.md*.
+11. [ ] *Event: Folder moved*: Create yet another folder in *Sandbox* and rename it to *ParentFolder*. Move *NewFolder* to *ParentFolder*. [[TestResults.md]] should now have a new line saying: *Folder moved from Sandbox\NewFolder to Sandbox\ParentFolder\NewFolder*.
+12. [ ] *Event: File deleted* and *Event: Folder deleted*: Delete *ParentFolder*. Deleting it shold also delete *NewFolder* and *NewNote.md*. [[TestResults.md]] should now have the following new lines (the order may differ):
+	- *Folder deleted: NewFolder*
+	- *File deleted: NewNote.md*
+	- *Folder deleted: ParentFolder*
 
 Finally:
 - [ ] Go to settings and turn *Enable events* off in the *Events* tab.
