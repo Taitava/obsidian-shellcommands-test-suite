@@ -112,6 +112,12 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 	- On linux (and macOS) the output should contain one additional directory:
 		- *LinuxAndMacExtraPath* should be present **at the end** of the output.
 	- The reason for outputs being different in different operating systems is that in order to test to different appending mechanisms, I needed to use two different operating system settings fields. I can't make separate test shell commands for these, because the `PATH` additions are implemented to happen for all shell commands, and no shell command specific settings exist for them.
+- [ ] **Test multiline shell command**: This should output the following, each word on its own line:
+	```markdown
+	Multiline
+	shell
+	command
+	```
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
