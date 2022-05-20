@@ -59,18 +59,18 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Title {{title }} to file**
 - [ ] **Vault path {{vault_path}} to file**
 - [ ] **Workspace {{workspace}} to file**
-- [ ] **Character encoding test**: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
-- [ ] **Test to ignore error code**: This command should do absolutely nothing. It tries to change directory (`cd`) to *NonExistingFolder*, which fails with error code `1` (on Windows), or `2` (on Linux) . I'm not sure about the code on Mac. The command is defined to ignore error codes `1` and `2`. Tick this checkbox if nothing happened during the execution, but do not tick, if you saw an error message popping up.
-- [ ] **Test empty shell command**: This one should always give an error message saying: *The shell command is empty*. If it  does not give an error message at all, **or if the message is different**, comment here and do not check the box. If the error message was correct, tick this checkbox.
+- [ ] **[Character encoding test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=17)**: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
+- [ ] **[Test to ignore error code](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=18)**: This command should do absolutely nothing. It tries to change directory (`cd`) to *NonExistingFolder*, which fails with error code `1` (on Windows), or `2` (on Linux) . I'm not sure about the code on Mac. The command is defined to ignore error codes `1` and `2`. Tick this checkbox if nothing happened during the execution, but do not tick, if you saw an error message popping up.
+- [ ] **[Test empty command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=23)**: This one should always give an error message saying: *The shell command is empty*. If it  does not give an error message at all, **or if the message is different**, comment here and do not check the box. If the error message was correct, tick this checkbox.
 - **Test output insertion**:
 	- This command inserts the following text to a currently active file, at caret position: *Text output test*. Be sure to have this **test report file** active and in **edit mode**. Check that a text insertion/replacement process succeeds:
 	- [ ] Place the caret after the colon and execute the command to see how *inserting* works: 
 	- [ ] Select some word in this sentence and execute the command to see how *replacing* works.
-- [ ] **Test output to stderr, with exit code 0**: This command should give the following output to an error balloon: *[0]: This goes to stderr*. Pay attention to the **[0]** part! It should not be *[null]*, and the number should not be anything else than zero. This command uses exit code 0, which indicates that the command actually succeeded, but it has the twist that even when the command succeeded, it directed its output to *stderr* instead of the normal *stdout*. SC should be able to differentiate error output despite of an exit code 0 that indicates a succeeded shell command execution.
+- [ ] **[Test output to stderr, with exit code 0](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=28)**: This command should give the following output to an error balloon: *[0]: This goes to stderr*. Pay attention to the **[0]** part! It should not be *[null]*, and the number should not be anything else than zero. This command uses exit code 0, which indicates that the command actually succeeded, but it has the twist that even when the command succeeded, it directed its output to *stderr* instead of the normal *stdout*. SC should be able to differentiate error output despite of an exit code 0 that indicates a succeeded shell command execution.
 - [ ] **Test output to top**: Make sure [[TestResults]] file is open and active! This command will insert *TEXT TO TOP* to the currently active file.
 - [ ] **Test output to bottom**: Make sure [[TestResults]] file is open and active! This command will insert *TEXT TO BOTTOM* to the currently active file.
-- [ ] **Test output to status bar**: Check that status bar will contain output text. Hover over the status bar with mouse and ensure that more output lines pop up.
-- [ ] **Test output to clipboard**: After running the command, paste clipboard content here: 
+- [ ] **[Test output to status bar](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=33)**: Check that status bar will contain output text. Hover over the status bar with mouse and ensure that more output lines pop up.
+- [ ] **[Test output to clipboard](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=34)**: After running the command, paste clipboard content here: 
 	- The pasted content should be *Hello clipboard!*. If it's something else, write a comment and do not tick the checkbox.
 	- A notification balloon should also appear, telling what was copied to the clipboard. If it does not appear or the content is wrong, write a comment and do not tick the checkbox.
 - **Test output to modal**: Make sure [[TestResults]] file is active when executing the command! After executing the command, click all of the *Redirect* buttons in the output modal, and see that each of them outputs the text MODAL OUTPUT in the correct channel:
@@ -80,7 +80,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 	- [ ] *Current file: bottom*
 	- *Open a file* does not need to be tested here.
 	- [ ] *Clipboard*
-- [ ] **Test output using Open a file 1**: This opens [[Welcome.md]] file in a new pane. Check that the file opens **and** that a new pane is created.
+- [ ] **[Test output using Open a file 1](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=59)**: This opens [[Welcome.md]] file in a new pane. Check that the file opens **and** that a new pane is created.
 - [ ] **Test output using Open a file 2**: Keep the previously opened pane focused! This opens [[README.md]] file and places the caret on line 2, column 3. Make sure the file opens in the current pane (which previously had [[Welcome.md]] open) **and** that the caret is placed in the mentioned position.
 - **Test output using Open a file 3**: Keep the previously opened pane focused! This opens [[Welcome.md]] again, this time with three selections:
 	- [ ] Line 1 is selected completely. I.e. *Welcome!* is selected.
@@ -91,28 +91,28 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 	- [ ] Before executing the command, make sure the file **does not exist**.
 	- [ ] Execute the command and make sure the file creation succeeds.
 	- [ ] Finally delete the file. You can now close the newly created tab, it's not needed anymore.
-- [ ] **Test \$& variable**: Symbol pair `$&` has caused problems in variable parsing when they appear in the variable's value (and some other `$` combinations too). Outputs:
+- [ ] **[Test $& variable](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=42)**: Symbol pair `$&` has caused problems in variable parsing when they appear in the variable's value (and some other `$` combinations too). Outputs:
 	- `Test $& variable: $&` when the test is correct. (Tick the checkbox).
 	- `Test $& variable: {{!passthrough:$&}}` when the test fails. Do not tick, leave a comment.
-- [ ] **Two 🐓 emojis**: This test should output two 🐓 emojis correctly. The first one has been written directly in the shell command, while the second one comes via a `{{passthrough:🐓}}` variable, which might break the emoji if variable parsing regular expressions fail. [Relates to bug #171](https://github.com/Taitava/obsidian-shellcommands/issues/171)
+- [ ] **[Two 🐓 emojis](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=63)**: This test should output two 🐓 emojis correctly. The first one has been written directly in the shell command, while the second one comes via a `{{passthrough:🐓}}` variable, which might break the emoji if variable parsing regular expressions fail. [Relates to bug #171](https://github.com/Taitava/obsidian-shellcommands/issues/171)
 	- Incorrect result: `🐓��`
 	- Correct result: 🐓🐓
-- [ ] **Escaping test 1**: This command tests a wide range of special characters that should be escaped. Two things are tested: **a)** The special characters should not do anything special, they should not prevent the test from outputting all the characters; **b)** When the characters are output to [[TestResults]], they should be presented there **without** any escaping characters (`\` or `` ` ``), with the exception that `\` and `` ` `` do appear in the result as individual test characters - they just should not appear in fron of every other special character.
+- [ ] **[Escaping test 1](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=43)**: This command tests a wide range of special characters that should be escaped. Two things are tested: **a)** The special characters should not do anything special, they should not prevent the test from outputting all the characters; **b)** When the characters are output to [[TestResults]], they should be presented there **without** any escaping characters (`\` or `` ` ``), with the exception that `\` and `` ` `` do appear in the result as individual test characters - they just should not appear in fron of every other special character.
 	- Wrong output: ``Escaping test 1: \<\>\,\.\-\;\:\§\+\´\½\!\'\"\#\¤\%\&\/\(\)\=\?\`\@\`\£\$\€\{\[\]\}\\\\\¨\^\~\*\å\ä\ö\*`` (a shell should remove the escape characters).
 	- Wrong, if the command tried to do something strange.
 	- Correct output: ``Escaping test 1: 
 <>,.-;:§+´½!'"#¤%&/()=?`@`£$€{[]}\\¨^~*åäö*``
-- [ ] **Escaping test 2**: This command tests actually the same thing as *Escaping test 1*, but it focuses more on to test that an escaped `>>` symbol pair does not cause output to be written into [[TestResults]]. So, unlike many other tests, this test **should not output anything to TestResults.md**. Instead, the test is passed, if it creates a notification balloon saying: *This should NOT be written to TestResults.md!!! >> TestResults.md*.
-- [ ] **Test YAML value**: Should output the following to [[TestResults]]: `YAML test: A1. 
+- [ ] **[Escaping test 2](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=44)**: This command tests actually the same thing as *Escaping test 1*, but it focuses more on to test that an escaped `>>` symbol pair does not cause output to be written into [[TestResults]]. So, unlike many other tests, this test **should not output anything to TestResults.md**. Instead, the test is passed, if it creates a notification balloon saying: *This should NOT be written to TestResults.md!!! >> TestResults.md*.
+- [ ] **[Test YAML value](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=47)**: Should output the following to [[TestResults]]: `YAML test: A1. 
 first_value A2. inner_value A3. last_value B) first: first-item B) second: second-item B) last: last-item B) count: 3` . If even a single difference is found, leave a comment and do not tick the checkbox.
-- [ ] **Test PATH additions**: Opens up a modal showing the content of the `PATH` environment variable.
+- [ ] **[Test PATH additions](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=77)**: Opens up a modal showing the content of the `PATH` environment variable.
 	- On Windows the output should contain two additional directories:
 		1. *WindowsExtraPath1* should be present **near the beginning** of the output. Not as the first directory, but after a PowerShell directory.
 		2. *WindowsExtraPath2* should be present **at the end** of the output.
 	- On linux (and macOS) the output should contain one additional directory:
 		- *LinuxAndMacExtraPath* should be present **at the end** of the output.
 	- The reason for outputs being different in different operating systems is that in order to test to different appending mechanisms, I needed to use two different operating system settings fields. I can't make separate test shell commands for these, because the `PATH` additions are implemented to happen for all shell commands, and no shell command specific settings exist for them.
-- [ ] **Test multiline shell command**: This should output the following, each word on its own line:
+- [ ] **[Test multiline shell command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=78)**: This should output the following, each word on its own line:
 	```markdown
 	Multiline
 	shell
@@ -142,7 +142,7 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 Go to shell commands settings and follow the below instructions to test each of these settings:
 ## 3.1. Working directory
 1. [ ] At the beginning, *Working directory* should be *Sandbox*. If it's not, change it.
-2. Go through the following values for *Working directory* and run a shell command named **Test working directory** (this will insert working directories into [[TestResults]]):
+2. Go through the following values for *Working directory* and run a shell command named **[Test working directory](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=15)** (this will insert working directories into [[TestResults]]):
 	- [ ] *Sandbox*. Execute the command and ensure that the result in [[TestResults]] is an absolute path to *Sandbox*.
 	- [ ] (An empty value, so that we refer to the vault's root folder.) Execute the command and ensure that the result in [[TestResults]] is an absolute path to this vault's root folder.
 	- [ ] On Windows: *C:\WINDOWS\Temp*. On Linux: */tmp*. On Mac: I'm not sure, maybe */tmp* too. (We need to test an absolute directory too. This test should not write anything in the working directory, but still use a temporary folder just in case. The test does write into a file in the Sandbox folder, but should not write elsewhere regardless of what the working directory happens to be). Execute the command and ensure that the result in [[TestResults]] is an absolute path to the aforementioned temp folder.
@@ -159,20 +159,20 @@ This setting should be on by default.
 - [ ] In the settings panel, pay attention to scrolling. SC's settings panel should remember the last scroll position when reopened. Tick this checkbox if it did remember. Exception: the scroll position is forgotten when Obsidian is restarted.
 
 # 4. Operating system specific commands
-- [ ] **Test operating system specific command**: This test will ensure that a shell command can run a correct version of it in each operating system. It should output one of these depending on your current OS. If it gives a wrong text, do not tick this checkbox.
+- [ ] **[Test operating system specific command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=35)**: This test will ensure that a shell command can run a correct version of it in each operating system. It should output one of these depending on your current OS. If it gives a wrong text, do not tick this checkbox.
 	- *Windows command version executed.*
 	- *Linux command version executed.*
 	- *Macintosh command version executed.*
 
 For the next tests, you need to **only run commands that are designed for your operating system**. For those tests that are not meant for your current operating system, just delete them.
 - Windows:
-	- [ ] **Test Windows shell: CMD**: This command is executed explicitly with CMD, and it should output an absolute path to *cmd.exe* file.
-	- [ ] **Test Windows shell: PowerShell 5**: Uses explicitly PowerShell and it's old version 5. Should output *PS5 version: 5*, if the last version number is something else than *5*, then something is wrong. (PowerShell 5 might output strange extra characters that look like big dots. Just ignore them, the problem is known.)
-	- [ ] **Test Windows shell: PowerShell Core**: Uses explicitly PowerShell and it's new version 6 or 7 (or even greater in the future). Should output *PSCore version: 6* (or 7 or above), if the last version number is *5*, then something is wrong.
+	- [ ] **[Test Windows shell: CMD](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=36)**: This command is executed explicitly with CMD, and it should output an absolute path to *cmd.exe* file.
+	- [ ] **[Test Windows shell: PowerShell 5](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=37)**: Uses explicitly PowerShell and it's old version 5. Should output *PS5 version: 5*, if the last version number is something else than *5*, then something is wrong. (PowerShell 5 might output strange extra characters that look like big dots. Just ignore them, the problem is known.)
+	- [ ] **[Test Windows shell: PowerShell Core](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=38)**: Uses explicitly PowerShell and it's new version 6 or 7 (or even greater in the future). Should output *PSCore version: 6* (or 7 or above), if the last version number is *5*, then something is wrong.
 - Linux / Macintosh:
-	- [ ] **Test Linux/Mac shell: Bash**: Uses explicitly Bash and it should output an absolute path to a Bash binary file.
-	- [ ] **Test Linux/Mac shell: Dash**: Uses explicitly Dash and it should output an absolute path to a Dash binary file.
-	- [ ] **Test Linux/Mac shell: Zsh**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
+	- [ ] **[Test Linux/Mac shell: Bash](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=39)**: Uses explicitly Bash and it should output an absolute path to a Bash binary file.
+	- [ ] **[Test Linux/Mac shell: Dash](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=45)**: Uses explicitly Dash and it should output an absolute path to a Dash binary file.
+	- [ ] **[Test Linux/Mac shell: Zsh](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=40)**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
 
 # 5. Events
 There a a few shell commands defined for testing events. They are excluded from the command palette, so they cannot be executed the normal way. Some of them have already been executed a few times by the time you'll reach this section. The only thing that these commands do, is echoing text to a notification balloon or to the status bar - they do not write anything to files.
@@ -207,7 +207,7 @@ Finally:
 
 # 6. Prompts and custom variables
 ## 6.1. Prompts
-Execute the command **Test custom variables and a prompt**. A prompt will appear to ask a few values.
+Execute the command **[Test custom variables and a prompt](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=66)**. A prompt will appear to ask a few values.
 
 Check the following things in the prompt:
 1. [ ] The prompt's description shows a week day name instead of `{ {date:dddd}}`.
@@ -240,7 +240,7 @@ Check the following things in the prompt:
 # 7. When there is no settings file
 This section will test that the plugin works correctly when no `data.json` settings file exist. The plugin should load default settings.
 
-1. [ ] Execute the command **Open the plugin folder in system explorer**.
+1. [ ] Execute the command **[Open the plugin folder in system explorer](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=50)**.
 2. [ ] Make sure with git that there are no uncommitted changes to `.obsidian/plugins/obsidian-shellcommand/data.json`.
 3. [ ] Rename `data.json` to `disabled-data.json`.
 4. [ ] Restart Obsidian by pressing Ctrl/Cmd + R.
@@ -253,7 +253,7 @@ This section will test that the plugin works correctly when no `data.json` setti
 9. [ ] Ensure that the settings now have the normal list of shell commands.
 
 # 8. Clean up
-- [ ] Execute **FINISH TEST** command, which will add your test results to the bottom of this file.
+- [ ] Execute **[FINISH TEST](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=14)** command, which will add your test results to the bottom of this file.
 - Edit the name of this file:
 	- [ ] Remove the *(incomplete)* mark.
 	- [ ] Add the version number of Shell commands in parenthesis, e.g. *(0.5.0)*. If you are testing a version that is not yet published as a stable version, please add also a suffix describing the status, e.g. `0.7.0-beta1` (for public betas) or `0.7.0-development` (for non-beta development versions, available only to me).
