@@ -1241,7 +1241,8 @@
     },
     "67": {
       "platform_specific_commands": {
-        "default": "echo \"New file created: {{event_file_name}}\" >> TestResults.md"
+        "default": "echo \"File created: \"{{event_file_name}} >> TestResults.md",
+        "win32": "echo \"File created: {{event_file_name}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Event: File created",
@@ -1263,7 +1264,8 @@
     },
     "68": {
       "platform_specific_commands": {
-        "default": "echo \"New folder created: {{event_folder_name}}\" >> TestResults.md"
+        "default": "echo \"Folder created: \"{{event_folder_name}} >> TestResults.md",
+        "win32": "echo \"Folder created: {{event_folder_name}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Event: Folder created",
@@ -1285,7 +1287,8 @@
     },
     "69": {
       "platform_specific_commands": {
-        "default": "echo \"File deleted: {{event_file_name}}\" >> TestResults.md"
+        "default": "echo \"File deleted: \"{{event_file_name}} >> TestResults.md",
+        "win32": "echo \"File deleted: {{event_file_name}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Event: File deleted",
@@ -1307,7 +1310,8 @@
     },
     "70": {
       "platform_specific_commands": {
-        "default": "echo \"Folder deleted: {{event_folder_name}}\" >> TestResults.md"
+        "default": "echo \"Folder deleted: \"{{event_folder_name}} >> TestResults.md",
+        "win32": "echo \"Folder deleted: {{event_folder_name}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Event: Folder deleted",
@@ -1329,7 +1333,8 @@
     },
     "71": {
       "platform_specific_commands": {
-        "default": "echo \"File content modified: {{event_file_name}}\""
+        "default": "echo \"File content modified: \"{{event_file_name}}",
+        "win32": "echo \"File content modified: {{event_file_name}}\""
       },
       "shells": {},
       "alias": "Event: File content modified",
@@ -1351,7 +1356,8 @@
     },
     "72": {
       "platform_specific_commands": {
-        "default": "echo \"File moved from {{event_old_file_path:relative}} to {{event_file_path:relative}}\" >> TestResults.md"
+        "default": "echo \"File moved from \"{{event_old_file_path:relative}}\" to \"{{event_file_path:relative}} >> TestResults.md",
+        "win32": "echo \"File moved from {{event_old_file_path:relative}} to {{event_file_path:relative}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Event: File moved",
@@ -1373,7 +1379,8 @@
     },
     "73": {
       "platform_specific_commands": {
-        "default": "echo \"Folder moved from {{event_old_folder_path:relative}} to {{event_folder_path:relative}}\" >> TestResults.md"
+        "default": "echo \"Folder moved from \"{{event_old_folder_path:relative}}\" to \"{{event_folder_path:relative}}\" >> TestResults.md",
+        "win32": "echo \"Folder moved from {{event_old_folder_path:relative}} to {{event_folder_path:relative}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Event: Folder moved",
@@ -1395,7 +1402,8 @@
     },
     "74": {
       "platform_specific_commands": {
-        "default": "echo \"File renamed from {{event_old_file_name}} to {{event_file_name}}\" >> TestResults.md"
+        "default": "echo \"File renamed from \"{{event_old_file_name}}\" to \"{{event_file_name}} >> TestResults.md",
+        "win32": "echo \"File renamed from {{event_old_file_name}} to {{event_file_name}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Event: File renamed",
@@ -1417,7 +1425,8 @@
     },
     "75": {
       "platform_specific_commands": {
-        "default": "echo \"Folder renamed from {{event_old_folder_name}} to {{event_folder_name}}\" >> TestResults.md"
+        "default": "echo \"Folder renamed from \"{{event_old_folder_name}}\" to \"{{event_folder_name}} >> TestResults.md",
+        "win32": "echo \"Folder renamed from {{event_old_folder_name}} to {{event_folder_name}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Event: Folder renamed",
