@@ -194,7 +194,7 @@ These require you to do something manually to see them executing:
 9. [ ] *Event: Folder renamed*: Give the new folder another name: *NewFolder*. [[TestResults.md]] should now have a new line saying: *Folder renamed from Untitled to NewFolder*.
 10. [ ] *Event: File moved*: Move *NewNote.md* to *NewFolder*. [[TestResults.md]] should now have a new line saying: *File moved from Sandbox\NewNote.md to Sandbox\NewFolder\NewNote.md*.
 11. [ ] *Event: Folder moved*: Create yet another folder in *Sandbox* and rename it to *ParentFolder*. Move *NewFolder* to *ParentFolder*. [[TestResults.md]] should now have a new line saying: *Folder moved from Sandbox\NewFolder to Sandbox\ParentFolder\NewFolder*.
-12. [ ] *Event: File deleted* and *Event: Folder deleted*: Delete *ParentFolder*. Deleting it shold also delete *NewFolder* and *NewNote.md*. [[TestResults.md]] should now have the following new lines (the order may differ):
+12. [ ] *Event: File deleted* and *Event: Folder deleted*: Delete *ParentFolder*. Deleting it should also delete *NewFolder* and *NewNote.md*. [[TestResults.md]] should now have the following new lines (the order may differ):
 	- *Folder deleted: NewFolder*
 	- *File deleted: NewNote.md*
 	- *Folder deleted: ParentFolder*
