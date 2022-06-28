@@ -1448,7 +1448,7 @@
     },
     "76": {
       "platform_specific_commands": {
-        "default": "echo \"Custom variable 1: \"{{_uri_custom_variable_1}} >> TestResults.md && \"Custom variable 2: \"{{_uri_custom_variable_2}} >> TestResults.md",
+        "default": "echo \"Custom variable 1: \"{{_uri_custom_variable_1}} >> TestResults.md && echo \"Custom variable 2: \"{{_uri_custom_variable_2}} >> TestResults.md",
         "win32": "echo \"Custom variable 1: {{_uri_custom_variable_1}}\" >> TestResults.md && \"Custom variable 2: {{_uri_custom_variable_2}}\" >> TestResults.md"
       },
       "shells": {},
