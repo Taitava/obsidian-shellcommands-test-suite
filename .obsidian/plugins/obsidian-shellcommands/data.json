@@ -709,7 +709,7 @@
     },
     "41": {
       "platform_specific_commands": {
-        "default": "git status --short"
+        "default": "git status"
       },
       "shells": {},
       "alias": "Git status (no need to test)",
