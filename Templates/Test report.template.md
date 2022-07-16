@@ -189,7 +189,7 @@ These require you to do something manually to see them executing:
 4. [ ] *Event: Editor menu*: In the editor, click text with the right button of your mouse. You should see an option named *Event: Editor menu*. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
 5. [ ] *Event: File created*: Create a new file in *Sandbox*. It will first have the name *Untitled.md*. [[TestResults.md]] should now have a new line saying: *New file created: Untitled.md*.
 6. [ ] *Event: File renamed*: Give the new file another name: *NewNote.md*. [[TestResults.md]] should now have a new line saying: *File renamed from Untitled.md to NewNote.md*.
-7. [ ] *Event: File content modified*: Write something into the *NewNote.md* file. You should see a notification balloon popping up: *File content modified: NewNote.md*.
+7. [ ] *Event: File content modified*: Write something into the *NewNote.md* file. The status bar should show the following message: *File content modified: NewNote.md*. There is a time at the end to indicate when the change happened.
 8. [ ] *Event: Folder created*: Create a new folder in *Sandbox*. It will first have the name *Untitled*. [[TestResults.md]] should now have a new line saying: *New file created: Untitled*.
 9. [ ] *Event: Folder renamed*: Give the new folder another name: *NewFolder*. [[TestResults.md]] should now have a new line saying: *Folder renamed from Untitled to NewFolder*.
 10. [ ] *Event: File moved*: Move *NewNote.md* to *NewFolder*. [[TestResults.md]] should now have a new line saying: *File moved from Sandbox\NewNote.md to Sandbox\NewFolder\NewNote.md*.

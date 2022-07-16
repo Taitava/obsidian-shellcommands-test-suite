@@ -1333,15 +1333,15 @@
     },
     "71": {
       "platform_specific_commands": {
-        "default": "echo \"File content modified: \"{{event_file_name}}",
-        "win32": "echo \"File content modified: {{event_file_name}}\""
+        "default": "echo \"File content modified: \"{{event_file_name}}\\ \\({{date:HH:mm:ss}}\\)",
+        "win32": "echo \"File content modified: {{event_file_name}} ({{date:HH:mm:ss}})\""
       },
       "shells": {},
       "alias": "Event: File content modified",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
-        "stdout": "notification",
+        "stdout": "status-bar",
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first",
@@ -1448,7 +1448,7 @@
     },
     "76": {
       "platform_specific_commands": {
-        "default": "echo \"Custom variable 1: \"{{_uri_custom_variable_1}} >> TestResults.md && \"Custom variable 2: \"{{_uri_custom_variable_2}} >> TestResults.md",
+        "default": "echo \"Custom variable 1: \"{{_uri_custom_variable_1}} >> TestResults.md && echo \"Custom variable 2: \"{{_uri_custom_variable_2}} >> TestResults.md",
         "win32": "echo \"Custom variable 1: {{_uri_custom_variable_1}}\" >> TestResults.md && \"Custom variable 2: {{_uri_custom_variable_2}}\" >> TestResults.md"
       },
       "shells": {},
