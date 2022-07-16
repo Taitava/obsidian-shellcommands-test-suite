@@ -35,6 +35,9 @@ Inspect closely that variables have correct values!
 - [ ] **Folder name {{folder_name}} to file**
 - [ ] **Absolute folder path {{folder_path:absolute}} to file**
 - [ ] **Relative folder path {{folder_path:relative}} to file**
+- [ ] **New note folder name {{new_note_folder_name}} to file**: Should be *Performed tests*.
+- [ ] **Absolute new note folder path {{new_note_folder_path:absolute}} to file**
+- [ ] **Relative new note folder path {{new_note_folder_path:relative}} to file**
 - [ ] **Selection {{selection}} to file**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
 - [ ] **Tags {{tags}} to file** #inline-tag
 - [ ] **Title {{title }} to file**
@@ -54,6 +57,9 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Folder name {{folder_name}} to file**
 - [ ] **Absolute folder path {{folder_path:absolute}} to file**: **Same check** as with *Absolute file path* above.
 - [ ] **Relative folder path {{folder_path:relative}} to file**
+- [ ] **New note folder name {{new_note_folder_name}} to file**: Should be *Performed tests*.
+- [ ] **Absolute new note folder path {{new_note_folder_path:absolute}} to file**
+- [ ] **Relative new note folder path {{new_note_folder_path:relative}} to file**
 - [ ] **Selection {{selection}} to file**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
 - [ ] **Tags {{tags}} to file**. #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
 - [ ] **Title {{title }} to file**

@@ -31,5 +31,7 @@
   "readableLineLength": false,
   "legacyEditor": false,
   "livePreview": true,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Performed tests"
 }

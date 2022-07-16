@@ -1501,6 +1501,63 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {}
+    },
+    "79": {
+      "platform_specific_commands": {
+        "default": "echo \"New note folder name: \"{{new_note_folder_name}} >> TestResults.md",
+        "win32": "echo \"New note folder name: {{new_note_folder_name}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "New note folder name {{new_note_folder_name}} to file",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "80": {
+      "platform_specific_commands": {
+        "default": "echo \"Absolute new note folder path: \"{{new_note_folder_path:absolute}} >> TestResults.md",
+        "win32": "echo \"Absolute new note folder path: {{new_note_folder_path:absolute}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Absolute new note folder path {{new_note_folder_path:absolute}} to file",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "81": {
+      "platform_specific_commands": {
+        "default": "echo \"Relative new note folder path: \"{{new_note_folder_path:relative}} >> TestResults.md",
+        "win32": "echo \"Relative new note folder path: {{new_note_folder_path:relative}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Relative new note folder path {{new_note_folder_path:relative}} to file",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   },
   "prompts": [
