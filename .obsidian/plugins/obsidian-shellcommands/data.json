@@ -21,7 +21,7 @@
   "approve_modals_by_pressing_enter_key": true,
   "max_visible_lines_in_shell_command_fields": false,
   "shell_commands": {
-    "0": {
+    "c0wajcu2vp": {
       "alias": "Git GUI (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [
@@ -43,7 +43,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "1": {
+    "c5oaftks00": {
       "alias": "Git Bash (No need to test)",
       "ignore_error_codes": [],
       "confirm_execution": false,
@@ -65,7 +65,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "2": {
+    "w8cgzuq66x": {
       "alias": "Clipboard {{clipboard}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -85,7 +85,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "3": {
+    "cvdgs01k3r": {
       "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -105,7 +105,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "4": {
+    "kj1jupcn7k": {
       "alias": "File name {{file_name}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -125,7 +125,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "5": {
+    "wj9xk8hlaq": {
       "alias": "Absolute file path {{file_path:absolute}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -145,7 +145,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "6": {
+    "vcj4wpa02y": {
       "alias": "Relative file path {{file_path:relative}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -165,7 +165,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "7": {
+    "4gzrhksyp7": {
       "alias": "Folder name {{folder_name}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -185,7 +185,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "8": {
+    "4kac7s6v56": {
       "alias": "Absolute folder path {{folder_path:absolute}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -205,7 +205,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "9": {
+    "435bcuiz11": {
       "alias": "Relative folder path {{folder_path:relative}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -225,7 +225,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "10": {
+    "3ng31p6gr0": {
       "alias": "Selection {{selection}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -245,7 +245,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "11": {
+    "acmo3jqv6g": {
       "alias": "Title {{title}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -265,7 +265,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "12": {
+    "ltxwi1hu05": {
       "alias": "Vault path {{vault_path}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -285,7 +285,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "13": {
+    "qf19834h9s": {
       "alias": "Workspace {{workspace}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -305,7 +305,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "14": {
+    "796vz9pyd6": {
       "alias": "FINISH TEST",
       "confirm_execution": true,
       "ignore_error_codes": [],
@@ -327,7 +327,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "15": {
+    "h1i3hjdujv": {
       "alias": "Test working directory",
       "ignore_error_codes": [],
       "confirm_execution": false,
@@ -347,7 +347,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "17": {
+    "ozilge8kih": {
       "alias": "Character encoding test",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -366,7 +366,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "18": {
+    "qm8y3vwg8k": {
       "alias": "Test to ignore error code",
       "confirm_execution": false,
       "ignore_error_codes": [
@@ -388,7 +388,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "21": {
+    "jjzgcfbnf6": {
       "alias": "Terminal in test suite folder (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -409,7 +409,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "22": {
+    "a3o2jzc1ju": {
       "alias": "Git pull (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -428,7 +428,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "23": {
+    "rejgzfrnyz": {
       "alias": "Test empty command",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -447,7 +447,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "24": {
+    "7avhlqk80e": {
       "alias": "Tags {{tags:, }} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -467,7 +467,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "26": {
+    "qsmsyxhep0": {
       "alias": "Test output insertion",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -487,7 +487,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "27": {
+    "ieb4t93yvb": {
       "alias": "Terminal in plugin folder (No need to test)",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -508,7 +508,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "28": {
+    "imsi0fzrit": {
       "alias": "Test output to stderr, with exit code 0",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -529,7 +529,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "29": {
+    "1deq5274qk": {
       "alias": "Test output to top",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -548,7 +548,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "31": {
+    "z7bdfzss6t": {
       "alias": "Test output to bottom",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -570,7 +570,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "33": {
+    "5w4m6q8d8e": {
       "alias": "Test output to status bar",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -589,7 +589,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "34": {
+    "5lk1z1h1ds": {
       "alias": "Test output to clipboard",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -608,7 +608,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "35": {
+    "rw1rhziprx": {
       "platform_specific_commands": {
         "default": "",
         "win32": "echo \"Windows command version executed.\" >> TestResults.md",
@@ -630,7 +630,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "36": {
+    "1w4y2bpbmk": {
       "platform_specific_commands": {
         "default": "",
         "win32": "echo Windows shell should be CMD: %COMSPEC% >> TestResults.md"
@@ -652,7 +652,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "37": {
+    "hml8qvuqrs": {
       "platform_specific_commands": {
         "default": "",
         "win32": "\"PS5 version: \", $PSVersionTable.PSVersion.Major -join \"\" >> TestResults.md"
@@ -674,7 +674,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "38": {
+    "r1erl29mnq": {
       "platform_specific_commands": {
         "default": "",
         "win32": "\"PSCore version: \", $PSVersionTable.PSVersion.Major -join \"\" >> TestResults.md"
@@ -696,7 +696,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "39": {
+    "cxircsux3k": {
       "platform_specific_commands": {
         "default": "",
         "linux": "echo \"Linux shell should be Bash: \"$(readlink /proc/$$/exe) >> TestResults.md",
@@ -719,7 +719,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "40": {
+    "0wuvfv0nzr": {
       "platform_specific_commands": {
         "default": "",
         "linux": "echo \"Linux shell should be Zsh: \"$(readlink /proc/$$/exe) >> TestResults.md",
@@ -742,7 +742,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "41": {
+    "cenx14cvbj": {
       "platform_specific_commands": {
         "default": "git status"
       },
@@ -761,7 +761,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "42": {
+    "asdmfqbx5d": {
       "alias": "Test $& variable",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -780,7 +780,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "43": {
+    "xkrjqxs3mv": {
       "platform_specific_commands": {
         "default": "echo \"Escaping test 1: \"{{passthrough:<>,.-;:§+´½!'\"#¤%&/()=?`@`£$€{[]}\\\\¨^~*åäö*}} >> TestResults.md"
       },
@@ -799,7 +799,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "44": {
+    "dk2axoxhd0": {
       "platform_specific_commands": {
         "default": "echo \"This should NOT be written to TestResults.md!!!\" {{passthrough:>>}} TestResults.md"
       },
@@ -818,7 +818,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "45": {
+    "pm9qf3zrfy": {
       "platform_specific_commands": {
         "default": "",
         "linux": "echo \"Linux shell should be Dash: \"$(readlink /proc/$$/exe) >> TestResults.md",
@@ -841,7 +841,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "46": {
+    "n6pv34hx2j": {
       "platform_specific_commands": {
         "default": "echo -n \"\" > TestResults.md",
         "win32": "break > TestResults.md"
@@ -863,7 +863,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "47": {
+    "jr2cpaherx": {
       "platform_specific_commands": {
         "default": "echo \"YAML test: A1. \"{{yaml_value:yaml_test1.first_item}}\" A2. \"{{yaml_value:yaml_test1.middle_item.inner_item}}\" A3. \"{{yaml_value:yaml_test1.last_item}}\" B) first: \"{{yaml_value:yaml_test2.0}}\" B) second: \"{{yaml_value:yaml_test2.1}}\" B) last: \"{{yaml_value:yaml_test2.-1}}\" B) count: \"{{yaml_value:yaml_test2.length}}  >> TestResults.md"
       },
@@ -882,7 +882,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "48": {
+    "01jk6q6kt5": {
       "platform_specific_commands": {
         "default": "echo \"Caret position: \"{{caret_position}}\" (line: \"{{caret_position:line}}\", column:\"{{caret_position:column}}\")\" >> TestResults.md",
         "win32": "echo \"Caret position: {{caret_position}} (line: {{caret_position:line}}, column:{{caret_position:column}})\" >> TestResults.md"
@@ -902,7 +902,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "49": {
+    "hcia4yjtcp": {
       "platform_specific_commands": {
         "default": "echo \"File extension: with dot: \"{{file_extension:with-dot}}\" / no dot: \"{{file_extension:no-dot}} >> TestResults.md",
         "win32": "echo \"File extension: with dot: {{file_extension:with-dot}} / no dot: {{file_extension:no-dot}}\" >> TestResults.md"
@@ -922,7 +922,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "50": {
+    "fsmbhs5vqc": {
       "platform_specific_commands": {
         "default": "",
         "win32": "explorer {{vault_path}}\"\\.obsidian\\plugins\\obsidian-shellcommands\"",
@@ -943,7 +943,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "51": {
+    "uqdzrigs8x": {
       "platform_specific_commands": {
         "default": "echo \"Event: After Obsidian starts\""
       },
@@ -966,7 +966,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "52": {
+    "lcyj918mbd": {
       "platform_specific_commands": {
         "default": "echo \"Event: Before Obsidian quits\""
       },
@@ -991,7 +991,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "53": {
+    "j7ihpidsj5": {
       "platform_specific_commands": {
         "default": "echo \"Event: After switching the active pane: \"{{date:HH:mm:ss}}",
         "win32": "echo \"Event: After switching the active pane: {{date:HH:mm:ss}}\""
@@ -1019,7 +1019,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "54": {
+    "xulk3kuuwl": {
       "platform_specific_commands": {
         "default": "echo \"Event: Every 180 seconds\""
       },
@@ -1043,7 +1043,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "55": {
+    "otw4q2sw4g": {
       "platform_specific_commands": {
         "default": "echo \"Event: File menu: \"{{event_file_name}}"
       },
@@ -1066,7 +1066,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "56": {
+    "moil249jw3": {
       "platform_specific_commands": {
         "default": "echo \"Event: Folder menu: \"{{event_folder_name}}"
       },
@@ -1089,7 +1089,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "57": {
+    "k09kk76bzr": {
       "platform_specific_commands": {
         "default": "echo \"Event: Editor menu\""
       },
@@ -1112,7 +1112,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "58": {
+    "3iqc6o9wus": {
       "platform_specific_commands": {
         "default": "echo \"MODAL OUTPUT\""
       },
@@ -1131,7 +1131,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "59": {
+    "5hvv4ee88g": {
       "platform_specific_commands": {
         "default": "echo \"Welcome.md:new-pane\""
       },
@@ -1150,7 +1150,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "60": {
+    "ktaxv4ssfi": {
       "platform_specific_commands": {
         "default": "echo \"README:2:3\""
       },
@@ -1169,7 +1169,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "61": {
+    "iasi8j8isj": {
       "platform_specific_commands": {
         "default": "echo \"Welcome.md : 1:1:1:-1 : 4:6:4:10 : 4:-10:6:5\""
       },
@@ -1188,7 +1188,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "62": {
+    "ciijp65aag": {
       "platform_specific_commands": {
         "default": "echo \"Sandbox/A file that did not exist before : can-create-file\""
       },
@@ -1207,7 +1207,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "63": {
+    "sr8mp9lpbb": {
       "platform_specific_commands": {
         "default": "echo \"Two emojis: 🐓\"{{passthrough:🐓}} >> TestResults.md",
         "win32": "echo \"Two emojis: 🐓{{passthrough:🐓}}\" >> TestResults.md"
@@ -1227,7 +1227,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "64": {
+    "mx4gwfpu1h": {
       "platform_specific_commands": {
         "default": "echo {{caret_position}} > caret_position.txt"
       },
@@ -1250,7 +1250,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "65": {
+    "d9ztrdqonw": {
       "platform_specific_commands": {
         "default": "echo -n {{file_path:relative}}\\:; cat caret_position.txt",
         "win32": "Write-Host {{file_path:relative}}`: -NoNewLine; type caret_position.txt"
@@ -1274,7 +1274,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "66": {
+    "dqnuqf8fo4": {
       "platform_specific_commands": {
         "default": "echo \"Day of week: \"{{date:dddd}} >> TestResults.md && echo \"Prompt mandatory field: \"{{_mandatory_field}} >> TestResults.md && echo \"Prompt field with a default value: \"{{_field_with_default_value}} >> TestResults.md && echo \"Prompt optional field: \"{{_optional_field}} >> TestResults.md && echo \"Prompt field using variables: \"{{_field_using_variables}} >> TestResults.md",
         "win32": "echo \"Day of week: {{date:dddd}}\" >> TestResults.md && echo \"Prompt mandatory field: {{_mandatory_field}}\" >> TestResults.md && echo \"Prompt field with a default value: {{_field_with_default_value}}\" >> TestResults.md && echo \"Prompt optional field: {{_optional_field}}\" >> TestResults.md && echo \"Prompt field using variables: {{_field_using_variables}}\" >> TestResults.md"
@@ -1300,7 +1300,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "67": {
+    "9dcu9qimfz": {
       "platform_specific_commands": {
         "default": "echo \"File created: \"{{event_file_name}} >> TestResults.md",
         "win32": "echo \"File created: {{event_file_name}}\" >> TestResults.md"
@@ -1324,7 +1324,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "68": {
+    "q2jo8zkrk2": {
       "platform_specific_commands": {
         "default": "echo \"Folder created: \"{{event_folder_name}} >> TestResults.md",
         "win32": "echo \"Folder created: {{event_folder_name}}\" >> TestResults.md"
@@ -1348,7 +1348,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "69": {
+    "pobjjezee1": {
       "platform_specific_commands": {
         "default": "echo \"File deleted: \"{{event_file_name}} >> TestResults.md",
         "win32": "echo \"File deleted: {{event_file_name}}\" >> TestResults.md"
@@ -1372,7 +1372,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "70": {
+    "t6lwbz9l9p": {
       "platform_specific_commands": {
         "default": "echo \"Folder deleted: \"{{event_folder_name}} >> TestResults.md",
         "win32": "echo \"Folder deleted: {{event_folder_name}}\" >> TestResults.md"
@@ -1396,7 +1396,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "71": {
+    "gm9ssow0jg": {
       "platform_specific_commands": {
         "default": "echo \"File content modified: \"{{event_file_name}}\\ \\({{date:HH:mm:ss}}\\)",
         "win32": "echo \"File content modified: {{event_file_name}} ({{date:HH:mm:ss}})\""
@@ -1420,7 +1420,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "72": {
+    "s7qrtmjwpa": {
       "platform_specific_commands": {
         "default": "echo \"File moved from \"{{event_old_file_path:relative}}\" to \"{{event_file_path:relative}} >> TestResults.md",
         "win32": "echo \"File moved from {{event_old_file_path:relative}} to {{event_file_path:relative}}\" >> TestResults.md"
@@ -1444,7 +1444,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "73": {
+    "z909n24dh6": {
       "platform_specific_commands": {
         "default": "echo \"Folder moved from \"{{event_old_folder_path:relative}}\" to \"{{event_folder_path:relative}}\" >> TestResults.md",
         "win32": "echo \"Folder moved from {{event_old_folder_path:relative}} to {{event_folder_path:relative}}\" >> TestResults.md"
@@ -1468,7 +1468,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "74": {
+    "7njiczc7os": {
       "platform_specific_commands": {
         "default": "echo \"File renamed from \"{{event_old_file_name}}\" to \"{{event_file_name}} >> TestResults.md",
         "win32": "echo \"File renamed from {{event_old_file_name}} to {{event_file_name}}\" >> TestResults.md"
@@ -1492,7 +1492,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "75": {
+    "2myyxj8sxk": {
       "platform_specific_commands": {
         "default": "echo \"Folder renamed from \"{{event_old_folder_name}}\" to \"{{event_folder_name}} >> TestResults.md",
         "win32": "echo \"Folder renamed from {{event_old_folder_name}} to {{event_folder_name}}\" >> TestResults.md"
@@ -1516,7 +1516,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "76": {
+    "2sb4p6r9b4": {
       "platform_specific_commands": {
         "default": "echo \"Custom variable 1: \"{{_uri_custom_variable_1}} >> TestResults.md && echo \"Custom variable 2: \"{{_uri_custom_variable_2}} >> TestResults.md",
         "win32": "echo \"Custom variable 1: {{_uri_custom_variable_1}}\" >> TestResults.md && \"Custom variable 2: {{_uri_custom_variable_2}}\" >> TestResults.md"
@@ -1536,7 +1536,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "77": {
+    "g7gauo1ds6": {
       "platform_specific_commands": {
         "default": "echo \"PATH (Linux/macOS): \"$PATH",
         "win32": "echo \"PATH (Windows): \"$Env:Path"
@@ -1556,7 +1556,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "78": {
+    "y2dtq5wuxy": {
       "platform_specific_commands": {
         "default": "echo Multiline >> TestResults.md\necho shell >> TestResults.md\necho command >> TestResults.md"
       },
@@ -1575,7 +1575,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "79": {
+    "0708g3m0bg": {
       "platform_specific_commands": {
         "default": "echo \"New note folder name: \"{{new_note_folder_name}} >> TestResults.md",
         "win32": "echo \"New note folder name: {{new_note_folder_name}}\" >> TestResults.md"
@@ -1595,7 +1595,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "80": {
+    "8j40a7ah1h": {
       "platform_specific_commands": {
         "default": "echo \"Absolute new note folder path: \"{{new_note_folder_path:absolute}} >> TestResults.md",
         "win32": "echo \"Absolute new note folder path: {{new_note_folder_path:absolute}}\" >> TestResults.md"
@@ -1615,7 +1615,7 @@
       "variable_default_values": {},
       "icon": null
     },
-    "81": {
+    "zyglscbzhx": {
       "platform_specific_commands": {
         "default": "echo \"Relative new note folder path: \"{{new_note_folder_path:relative}} >> TestResults.md",
         "win32": "echo \"Relative new note folder path: {{new_note_folder_path:relative}}\" >> TestResults.md"

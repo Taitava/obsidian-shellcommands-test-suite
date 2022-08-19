@@ -1,6 +1,6 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.14.0
+test_suite_version: 0.15.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -132,7 +132,7 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 4. [ ] Check that the settings view shows a preview for this shell command, e.g. *echo TestResults.md*.
 5. [ ] Define an alias for the command, e.g. *Echo test*.
 6. [ ] When you opened the modal for defining the alias, the alias field should have been focused automatically.
-7. [ ] Check that the settings view shows the alias text instead of *Command #*.
+7. [ ] Check that the settings view shows the alias text instead of *Shell command without alias*.
 8. [ ] Go to *Hotkeys* settings and search for this new shell command (make sure it can be found there).
 9. [ ] Define the following hotkey for the new shell command: Ctrl/Cmd + M.
 10. [ ] Restart Obsidian by pressing Ctrl/Cmd + R (a custom hotkey defined in this test vault). This is to make sure that all settings are stored and loaded correctly.
