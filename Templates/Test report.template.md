@@ -32,6 +32,7 @@ Inspect closely that variables have correct values!
 - [ ] **File name {{file_name}} to file**:  Check that the preview of the command shows escape characters (\` or \\ depending on your OS/shell) in front of spaces, dashes and dots in the file name. This ensures that escaping special characters works correctly. You'll see same escape characters with other commands, too.
 - [ ] **Absolute file path {{file_path:absolute}} to file**
 - [ ] **Relative file path {{file_path:relative}} to file**
+- [ ] **File URI {{file_uri}} to file**
 - [ ] **Folder name {{folder_name}} to file**
 - [ ] **Absolute folder path {{folder_path:absolute}} to file**
 - [ ] **Relative folder path {{folder_path:relative}} to file**
@@ -54,6 +55,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **File name {{file_name}} to file**: Check that the file name does not contain any escape characters like: \` or \\.
 - [ ] **Absolute file path {{file_path:absolute}} to file**: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
 - [ ] **Relative file path {{file_path:relative}} to file**
+- [ ] **File URI {{file_uri}} to file**
 - [ ] **Folder name {{folder_name}} to file**
 - [ ] **Absolute folder path {{folder_path:absolute}} to file**: **Same check** as with *Absolute file path* above.
 - [ ] **Relative folder path {{folder_path:relative}} to file**

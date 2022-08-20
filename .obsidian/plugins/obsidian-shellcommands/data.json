@@ -1710,6 +1710,27 @@
       "preactions": [],
       "variable_default_values": {},
       "icon": null
+    },
+    {
+      "id": "hkcskjz8cb",
+      "platform_specific_commands": {
+        "default": "echo \"File URI: \"{{file_uri}} >> TestResults.md",
+        "win32": "echo \"File URI: {{file_uri}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "File URI {{file_uri}} to file",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   ],
   "prompts": [
