@@ -2112,6 +2112,30 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {}
+    },
+    {
+      "id": "morocg0jlo",
+      "platform_specific_commands": {
+        "default": "echo \"Output wrapped in code block.\""
+      },
+      "shells": {},
+      "alias": "Test output wrapping",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "modal",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": "w85m6up4bg",
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   ],
   "prompts": [
@@ -2185,5 +2209,11 @@
       "description": "Used in Shell commands URI testing."
     }
   ],
-  "output_wrappers": []
+  "output_wrappers": [
+    {
+      "id": "w85m6up4bg",
+      "title": "Code block",
+      "content": "Executed on {{date:YYYY-MM-DD}}:\n```\n{{output}}\n```\nFile name: {{file_name}}"
+    }
+  ]
 }
