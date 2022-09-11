@@ -2040,6 +2040,30 @@
         "stdout": null,
         "stderr": null
       }
+    },
+    {
+      "id": "au049jz2sy",
+      "platform_specific_commands": {
+        "default": "echo {{file_content}}"
+      },
+      "shells": {},
+      "alias": "Test {{file content}}",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "modal",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   ],
   "prompts": [

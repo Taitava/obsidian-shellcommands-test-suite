@@ -1,3 +1,6 @@
+---
+test_yaml: This should be visibile in {{file_content}} test, but not visible in {{note_content}} test!!!
+---
 # Welcome!
 This [Obsidian](https://obsidian.md) vault is designed to be a test suite for Obsidian's [Shell commands](https://github.com/Taitava/obsidian-shellcommands) community plugin. It is assumed that you are already familiar with both Obsidian and the Shell commands plugin, and have used them for some time already.
 
