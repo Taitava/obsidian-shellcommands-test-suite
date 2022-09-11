@@ -128,7 +128,7 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 	shell
 	command
 	```
-
+- [ ] **[A long running shell command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=2jk7adqi4s)**: You should see a notification saying: *Executing: A long running shell command*. The notification should appear around a couple of seconds after starting the execution (because it's only shown when a shell command execution takes an extended period of time). The notification should disappear the same time when the shell command finishes execution and outputs: *Waited for 5 seconds.*
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
 2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{file_name}}`. The command does not need to actually do anything.

@@ -16,7 +16,7 @@
   },
   "error_message_duration": 20,
   "notification_message_duration": 10,
-  "execution_notification_mode": "disabled",
+  "execution_notification_mode": "if-long",
   "output_channel_clipboard_also_outputs_to_notification": true,
   "enable_events": true,
   "approve_modals_by_pressing_enter_key": true,
@@ -2077,6 +2077,30 @@
       "ignore_error_codes": [],
       "output_channels": {
         "stdout": "modal",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "2jk7adqi4s",
+      "platform_specific_commands": {
+        "default": "sleep 5\necho \"Waited for 5 seconds.\""
+      },
+      "shells": {},
+      "alias": "A long running shell command",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
         "stderr": "notification"
       },
       "output_wrappers": {
