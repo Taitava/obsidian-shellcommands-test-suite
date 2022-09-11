@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.15.0",
+  "settings_version": "0.16.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -16,6 +16,7 @@
   },
   "error_message_duration": 20,
   "notification_message_duration": 10,
+  "execution_notification_mode": "disabled",
   "output_channel_clipboard_also_outputs_to_notification": true,
   "enable_events": true,
   "approve_modals_by_pressing_enter_key": true,
@@ -42,7 +43,11 @@
       "command_palette_availability": "unlisted",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "c5oaftks00",
@@ -65,7 +70,11 @@
       "command_palette_availability": "unlisted",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "w8cgzuq66x",
@@ -86,7 +95,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "cvdgs01k3r",
@@ -107,7 +120,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "kj1jupcn7k",
@@ -128,7 +145,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "wj9xk8hlaq",
@@ -149,7 +170,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "vcj4wpa02y",
@@ -170,7 +195,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "4gzrhksyp7",
@@ -191,7 +220,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "4kac7s6v56",
@@ -212,7 +245,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "435bcuiz11",
@@ -233,7 +270,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "3ng31p6gr0",
@@ -254,7 +295,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "acmo3jqv6g",
@@ -275,7 +320,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "ltxwi1hu05",
@@ -296,7 +345,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "qf19834h9s",
@@ -317,7 +370,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "796vz9pyd6",
@@ -340,7 +397,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "h1i3hjdujv",
@@ -361,7 +422,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "ozilge8kih",
@@ -381,7 +446,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "qm8y3vwg8k",
@@ -404,7 +473,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "jjzgcfbnf6",
@@ -426,7 +499,11 @@
       "command_palette_availability": "unlisted",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "a3o2jzc1ju",
@@ -446,7 +523,11 @@
       "command_palette_availability": "unlisted",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "rejgzfrnyz",
@@ -466,7 +547,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "7avhlqk80e",
@@ -487,7 +572,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "qsmsyxhep0",
@@ -508,7 +597,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "ieb4t93yvb",
@@ -530,7 +623,11 @@
       "command_palette_availability": "unlisted",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "imsi0fzrit",
@@ -552,7 +649,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "1deq5274qk",
@@ -572,7 +673,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "z7bdfzss6t",
@@ -595,7 +700,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "5w4m6q8d8e",
@@ -615,7 +724,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "5lk1z1h1ds",
@@ -635,7 +748,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "rw1rhziprx",
@@ -658,7 +775,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "1w4y2bpbmk",
@@ -681,7 +802,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "hml8qvuqrs",
@@ -704,7 +829,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "r1erl29mnq",
@@ -727,7 +856,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "cxircsux3k",
@@ -751,7 +884,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "0wuvfv0nzr",
@@ -775,7 +912,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "cenx14cvbj",
@@ -795,7 +936,11 @@
       "command_palette_availability": "unlisted",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "asdmfqbx5d",
@@ -815,7 +960,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "xkrjqxs3mv",
@@ -835,7 +984,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "dk2axoxhd0",
@@ -855,7 +1008,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "pm9qf3zrfy",
@@ -879,7 +1036,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "n6pv34hx2j",
@@ -902,7 +1063,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "jr2cpaherx",
@@ -922,7 +1087,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "01jk6q6kt5",
@@ -943,7 +1112,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "hcia4yjtcp",
@@ -964,7 +1137,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "fsmbhs5vqc",
@@ -986,7 +1163,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "uqdzrigs8x",
@@ -1010,7 +1191,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "lcyj918mbd",
@@ -1036,7 +1221,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "j7ihpidsj5",
@@ -1065,7 +1254,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "xulk3kuuwl",
@@ -1090,7 +1283,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "otw4q2sw4g",
@@ -1114,7 +1311,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "moil249jw3",
@@ -1138,7 +1339,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "k09kk76bzr",
@@ -1162,7 +1367,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "3iqc6o9wus",
@@ -1182,7 +1391,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "5hvv4ee88g",
@@ -1202,7 +1415,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "ktaxv4ssfi",
@@ -1222,7 +1439,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "iasi8j8isj",
@@ -1242,7 +1463,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "ciijp65aag",
@@ -1262,7 +1487,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "sr8mp9lpbb",
@@ -1283,7 +1512,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "mx4gwfpu1h",
@@ -1307,7 +1540,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "d9ztrdqonw",
@@ -1332,7 +1569,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "dqnuqf8fo4",
@@ -1359,7 +1600,11 @@
         }
       ],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "9dcu9qimfz",
@@ -1384,7 +1629,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "q2jo8zkrk2",
@@ -1409,7 +1658,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "pobjjezee1",
@@ -1434,7 +1687,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "t6lwbz9l9p",
@@ -1459,7 +1716,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "gm9ssow0jg",
@@ -1484,7 +1745,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "s7qrtmjwpa",
@@ -1509,7 +1774,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "z909n24dh6",
@@ -1534,7 +1803,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "7njiczc7os",
@@ -1559,7 +1832,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "2myyxj8sxk",
@@ -1584,7 +1861,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "2sb4p6r9b4",
@@ -1605,7 +1886,11 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "g7gauo1ds6",
@@ -1626,7 +1911,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "y2dtq5wuxy",
@@ -1646,7 +1935,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "0708g3m0bg",
@@ -1667,7 +1960,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "8j40a7ah1h",
@@ -1688,7 +1985,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "zyglscbzhx",
@@ -1709,7 +2010,11 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     },
     {
       "id": "hkcskjz8cb",
@@ -1730,7 +2035,11 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      }
     }
   ],
   "prompts": [
@@ -1803,5 +2112,6 @@
       "name": "uri_custom_variable_2",
       "description": "Used in Shell commands URI testing."
     }
-  ]
+  ],
+  "output_wrappers": []
 }
