@@ -1448,7 +1448,7 @@
     {
       "id": "iasi8j8isj",
       "platform_specific_commands": {
-        "default": "echo \"Welcome.md : 1:1:1:-1 : 4:6:4:10 : 4:-10:6:5\""
+        "default": "echo \"Welcome.md : 4:1:4:-1 : 7:6:7:10 : 7:-10:9:5\""
       },
       "shells": {},
       "alias": "Test output using Open a file 3",

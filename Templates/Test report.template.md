@@ -93,9 +93,9 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **[Test output using Open a file 1](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=5hvv4ee88g)**: This opens [[Welcome.md]] file in a new pane. Check that the file opens **and** that a new pane is created.
 - [ ] **Test output using Open a file 2**: Keep the previously opened pane focused! This opens [[README.md]] file and places the caret on line 2, column 3. Make sure the file opens in the current pane (which previously had [[Welcome.md]] open) **and** that the caret is placed in the mentioned position.
 - **Test output using Open a file 3**: Keep the previously opened pane focused! This opens [[Welcome.md]] again, this time with three selections:
-	- [ ] Line 1 is selected completely. I.e. *Welcome!* is selected.
-	- [ ] Line 4 contains a selection between columns 6 to 10. I.e. *test* is selected.
-	- [ ] Line 4 also starts a selection 10 columns before the end of the line, and the selection extens to line 6, column 5. I.e. *improved*, two newlines and *This* are selected.
+	- [ ] Line 4 is selected completely. I.e. *Welcome!* is selected.
+	- [ ] Line 7 contains a selection between columns 6 to 10. I.e. *test* is selected.
+	- [ ] Line 7 also starts a selection 10 columns before the end of the line, and the selection extens to line 6, column 5. I.e. *improved*, two newlines and *This* are selected.
 	- The above-mentioned  selected texts might be slightly inaccurate in case the content of [[Welcome.md]] changes after writing this test.
 - **Test output using Open a file 4**: Keep the previously opened pane focused! This opens and creates a new file named *A file that did not exist before.md* in the *Sandbox* folder.
 	- [ ] Before executing the command, make sure the file **does not exist**.
