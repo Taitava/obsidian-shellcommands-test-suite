@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.16.0",
+  "settings_version": "0.17.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -47,7 +47,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "c5oaftks00",
@@ -74,7 +75,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "w8cgzuq66x",
@@ -99,7 +101,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "cvdgs01k3r",
@@ -124,7 +127,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "kj1jupcn7k",
@@ -149,7 +153,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "wj9xk8hlaq",
@@ -174,7 +179,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "vcj4wpa02y",
@@ -199,7 +205,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "4gzrhksyp7",
@@ -224,7 +231,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "4kac7s6v56",
@@ -249,7 +257,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "435bcuiz11",
@@ -274,7 +283,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "3ng31p6gr0",
@@ -299,7 +309,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "acmo3jqv6g",
@@ -324,7 +335,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "ltxwi1hu05",
@@ -349,7 +361,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "qf19834h9s",
@@ -374,7 +387,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "796vz9pyd6",
@@ -401,7 +415,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "h1i3hjdujv",
@@ -426,7 +441,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "ozilge8kih",
@@ -450,7 +466,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "qm8y3vwg8k",
@@ -477,7 +494,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "jjzgcfbnf6",
@@ -503,7 +521,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "a3o2jzc1ju",
@@ -527,7 +546,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "rejgzfrnyz",
@@ -551,7 +571,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "7avhlqk80e",
@@ -576,7 +597,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "qsmsyxhep0",
@@ -601,7 +623,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "ieb4t93yvb",
@@ -627,7 +650,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "imsi0fzrit",
@@ -653,7 +677,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "1deq5274qk",
@@ -677,7 +702,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "z7bdfzss6t",
@@ -704,7 +730,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "5w4m6q8d8e",
@@ -728,7 +755,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "5lk1z1h1ds",
@@ -752,7 +780,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "rw1rhziprx",
@@ -779,7 +808,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "1w4y2bpbmk",
@@ -806,7 +836,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "hml8qvuqrs",
@@ -833,7 +864,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "r1erl29mnq",
@@ -860,7 +892,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "cxircsux3k",
@@ -888,7 +921,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "0wuvfv0nzr",
@@ -916,7 +950,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "cenx14cvbj",
@@ -940,7 +975,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "asdmfqbx5d",
@@ -964,7 +1000,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "xkrjqxs3mv",
@@ -988,7 +1025,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "dk2axoxhd0",
@@ -1012,7 +1050,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "pm9qf3zrfy",
@@ -1040,7 +1079,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "n6pv34hx2j",
@@ -1067,7 +1107,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "jr2cpaherx",
@@ -1091,7 +1132,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "01jk6q6kt5",
@@ -1116,7 +1158,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "hcia4yjtcp",
@@ -1141,7 +1184,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "fsmbhs5vqc",
@@ -1167,7 +1211,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "uqdzrigs8x",
@@ -1195,7 +1240,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "lcyj918mbd",
@@ -1225,7 +1271,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "j7ihpidsj5",
@@ -1258,7 +1305,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "xulk3kuuwl",
@@ -1287,7 +1335,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "otw4q2sw4g",
@@ -1315,7 +1364,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "moil249jw3",
@@ -1343,7 +1393,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "k09kk76bzr",
@@ -1371,7 +1422,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "3iqc6o9wus",
@@ -1395,7 +1447,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "5hvv4ee88g",
@@ -1419,7 +1472,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "ktaxv4ssfi",
@@ -1443,7 +1497,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "iasi8j8isj",
@@ -1467,7 +1522,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "ciijp65aag",
@@ -1491,7 +1547,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "sr8mp9lpbb",
@@ -1516,7 +1573,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "mx4gwfpu1h",
@@ -1544,7 +1602,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "d9ztrdqonw",
@@ -1573,7 +1632,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "dqnuqf8fo4",
@@ -1604,7 +1664,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "9dcu9qimfz",
@@ -1633,7 +1694,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "q2jo8zkrk2",
@@ -1662,7 +1724,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "pobjjezee1",
@@ -1691,7 +1754,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "t6lwbz9l9p",
@@ -1720,7 +1784,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "gm9ssow0jg",
@@ -1749,7 +1814,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "s7qrtmjwpa",
@@ -1778,7 +1844,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "z909n24dh6",
@@ -1807,7 +1874,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "7njiczc7os",
@@ -1836,7 +1904,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "2myyxj8sxk",
@@ -1865,7 +1934,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "2sb4p6r9b4",
@@ -1890,7 +1960,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "g7gauo1ds6",
@@ -1915,7 +1986,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "y2dtq5wuxy",
@@ -1939,7 +2011,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "0708g3m0bg",
@@ -1964,7 +2037,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "8j40a7ah1h",
@@ -1989,7 +2063,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "zyglscbzhx",
@@ -2014,7 +2089,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "hkcskjz8cb",
@@ -2039,7 +2115,8 @@
       "output_wrappers": {
         "stdout": null,
         "stderr": null
-      }
+      },
+      "output_handling_mode": "buffered"
     },
     {
       "id": "au049jz2sy",
@@ -2063,7 +2140,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handling_mode": "buffered"
     },
     {
       "id": "zcxdt1jp1f",
@@ -2087,7 +2165,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handling_mode": "buffered"
     },
     {
       "id": "2jk7adqi4s",
@@ -2111,7 +2190,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handling_mode": "buffered"
     },
     {
       "id": "morocg0jlo",
@@ -2135,7 +2215,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handling_mode": "buffered"
     }
   ],
   "prompts": [
