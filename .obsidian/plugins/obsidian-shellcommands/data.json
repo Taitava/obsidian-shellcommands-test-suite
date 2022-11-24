@@ -1551,6 +1551,56 @@
       "output_handling_mode": "buffered"
     },
     {
+      "id": "awn0zh7t5u",
+      "platform_specific_commands": {
+        "default": "echo \"Welcome.md:new-tab\""
+      },
+      "shells": {},
+      "alias": "Test output using Open a file 5",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "open-files",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {},
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_handling_mode": "buffered"
+    },
+    {
+      "id": "tlq9kj69h5",
+      "platform_specific_commands": {
+        "default": "echo \"Welcome.md:new-window\""
+      },
+      "shells": {},
+      "alias": "Test output using Open a file 6",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "open-files",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {},
+      "icon": null,
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_handling_mode": "buffered"
+    },
+    {
       "id": "sr8mp9lpbb",
       "platform_specific_commands": {
         "default": "echo \"Two emojis: 🐓\"{{passthrough:🐓}} >> TestResults.md",

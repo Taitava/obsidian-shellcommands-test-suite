@@ -1,6 +1,6 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.16.0
+test_suite_version: 0.17.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -88,7 +88,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 	- [ ] *Current file: caret position*
 	- [ ] *Current file: top*
 	- [ ] *Current file: bottom*
-	- *Open a file* does not need to be tested here.
+	- *Open files* does not need to be tested here.
 	- [ ] *Clipboard*
 - [ ] **[Test output using Open a file 1](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=5hvv4ee88g)**: This opens [[Welcome.md]] file in a new pane. Check that the file opens **and** that a new pane is created.
 - [ ] **Test output using Open a file 2**: Keep the previously opened pane focused! This opens [[README.md]] file and places the caret on line 2, column 3. Make sure the file opens in the current pane (which previously had [[Welcome.md]] open) **and** that the caret is placed in the mentioned position.
@@ -101,6 +101,8 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 	- [ ] Before executing the command, make sure the file **does not exist**.
 	- [ ] Execute the command and make sure the file creation succeeds.
 	- [ ] Finally delete the file. You can now close the newly created tab, it's not needed anymore.
+- **[Test output using Open a file 5](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=awn0zh7t5u)**: This should open [[Welcome.md]] in a new **tab**. No selections are made.
+- **[Test output using Open a file 6](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=tlq9kj69h5)**: This should open [[Welcome.md]] in a new **window**. No selections are made.
 - [ ] **[Test $& variable](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=asdmfqbx5d)**: Symbol pair `$&` has caused problems in variable parsing when they appear in the variable's value (and some other `$` combinations too). Outputs:
 	- `Test $& variable: $&` when the test is correct. (Tick the checkbox).
 	- `Test $& variable: {{!passthrough:$&}}` when the test fails. Do not tick, leave a comment.
