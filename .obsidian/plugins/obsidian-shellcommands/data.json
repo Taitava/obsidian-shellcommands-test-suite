@@ -2267,6 +2267,31 @@
       "preactions": [],
       "variable_default_values": {},
       "output_handling_mode": "buffered"
+    },
+    {
+      "id": "tm2ulm7r2m",
+      "platform_specific_commands": {
+        "default": "echo \"Realtime 1\"\nsleep 1\necho \"Realtime 2\"\nsleep 1\necho \"Realtime 3\"\nsleep 1\necho \"Realtime 4\"\nsleep 1\necho \"Realtime 5\""
+      },
+      "shells": {},
+      "alias": "Realtime test: Notification balloon",
+      "icon": "activity",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {},
+      "output_handling_mode": "realtime"
     }
   ],
   "prompts": [
