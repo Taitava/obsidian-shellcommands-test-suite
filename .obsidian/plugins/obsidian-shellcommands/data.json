@@ -305,12 +305,12 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null,
+      "icon": "activity",
       "output_wrappers": {
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "realtime"
     },
     {
       "id": "acmo3jqv6g",
@@ -331,12 +331,12 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null,
+      "icon": "activity",
       "output_wrappers": {
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "realtime"
     },
     {
       "id": "ltxwi1hu05",
@@ -357,12 +357,12 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null,
+      "icon": "activity",
       "output_wrappers": {
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "realtime"
     },
     {
       "id": "qf19834h9s",
@@ -383,12 +383,12 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null,
+      "icon": "activity",
       "output_wrappers": {
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "realtime"
     },
     {
       "id": "796vz9pyd6",
@@ -593,12 +593,12 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null,
+      "icon": "activity",
       "output_wrappers": {
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "realtime"
     },
     {
       "id": "qsmsyxhep0",

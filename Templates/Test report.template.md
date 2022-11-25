@@ -47,6 +47,7 @@ Inspect closely that variables have correct values!
 
 ## 1.2 Execute shell commands
 Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
+\*) These commands' output handling is done in [realtime mode](https://publish.obsidian.md/shellcommands/Output+handling/Realtime+output+handling). It should not affect the outcome, but expands testing to that output handling mode, too.
 - [ ] **Caret position {{caret_position}} to file**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
@@ -62,11 +63,11 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **New note folder name {{new_note_folder_name}} to file**: Should be *Performed tests*.
 - [ ] **Absolute new note folder path {{new_note_folder_path:absolute}} to file**
 - [ ] **Relative new note folder path {{new_note_folder_path:relative}} to file**
-- [ ] **Selection {{selection}} to file**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
-- [ ] **Tags {{tags}} to file**. #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
-- [ ] **Title {{title }} to file**
-- [ ] **Vault path {{vault_path}} to file**
-- [ ] **Workspace {{workspace}} to file**
+- [ ] \* **Selection {{selection}} to file**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
+- [ ] \* **Tags {{tags}} to file**. #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
+- [ ] \* **Title {{title }} to file**
+- [ ] \* ***Vault path {{vault_path}} to file**
+- [ ] \* ***Workspace {{workspace}} to file**
 - [ ] **Test {{file content}}**: Open [[Welcome.md]] before executing this! Otherwise you'll get an error message saying that the shell command is too long. You should see the file's content **with YAML**.
 - [ ] **Test {{note content}}**: Open [[Welcome.md]] before executing this! Otherwise you'll get an error message saying that the shell command is too long. You should see the file's content **without YAML**.
 - [ ] **[Character encoding test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=ozilge8kih)**: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
