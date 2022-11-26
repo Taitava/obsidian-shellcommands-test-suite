@@ -25,32 +25,14 @@ Test date: **{{date:YYYY-MM-DD}}**
 # [[1. Preview and execute shell commands]]
 ## 1.1. Preview shell commands
 Inspect closely that variables have correct values!
-- [ ] **Caret position {{caret_position}} to file**
-- [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
-- [ ] **File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file**
-- [ ] **File name {{file_name}} to file**:  Check that the preview of the command shows escape characters (\` or \\ depending on your OS/shell) in front of spaces, dashes and dots in the file name. This ensures that escaping special characters works correctly. You'll see same escape characters with other commands, too.
-- [ ] **Absolute file path {{file_path:absolute}} to file**
-- [ ] **Relative file path {{file_path:relative}} to file**
-- [ ] **File URI {{file_uri}} to file**
-- [ ] **Folder name {{folder_name}} to file**
-- [ ] **Absolute folder path {{folder_path:absolute}} to file**
-- [ ] **Relative folder path {{folder_path:relative}} to file**
-- [ ] **New note folder name {{new_note_folder_name}} to file**: Should be *Performed tests*.
-- [ ] **Absolute new note folder path {{new_note_folder_path:absolute}} to file**
-- [ ] **Relative new note folder path {{new_note_folder_path:relative}} to file**
-- [ ] **Selection {{selection}} to file**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
-- [ ] **Tags {{tags}} to file** #inline-tag
-- [ ] **Title {{title }} to file**
-- [ ] **Vault path {{vault_path}} to file**
-- [ ] **Workspace {{workspace}} to file**
+- [ ] **File name {{file_name}} to file**: Check that the preview of the command shows escape characters (\` or \\ depending on your OS/shell) in front of spaces, dashes and dots in the file name. This ensures that escaping special characters works correctly.
 
 ## 1.2 Execute shell commands
-Inspect closely that their output to TestResults.md is a) correct, and b) matches what you saw in preview (e.g. `{{date:YYYY-MM-DD HH:mm:ss} }` %% The extra space here is intentional: Obsidian Templates should not parse this variable. %% should have exactly same seconds)!
 \*) These commands' output handling is done in [realtime mode](https://publish.obsidian.md/shellcommands/Output+handling/Realtime+output+handling). It should not affect the outcome, but expands testing to that output handling mode, too.
 - [ ] **Caret position {{caret_position}} to file**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
 - [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
-- [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
+- [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**: Check that the **seconds** are the same as they were during preview!
 - [ ] **File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file**: The result should be: *File extension: with dot: 
 .md / no dot: md*
 - [ ] **File name {{file_name}} to file**: Check that the file name does not contain any escape characters like: \` or \\.
@@ -64,7 +46,7 @@ Inspect closely that their output to TestResults.md is a) correct, and b) matche
 - [ ] **Absolute new note folder path {{new_note_folder_path:absolute}} to file**
 - [ ] **Relative new note folder path {{new_note_folder_path:relative}} to file**
 - [ ] \* **Selection {{selection}} to file**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
-- [ ] \* **Tags {{tags}} to file**. #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
+- [ ] \* **Tags {{tags}} to file**. #inline-tag #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
 - [ ] \* **Title {{title }} to file**
 - [ ] \* ***Vault path {{vault_path}} to file**
 - [ ] \* ***Workspace {{workspace}} to file**
