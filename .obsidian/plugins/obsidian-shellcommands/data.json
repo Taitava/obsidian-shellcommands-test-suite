@@ -769,7 +769,8 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Hello clipboard!\""
+        "default": "echo -n \"Hello clipboard!\"",
+        "win32": "Write-Host -NoNewLine \"Hello clipboard!\""
       },
       "shells": {},
       "events": {},
