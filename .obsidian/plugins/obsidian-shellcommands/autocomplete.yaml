@@ -1,6 +1,10 @@
 "Test suite related":
   ">> TestResults.md": "Redirect output to the temporary test result file."
   "TestResults.md": "The temporary test result file."
+
+"All shells":
   "echo ": ""
+
+"PowerShell":
   "Write-Host -NoNewLine ": "PowerShell output without a trailing newline."
   "Write-Error ": "PowerShell output to stderr."
