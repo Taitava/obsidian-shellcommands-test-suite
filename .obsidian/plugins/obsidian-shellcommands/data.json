@@ -393,23 +393,27 @@
     {
       "id": "796vz9pyd6",
       "alias": "FINISH TEST",
-      "confirm_execution": true,
+      "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
-        "stdout": "ignore",
+        "stdout": "open-files",
         "stderr": "notification"
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "cat TestResults.md >> \"../Performed tests/\"{{date:YYYY-MM-DD}}\" (incomplete).md\" && echo -n \"\" > TestResults.md",
-        "win32": "type TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\" & break > TestResults.md"
+        "default": "# Copy test results to the end of the test report file.\ncat TestResults.md >> \"../Performed tests/\"{{date:YYYY-MM-DD}}\" (incomplete).md\"\n\n# Clear the test results file's content.\necho -n \"\" > TestResults.md\n\n# Rename the test report file\ncd \"../Performed tests/\"\nmv {{date:YYYY-MM-DD}}\" (incomplete).md\" {{date:YYYY-MM-DD}}\\ \\({{_plugin_version}}\\)\\ {{_operating_system}}\\ {{_test_status}}.md\n\n# Open the renamed file in Obsidian (:-1 sets caret to the last line).\necho {{date:YYYY-MM-DD}}\\ \\({{_plugin_version}}\\)\\ {{_operating_system}}\\ {{_test_status}}.md:-1",
+        "win32": "# Copy test results to the end of the test report file.\ntype TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\"\n\n# Clear the test results file's content.\nWrite-Host -NoNewLine > TestResults.md\n\n# Rename the test report file\ncd \"..\\Performed tests\\\"\nren \"{{date:YYYY-MM-DD}} (incomplete).md\" \"{{date:YYYY-MM-DD}} ({{_plugin_version}}) {{_operating_system}} {{_test_status}}.md\"\n\n# Sleep one second, otherwise the file opening may be tried before the file had time to rename.\nsleep 1\n\n# Open the renamed file in Obsidian (:-1 sets caret to the last line).\necho \"{{date:YYYY-MM-DD}} ({{_plugin_version}}) {{_operating_system}} {{_test_status}}.md:-1\""
       },
-      "shells": {
-        "win32": "CMD.EXE"
-      },
+      "shells": {},
       "events": {},
       "command_palette_availability": "enabled",
-      "preactions": [],
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "vams4z5e06"
+        }
+      ],
       "variable_default_values": {},
       "icon": null,
       "output_wrappers": {
@@ -2559,6 +2563,36 @@
         }
       ],
       "execute_button_text": "Submit the values"
+    },
+    {
+      "id": "vams4z5e06",
+      "title": "Finish test",
+      "description": "{{file_name}} will be renamed according to the input you give here.",
+      "preview_shell_command": true,
+      "fields": [
+        {
+          "label": "Plugin version",
+          "description": "E.g. 0.5.0. If you are testing a version that is not yet published as a stable version, please add also a suffix describing the status, e.g. 0.7.0-beta1 (for public betas) or 0.7.0-development (for non-beta development versions, available only to me).",
+          "default_value": "",
+          "target_variable_id": "ax7fxgrmft",
+          "required": true
+        },
+        {
+          "label": "Operating system",
+          "description": "Either Windows, Linux or macOS",
+          "default_value": "",
+          "target_variable_id": "kk420sww12",
+          "required": true
+        },
+        {
+          "label": "Test status",
+          "description": "Type ok if all tests were successful, or FAILED if even just one test failed.",
+          "default_value": "ok",
+          "target_variable_id": "m6giquj5kc",
+          "required": true
+        }
+      ],
+      "execute_button_text": "Finish test"
     }
   ],
   "custom_variables": [
@@ -2591,6 +2625,21 @@
       "id": "nbwu2szvx5",
       "name": "uri_custom_variable_2",
       "description": "Used in Shell commands URI testing."
+    },
+    {
+      "id": "ax7fxgrmft",
+      "name": "plugin_version",
+      "description": "Used in FINISH TEST."
+    },
+    {
+      "id": "kk420sww12",
+      "name": "operating_system",
+      "description": "Used in FINISH TEST."
+    },
+    {
+      "id": "m6giquj5kc",
+      "name": "test_status",
+      "description": "Used in FINISH TEST."
     }
   ],
   "output_wrappers": [

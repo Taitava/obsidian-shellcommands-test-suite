@@ -273,17 +273,17 @@ This section will test that the plugin works correctly when no `data.json` setti
 
 # 8. Clean up
 - [ ] Execute **[FINISH TEST](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=796vz9pyd6)** command, which will add your test results to the bottom of this file.
-- Edit the name of this file:
-	- [ ] Remove the *(incomplete)* mark.
-	- [ ] Add the version number of Shell commands in parenthesis, e.g. *(0.5.0)*. If you are testing a version that is not yet published as a stable version, please add also a suffix describing the status, e.g. `0.7.0-beta1` (for public betas) or `0.7.0-development` (for non-beta development versions, available only to me).
-	- [ ] Add operating system/platform name (without a version), e.g *Windows*, *Linux* or *Mac*.
-	- [ ] Add *ok* if **all** tests were successful, or *FAILED* if even just one test failed.
-	- **Do not rename before you have executed the *FINISH TEST* command!**
+- The command will rename this test report file:
+	- It removes the *(incomplete)* mark.
+	- It adds the version number of Shell commands in parenthesis, e.g. *(0.5.0)*.
+	- It adds operating system/platform name, e.g *Windows*, *Linux* or *Mac*.
+	- It adds *ok* if **all** tests were successful, or *FAILED*.
 	- Examples of a final file name:
 		- *2021-09-26 (0.4.0) Windows ok.md*
 		- *2021-09-26 (0.4.0) Linux FAILED.md*
 		- *2021-11-06 (0.7.0-beta1) Linux ok.md*
 - [ ] Check with Git that the only changes made in this vault/repository is your newly added report file. Other files - if edited(/created) - should have returned to their original states at this point.
+- Finally, you should commit this new report file.
 
 # 9. Results
 %% Needs to have an empty line below the Results heading. Otherwise test results will start at the same line with the heading.%%
