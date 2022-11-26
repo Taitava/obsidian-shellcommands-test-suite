@@ -137,6 +137,9 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 	- Each of these tests should output five lines to their specific output channels. There should always be one second pause between each line appearing. If all of the lines appear at once, do not tick a checkbox!
 	- [ ] **[Realtime test: Notification balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=tm2ulm7r2m)**
 	- [ ] **[Realtime test: Error balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=st8k313wkf)**
+	- [ ] **Realtime test: Current file: caret position**: Make sure [[TestResults.md]] has focus when executing this!
+	- [ ] **Realtime test: Current file: top**: Make sure [[TestResults.md]] has focus when executing this!
+	- [ ] **Realtime test: Current file: bottom**: Make sure [[TestResults.md]] has focus when executing this!
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
 2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{file_name}}`. The command does not need to actually do anything.
