@@ -30,6 +30,7 @@ Inspect closely that variables have correct values!
 
 ## 1.2 Execute shell commands
 \*) These commands' output handling is done in [realtime mode](https://publish.obsidian.md/shellcommands/Output+handling/Realtime+output+handling). It should not affect the outcome, but expands testing to that output handling mode, too.
+- [ ] **[Caret paragraph {{caret_paragraph}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=1bj54ofqvt)**
 - [ ] **[Caret position {{caret_position}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=01jk6q6kt5)**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
 - [ ] **[Clipboard {{clipboard}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=w8cgzuq66x)**: (You can copy this to clipboard: TESTCLIPBOARD).
 - [ ] **[Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=cvdgs01k3r)**: Check that the **seconds** are the same as they were during preview!

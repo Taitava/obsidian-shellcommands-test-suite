@@ -2493,6 +2493,32 @@
       "preactions": [],
       "variable_default_values": {},
       "output_handling_mode": "realtime"
+    },
+    {
+      "id": "1bj54ofqvt",
+      "platform_specific_commands": {
+        "default": "echo \"Caret paragraph: \"{{caret_paragraph}} >> TestResults.md",
+        "win32": "echo \"Caret paragraph: {{caret_paragraph}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Caret paragraph {{caret_paragraph}} to file",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   ],
   "prompts": [
