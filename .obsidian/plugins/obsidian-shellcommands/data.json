@@ -2393,6 +2393,31 @@
       "preactions": [],
       "variable_default_values": {},
       "output_handling_mode": "realtime"
+    },
+    {
+      "id": "x9mb2l65cf",
+      "platform_specific_commands": {
+        "default": "echo \"Welcome.md:new-window\"\nsleep 1\necho \"Welcome.md:new-tab\"\nsleep 1\necho \"Welcome.md:new-tab\"\nsleep 1\necho \"Welcome.md:new-tab\"\nsleep 1\necho \"Welcome.md:new-tab\""
+      },
+      "shells": {},
+      "alias": "Realtime test: Open files",
+      "icon": "activity",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "open-files",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {},
+      "output_handling_mode": "realtime"
     }
   ],
   "prompts": [

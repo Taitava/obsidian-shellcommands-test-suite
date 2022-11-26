@@ -140,6 +140,7 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 	- [ ] **Realtime test: Current file: caret position**: Make sure [[TestResults.md]] has focus when executing this!
 	- [ ] **Realtime test: Current file: top**: Make sure [[TestResults.md]] has focus when executing this!
 	- [ ] **Realtime test: Current file: bottom**: Make sure [[TestResults.md]] has focus when executing this!
+	- [ ] **[Realtime test: Open files](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=x9mb2l65cf)**: Will open a new Obsidian window and five tabs, all of which will contain [[Welcome.md]]. One second should pass between each tab opening.
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
 2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{file_name}}`. The command does not need to actually do anything.
