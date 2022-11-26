@@ -3,3 +3,4 @@
   "TestResults.md": "The temporary test result file."
   "echo ": ""
   "Write-Host -NoNewLine ": "PowerShell output without a trailing newline."
+  "Write-Error ": "PowerShell output to stderr."
