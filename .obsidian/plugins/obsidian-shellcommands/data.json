@@ -551,7 +551,7 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "realtime"
     },
     {
       "id": "rejgzfrnyz",
