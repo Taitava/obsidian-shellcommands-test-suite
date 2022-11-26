@@ -30,26 +30,26 @@ Inspect closely that variables have correct values!
 
 ## 1.2 Execute shell commands
 \*) These commands' output handling is done in [realtime mode](https://publish.obsidian.md/shellcommands/Output+handling/Realtime+output+handling). It should not affect the outcome, but expands testing to that output handling mode, too.
-- [ ] **Caret position {{caret_position}} to file**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
-- [ ] **Clipboard {{clipboard}} to file**: (You can copy this to clipboard: TESTCLIPBOARD).
-- [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**: Check that the **seconds** are the same as they were during preview!
-- [ ] **File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file**: The result should be: *File extension: with dot: 
+- [ ] **[Caret position {{caret_position}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=01jk6q6kt5)**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
+- [ ] **[Clipboard {{clipboard}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=w8cgzuq66x)**: (You can copy this to clipboard: TESTCLIPBOARD).
+- [ ] **[Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=cvdgs01k3r)**: Check that the **seconds** are the same as they were during preview!
+- [ ] **[File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=hcia4yjtcp)**: The result should be: *File extension: with dot: 
 .md / no dot: md*
-- [ ] **File name {{file_name}} to file**: Check that the file name does not contain any escape characters like: \` or \\.
-- [ ] **Absolute file path {{file_path:absolute}} to file**: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
-- [ ] **Relative file path {{file_path:relative}} to file**
-- [ ] **File URI {{file_uri}} to file**
-- [ ] **Folder name {{folder_name}} to file**
-- [ ] **Absolute folder path {{folder_path:absolute}} to file**: **Same check** as with *Absolute file path* above.
-- [ ] **Relative folder path {{folder_path:relative}} to file**
-- [ ] **New note folder name {{new_note_folder_name}} to file**: Should be *Performed tests*.
-- [ ] **Absolute new note folder path {{new_note_folder_path:absolute}} to file**
-- [ ] **Relative new note folder path {{new_note_folder_path:relative}} to file**
-- [ ] \* **Selection {{selection}} to file**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
-- [ ] \* **Tags {{tags}} to file**. #inline-tag #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
-- [ ] \* **Title {{title }} to file**
-- [ ] \* ***Vault path {{vault_path}} to file**
-- [ ] \* ***Workspace {{workspace}} to file**
+- [ ] **[File name {{file_name}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=kj1jupcn7k)**: Check that the file name does not contain any escape characters like: \` or \\.
+- [ ] **[Absolute file path {{file_path:absolute}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=wj9xk8hlaq)**: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
+- [ ] **[Relative file path {{file_path:relative}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=vcj4wpa02y)**
+- [ ] **[File URI {{file_uri}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=hkcskjz8cb)**
+- [ ] **[Folder name {{folder_name}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=4gzrhksyp7)**
+- [ ] **[Absolute folder path {{folder_path:absolute}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=4kac7s6v56)**: **Same check** as with *Absolute file path* above.
+- [ ] **[Relative folder path {{folder_path:relative}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=435bcuiz11)**
+- [ ] **[New note folder name {{new_note_folder_name}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=0708g3m0bg)**: Should be *Performed tests*.
+- [ ] **[Absolute new note folder path {{new_note_folder_path:absolute}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=8j40a7ah1h)**
+- [ ] **[Relative new note folder path {{new_note_folder_path:relative}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=zyglscbzhx)**
+- [ ] \* **[Selection {{selection}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=3ng31p6gr0)**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
+- [ ] \* **[Tags {{tags}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=7avhlqk80e)**. #inline-tag #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
+- [ ] \* **[Title {{title}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=acmo3jqv6g)**
+- [ ] \* **[Vault path {{vault_path}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=ltxwi1hu05)**
+- [ ] \* **[Workspace {{workspace}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=qf19834h9s)**
 - [ ] **Test {{file content}}**: Open [[Welcome.md]] before executing this! Otherwise you'll get an error message saying that the shell command is too long. You should see the file's content **with YAML**.
 - [ ] **Test {{note content}}**: Open [[Welcome.md]] before executing this! Otherwise you'll get an error message saying that the shell command is too long. You should see the file's content **without YAML**.
 - [ ] **[Character encoding test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=ozilge8kih)**: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
