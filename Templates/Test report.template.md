@@ -142,6 +142,7 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 	- [ ] **Realtime test: Current file: bottom**: Make sure [[TestResults.md]] has focus when executing this!
 	- [ ] **[Realtime test: Open files](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=x9mb2l65cf)**: Will open a new Obsidian window and five tabs, all of which will contain [[Welcome.md]]. One second should pass between each tab opening.
 	- [ ] **[Realtime test: Status bar](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=9a98pvcn6p)**: Status bar will show always the latest line, but hover over it to see all lines.
+	- [ ] **[Realtime test: Ask after execution](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=vn29xcs8xs)**: See that output lines appear to the modal with one second pause between each line. No need to click any redirection buttons.
 	- [ ] **[Realtime test: Clipboard](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=risjcw3y5m)**: You should see five notifications telling that output has been copied to clipboard.
 ```
 Paste the clipboard content here after the execution has finished:
@@ -149,7 +150,6 @@ Paste the clipboard content here after the execution has finished:
 ```
 
 
-		
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
 2. [ ] Create a new shell command. This can be something simple with one variable, like: `echo {{file_name}}`. The command does not need to actually do anything.
