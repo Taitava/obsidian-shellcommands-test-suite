@@ -612,7 +612,7 @@
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo -n \"Text output test\"",
-        "win32": "echo \"Text output test\""
+        "win32": "Write-Host -NoNewLine \"Text output test\""
       },
       "shells": {},
       "events": {},
