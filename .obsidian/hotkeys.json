@@ -103,5 +103,11 @@
       "key": "N"
     }
   ],
-  "workspace:close": []
+  "workspace:close": [],
+  "file-explorer:reveal-active-file": [
+    {
+      "modifiers": [],
+      "key": "F10"
+    }
+  ]
 }
