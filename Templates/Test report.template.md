@@ -116,7 +116,7 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 	```
 - [ ] **[A long running shell command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=2jk7adqi4s)**: You should see a notification saying: *Executing: A long running shell command*. The notification should appear around a couple of seconds after starting the execution (because it's only shown when a shell command execution takes an extended period of time). The notification should disappear the same time when the shell command finishes execution and outputs: *Waited for 5 seconds.*
 - [ ] **[Test output wrapping](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=morocg0jlo)**: Opens up a modal showing the following output text: *Output wrapped in code block.* The output should also show texts *Executed on* and *File name*. Check that all of the variables work ok, and that special characters in the *date* and *file name* values are **not escaped**.
-- [ ] **Realtime tests**:
+- **Realtime tests**:
 	- Each of these tests should output five lines to their specific output channels. There should always be one second pause between each line appearing. If all of the lines appear at once, do not tick a checkbox!
 	- [ ] **[Realtime test: Notification balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=tm2ulm7r2m)**
 	- [ ] **[Realtime test: Error balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=st8k313wkf)**
