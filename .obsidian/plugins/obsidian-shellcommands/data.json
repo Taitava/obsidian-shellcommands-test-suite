@@ -2443,6 +2443,31 @@
       "preactions": [],
       "variable_default_values": {},
       "output_handling_mode": "realtime"
+    },
+    {
+      "id": "risjcw3y5m",
+      "platform_specific_commands": {
+        "default": "echo \"Realtime 1\"\nsleep 1\necho \"Realtime 2\"\nsleep 1\necho \"Realtime 3\"\nsleep 1\necho \"Realtime 4\"\nsleep 1\necho \"Realtime 5\""
+      },
+      "shells": {},
+      "alias": "Realtime test: Clipboard",
+      "icon": "activity",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "clipboard",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {},
+      "output_handling_mode": "realtime"
     }
   ],
   "prompts": [
