@@ -131,6 +131,11 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 Paste the clipboard content here after the execution has finished:
 
 ```
+- **Terminate long running shell commands**
+	- These tests do not need their own shell commands, they just borrow other shell commands. You should be able to stop their execution before they end theirselves.
+	- [ ] **[Realtime test: Notification balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=tm2ulm7r2m)**: A stop icon shows up in notification balloon that shows output text. Click it to stop the execution before _Realtime 5_ line is outputted.
+	- [ ] **[Realtime test: Notification balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=tm2ulm7r2m)**: Execute it again, but this time stop it from an icon in another notification balloon with content _Executing: Realtime test: Notification balloon_. This balloon appears after the shell command been executing a couple of seconds.
+	- [ ] **[Realtime test: Ask after execution](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=vn29xcs8xs)**: Stop the executing by clicking a stop icon in the modal.
 
 
 # [[2. The rise and fall of a temporary shell command]]
