@@ -34,5 +34,7 @@
   "showLineNumber": true,
   "newFileLocation": "folder",
   "newFileFolderPath": "Performed tests",
-  "communityThemeSortOrder": "download"
+  "communityThemeSortOrder": "download",
+  "foldIndent": false,
+  "foldHeading": false
 }
