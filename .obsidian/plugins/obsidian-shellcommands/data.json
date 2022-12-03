@@ -2176,7 +2176,8 @@
     {
       "id": "au049jz2sy",
       "platform_specific_commands": {
-        "default": "echo {{file_content}}"
+        "default": "echo -e {{file_content}}",
+        "win32": "echo {{file_content}}"
       },
       "shells": {},
       "alias": "Test {{file content}}",
@@ -2201,7 +2202,8 @@
     {
       "id": "zcxdt1jp1f",
       "platform_specific_commands": {
-        "default": "echo {{note_content}}"
+        "default": "echo -e {{note_content}}",
+        "win32": "echo {{note_content}}"
       },
       "shells": {},
       "alias": "Test {{note content}}",
