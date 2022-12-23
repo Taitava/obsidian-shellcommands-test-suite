@@ -2413,8 +2413,8 @@
     {
       "id": "au049jz2sy",
       "platform_specific_commands": {
-        "default": "echo -e {{file_content}}",
-        "win32": "echo {{file_content}}"
+        "default": "echo -e $(</dev/stdin)",
+        "win32": "echo \"$Input\""
       },
       "shells": {},
       "alias": "Test {{file content}}",
@@ -2436,14 +2436,14 @@
       "variable_default_values": {},
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{file_content}}"
       }
     },
     {
       "id": "zcxdt1jp1f",
       "platform_specific_commands": {
-        "default": "echo -e {{note_content}}",
-        "win32": "echo {{note_content}}"
+        "default": "echo -e $(</dev/stdin)",
+        "win32": "echo \"$Input\""
       },
       "shells": {},
       "alias": "Test {{note content}}",
@@ -2465,7 +2465,7 @@
       "variable_default_values": {},
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{note_content}}"
       }
     },
     {

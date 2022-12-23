@@ -1,6 +1,6 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.17.0
+test_suite_version: 0.18.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -51,8 +51,8 @@ Inspect closely that variables have correct values!
 - [ ] \* **[Title {{title}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=acmo3jqv6g)**
 - [ ] \* **[Vault path {{vault_path}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=ltxwi1hu05)**
 - [ ] \* **[Workspace {{workspace}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=qf19834h9s)**
-- [ ] **Test {{file content}}**: Open [[Welcome.md]] before executing this! Otherwise you'll get an error message saying that the shell command is too long. You should see the file's content **with YAML**.
-- [ ] **Test {{note content}}**: Open [[Welcome.md]] before executing this! Otherwise you'll get an error message saying that the shell command is too long. You should see the file's content **without YAML**.
+- [ ] **[Test {{file content}}](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=au049jz2sy)**: You should see the current file's content **with YAML**. (This test and the similar one below uses `stdin` to pass the variable content to shell, so the `stdin` feature gets tested, too).
+- [ ] **[Test {{note content}}](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=zcxdt1jp1f)**: You should see the current file's content **without YAML**.
 - [ ] **[Character encoding test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=ozilge8kih)**: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
 - [ ] **[Test to ignore error code](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=qm8y3vwg8k)**: This command should do absolutely nothing. It tries to change directory (`cd`) to *NonExistingFolder*, which fails with error code `1` (on Windows), or `2` (on Linux) . I'm not sure about the code on Mac. The command is defined to ignore error codes `1` and `2`. Tick this checkbox if nothing happened during the execution, but do not tick, if you saw an error message popping up.
 - [ ] **[Test empty command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=rejgzfrnyz)**: This one should always give an error message saying: *The shell command is empty*. If it  does not give an error message at all, **or if the message is different**, comment here and do not check the box. If the error message was correct, tick this checkbox.
