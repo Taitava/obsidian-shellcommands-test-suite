@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.17.0",
+  "settings_version": "0.18.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -48,7 +48,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "c5oaftks00",
@@ -76,7 +79,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "w8cgzuq66x",
@@ -102,7 +108,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "cvdgs01k3r",
@@ -128,7 +137,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "kj1jupcn7k",
@@ -154,7 +166,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "wj9xk8hlaq",
@@ -180,7 +195,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "vcj4wpa02y",
@@ -206,7 +224,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "4gzrhksyp7",
@@ -232,7 +253,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "4kac7s6v56",
@@ -258,7 +282,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "435bcuiz11",
@@ -284,7 +311,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "3ng31p6gr0",
@@ -310,7 +340,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "acmo3jqv6g",
@@ -336,7 +369,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "ltxwi1hu05",
@@ -362,7 +398,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "qf19834h9s",
@@ -388,7 +427,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "796vz9pyd6",
@@ -420,7 +462,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "h1i3hjdujv",
@@ -446,7 +491,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "ozilge8kih",
@@ -471,7 +519,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "qm8y3vwg8k",
@@ -499,7 +550,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "jjzgcfbnf6",
@@ -526,7 +580,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "a3o2jzc1ju",
@@ -551,7 +608,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "rejgzfrnyz",
@@ -576,7 +636,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "7avhlqk80e",
@@ -602,7 +665,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "qsmsyxhep0",
@@ -628,7 +694,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "ieb4t93yvb",
@@ -655,7 +724,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "imsi0fzrit",
@@ -682,7 +754,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "1deq5274qk",
@@ -707,7 +782,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "z7bdfzss6t",
@@ -735,7 +813,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "5w4m6q8d8e",
@@ -760,7 +841,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "5lk1z1h1ds",
@@ -786,7 +870,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "rw1rhziprx",
@@ -814,7 +901,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "1w4y2bpbmk",
@@ -842,7 +932,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "hml8qvuqrs",
@@ -870,7 +963,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "r1erl29mnq",
@@ -898,7 +994,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "cxircsux3k",
@@ -927,7 +1026,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "0wuvfv0nzr",
@@ -956,7 +1058,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "cenx14cvbj",
@@ -981,7 +1086,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "asdmfqbx5d",
@@ -1006,7 +1114,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "xkrjqxs3mv",
@@ -1031,7 +1142,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "dk2axoxhd0",
@@ -1056,7 +1170,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "pm9qf3zrfy",
@@ -1085,7 +1202,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "n6pv34hx2j",
@@ -1113,7 +1233,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "jr2cpaherx",
@@ -1138,7 +1261,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "01jk6q6kt5",
@@ -1164,7 +1290,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "hcia4yjtcp",
@@ -1190,7 +1319,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "fsmbhs5vqc",
@@ -1217,7 +1349,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "uqdzrigs8x",
@@ -1246,7 +1381,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "lcyj918mbd",
@@ -1277,7 +1415,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "j7ihpidsj5",
@@ -1311,7 +1452,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "xulk3kuuwl",
@@ -1341,7 +1485,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "otw4q2sw4g",
@@ -1370,7 +1517,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "moil249jw3",
@@ -1399,7 +1549,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "k09kk76bzr",
@@ -1428,7 +1581,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "3iqc6o9wus",
@@ -1453,7 +1609,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "5hvv4ee88g",
@@ -1478,7 +1637,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "ktaxv4ssfi",
@@ -1503,7 +1665,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "iasi8j8isj",
@@ -1528,7 +1693,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "ciijp65aag",
@@ -1553,7 +1721,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "awn0zh7t5u",
@@ -1578,7 +1749,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "tlq9kj69h5",
@@ -1603,7 +1777,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "sr8mp9lpbb",
@@ -1629,7 +1806,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "mx4gwfpu1h",
@@ -1658,7 +1838,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "d9ztrdqonw",
@@ -1688,7 +1871,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "dqnuqf8fo4",
@@ -1720,7 +1906,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "9dcu9qimfz",
@@ -1750,7 +1939,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "q2jo8zkrk2",
@@ -1780,7 +1972,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "pobjjezee1",
@@ -1810,7 +2005,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "t6lwbz9l9p",
@@ -1840,7 +2038,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "gm9ssow0jg",
@@ -1870,7 +2071,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "s7qrtmjwpa",
@@ -1900,7 +2104,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "z909n24dh6",
@@ -1930,7 +2137,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "7njiczc7os",
@@ -1960,7 +2170,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "2myyxj8sxk",
@@ -1990,7 +2203,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "2sb4p6r9b4",
@@ -2016,7 +2232,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "g7gauo1ds6",
@@ -2042,7 +2261,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "y2dtq5wuxy",
@@ -2067,7 +2289,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "0708g3m0bg",
@@ -2093,7 +2318,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "8j40a7ah1h",
@@ -2119,7 +2347,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "zyglscbzhx",
@@ -2145,7 +2376,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "hkcskjz8cb",
@@ -2171,7 +2405,10 @@
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "au049jz2sy",
@@ -2197,7 +2434,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "zcxdt1jp1f",
@@ -2223,7 +2463,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "2jk7adqi4s",
@@ -2248,7 +2491,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "morocg0jlo",
@@ -2273,7 +2519,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "buffered"
+      "output_handling_mode": "buffered",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "tm2ulm7r2m",
@@ -2298,7 +2547,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "st8k313wkf",
@@ -2324,7 +2576,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "9en7d3rlok",
@@ -2349,7 +2604,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "m1o9ar2af9",
@@ -2374,7 +2632,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "hi205zajc3",
@@ -2399,7 +2660,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "x9mb2l65cf",
@@ -2424,7 +2688,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "9a98pvcn6p",
@@ -2449,7 +2716,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "risjcw3y5m",
@@ -2474,7 +2744,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "vn29xcs8xs",
@@ -2499,7 +2772,10 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "realtime"
+      "output_handling_mode": "realtime",
+      "input_contents": {
+        "stdin": null
+      }
     },
     {
       "id": "1bj54ofqvt",
@@ -2525,7 +2801,10 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "input_contents": {
+        "stdin": null
+      }
     }
   ],
   "prompts": [
@@ -2597,6 +2876,7 @@
       "execute_button_text": "Finish test"
     }
   ],
+  "builtin_variables": {},
   "custom_variables": [
     {
       "id": "isv01gr33c",
