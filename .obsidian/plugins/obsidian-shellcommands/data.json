@@ -1496,7 +1496,7 @@
         "default": "echo \"Event: File menu: \"{{event_file_name}}"
       },
       "shells": {},
-      "alias": "Event: File menu: {{event_file_name}}",
+      "alias": "Event: File menu: {{!event_file_name}}",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -1528,7 +1528,7 @@
         "default": "echo \"Event: Folder menu: \"{{event_folder_name}}"
       },
       "shells": {},
-      "alias": "Event: Folder menu: {{event_folder_name}}",
+      "alias": "Event: Folder menu: {{!event_folder_name}}",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
