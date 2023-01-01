@@ -99,6 +99,7 @@ Inspect closely that variables have correct values!
 	- Correct output: ``Escaping test 1: 
 <>,.-;:§+´½!'"#¤%&/()=?`@`£$€{[]}\\¨^~*åäö*``
 - [ ] **[Escaping test 2](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=dk2axoxhd0)**: This command tests actually the same thing as *Escaping test 1*, but it focuses more on to test that an escaped `>>` symbol pair does not cause output to be written into [[TestResults]]. So, unlike many other tests, this test **should not output anything to TestResults.md**. Instead, the test is passed, if it creates a notification balloon saying: *This should NOT be written to TestResults.md!!! >> TestResults.md*.
+- [ ] **[Test YAML content](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=yo01vuor9j)**: Should show a notification balloon with the current file's YAML  frontmatter outputted twice: first without `---` dashes, then including them.
 - [ ] **[Test YAML value](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=jr2cpaherx)**: Should output the following to [[TestResults]]: `YAML test: A1. 
 first_value A2. inner_value A3. last_value B) first: first-item B) second: second-item B) last: last-item B) count: 3` . If even a single difference is found, leave a comment and do not tick the checkbox.
 - [ ] **[Test PATH additions](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=g7gauo1ds6)**: Opens up a modal showing the content of the `PATH` environment variable.

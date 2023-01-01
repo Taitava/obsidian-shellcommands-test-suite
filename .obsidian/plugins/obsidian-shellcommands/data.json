@@ -2805,6 +2805,38 @@
       "input_contents": {
         "stdin": null
       }
+    },
+    {
+      "id": "yo01vuor9j",
+      "platform_specific_commands": {
+        "default": "echo \"YAML content WITHOUT dashes:\"\necho {{yaml_content:no-dashes}}\necho \"\"\necho \"\"\necho \"YAML content WITH dashes:\"\necho {{yaml_content:with-dashes}}"
+      },
+      "shells": {},
+      "alias": "Test YAML content",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {
+        "file-menu": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   ],
   "prompts": [
