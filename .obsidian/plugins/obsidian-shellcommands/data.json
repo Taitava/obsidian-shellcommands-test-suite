@@ -2913,47 +2913,56 @@
     {
       "id": "isv01gr33c",
       "name": "mandatory_field",
-      "description": "User should set this to 'example'."
+      "description": "User should set this to 'example'.",
+      "default_value": null
     },
     {
       "id": "4pw77r1izt",
       "name": "field_with_default_value",
-      "description": "This should become 'Default'."
+      "description": "This should become 'Default'.",
+      "default_value": null
     },
     {
       "id": "a8hvq53otu",
       "name": "optional_field",
-      "description": "This should become an empty string."
+      "description": "This should become an empty string.",
+      "default_value": null
     },
     {
       "id": "zecw45agxe",
       "name": "field_using_variables",
-      "description": ""
+      "description": "",
+      "default_value": null
     },
     {
       "id": "ojzjfapyot",
       "name": "uri_custom_variable_1",
-      "description": "Used in Shell commands URI testing."
+      "description": "Used in Shell commands URI testing.",
+      "default_value": null
     },
     {
       "id": "nbwu2szvx5",
       "name": "uri_custom_variable_2",
-      "description": "Used in Shell commands URI testing."
+      "description": "Used in Shell commands URI testing.",
+      "default_value": null
     },
     {
       "id": "ax7fxgrmft",
       "name": "plugin_version",
-      "description": "Used in FINISH TEST."
+      "description": "Used in FINISH TEST.",
+      "default_value": null
     },
     {
       "id": "kk420sww12",
       "name": "operating_system",
-      "description": "Used in FINISH TEST."
+      "description": "Used in FINISH TEST.",
+      "default_value": null
     },
     {
       "id": "m6giquj5kc",
       "name": "test_status",
-      "description": "Used in FINISH TEST."
+      "description": "Used in FINISH TEST.",
+      "default_value": null
     }
   ],
   "output_wrappers": [
