@@ -2414,7 +2414,7 @@
       "id": "au049jz2sy",
       "platform_specific_commands": {
         "default": "echo -e $(cat)",
-        "win32": "echo \"$Input\""
+        "win32": "$OFS = \"`r`n\"\necho \"$Input\""
       },
       "shells": {},
       "alias": "Test {{file content}}",
@@ -2443,7 +2443,7 @@
       "id": "zcxdt1jp1f",
       "platform_specific_commands": {
         "default": "echo -e $(cat)",
-        "win32": "echo \"$Input\""
+        "win32": "$OFS = \"`r`n\"\necho \"$Input\""
       },
       "shells": {},
       "alias": "Test {{note content}}",
