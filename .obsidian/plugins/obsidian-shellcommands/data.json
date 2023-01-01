@@ -2413,7 +2413,7 @@
     {
       "id": "au049jz2sy",
       "platform_specific_commands": {
-        "default": "echo -e $(</dev/stdin)",
+        "default": "echo -e $(cat)",
         "win32": "echo \"$Input\""
       },
       "shells": {},
@@ -2442,7 +2442,7 @@
     {
       "id": "zcxdt1jp1f",
       "platform_specific_commands": {
-        "default": "echo -e $(</dev/stdin)",
+        "default": "echo -e $(cat)",
         "win32": "echo \"$Input\""
       },
       "shells": {},
