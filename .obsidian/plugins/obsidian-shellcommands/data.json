@@ -2833,6 +2833,34 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {}
+    },
+    {
+      "id": "umqymtjrfc",
+      "platform_specific_commands": {
+        "default": "echo \"Builtin variable's global default value: {{event_title}}\" >> TestResults.md\necho \"Custom variable's global default value: {{_variable_with_default_value}}\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Test globally default values",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   ],
   "prompts": [
@@ -2904,7 +2932,14 @@
       "execute_button_text": "Finish test"
     }
   ],
-  "builtin_variables": {},
+  "builtin_variables": {
+    "{{event_title}}": {
+      "default_value": {
+        "type": "value",
+        "value": "This is a global default value for {{event_title}}."
+      }
+    }
+  },
   "custom_variables": [
     {
       "id": "isv01gr33c",
@@ -2959,6 +2994,15 @@
       "name": "test_status",
       "description": "Used in FINISH TEST.",
       "default_value": null
+    },
+    {
+      "id": "pxwqdow8yp",
+      "name": "variable_with_default_value",
+      "description": "This variable is never planned to be assigned an actual value. It should always fall back to a default value.",
+      "default_value": {
+        "type": "value",
+        "value": "This is a global default value for a custom variable."
+      }
     }
   ],
   "output_wrappers": [
