@@ -2809,7 +2809,7 @@
     {
       "id": "yo01vuor9j",
       "platform_specific_commands": {
-        "default": "echo \"YAML content WITHOUT dashes:\"\necho {{yaml_content:no-dashes}}\necho \"\"\necho \"\"\necho \"YAML content WITH dashes:\"\necho {{yaml_content:with-dashes}}"
+        "default": "echo \"YAML content WITHOUT dashes:\"\necho -e {{yaml_content:no-dashes}}\necho \"\"\necho \"\"\necho \"YAML content WITH dashes:\"\necho -e {{yaml_content:with-dashes}}"
       },
       "shells": {},
       "alias": "Test YAML content",
