@@ -479,7 +479,7 @@
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo Working directory: `pwd` >> {{vault_path}}\"/Sandbox/TestResults.md\"",
-        "win32": "echo Working directory: $pwd.Path >> \"{{vault_path}}\\Sandbox\\TestResults.md\""
+        "win32": "echo \"Working directory: $pwd\" >> \"{{vault_path}}\\Sandbox\\TestResults.md\""
       },
       "shells": {},
       "events": {},
