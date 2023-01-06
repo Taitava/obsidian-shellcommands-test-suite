@@ -121,6 +121,39 @@ first_value A2. inner_value A3. last_value B) first: first-item B) second: secon
 	- `{{event_title}}` (not available because no event is triggered here). Default value: `This is a global default value for {{event_title}}.`
 	- A custom variable. Default value: `This is a global default value for a custom variable.`
 	- Make sure the command outputs the default values like they are presented above.
+- [ ] Menu item: **Test file menu event variables \(excluding ...\)**:
+	- Right-click _Test report.template_, and then click this menu item.
+	- Aims to test most `{{event_\*}}` variables. E.g. `{{event_tags}}` is not tested by any other test. Excludes long `{{event_file/note_content}}` variables, because I noticed the output (or input?) was truncated when those variables were present.
+	- Output is shown in a modal. Make sure it looks similar to the sample below:
+> [!EXAMPLE]- Sample output  
+> ```
+> event_file_extension:with-dot = .md  
+> event_file_name = Test report.template.md  
+> event_file_path:absolute = V:\Lajitellut\Obsidian-tietokannat\Shell commands test\Templates\Test report.template.md  
+> event_file_uri = obsidian://vault/Shell%20commands%20test/Templates%2FTest%20report.template.md  
+> event_folder_name = Templates  
+> event_folder_path:absolute = V:\Lajitellut\Obsidian-tietokannat\Shell commands test\Templates  
+> event_tags:,  = frontmatter-tag, this-should-not-appear-twice, inline-tag  
+> event_title = Test report.template  
+> event_yaml_content:with-dashes = ---  
+> # Do not change these values during testing.  
+> test_suite_version: 0.18.0  
+> tags:  
+>         - frontmatter-tag  
+>         - this-should-not-appear-twice  
+>       yaml_test1:  
+>         first_item: first_value  
+>         middle_item:  
+>          inner_item: inner_value**  
+>         last_item: last_value  
+>       yaml_test2:  
+>         - first-item  
+>         - second-item  
+>         - last-item  
+> ---  
+> event_yaml_value:yaml_test1.first_item = first_value
+> ```
+
 - **Realtime tests**:
 	- Each of these tests should output five lines to their specific output channels. There should always be one second pause between each line appearing. If all of the lines appear at once, do not tick a checkbox!
 	- [ ] **[Realtime test: Notification balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=tm2ulm7r2m)**
