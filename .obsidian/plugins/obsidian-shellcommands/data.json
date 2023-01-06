@@ -2418,7 +2418,7 @@
       },
       "shells": {},
       "alias": "Test {{file content}}",
-      "icon": null,
+      "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -2434,7 +2434,7 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "buffered",
+      "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": "{{file_content}}"
       }
@@ -2447,7 +2447,7 @@
       },
       "shells": {},
       "alias": "Test {{note content}}",
-      "icon": null,
+      "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -2463,7 +2463,7 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "output_handling_mode": "buffered",
+      "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": "{{note_content}}"
       }
