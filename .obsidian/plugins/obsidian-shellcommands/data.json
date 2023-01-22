@@ -24,7 +24,7 @@
   "shell_commands": [
     {
       "id": "c0wajcu2vp",
-      "alias": "Git GUI (No need to test)",
+      "alias": "Git GUI",
       "confirm_execution": false,
       "ignore_error_codes": [
         259
@@ -55,7 +55,7 @@
     },
     {
       "id": "c5oaftks00",
-      "alias": "Git Bash (No need to test)",
+      "alias": "Git Bash",
       "ignore_error_codes": [],
       "confirm_execution": false,
       "output_channels": {
@@ -557,7 +557,7 @@
     },
     {
       "id": "jjzgcfbnf6",
-      "alias": "Terminal in test suite folder (No need to test)",
+      "alias": "Terminal in test suite folder",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -587,7 +587,7 @@
     },
     {
       "id": "a3o2jzc1ju",
-      "alias": "Git pull (No need to test)",
+      "alias": "Git pull",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -701,7 +701,7 @@
     },
     {
       "id": "ieb4t93yvb",
-      "alias": "Terminal in plugin folder (No need to test)",
+      "alias": "Terminal in plugin folder",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -1069,7 +1069,7 @@
         "default": "git status"
       },
       "shells": {},
-      "alias": "Git status (no need to test)",
+      "alias": "Git status",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
