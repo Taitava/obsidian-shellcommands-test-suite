@@ -8,3 +8,8 @@
 "PowerShell":
   "Write-Host -NoNewLine ": "PowerShell output without a trailing newline."
   "Write-Error ": "PowerShell output to stderr."
+  
+"FINISH TEST":
+  "Windows": ""
+  "Linux": ""
+  "macOS": ""
