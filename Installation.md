@@ -18,7 +18,7 @@ You can still use GUI applications to do some things (e.g. commits), if you wish
 ## 1.1. For Linux
 See command line installation instructions here: https://git-scm.com/download/linux
 
-## 1.2. For Macintosh
+## 1.2. For macOS
 See command line installation instructions here: https://git-scm.com/download/mac
 
 ## 1.3. For Windows

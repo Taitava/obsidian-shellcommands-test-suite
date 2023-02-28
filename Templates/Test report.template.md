@@ -1,6 +1,6 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.18.0
+test_suite_version: 0.19.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -218,14 +218,14 @@ This setting should be on by default.
 - [ ] **[Test operating system specific command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=rw1rhziprx)**: This test will ensure that a shell command can run a correct version of it in each operating system. It should output one of these depending on your current OS. If it gives a wrong text, do not tick this checkbox.
 	- *Windows command version executed.*
 	- *Linux command version executed.*
-	- *Macintosh command version executed.*
+	- *macOS command version executed.*
 
 For the next tests, you need to **only run commands that are designed for your operating system**. For those tests that are not meant for your current operating system, just delete them.
 - Windows:
 	- [ ] **[Test Windows shell: CMD](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=1w4y2bpbmk)**: This command is executed explicitly with CMD, and it should output an absolute path to *cmd.exe* file.
 	- [ ] **[Test Windows shell: PowerShell 5](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=hml8qvuqrs)**: Uses explicitly PowerShell and it's old version 5. Should output *PS5 version: 5*, if the last version number is something else than *5*, then something is wrong. (PowerShell 5 might output strange extra characters that look like big dots. Just ignore them, the problem is known.)
 	- [ ] **[Test Windows shell: PowerShell Core](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=r1erl29mnq)**: Uses explicitly PowerShell and it's new version 6 or 7 (or even greater in the future). Should output *PSCore version: 6* (or 7 or above), if the last version number is *5*, then something is wrong.
-- Linux / Macintosh:
+- Linux / macOS:
 	- [ ] **[Test Linux/Mac shell: Bash](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=cxircsux3k)**: Uses explicitly Bash and it should output an absolute path to a Bash binary file.
 	- [ ] **[Test Linux/Mac shell: Dash](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=pm9qf3zrfy)**: Uses explicitly Dash and it should output an absolute path to a Dash binary file.
 	- [ ] **[Test Linux/Mac shell: Zsh](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=0wuvfv0nzr)**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
