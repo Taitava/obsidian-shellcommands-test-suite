@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.18.0",
+  "settings_version": "0.19.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -2895,6 +2895,105 @@
       "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {}
+    },
+    {
+      "id": "7fn65l4j2m",
+      "platform_specific_commands": {
+        "default": "",
+        "win32": "# Use printf instead of echo, because echo works in PowerShell and CMD.EXE, but printf doesn't, so it's a good breaker to notice if this command is accidentally executed in PowerShell/CMD.EXE instead of WSL.\nprintf \"Hello from WSL!\\n\" >> TestResults.md\nprintf \"You wanted to output this: \"{{_wsl_test_variable}}\"\\n\" >> TestResults.md\nprintf \"Variable escaping should use unix style escaping: \"{{passthrough:+-*/}}\"\\n\" >> TestResults.md"
+      },
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
+      "alias": "WSL test",
+      "icon": "activity",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "realtime",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "5g487gw0fo"
+        }
+      ],
+      "variable_default_values": {},
+      "input_contents": {
+        "stdin": null
+      }
+    },
+    {
+      "id": "a437tpl07p",
+      "platform_specific_commands": {
+        "default": "",
+        "win32": "# Use printf instead of echo, because echo works in PowerShell and CMD.EXE, but printf doesn't, so it's a good breaker to notice if this command is accidentally executed in PowerShell/CMD.EXE instead of MinGW-w64.\nprintf \"Hello from MinGW-w64!\\n\" >> TestResults.md\nprintf \"Vault path: \"{{vault_path}}\"\\n\" >> TestResults.md\nprintf \"Variable escaping should use unix style escaping: \"{{passthrough:+-*/}}\"\\n\" >> TestResults.md"
+      },
+      "shells": {
+        "win32": "i66xg4nnvs"
+      },
+      "alias": "MinGW-w64 test",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {},
+      "input_contents": {
+        "stdin": null
+      }
+    },
+    {
+      "id": "9b3bkhu159",
+      "platform_specific_commands": {
+        "default": "",
+        "linux": "# Use echo. instead of normal echo, because echo works in Bash etc, but echo. doesn't, so it's a good breaker to notice if this command is accidentally executed in Bash instead of Wine+CMD.EXE.\necho. Hello from CMD.EXE via Wine! >> TestResults.md"
+      },
+      "shells": {
+        "linux": "shi0niw9u9"
+      },
+      "alias": "Wine + CMD.EXE test",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   ],
   "prompts": [
@@ -2964,6 +3063,22 @@
         }
       ],
       "execute_button_text": "Finish test"
+    },
+    {
+      "id": "5g487gw0fo",
+      "title": "WSL test prompt",
+      "description": "Prompted when executing \"WSL test\".",
+      "preview_shell_command": true,
+      "fields": [
+        {
+          "label": "Output something from WSL",
+          "description": "Type e.g. your name.",
+          "default_value": "",
+          "target_variable_id": "w9agfa690f",
+          "required": true
+        }
+      ],
+      "execute_button_text": "Execute"
     }
   ],
   "builtin_variables": {
@@ -3037,6 +3152,12 @@
         "type": "value",
         "value": "This is a global default value for a custom variable."
       }
+    },
+    {
+      "id": "w9agfa690f",
+      "name": "wsl_test_variable",
+      "description": "",
+      "default_value": null
     }
   ],
   "output_wrappers": [
@@ -3044,6 +3165,73 @@
       "id": "w85m6up4bg",
       "title": "Code block",
       "content": "Executed on {{date:YYYY-MM-DD}}:\n```\n{{output}}\n```\nFile name: {{file_name}}"
+    }
+  ],
+  "custom_shells": [
+    {
+      "id": "k73ibys6zs",
+      "name": "Windows Subsystem for Linux (WSL)",
+      "description": "\"WSL is a feature of Windows that allows developers to run a Linux environment without the need for a separate virtual machine or dual booting.\" (from: https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)\n\nThis custom shell configuration allows you to execute Linux/Bash commands from Obsidian on Windows.\n\nInstall WSL: https://learn.microsoft.com/en-us/windows/wsl/install",
+      "binary_path": "C:\\Windows\\System32\\wsl.exe",
+      "shell_arguments": [
+        "--",
+        "{{shell_command_content}}"
+      ],
+      "host_platform": "win32",
+      "host_platform_configurations": {
+        "win32": {
+          "quote_shell_arguments": false
+        }
+      },
+      "shell_platform": "linux",
+      "escaper": "UnixShell",
+      "path_translator": "const matches = absolutePath.match(/^([a-z]):\\/(.+)$/ui);\nconst driveLetter = matches[1];\nconst trailingPath = matches[2];\nreturn '/mnt/' + driveLetter.toLocaleLowerCase() + '/' + trailingPath;",
+      "shell_command_wrapper": "echo \"Executing WSL in \"{{vault_path}}\":\" >> TestResults.md\n{{shell_command_content}}\necho \"WSL executed.\" >> TestResults.md",
+      "shell_command_test": "echo \"Hello $USER, current working directory is: $(pwd)\""
+    },
+    {
+      "id": "i66xg4nnvs",
+      "name": "MinGW-w64",
+      "description": "\"Mingw-w64 is an advancement of the original mingw.org project, created to support the GCC compiler on Windows systems.\" (from: https://www.mingw-w64.org/)\n\nThis custom shell configuration allows you to execute some Linux/Bash commands from Obsidian on Windows.",
+      "binary_path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "shell_arguments": [
+        "--login",
+        "-c",
+        "{{shell_command_content}}"
+      ],
+      "host_platform": "win32",
+      "host_platform_configurations": {
+        "win32": {
+          "quote_shell_arguments": true
+        }
+      },
+      "shell_platform": "linux",
+      "escaper": "UnixShell",
+      "path_translator": "const matches = absolutePath.match(/^([a-z]):\\/(.+)$/ui);\nconst driveLetter = matches[1];\nconst trailingPath = matches[2];\nreturn '/' + driveLetter.toLocaleLowerCase() + '/' + trailingPath;",
+      "shell_command_wrapper": null,
+      "shell_command_test": "echo \"Hello, current working directory is: $(pwd)\""
+    },
+    {
+      "id": "shi0niw9u9",
+      "name": "Wine + CMD.EXE",
+      "description": "\"Wine Is Not an Emulator\"",
+      "binary_path": "wine",
+      "shell_arguments": [
+        "CMD.EXE",
+        "/C",
+        "{{shell_command_content}}"
+      ],
+      "host_platform": "linux",
+      "host_platform_configurations": {
+        "win32": {
+          "quote_shell_arguments": true
+        }
+      },
+      "shell_platform": null,
+      "escaper": "PowerShell",
+      "path_translator": null,
+      "shell_command_wrapper": null,
+      "shell_command_test": "echo Current working directory: & cd & echo Vault path: {{vault_path}}"
     }
   ]
 }

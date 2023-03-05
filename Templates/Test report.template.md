@@ -293,7 +293,42 @@ Check the following things in the prompt:
 	- [ ] *Custom variable 1: Variable values set*
 	- [ ] *Custom variable 2: without executing anything*
 
-# 7. When there is no settings file
+# 7. Custom shells
+If you are running:
+ - macOS: There's no custom shell defined for macOS at the moment, so you can delete all subsections.
+ - Linux: Remove subsections _7.1. Windows: WSL_ and _7.2. Windows: MinGW-w64_.
+ - Windows: Remove subsection _7.3. Linux: Wine + CMD.EXE_.
+
+## 7.1. Windows: WSL
+Execute [WSL test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=7fn65l4j2m). It opens a prompt (just to cross-test that prompts work with custom shells) which asks for a single value. Type whatever there and execute the shell command. It should output something like this to [[TestResults.md]]:
+```
+Executing WSL in /mnt/v/Lajitellut/Obsidian-tietokannat/Shell commands test:
+Hello from WSL!
+You wanted to output this: Your Name
+Variable escaping should use unix style escaping: +-*/
+WSL executed.
+```
+- [ ] Check that the folder path on the first line begins with `/mnt/`. If not, _path translation_ does not work.
+- [ ] Check that `You wanted to output this:` is followed by the value you submitted in the prompt.
+- [ ] Check that `+-*/` appears **without** escaping characters.
+  - This would be incorrect: `` `+`-`*`/ `` If this appears, then the custom shell uses a wrong escaping character.
+
+## 7.2. Windows: MinGW-w64
+Execute [MinGW-w64 test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=a437tpl07p). It should output something like:
+```
+Hello from MinGW-w64!
+Vault path: /v/Lajitellut/Obsidian-tietokannat/Shell commands test
+Variable escaping should use unix style escaping: +-*/
+```
+- [ ] Check that the folder path on the second line begins with `/v/` (`v` can be a different character). If not, _path translation_ does not work.
+- [ ] Check that `+-*/` appears **without** escaping characters.
+  - This would be incorrect: `` `+`-`*`/ `` If this appears, then the custom shell uses a wrong escaping character.
+
+## 7.3. Linux: Wine + CMD.EXE
+Execute [Wine + CMD.EXE test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=9b3bkhu159). It should output something like:
+TODO: Add output example and checks.
+
+# 8. When there is no settings file
 This section will test that the plugin works correctly when no `data.json` settings file exist. The plugin should load default settings.
 
 1. [ ] Execute the command **[Open the plugin folder in system explorer](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=fsmbhs5vqc)**.
@@ -308,7 +343,7 @@ This section will test that the plugin works correctly when no `data.json` setti
 8. [ ] Restart Obsidian again.
 9. [ ] Ensure that the settings now have the normal list of shell commands.
 
-# 8. Clean up
+# 9. Clean up
 - [ ] Execute **[FINISH TEST](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=796vz9pyd6)** command, which will add your test results to the bottom of this file.
 - The command will rename this test report file:
 	- It removes the *(incomplete)* mark.
