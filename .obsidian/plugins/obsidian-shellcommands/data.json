@@ -881,7 +881,7 @@
         "default": "",
         "win32": "echo \"Windows command version executed.\" >> TestResults.md",
         "linux": "echo \"Linux command version executed.\" >> TestResults.md",
-        "darwin": "echo \"Macintosh command version executed.\" >> TestResults.md"
+        "darwin": "echo \"macOS command version executed.\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Test operating system specific command",
@@ -1004,7 +1004,7 @@
       "platform_specific_commands": {
         "default": "",
         "linux": "echo \"Linux shell should be Bash: \"$(readlink /proc/$$/exe) >> TestResults.md",
-        "darwin": "echo \"Macintosh shell should be Bash: \"$(readlink /proc/$$/exe) >> TestResults.md"
+        "darwin": "echo \"macOS shell should be Bash: \"$(readlink /proc/$$/exe) >> TestResults.md"
       },
       "shells": {
         "linux": "/bin/bash"
@@ -1036,7 +1036,7 @@
       "platform_specific_commands": {
         "default": "",
         "linux": "echo \"Linux shell should be Zsh: \"$(readlink /proc/$$/exe) >> TestResults.md",
-        "darwin": "echo \"Macintosh shell should be Zsh: \"$(readlink /proc/$$/exe) >> TestResults.md"
+        "darwin": "echo \"macOS shell should be Zsh: \"$(readlink /proc/$$/exe) >> TestResults.md"
       },
       "shells": {
         "linux": "/bin/zsh"
@@ -1180,7 +1180,7 @@
       "platform_specific_commands": {
         "default": "",
         "linux": "echo \"Linux shell should be Dash: \"$(readlink /proc/$$/exe) >> TestResults.md",
-        "darwin": "echo \"Macintosh shell should be Dash: \"$(readlink /proc/$$/exe) >> TestResults.md"
+        "darwin": "echo \"macOS shell should be Dash: \"$(readlink /proc/$$/exe) >> TestResults.md"
       },
       "shells": {
         "linux": "/bin/dash"
