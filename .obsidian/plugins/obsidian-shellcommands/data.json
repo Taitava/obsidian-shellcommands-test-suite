@@ -3175,7 +3175,7 @@
       "binary_path": "C:\\Windows\\System32\\wsl.exe",
       "shell_arguments": [
         "--",
-        "{{shell_command_content}}"
+        "{{!shell_command_content}}"
       ],
       "host_platform": "win32",
       "host_platform_configurations": {
@@ -3186,7 +3186,7 @@
       "shell_platform": "linux",
       "escaper": "UnixShell",
       "path_translator": "const matches = absolutePath.match(/^([a-z]):\\/(.+)$/ui);\nconst driveLetter = matches[1];\nconst trailingPath = matches[2];\nreturn '/mnt/' + driveLetter.toLocaleLowerCase() + '/' + trailingPath;",
-      "shell_command_wrapper": "echo \"Executing WSL in \"{{vault_path}}\":\" >> TestResults.md\n{{shell_command_content}}\necho \"WSL executed.\" >> TestResults.md",
+      "shell_command_wrapper": "echo \"Executing WSL in \"{{vault_path}}\":\" >> TestResults.md\n{{!shell_command_content}}\necho \"WSL executed.\" >> TestResults.md",
       "shell_command_test": "echo \"Hello $USER, current working directory is: $(pwd)\""
     },
     {
@@ -3197,7 +3197,7 @@
       "shell_arguments": [
         "--login",
         "-c",
-        "{{shell_command_content}}"
+        "{{!shell_command_content}}"
       ],
       "host_platform": "win32",
       "host_platform_configurations": {
@@ -3219,7 +3219,7 @@
       "shell_arguments": [
         "CMD.EXE",
         "/C",
-        "{{shell_command_content}}"
+        "{{!shell_command_content}}"
       ],
       "host_platform": "linux",
       "host_platform_configurations": {
