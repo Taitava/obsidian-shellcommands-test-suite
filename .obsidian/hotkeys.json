@@ -109,5 +109,13 @@
       "modifiers": [],
       "key": "F10"
     }
+  ],
+  "obsidian-shellcommands:shell-command-zonkcdyhxn": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "-"
+    }
   ]
 }

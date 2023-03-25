@@ -85,35 +85,6 @@
       }
     },
     {
-      "id": "w8cgzuq66x",
-      "alias": "Clipboard {{clipboard}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Clipboard: \"{{clipboard}} >> TestResults.md",
-        "win32": "echo \"Clipboard: {{clipboard}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
       "id": "cvdgs01k3r",
       "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file",
       "confirm_execution": false,
@@ -124,7 +95,7 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Date and time: \"{{date:YYYY-MM-DD HH:mm:ss}} >> TestResults.md",
+        "default": "echo \"Date and time: \"{{date:YYYY-MM-DD HH:mm:ss}} >> TestResults.md\n# 2023-03-25: This shell command is nowadays only used for testing variable parsing in Obsidian's command palette. It's not anymore executed in the typical testing process.",
         "win32": "echo \"Date and time: {{date:YYYY-MM-DD HH:mm:ss}}\" >> TestResults.md"
       },
       "shells": {},
@@ -153,7 +124,7 @@
       },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"File name: \"{{file_name}} >> TestResults.md",
+        "default": "echo \"File name: \"{{file_name}} >> TestResults.md\n# 2023-03-25: This shell command is nowadays only used for testing variable parsing in Obsidian's command palette. It's not anymore executed in the typical testing process.",
         "win32": "echo \"File name: {{file_name}}\" >> TestResults.md"
       },
       "shells": {},
@@ -167,267 +138,6 @@
         "stderr": null
       },
       "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "wj9xk8hlaq",
-      "alias": "Absolute file path {{file_path:absolute}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Absolute file path: \"{{file_path:absolute}} >> TestResults.md",
-        "win32": "echo \"Absolute file path: {{file_path:absolute}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "vcj4wpa02y",
-      "alias": "Relative file path {{file_path:relative}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Relative file path: \"{{file_path:relative}} >> TestResults.md",
-        "win32": "echo \"Relative file path: {{file_path:relative}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "4gzrhksyp7",
-      "alias": "Folder name {{folder_name}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Folder name: \"{{folder_name}} >> TestResults.md",
-        "win32": "echo \"Folder name: {{folder_name}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "4kac7s6v56",
-      "alias": "Absolute folder path {{folder_path:absolute}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Absolute folder path: \"{{folder_path:absolute}} >> TestResults.md",
-        "win32": "echo \"Absolute folder path: {{folder_path:absolute}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "435bcuiz11",
-      "alias": "Relative folder path {{folder_path:relative}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Relative folder path: \"{{folder_path:relative}} >> TestResults.md",
-        "win32": "echo \"Relative folder path: {{folder_path:relative}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "3ng31p6gr0",
-      "alias": "Selection {{selection}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Selection: \"{{selection}} >> TestResults.md",
-        "win32": "echo \"Selection: {{selection}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": "activity",
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "realtime",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "acmo3jqv6g",
-      "alias": "Title {{title}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Title: \"{{title}} >> TestResults.md",
-        "win32": "echo \"Title: {{title}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": "activity",
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "realtime",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "ltxwi1hu05",
-      "alias": "Vault path {{vault_path}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Vault path: \"{{vault_path}} >> TestResults.md",
-        "win32": "echo \"Vault path: {{vault_path}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": "activity",
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "realtime",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "qf19834h9s",
-      "alias": "Workspace {{workspace}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Workspace: \"{{workspace}} >> TestResults.md",
-        "win32": "echo \"Workspace: {{workspace}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": "activity",
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
       }
@@ -637,35 +347,6 @@
         "stderr": null
       },
       "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "7avhlqk80e",
-      "alias": "Tags {{tags:, }} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "platform_specific_commands": {
-        "default": "echo \"Tags: \"{{tags:, }} >> TestResults.md",
-        "win32": "echo \"Tags: {{tags:, }}\" >> TestResults.md"
-      },
-      "shells": {},
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": "activity",
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
       }
@@ -1120,40 +801,12 @@
       }
     },
     {
-      "id": "xkrjqxs3mv",
-      "platform_specific_commands": {
-        "default": "echo \"Escaping test 1: \"{{passthrough:<>,.-;:§+´½!'\"#¤%&/()=?`@`£$€{[]}\\\\¨^~*åäö*}} >> TestResults.md"
-      },
-      "shells": {},
-      "alias": "Escaping test 1",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
       "id": "dk2axoxhd0",
       "platform_specific_commands": {
         "default": "echo \"This should NOT be written to TestResults.md!!!\" {{passthrough:>>}} TestResults.md"
       },
       "shells": {},
-      "alias": "Escaping test 2",
+      "alias": "Escaping test",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channels": {
@@ -1239,34 +892,6 @@
       }
     },
     {
-      "id": "jr2cpaherx",
-      "platform_specific_commands": {
-        "default": "echo \"YAML test: A1. \"{{yaml_value:yaml_test1.first_item}}\" A2. \"{{yaml_value:yaml_test1.middle_item.inner_item}}\" A3. \"{{yaml_value:yaml_test1.last_item}}\" B) first: \"{{yaml_value:yaml_test2.0}}\" B) second: \"{{yaml_value:yaml_test2.1}}\" B) last: \"{{yaml_value:yaml_test2.-1}}\" B) count: \"{{yaml_value:yaml_test2.length}}  >> TestResults.md"
-      },
-      "shells": {},
-      "alias": "Test YAML value",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
       "id": "01jk6q6kt5",
       "platform_specific_commands": {
         "default": "echo \"Caret position: \"{{caret_position}}\" (line: \"{{caret_position:line}}\", column:\"{{caret_position:column}}\")\" >> TestResults.md",
@@ -1285,41 +910,12 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": null,
+      "icon": "activity",
       "output_wrappers": {
         "stdout": null,
         "stderr": null
       },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "hcia4yjtcp",
-      "platform_specific_commands": {
-        "default": "echo \"File extension: with dot: \"{{file_extension:with-dot}}\" / no dot: \"{{file_extension:no-dot}} >> TestResults.md",
-        "win32": "echo \"File extension: with dot: {{file_extension:with-dot}} / no dot: {{file_extension:no-dot}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "alias": "File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
+      "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
       }
@@ -2295,122 +1891,6 @@
       }
     },
     {
-      "id": "0708g3m0bg",
-      "platform_specific_commands": {
-        "default": "echo \"New note folder name: \"{{new_note_folder_name}} >> TestResults.md",
-        "win32": "echo \"New note folder name: {{new_note_folder_name}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "alias": "New note folder name {{new_note_folder_name}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "8j40a7ah1h",
-      "platform_specific_commands": {
-        "default": "echo \"Absolute new note folder path: \"{{new_note_folder_path:absolute}} >> TestResults.md",
-        "win32": "echo \"Absolute new note folder path: {{new_note_folder_path:absolute}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "alias": "Absolute new note folder path {{new_note_folder_path:absolute}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "zyglscbzhx",
-      "platform_specific_commands": {
-        "default": "echo \"Relative new note folder path: \"{{new_note_folder_path:relative}} >> TestResults.md",
-        "win32": "echo \"Relative new note folder path: {{new_note_folder_path:relative}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "alias": "Relative new note folder path {{new_note_folder_path:relative}} to file",
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "icon": null,
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "hkcskjz8cb",
-      "platform_specific_commands": {
-        "default": "echo \"File URI: \"{{file_uri}} >> TestResults.md",
-        "win32": "echo \"File URI: {{file_uri}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "alias": "File URI {{file_uri}} to file",
-      "icon": null,
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_channel_order": "stdout-first",
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_handling_mode": "buffered",
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
       "id": "au049jz2sy",
       "platform_specific_commands": {
         "default": "echo -e \"$(cat)\"",
@@ -2778,64 +2258,6 @@
       }
     },
     {
-      "id": "1bj54ofqvt",
-      "platform_specific_commands": {
-        "default": "echo \"Caret paragraph: \"{{caret_paragraph}} >> TestResults.md",
-        "win32": "echo \"Caret paragraph: {{caret_paragraph}}\" >> TestResults.md"
-      },
-      "shells": {},
-      "alias": "Caret paragraph {{caret_paragraph}} to file",
-      "icon": null,
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_channel_order": "stdout-first",
-      "output_handling_mode": "buffered",
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {},
-      "input_contents": {
-        "stdin": null
-      }
-    },
-    {
-      "id": "yo01vuor9j",
-      "platform_specific_commands": {
-        "default": "echo \"YAML content WITHOUT dashes:\"\necho -e {{yaml_content:no-dashes}}\necho \"\"\necho \"\"\necho \"YAML content WITH dashes:\"\necho -e {{yaml_content:with-dashes}}",
-        "win32": "echo \"YAML content WITHOUT dashes:\"\necho {{yaml_content:no-dashes}}\necho \"\"\necho \"\"\necho \"YAML content WITH dashes:\"\necho {{yaml_content:with-dashes}}"
-      },
-      "shells": {},
-      "alias": "Test YAML content",
-      "icon": null,
-      "confirm_execution": false,
-      "ignore_error_codes": [],
-      "input_contents": {
-        "stdin": null
-      },
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
-      "output_wrappers": {
-        "stdout": null,
-        "stderr": null
-      },
-      "output_channel_order": "stdout-first",
-      "output_handling_mode": "buffered",
-      "events": {},
-      "command_palette_availability": "enabled",
-      "preactions": [],
-      "variable_default_values": {}
-    },
-    {
       "id": "umqymtjrfc",
       "platform_specific_commands": {
         "default": "echo \"Builtin variable's global default value: {{event_title}}\" >> TestResults.md\necho \"Custom variable's global default value: {{_variable_with_default_value}}\" >> TestResults.md"
@@ -2994,6 +2416,39 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {}
+    },
+    {
+      "id": "zonkcdyhxn",
+      "platform_specific_commands": {
+        "default": "python3 ../Assets/Scripts/NormalVariableTests.py {{caret_paragraph}} {{clipboard}} {{date:YYYY-MM-DD HH:mm:ss}} {{file_extension:no-dot}} {{file_extension:with-dot}} {{file_name}} {{file_path:absolute}} {{file_path:relative}} {{file_uri}} {{folder_name}} {{folder_path:absolute}} {{folder_path:relative}} {{new_note_folder_name}} {{new_note_folder_path:absolute}} {{new_note_folder_path:relative}} {{selection}} {{tags:, }} {{title}} {{vault_path}} {{workspace}} {{yaml_content:no-dashes}} {{yaml_content:with-dashes}} {{yaml_value:yaml_test1.first_item}}.{{yaml_value:yaml_test1.middle_item.inner_item}}.{{yaml_value:yaml_test1.last_item}}.{{yaml_value:yaml_test2.0}}.{{yaml_value:yaml_test2.1}}.{{yaml_value:yaml_test2.-1}}.count:{{yaml_value:yaml_test2.length}} {{passthrough:>,.-;:§+´½!'\"#¤%&/()|=?`@`£$€{[]}\\\\¨^~*åäö*}} >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Normal variable tests",
+      "icon": "table",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_channels": {
+        "stdout": "notification",
+        "stderr": "modal"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {
+        "{{selection}}": {
+          "type": "value",
+          "value": "You forgot to select TESTSELECTION :("
+        }
+      }
     }
   ],
   "prompts": [

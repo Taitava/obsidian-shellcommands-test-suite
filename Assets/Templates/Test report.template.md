@@ -5,10 +5,10 @@ tags:
   - frontmatter-tag
   - this-should-not-appear-twice
 yaml_test1:
-  first_item: first_value
+  first_item: "first value"
   middle_item:
-    inner_item: inner_value
-  last_item: last_value
+    inner_item: "inner value"
+  last_item: "last value"
 yaml_test2:
   - first-item
   - second-item
@@ -30,27 +30,7 @@ Inspect closely that variables have correct values!
 
 ## 1.2 Execute shell commands
 \*) These commands' output handling is done in [realtime mode](https://publish.obsidian.md/shellcommands/Output+handling/Realtime+output+handling). It should not affect the outcome, but expands testing to that output handling mode, too.
-- [ ] **[Caret paragraph {{caret_paragraph}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=1bj54ofqvt)**
-- [ ] **[Caret position {{caret_position}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=01jk6q6kt5)**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
-- [ ] **[Clipboard {{clipboard}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=w8cgzuq66x)**: (You can copy this to clipboard: TESTCLIPBOARD).
-- [ ] **[Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=cvdgs01k3r)**: Check that the **seconds** are the same as they were during preview!
-- [ ] **[File extension {{file_extension:with-dot}}/{{file_extension:no-dot}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=hcia4yjtcp)**: The result should be: *File extension: with dot: 
-.md / no dot: md*
-- [ ] **[File name {{file_name}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=kj1jupcn7k)**: Check that the file name does not contain any escape characters like: \` or \\.
-- [ ] **[Absolute file path {{file_path:absolute}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=wj9xk8hlaq)**: If you are on **Mac or Linux**, please ensure that the path starts with `/`, e.g. `/Users/.../SomeFile.md`. If it's without a leading `/` (e.g. `Users/.../SomeFile.md`), then there is a bug. Add a comment here and leave the checkbox unchecked. On Windows: Check that directories are separated by `\`, not `/`.
-- [ ] **[Relative file path {{file_path:relative}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=vcj4wpa02y)**
-- [ ] **[File URI {{file_uri}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=hkcskjz8cb)**
-- [ ] **[Folder name {{folder_name}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=4gzrhksyp7)**
-- [ ] **[Absolute folder path {{folder_path:absolute}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=4kac7s6v56)**: **Same check** as with *Absolute file path* above.
-- [ ] **[Relative folder path {{folder_path:relative}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=435bcuiz11)**
-- [ ] **[New note folder name {{new_note_folder_name}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=0708g3m0bg)**: Should be *Performed tests*.
-- [ ] **[Absolute new note folder path {{new_note_folder_path:absolute}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=8j40a7ah1h)**
-- [ ] **[Relative new note folder path {{new_note_folder_path:relative}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=zyglscbzhx)**
-- [ ] \* **[Selection {{selection}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=3ng31p6gr0)**: Edit mode needs to be on! (You can select this text: TESTSELECTION).
-- [ ] \* **[Tags {{tags}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=7avhlqk80e)**. #inline-tag #this-should-not-appear-twice . If this tag appears twice in the result, leave a comment and do not tick the box.
-- [ ] \* **[Title {{title}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=acmo3jqv6g)**
-- [ ] \* **[Vault path {{vault_path}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=ltxwi1hu05)**
-- [ ] \* **[Workspace {{workspace}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=qf19834h9s)**
+- [ ] \* **[Caret position {{caret_position}} to file](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=01jk6q6kt5)**: Should give something like `Caret position: 45:60 (line: 45, column:60)`. The real numbers do not matter as they depend on where your caret happens to be.
 - [ ] **[Test {{file content}}](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=au049jz2sy)**: You should see the current file's content **with YAML**. (This test and the similar one below uses `stdin` to pass the variable content to shell, so the `stdin` feature gets tested, too).
 - [ ] **[Test {{note content}}](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=zcxdt1jp1f)**: You should see the current file's content **without YAML**.
 - [ ] **[Character encoding test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=ozilge8kih)**: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
@@ -93,14 +73,7 @@ Inspect closely that variables have correct values!
 - [ ] **[Two 🐓 emojis](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=sr8mp9lpbb)**: This test should output two 🐓 emojis correctly. The first one has been written directly in the shell command, while the second one comes via a `{{passthrough:🐓}}` variable, which might break the emoji if variable parsing regular expressions fail. [Relates to bug #171](https://github.com/Taitava/obsidian-shellcommands/issues/171)
 	- Incorrect result: `🐓��`
 	- Correct result: 🐓🐓
-- [ ] **[Escaping test 1](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=xkrjqxs3mv)**: This command tests a wide range of special characters that should be escaped. Two things are tested: **a)** The special characters should not do anything special, they should not prevent the test from outputting all the characters; **b)** When the characters are output to [[TestResults]], they should be presented there **without** any escaping characters (`\` or `` ` ``), with the exception that `\` and `` ` `` do appear in the result as individual test characters - they just should not appear in fron of every other special character.
-	- Wrong output: ``Escaping test 1: \<\>\,\.\-\;\:\§\+\´\½\!\'\"\#\¤\%\&\/\(\)\=\?\`\@\`\£\$\€\{\[\]\}\\\\\¨\^\~\*\å\ä\ö\*`` (a shell should remove the escape characters).
-	- Wrong, if the command tried to do something strange.
-	- Correct output: ``Escaping test 1: 
-<>,.-;:§+´½!'"#¤%&/()=?`@`£$€{[]}\\¨^~*åäö*``
-- [ ] **[Escaping test 2](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=dk2axoxhd0)**: This command tests actually the same thing as *Escaping test 1*, but it focuses more on to test that an escaped `>>` symbol pair does not cause output to be written into [[TestResults]]. So, unlike many other tests, this test **should not output anything to TestResults.md**. Instead, the test is passed, if it creates a notification balloon saying: *This should NOT be written to TestResults.md!!! >> TestResults.md*.
-- [ ] **[Test YAML content](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=yo01vuor9j)**: Should show a notification balloon with the current file's YAML  frontmatter outputted twice: first without `---` dashes, then including them.
-- [ ] **[Test YAML value](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=jr2cpaherx)**: Should output the following to [[TestResults]]: `YAML test: A1. first_value A2. inner_value A3. last_value B) first: first-item B) second: second-item B) last: last-item B) count: 3` . If even a single difference is found, leave a comment and do not tick the checkbox.
+- [ ] **[Escaping test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=dk2axoxhd0)**: This command tests that an escaped `>>` symbol pair does not cause output to be written into [[TestResults]]. So, this test **should not output anything to TestResults.md**. Instead, the test is passed, if it creates a notification balloon saying: *This should NOT be written to TestResults.md!!! >> TestResults.md*.
 - [ ] **[Test PATH additions](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=g7gauo1ds6)**: Opens up a modal showing the content of the `PATH` environment variable.
 	- On Windows the output should contain two additional directories:
 		1. *WindowsExtraPath1* should be present **near the beginning** of the output. Not as the first directory, but after a PowerShell directory.
@@ -174,6 +147,14 @@ Paste the clipboard content here after the execution has finished:
 	- [ ] **[Realtime test: Notification balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=tm2ulm7r2m)**: Execute it again, but this time stop it from an icon in another notification balloon with content _Executing: Realtime test: Notification balloon_. This balloon appears after the shell command been executing a couple of seconds.
 	- [ ] **[Realtime test: Ask after execution](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=vn29xcs8xs)**: Stop the executing by clicking a stop icon in the modal.
 
+## 1.3. Automated tests
+This test covers testing multiple variables, speeding up the testing process.
+1. Copy this to clipboard: TESTCLIPBOARD
+	- It will be used to test the `{{clipboard}}` variable.
+2. Select this text: TESTSELECTION
+	- It will be used to test the `{{selection}}` variable.
+3. Execute [Normal variable tests](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=zonkcdyhxn) by pressing  `Ctrl`/`Cmd` + `-` .
+4. The test outputs a table to [[TestResults.md]]. Check this checkbox if the summary is **ALL PASSED**.
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
