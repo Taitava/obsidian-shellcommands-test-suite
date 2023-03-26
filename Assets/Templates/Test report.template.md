@@ -155,7 +155,8 @@ This test covers testing multiple variables, speeding up the testing process.
 2. Select this text: TESTSELECTION
 	- It will be used to test the `{{selection}}` variable.
 3. Execute [Normal variable tests](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=zonkcdyhxn) by pressing  `Ctrl`/`Cmd` + `-` .
-4. The test outputs a table to [[TestResults.md]]. Check this checkbox if the summary is **ALL PASSED**.
+4. The test outputs a table to [[TestResults.md]].
+- [ ] Check this checkbox if the summary is **ALL PASSED**.
 
 # [[2. The rise and fall of a temporary shell command]]
 1. Go to Shell command settings (`Ctrl/Cmd + ,`).
