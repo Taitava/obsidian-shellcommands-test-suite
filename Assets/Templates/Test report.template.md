@@ -25,7 +25,7 @@ Test date: **{{date:YYYY-MM-DD}}**
 # [[1. Preview and execute shell commands]]
 ## 1.1. Preview shell commands
 Inspect closely that variables have correct values!
-- [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss} } to file**
+- [ ] **Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file**
 - [ ] **File name {{file_name}} to file**: Check that the preview of the command shows escape characters (\` or \\ depending on your OS/shell) in front of spaces, dashes and dots in the file name. This ensures that escaping special characters works correctly.
 
 ## 1.2 Execute shell commands

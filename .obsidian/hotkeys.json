@@ -95,14 +95,7 @@
       "key": "S"
     }
   ],
-  "daily-notes": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "N"
-    }
-  ],
+  "daily-notes": [],
   "workspace:close": [],
   "file-explorer:reveal-active-file": [
     {
@@ -116,6 +109,14 @@
         "Mod"
       ],
       "key": "-"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-eazh80xkr2": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
     }
   ]
 }

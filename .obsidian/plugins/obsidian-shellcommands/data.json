@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.19.0",
+  "settings_version": "0.18.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -2449,6 +2449,41 @@
           "value": "You forgot to select TESTSELECTION :("
         }
       }
+    },
+    {
+      "id": "eazh80xkr2",
+      "platform_specific_commands": {
+        "default": "python3 ../Assets/Scripts/NewReportFile.py\nsleep 1\necho -n \"\" > TestResults.md",
+        "win32": "python3 ../Assets/Scripts/NewReportFile.py\nStart-Sleep -Seconds 1\nWrite-Host -NoNewLine \"\" > TestResults.md"
+      },
+      "shells": {},
+      "alias": "BEGIN TEST",
+      "icon": "star",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": "../Assets/Templates/Test report.template.md\n../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\n{{_test_author_name}}\n{{_operating_system}}\n{{_obsidian_version}}\n{{_plugin_version}}\nnew-tab"
+      },
+      "output_channels": {
+        "stdout": "open-files",
+        "stderr": "modal"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "wiokq6mc0f"
+        }
+      ],
+      "variable_default_values": {}
     }
   ],
   "prompts": [
@@ -2498,7 +2533,7 @@
         {
           "label": "Plugin version",
           "description": "E.g. 0.5.0. If you are testing a version that is not yet published as a stable version, please add also a suffix describing the status, e.g. 0.7.0-beta1 (for public betas) or 0.7.0-development (for non-beta development versions, available only to me).",
-          "default_value": "",
+          "default_value": "{{_plugin_version}}",
           "target_variable_id": "ax7fxgrmft",
           "required": true
         },
@@ -2534,6 +2569,43 @@
         }
       ],
       "execute_button_text": "Execute"
+    },
+    {
+      "id": "wiokq6mc0f",
+      "title": "Begin test",
+      "description": "Note that this script overwrites contents of the following files:\n - Sandbox/TestResults.md: The content is emptied.\n - Performed tests/{{date:YYYY-MM-DD}} (incomplete).md: Possible earlier content is replaced with content from Assets/Templates/Test report.template.md.",
+      "preview_shell_command": false,
+      "fields": [
+        {
+          "label": "Test author",
+          "description": "Type you name/nick/link.",
+          "default_value": "{{_test_author_name}}",
+          "target_variable_id": "1onfw0lws9",
+          "required": true
+        },
+        {
+          "label": "Operating system name and version",
+          "description": "E.g. Windows 10",
+          "default_value": "{{_operating_system}}",
+          "target_variable_id": "kk420sww12",
+          "required": true
+        },
+        {
+          "label": "Obsidian version",
+          "description": "",
+          "default_value": "{{_obsidian_version}}",
+          "target_variable_id": "4hvy83w00o",
+          "required": true
+        },
+        {
+          "label": "Shell commands plugin version",
+          "description": "",
+          "default_value": "{{_plugin_version}}",
+          "target_variable_id": "ax7fxgrmft",
+          "required": true
+        }
+      ],
+      "execute_button_text": "Create a new test report file"
     }
   ],
   "builtin_variables": {
@@ -2585,13 +2657,19 @@
       "id": "ax7fxgrmft",
       "name": "plugin_version",
       "description": "Used in FINISH TEST.",
-      "default_value": null
+      "default_value": {
+        "type": "value",
+        "value": ""
+      }
     },
     {
       "id": "kk420sww12",
       "name": "operating_system",
       "description": "Used in FINISH TEST.",
-      "default_value": null
+      "default_value": {
+        "type": "value",
+        "value": ""
+      }
     },
     {
       "id": "m6giquj5kc",
@@ -2613,6 +2691,24 @@
       "name": "wsl_test_variable",
       "description": "",
       "default_value": null
+    },
+    {
+      "id": "4hvy83w00o",
+      "name": "obsidian_version",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": ""
+      }
+    },
+    {
+      "id": "1onfw0lws9",
+      "name": "test_author_name",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": ""
+      }
     }
   ],
   "output_wrappers": [
