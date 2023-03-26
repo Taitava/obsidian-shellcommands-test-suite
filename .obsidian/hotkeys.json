@@ -99,7 +99,9 @@
   "workspace:close": [],
   "file-explorer:reveal-active-file": [
     {
-      "modifiers": [],
+      "modifiers": [
+        "Mod"
+      ],
       "key": "F10"
     }
   ],
@@ -117,6 +119,74 @@
         "Mod"
       ],
       "key": "N"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-qsmsyxhep0": [
+    {
+      "modifiers": [],
+      "key": "F1"
+    }
+  ],
+  "app:open-help": [],
+  "obsidian-shellcommands:shell-command-1deq5274qk": [
+    {
+      "modifiers": [],
+      "key": "F2"
+    }
+  ],
+  "workspace:edit-file-title": [],
+  "obsidian-shellcommands:shell-command-z7bdfzss6t": [
+    {
+      "modifiers": [],
+      "key": "F3"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-3iqc6o9wus": [
+    {
+      "modifiers": [],
+      "key": "F4"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-ktaxv4ssfi": [
+    {
+      "modifiers": [],
+      "key": "F5"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-iasi8j8isj": [
+    {
+      "modifiers": [],
+      "key": "F6"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-ciijp65aag": [
+    {
+      "modifiers": [],
+      "key": "F7"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-9en7d3rlok": [
+    {
+      "modifiers": [],
+      "key": "F8"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-m1o9ar2af9": [
+    {
+      "modifiers": [],
+      "key": "F9"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-hi205zajc3": [
+    {
+      "modifiers": [],
+      "key": "F10"
+    }
+  ],
+  "obsidian-shellcommands:shell-command-h1i3hjdujv": [
+    {
+      "modifiers": [],
+      "key": "F11"
     }
   ]
 }

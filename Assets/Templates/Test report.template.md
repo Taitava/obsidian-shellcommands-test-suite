@@ -36,18 +36,18 @@ Inspect closely that variables have correct values!
 - [ ] **[Character encoding test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=ozilge8kih)**: This outputs *Test non-ASCII characters: Å Ä Ö* to *TestResults.md*. **Check that Å Ä Ö show up correctly in the file.** If you see something strange (e.g. �), the test is failed and you should not tick the checkbox in this test report.
 - [ ] **[Test to ignore error code](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=qm8y3vwg8k)**: This command should do absolutely nothing. It tries to change directory (`cd`) to *NonExistingFolder*, which fails with error code `1` (on Windows), or `2` (on Linux) . I'm not sure about the code on Mac. The command is defined to ignore error codes `1` and `2`. Tick this checkbox if nothing happened during the execution, but do not tick, if you saw an error message popping up.
 - [ ] **[Test empty command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=rejgzfrnyz)**: This one should always give an error message saying: *The shell command is empty*. If it  does not give an error message at all, **or if the message is different**, comment here and do not check the box. If the error message was correct, tick this checkbox.
-- **Test output insertion**:
+- **Test output insertion** (hotkey F1):
 	- This command inserts the following text to a currently active file, at caret position: *Text output test*. Be sure to have this **test report file** active and in **edit mode**. Check that a text insertion/replacement process succeeds:
 	- [ ] Place the caret after the colon and execute the command to see how *inserting* works: 
 	- [ ] Select some word in this sentence and execute the command to see how *replacing* works.
 - [ ] **[Test output to stderr, with exit code 0](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=imsi0fzrit)**: This command should give the following output to an error balloon: *\[0\]: This goes to stderr*. Pay attention to the **\[0\]** part! It should not be *\[null\]*, and the number should not be anything else than zero. This command uses exit code 0, which indicates that the command actually succeeded, but it has the twist that even when the command succeeded, it directed its output to *stderr* instead of the normal *stdout*. SC should be able to differentiate error output despite of an exit code 0 that indicates a succeeded shell command execution.
-- [ ] **Test output to top**: Make sure [[TestResults]] file is open and active! This command will insert *TEXT TO TOP* to the currently active file.
-- [ ] **Test output to bottom**: Make sure [[TestResults]] file is open and active! This command will insert *TEXT TO BOTTOM* to the currently active file.
+- [ ] **Test output to top** (hotkey F2): Make sure [[TestResults]] file is open and active! This command will insert *TEXT TO TOP* to the currently active file.
+- [ ] **Test output to bottom** (hotkey F3): Make sure [[TestResults]] file is open and active! This command will insert *TEXT TO BOTTOM* to the currently active file.
 - [ ] **[Test output to status bar](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=5w4m6q8d8e)**: Check that status bar will contain output text. Hover over the status bar with mouse and ensure that more output lines pop up.
 - [ ] **[Test output to clipboard](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=5lk1z1h1ds)**: After running the command, paste clipboard content here: 
 	- The pasted content should be *Hello clipboard!*. If it's something else, write a comment and do not tick the checkbox.
 	- A notification balloon should also appear, telling what was copied to the clipboard. If it does not appear or the content is wrong, write a comment and do not tick the checkbox.
-- **Test output to modal**: Make sure [[TestResults]] file is active when executing the command! After executing the command, click all of the *Redirect* buttons in the output modal, and see that each of them outputs the text MODAL OUTPUT in the correct channel:
+- **Test output to modal** (hotkey F4): Make sure [[TestResults]] file is active when executing the command! After executing the command, click all of the *Redirect* buttons in the output modal, and see that each of them outputs the text MODAL OUTPUT in the correct channel:
 	- [ ] *Status bar*
 	- [ ] *Current file: caret position*
 	- [ ] *Current file: top*
@@ -55,13 +55,13 @@ Inspect closely that variables have correct values!
 	- *Open files* does not need to be tested here.
 	- [ ] *Clipboard*
 - [ ] **[Test output using Open a file 1](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=5hvv4ee88g)**: This opens [[Welcome.md]] file in a new pane. Check that the file opens **and** that a new pane is created.
-- [ ] **Test output using Open a file 2**: Keep the previously opened pane focused! This opens [[README.md]] file and places the caret on line 2, column 3. Make sure the file opens in the current pane (which previously had [[Welcome.md]] open) **and** that the caret is placed in the mentioned position.
-- **Test output using Open a file 3**: Keep the previously opened pane focused! This opens [[Welcome.md]] again, this time with three selections:
+- [ ] **Test output using Open a file 2** (hotkey F5): Keep the previously opened pane focused! This opens [[README.md]] file and places the caret on line 2, column 3. Make sure the file opens in the current pane (which previously had [[Welcome.md]] open) **and** that the caret is placed in the mentioned position.
+- **Test output using Open a file 3** (hotkey F6): Keep the previously opened pane focused! This opens [[Welcome.md]] again, this time with three selections:
 	- [ ] Line 4 is selected completely. I.e. *Welcome!* is selected.
 	- [ ] Line 7 contains a selection between columns 6 to 10. I.e. *test* is selected.
 	- [ ] Line 7 also starts a selection 10 columns before the end of the line, and the selection extens to line 6, column 5. I.e. *improved*, two newlines and *This* are selected.
 	- The above-mentioned  selected texts might be slightly inaccurate in case the content of [[Welcome.md]] changes after writing this test.
-- **Test output using Open a file 4**: Keep the previously opened pane focused! This opens and creates a new file named *A file that did not exist before.md* in the *Sandbox* folder.
+- **Test output using Open a file 4** (hotkey F7): Keep the previously opened pane focused! This opens and creates a new file named *A file that did not exist before.md* in the *Sandbox* folder.
 	- [ ] Before executing the command, make sure the file **does not exist**.
 	- [ ] Execute the command and make sure the file creation succeeds.
 	- [ ] Finally delete the file. You can now close the newly created tab, it's not needed anymore.
@@ -130,9 +130,9 @@ Inspect closely that variables have correct values!
 	- Each of these tests should output five lines to their specific output channels. There should always be one second pause between each line appearing. If all of the lines appear at once, do not tick a checkbox!
 	- [ ] **[Realtime test: Notification balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=tm2ulm7r2m)**
 	- [ ] **[Realtime test: Error balloon](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=st8k313wkf)**
-	- [ ] **Realtime test: Current file: caret position**: Make sure [[TestResults.md]] has focus when executing this!
-	- [ ] **Realtime test: Current file: top**: Make sure [[TestResults.md]] has focus when executing this!
-	- [ ] **Realtime test: Current file: bottom**: Make sure [[TestResults.md]] has focus when executing this!
+	- [ ] **Realtime test: Current file: caret position** (hotkey F8): Make sure [[TestResults.md]] has focus when executing this!
+	- [ ] **Realtime test: Current file: top** (hotkey F9): Make sure [[TestResults.md]] has focus when executing this!
+	- [ ] **Realtime test: Current file: bottom** (hotkey F10): Make sure [[TestResults.md]] has focus when executing this!
 	- [ ] **[Realtime test: Open files](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=x9mb2l65cf)**: Will open a new Obsidian window and five tabs, all of which will contain [[Welcome.md]]. One second should pass between each tab opening.
 	- [ ] **[Realtime test: Status bar](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=9a98pvcn6p)**: Status bar will show always the latest line, but hover over it to see all lines.
 	- [ ] **[Realtime test: Ask after execution](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=vn29xcs8xs)**: See that output lines appear to the modal with one second pause between each line. No need to click any redirection buttons.
@@ -165,7 +165,7 @@ This test section is removed in order to shorten the test process. It was just U
 Go to shell commands settings and follow the below instructions to test each of these settings:
 ## 3.1. Working directory
 1. [ ] At the beginning, *Working directory* should be *Sandbox*. If it's not, change it.
-2. Go through the following values for *Working directory* and run a shell command named **[Test working directory](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=h1i3hjdujv)** (this will insert working directories into [[TestResults]]):
+2. Go through the following values for *Working directory* and run a shell command named **[Test working directory](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=h1i3hjdujv)** (hotkey F11). (This will insert working directories into [[TestResults]]):
 	- [ ] *Sandbox*. Execute the command and ensure that the result in [[TestResults]] is an absolute path to *Sandbox*.
 	- [ ] (An empty value, so that we refer to the vault's root folder.) Execute the command and ensure that the result in [[TestResults]] is an absolute path to this vault's root folder.
 	- [ ] On Windows: *C:\WINDOWS\Temp*. On Linux: */tmp*. On Mac: I'm not sure, maybe */tmp* too. (We need to test an absolute directory too. This test should not write anything in the working directory, but still use a temporary folder just in case. The test does write into a file in the Sandbox folder, but should not write elsewhere regardless of what the working directory happens to be). Execute the command and ensure that the result in [[TestResults]] is an absolute path to the aforementioned temp folder.
