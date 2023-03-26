@@ -322,6 +322,7 @@ This section will test that the plugin works correctly when no `data.json` setti
 		- *2021-09-26 (0.4.0) Linux FAILED.md*
 		- *2021-11-06 (0.7.0-beta1) Linux ok.md*
 - [ ] Check with Git that the only changes made in this vault/repository is your newly added report file. Other files - if edited(/created) - should have returned to their original states at this point.
+- [ ] **Check that the test results appeared to the bottom of this file!** `0.18.2` test on Windows had a weird problem that [[TestResults.md]] was cleared, but its content was not copied over to the report file before the clearing.
 - Finally, you should commit this new report file.
 
 # 9. Results
