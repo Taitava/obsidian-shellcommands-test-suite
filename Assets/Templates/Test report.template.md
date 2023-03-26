@@ -148,6 +148,7 @@ Paste the clipboard content here after the execution has finished:
 	- [ ] **[Realtime test: Ask after execution](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=vn29xcs8xs)**: Stop the executing by clicking a stop icon in the modal.
 
 ## 1.3. Automated tests
+#inline-tag
 This test covers testing multiple variables, speeding up the testing process.
 1. Copy this to clipboard: TESTCLIPBOARD
 	- It will be used to test the `{{clipboard}}` variable.
