@@ -2758,7 +2758,7 @@
       },
       "shell_platform": "linux",
       "escaper": "UnixShell",
-      "path_translator": "const matches = absolutePath.match(/^([a-z]):\\/(.+)$/ui);\nconst driveLetter = matches[1];\nconst trailingPath = matches[2];\nreturn '/' + driveLetter.toLocaleLowerCase() + '/' + trailingPath;",
+      "path_translator": "const pathParts = absolutePath.match(/^([a-z]):\\/(.+)$/ui);\nconst driveLetter = pathParts[1];\nconst trailingPath = pathParts[2];\nreturn '/' + driveLetter.toLocaleLowerCase() + '/' + trailingPath;",
       "shell_command_wrapper": null,
       "shell_command_test": "echo \"Hello, current working directory is: $(pwd)\""
     },
