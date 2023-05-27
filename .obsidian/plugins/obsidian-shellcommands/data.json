@@ -2390,7 +2390,7 @@
       "id": "9b3bkhu159",
       "platform_specific_commands": {
         "default": "",
-        "linux": "# Use echo. instead of normal echo, because echo works in Bash etc, but echo. doesn't, so it's a good breaker to notice if this command is accidentally executed in Bash instead of Wine+CMD.EXE.\necho. Hello from CMD.EXE via Wine! >> TestResults.md"
+        "linux": "echo. Hello from CMD.EXE via Wine! >> TestResults.md & REM Use echo. instead of normal echo, because echo works in Bash etc, but echo. doesn't, so it's a good breaker to notice if this command is accidentally executed in Bash instead of Wine+CMD.EXE."
       },
       "shells": {
         "linux": "shi0niw9u9"
@@ -2398,7 +2398,9 @@
       "alias": "Wine + CMD.EXE test",
       "icon": null,
       "confirm_execution": false,
-      "ignore_error_codes": [],
+      "ignore_error_codes": [
+        0
+      ],
       "input_contents": {
         "stdin": null
       },
@@ -2778,9 +2780,9 @@
           "quote_shell_arguments": true
         }
       },
-      "shell_platform": null,
-      "escaper": "PowerShell",
-      "path_translator": null,
+      "shell_platform": "win32",
+      "escaper": null,
+      "path_translator": "return 'Z:' + absolutePath;",
       "shell_command_wrapper": null,
       "shell_command_test": "echo Current working directory: & cd & echo Vault path: {{vault_path}}"
     }
