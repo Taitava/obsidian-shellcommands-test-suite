@@ -272,24 +272,24 @@ Execute [WSL test](obsidian://shell-commands/?vault=Shell%20commands%20test&exec
 Executing WSL in /mnt/v/Lajitellut/Obsidian-tietokannat/Shell commands test:
 Hello from WSL!
 You wanted to output this: Your Name
-Variable escaping should use unix style escaping: +-*/
+Variable escaping should use unix style escaping: +-*/*
 WSL executed.
 ```
 - [ ] Check that the folder path on the first line begins with `/mnt/`. If not, _path translation_ does not work.
 - [ ] Check that `You wanted to output this:` is followed by the value you submitted in the prompt.
 - [ ] Check that `+-*/` appears **without** escaping characters.
-  - This would be incorrect: `` `+`-`*`/ `` If this appears, then the custom shell uses a wrong escaping character.
+  - This would be incorrect: `` `+`-`*`/`* `` If this appears, then the custom shell uses a wrong escaping character.
 
 ## 7.2. Windows: MinGW-w64
 Execute [MinGW-w64 test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=a437tpl07p). It should output something like:
 ```
 Hello from MinGW-w64!
 Vault path: /v/Lajitellut/Obsidian-tietokannat/Shell commands test
-Variable escaping should use unix style escaping: +-*/
+Variable escaping should use unix style escaping: +-*/*
 ```
 - [ ] Check that the folder path on the second line begins with `/v/` (`v` can be a different character). If not, _path translation_ does not work.
-- [ ] Check that `+-*/` appears **without** escaping characters.
-  - This would be incorrect: `` `+`-`*`/ `` If this appears, then the custom shell uses a wrong escaping character.
+- [ ] Check that `+-*/*` appears **without** escaping characters.
+  - This would be incorrect: `` `+`-`*`/`* `` If this appears, then the custom shell uses a wrong escaping character.
 
 ## 7.3. Linux: Wine + CMD.EXE
 Execute [Wine + CMD.EXE test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=9b3bkhu159). It should output something like:

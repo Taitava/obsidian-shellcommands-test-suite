@@ -2322,7 +2322,7 @@
       "id": "7fn65l4j2m",
       "platform_specific_commands": {
         "default": "",
-        "win32": "# Use printf instead of echo, because echo works in PowerShell and CMD.EXE, but printf doesn't, so it's a good breaker to notice if this command is accidentally executed in PowerShell/CMD.EXE instead of WSL.\nprintf \"Hello from WSL!\\n\" >> TestResults.md\nprintf \"You wanted to output this: \"{{_wsl_test_variable}}\"\\n\" >> TestResults.md\nprintf \"Variable escaping should use unix style escaping: \"{{passthrough:+-*/}}\"\\n\" >> TestResults.md"
+        "win32": "# Use printf instead of echo, because echo works in PowerShell and CMD.EXE, but printf doesn't, so it's a good breaker to notice if this command is accidentally executed in PowerShell/CMD.EXE instead of WSL.\nprintf \"Hello from WSL!\\n\" >> TestResults.md\nprintf \"You wanted to output this: \"{{_wsl_test_variable}}\"\\n\" >> TestResults.md\nprintf \"Variable escaping should use unix style escaping: \"{{passthrough:+-*/*}}\"\\n\" >> TestResults.md"
       },
       "shells": {
         "win32": "k73ibys6zs"
@@ -2359,7 +2359,7 @@
       "id": "a437tpl07p",
       "platform_specific_commands": {
         "default": "",
-        "win32": "# Use printf instead of echo, because echo works in PowerShell and CMD.EXE, but printf doesn't, so it's a good breaker to notice if this command is accidentally executed in PowerShell/CMD.EXE instead of MinGW-w64.\nprintf \"Hello from MinGW-w64!\\n\" >> TestResults.md\nprintf \"Vault path: \"{{vault_path}}\"\\n\" >> TestResults.md\nprintf \"Variable escaping should use unix style escaping: \"{{passthrough:+-*/}}\"\\n\" >> TestResults.md"
+        "win32": "# Use printf instead of echo, because echo works in PowerShell and CMD.EXE, but printf doesn't, so it's a good breaker to notice if this command is accidentally executed in PowerShell/CMD.EXE instead of MinGW-w64.\nprintf \"Hello from MinGW-w64!\\n\" >> TestResults.md\nprintf \"Vault path: \"{{vault_path}}\"\\n\" >> TestResults.md\nprintf \"Variable escaping should use unix style escaping: \"{{passthrough:+-*/*}}\"\\n\" >> TestResults.md"
       },
       "shells": {
         "win32": "i66xg4nnvs"
