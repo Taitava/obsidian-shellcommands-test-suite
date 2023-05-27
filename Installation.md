@@ -94,5 +94,13 @@ For installing a stable version, please see the installation instructions provid
 
 An installation guide for beta versions is available at [SC's GitHub Discussions section](https://github.com/Taitava/obsidian-shellcommands/discussions/98). You can start from the heading *1.1. Installing BRAT and using it to install a beta version of SC*.
 
-# 3. Done
+# 3. Install other requirements
+# 3.1. Windows
+- Install Windows Subsystem for Linux. TODO: Add link to instructions.
+
+# 3.2. Linux
+- Install Z-sh: `sudo apt update && sudo apt install zsh`.
+- Install Wine: `sudo apt update && sudo apt install wine`.
+
+# 4. Done
 After all installations are done, you can start testing as per instructions written in [[Welcome.md]].
