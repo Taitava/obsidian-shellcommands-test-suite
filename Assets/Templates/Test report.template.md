@@ -81,6 +81,7 @@ Inspect closely that variables have correct values!
 	- On linux (and macOS) the output should contain one additional directory:
 		- *LinuxAndMacExtraPath* should be present **at the end** of the output.
 	- The reason for outputs being different in different operating systems is that in order to test to different appending mechanisms, I needed to use two different operating system settings fields. I can't make separate test shell commands for these, because the `PATH` additions are implemented to happen for all shell commands, and no shell command specific settings exist for them.
+- [ ] **Remove PATH additions temporarily** in the settings (cut the text in the field to make it empty, you need to re-insert it afterwards). Then execute [Test PATH additions](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=g7gauo1ds6) again and see that shell command execution works even when there's no PATH additions defined. `0.19.0` had a bug that caused execution to fail silently in this case. Finally, **add the PATH additions back**.
 - [ ] **[Test multiline shell command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=y2dtq5wuxy)**: This should output the following, each word on its own line:
 	```markdown
 	Multiline
