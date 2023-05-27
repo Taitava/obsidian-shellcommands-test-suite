@@ -292,8 +292,11 @@ Variable escaping should use unix style escaping: +-*/*
   - This would be incorrect: `` `+`-`*`/`* `` If this appears, then the custom shell uses a wrong escaping character.
 
 ## 7.3. Linux: Wine + CMD.EXE
-Execute [Wine + CMD.EXE test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=9b3bkhu159). It should output something like:
-TODO: Add output example and checks.
+Execute [Wine + CMD.EXE test](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=9b3bkhu159). It should output this:
+```
+Hello from CMD.EXE via Wine!  
+```
+- [ ] Wine gave correct output.
 
 # 8. When there is no settings file
 This section will test that the plugin works correctly when no `data.json` settings file exist. The plugin should load default settings.
