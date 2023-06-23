@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.19.0",
+  "settings_version": "0.20.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -18,8 +18,15 @@
   "notification_message_duration": 10,
   "execution_notification_mode": "if-long",
   "output_channel_clipboard_also_outputs_to_notification": true,
+  "output_channel_notification_decorates_output": true,
   "enable_events": true,
   "approve_modals_by_pressing_enter_key": true,
+  "command_palette": {
+    "re_execute_last_shell_command": {
+      "enabled": true,
+      "prefix": "Re-execute: "
+    }
+  },
   "max_visible_lines_in_shell_command_fields": false,
   "shell_commands": [
     {
@@ -29,10 +36,6 @@
       "ignore_error_codes": [
         259
       ],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
@@ -51,6 +54,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -58,10 +71,6 @@
       "alias": "Git Bash",
       "ignore_error_codes": [],
       "confirm_execution": false,
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
@@ -82,6 +91,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -89,10 +108,6 @@
       "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo \"Date and time: \"{{date:YYYY-MM-DD HH:mm:ss}} >> TestResults.md\n# 2023-03-25: This shell command is nowadays only used for testing variable parsing in Obsidian's command palette. It's not anymore executed in the typical testing process.",
@@ -111,6 +126,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -118,10 +143,6 @@
       "alias": "File name {{file_name}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo \"File name: \"{{file_name}} >> TestResults.md\n# 2023-03-25: This shell command is nowadays only used for testing variable parsing in Obsidian's command palette. It's not anymore executed in the typical testing process.",
@@ -140,6 +161,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -147,10 +178,6 @@
       "alias": "FINISH TEST",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "# Copy test results to the end of the test report file.\ncat TestResults.md >> \"../Performed tests/\"{{date:YYYY-MM-DD}}\" (incomplete).md\"\n\n# Sleep one second to make sure TestResults.md is not emptied before it's written to the report file.\nsleep 1\n\n# Clear the test results file's content.\necho -n \"\" > TestResults.md\n\n# Rename the test report file\ncd \"../Performed tests/\"\nmv {{date:YYYY-MM-DD}}\" (incomplete).md\" {{date:YYYY-MM-DD}}\\ \\({{_plugin_version}}\\)\\ {{_operating_system}}\\ {{_test_status}}.md\n\n# Sleep one second, otherwise the file opening may be tried before the file had time to rename.\nsleep 1\n\n# Open the renamed file in Obsidian (:-1 sets caret to the last line).\necho {{date:YYYY-MM-DD}}\\ \\({{_plugin_version}}\\)\\ {{_operating_system}}\\ {{_test_status}}.md:-1",
@@ -175,6 +202,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -182,10 +219,6 @@
       "alias": "Test working directory",
       "ignore_error_codes": [],
       "confirm_execution": false,
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo Working directory: `pwd` >> {{vault_path}}\"/Sandbox/TestResults.md\"",
@@ -204,6 +237,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -211,10 +254,6 @@
       "alias": "Character encoding test",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo \"Test non-ASCII characters: Å Ä Ö\" >> TestResults.md"
@@ -232,6 +271,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -242,10 +291,6 @@
         1,
         2
       ],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "cd NonExistingFolder"
@@ -263,6 +308,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -270,10 +325,6 @@
       "alias": "Terminal in test suite folder",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
@@ -293,6 +344,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -300,10 +361,6 @@
       "alias": "Git pull",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "modal"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo \"Pulling...\"\ngit pull"
@@ -321,6 +378,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -328,10 +395,6 @@
       "alias": "Test empty command",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "shells": {},
       "platform_specific_commands": {
@@ -349,6 +412,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -356,10 +429,6 @@
       "alias": "Test output insertion",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "current-file-caret",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo -n \"Text output test\"",
@@ -378,6 +447,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "current-file-caret",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -385,10 +464,6 @@
       "alias": "Terminal in plugin folder",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "",
@@ -408,6 +483,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -415,10 +500,6 @@
       "alias": "Test output to stderr, with exit code 0",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo \"This goes to stderr\" >&2"
@@ -438,6 +519,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -445,10 +536,6 @@
       "alias": "Test output to top",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "current-file-top",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo \"TEXT TO TOP\""
@@ -466,6 +553,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "current-file-top",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -473,10 +570,6 @@
       "alias": "Test output to bottom",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "current-file-bottom",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo -e \"\\nTEXT TO BOTTOM\"",
@@ -497,6 +590,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "current-file-bottom",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -504,10 +607,6 @@
       "alias": "Test output to status bar",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "status-bar",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo \"Multiline output\" && echo \"hides earlier lines.\" && echo \"Only the last line is permanently displayed on the status bar.\""
@@ -525,6 +624,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "status-bar",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -532,10 +641,6 @@
       "alias": "Test output to clipboard",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "clipboard",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo -n \"Hello clipboard!\"",
@@ -554,6 +659,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "clipboard",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -568,10 +683,6 @@
       "alias": "Test operating system specific command",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -585,6 +696,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -599,10 +720,6 @@
       "alias": "Test Windows shell: CMD",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -616,6 +733,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -630,10 +757,6 @@
       "alias": "Test Windows shell: PowerShell 5",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -647,6 +770,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -661,10 +794,6 @@
       "alias": "Test Windows shell: PowerShell Core",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -678,6 +807,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -693,10 +832,6 @@
       "alias": "Test Linux/Mac shell: Bash",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -710,6 +845,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -725,10 +870,6 @@
       "alias": "Test Linux/Mac shell: Zsh",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -742,6 +883,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -753,10 +904,6 @@
       "alias": "Git status",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "unlisted",
@@ -770,6 +917,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -777,10 +934,6 @@
       "alias": "Test $& variable",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
         "default": "echo \"Test $& variable: {{!passthrough:$&}}\" >> TestResults.md"
@@ -798,6 +951,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -809,10 +972,6 @@
       "alias": "Escaping test",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -826,6 +985,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -841,10 +1010,6 @@
       "alias": "Test Linux/Mac shell: Dash",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -858,6 +1023,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -872,10 +1047,6 @@
       "alias": "Reset TestResults.md",
       "confirm_execution": true,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -889,6 +1060,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -901,10 +1082,6 @@
       "alias": "Caret position {{caret_position}} to file",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -918,6 +1095,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -931,10 +1118,6 @@
       "alias": "Open the plugin folder in system explorer",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -948,6 +1131,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -959,10 +1152,6 @@
       "alias": "Event: After Obsidian starts",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "on-layout-ready": {
@@ -980,6 +1169,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -993,10 +1192,6 @@
       "alias": "Event: Before Obsidian quits",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "on-quit": {
@@ -1014,6 +1209,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1026,10 +1231,6 @@
       "alias": "Event: After switching the active pane",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "status-bar",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "on-active-leaf-changed": {
@@ -1051,6 +1252,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "status-bar",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1062,10 +1273,6 @@
       "alias": "Event: Every 180 seconds",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "every-n-seconds": {
@@ -1084,6 +1291,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1095,10 +1312,6 @@
       "alias": "Event: File menu: {{!event_file_name}}",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "file-menu": {
@@ -1116,6 +1329,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1127,10 +1350,6 @@
       "alias": "Event: Folder menu: {{!event_folder_name}}",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "folder-menu": {
@@ -1148,6 +1367,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1159,10 +1388,6 @@
       "alias": "Event: Editor menu",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "editor-menu": {
@@ -1180,6 +1405,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1191,10 +1426,6 @@
       "alias": "Test output to modal",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1208,6 +1439,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1219,10 +1460,6 @@
       "alias": "Test output using Open a file 1",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1236,6 +1473,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1247,10 +1494,6 @@
       "alias": "Test output using Open a file 2",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1264,6 +1507,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1275,10 +1528,6 @@
       "alias": "Test output using Open a file 3",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1292,6 +1541,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1303,10 +1562,6 @@
       "alias": "Test output using Open a file 4",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1320,6 +1575,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1331,10 +1596,6 @@
       "alias": "Test output using Open a file 5",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1348,6 +1609,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1359,10 +1630,6 @@
       "alias": "Test output using Open a file 6",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1376,6 +1643,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1388,10 +1665,6 @@
       "alias": "Two 🐓 emojis",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "modal"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1405,6 +1678,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1416,10 +1699,6 @@
       "alias": "Remember caret position",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "on-quit": {
@@ -1437,6 +1716,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1449,10 +1738,6 @@
       "alias": "Restore caret position",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "ignore"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "on-layout-ready": {
@@ -1470,6 +1755,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1482,10 +1777,6 @@
       "alias": "Test custom variables and a prompt",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1505,6 +1796,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1517,10 +1818,6 @@
       "alias": "Event: File created",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "file-created": {
@@ -1538,6 +1835,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1550,10 +1857,6 @@
       "alias": "Event: Folder created",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "folder-created": {
@@ -1571,6 +1874,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1583,10 +1896,6 @@
       "alias": "Event: File deleted",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "file-deleted": {
@@ -1604,6 +1913,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1616,10 +1935,6 @@
       "alias": "Event: Folder deleted",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "folder-deleted": {
@@ -1637,6 +1952,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1649,10 +1974,6 @@
       "alias": "Event: File content modified",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "status-bar",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "file-content-modified": {
@@ -1670,6 +1991,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "status-bar",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1682,10 +2013,6 @@
       "alias": "Event: File moved",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "file-moved": {
@@ -1703,6 +2030,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1715,10 +2052,6 @@
       "alias": "Event: Folder moved",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "folder-moved": {
@@ -1736,6 +2069,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1748,10 +2091,6 @@
       "alias": "Event: File renamed",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "file-renamed": {
@@ -1769,6 +2108,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1781,10 +2130,6 @@
       "alias": "Event: Folder renamed",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {
         "folder-renamed": {
@@ -1802,6 +2147,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1814,10 +2169,6 @@
       "alias": "Test Shell commands URI",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "disabled",
@@ -1831,6 +2182,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1843,10 +2204,6 @@
       "alias": "Test PATH additions",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "modal"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1860,6 +2217,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1871,10 +2238,6 @@
       "alias": "Test multiline shell command",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_channel_order": "stdout-first",
       "events": {},
       "command_palette_availability": "enabled",
@@ -1888,6 +2251,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1901,10 +2274,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -1917,6 +2286,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": "{{file_content}}"
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1930,10 +2309,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -1946,6 +2321,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": "{{note_content}}"
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1958,10 +2343,6 @@
       "icon": null,
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -1974,6 +2355,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -1986,10 +2377,6 @@
       "icon": null,
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": "w85m6up4bg",
         "stderr": null
@@ -2002,6 +2389,16 @@
       "output_handling_mode": "buffered",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2014,10 +2411,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2030,6 +2423,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2043,10 +2446,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2059,6 +2458,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2071,10 +2480,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "current-file-caret",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2087,6 +2492,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "current-file-caret",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2099,10 +2514,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "current-file-top",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2115,6 +2526,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "current-file-top",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2127,10 +2548,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "current-file-bottom",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2143,6 +2560,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "current-file-bottom",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2155,10 +2582,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2171,6 +2594,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2183,10 +2616,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "status-bar",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2199,6 +2628,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "status-bar",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2211,10 +2650,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "clipboard",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2227,6 +2662,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "clipboard",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2239,10 +2684,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2255,6 +2696,16 @@
       "output_handling_mode": "realtime",
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2270,10 +2721,6 @@
       "input_contents": {
         "stdin": null
       },
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2283,7 +2730,17 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      }
     },
     {
       "id": "1d5ti6wqbp",
@@ -2299,10 +2756,6 @@
       "input_contents": {
         "stdin": "event_file_extension:with-dot = {{event_file_extension:with-dot}}\nevent_file_name = {{event_file_name}}\nevent_file_path:absolute = {{event_file_path:absolute}}\nevent_file_uri = {{event_file_uri}}\nevent_folder_name = {{event_folder_name}}\nevent_folder_path:absolute = {{event_folder_path:absolute}}\nevent_tags:,  = {{event_tags:, }}\nevent_title = {{event_title}}\nevent_yaml_content:with-dashes = {{event_yaml_content:with-dashes}}\nevent_yaml_value:yaml_test1.first_item = {{event_yaml_value:yaml_test1.first_item}}"
       },
-      "output_channels": {
-        "stdout": "modal",
-        "stderr": "modal"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2316,7 +2769,17 @@
       },
       "command_palette_availability": "disabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        }
+      }
     },
     {
       "id": "7fn65l4j2m",
@@ -2331,10 +2794,6 @@
       "icon": "activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2353,6 +2812,16 @@
       "variable_default_values": {},
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2368,10 +2837,6 @@
       "icon": null,
       "confirm_execution": false,
       "ignore_error_codes": [],
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2384,6 +2849,16 @@
       "variable_default_values": {},
       "input_contents": {
         "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
       }
     },
     {
@@ -2404,10 +2879,6 @@
       "input_contents": {
         "stdin": null
       },
-      "output_channels": {
-        "stdout": "ignore",
-        "stderr": "notification"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2417,7 +2888,17 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      }
     },
     {
       "id": "zonkcdyhxn",
@@ -2432,10 +2913,6 @@
       "input_contents": {
         "stdin": null
       },
-      "output_channels": {
-        "stdout": "notification",
-        "stderr": "modal"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2449,6 +2926,16 @@
         "{{selection}}": {
           "type": "value",
           "value": "You forgot to select TESTSELECTION :("
+        }
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "modal",
+          "convert_ansi_code": true
         }
       }
     },
@@ -2466,10 +2953,6 @@
       "input_contents": {
         "stdin": "../Assets/Templates/Test report.template.md\n../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\n{{_test_author_name}}\n{{_operating_system}}\n{{_obsidian_version}}\n{{_plugin_version}}\nnew-tab"
       },
-      "output_channels": {
-        "stdout": "open-files",
-        "stderr": "modal"
-      },
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2485,7 +2968,17 @@
           "prompt_id": "wiokq6mc0f"
         }
       ],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "output_handlers": {
+        "stdout": {
+          "handler": "open-files",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        }
+      }
     }
   ],
   "prompts": [
@@ -2713,13 +3206,6 @@
       }
     }
   ],
-  "output_wrappers": [
-    {
-      "id": "w85m6up4bg",
-      "title": "Code block",
-      "content": "Executed on {{date:YYYY-MM-DD}}:\n```\n{{output}}\n```\nFile name: {{file_name}}"
-    }
-  ],
   "custom_shells": [
     {
       "id": "k73ibys6zs",
@@ -2785,6 +3271,13 @@
       "path_translator": "return 'Z:' + absolutePath;",
       "shell_command_wrapper": null,
       "shell_command_test": "echo Current working directory: & cd & echo Vault path: {{vault_path}}"
+    }
+  ],
+  "output_wrappers": [
+    {
+      "id": "w85m6up4bg",
+      "title": "Code block",
+      "content": "Executed on {{date:YYYY-MM-DD}}:\n```\n{{output}}\n```\nFile name: {{file_name}}"
     }
   ]
 }
