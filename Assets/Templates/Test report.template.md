@@ -305,7 +305,7 @@ This section will test that the plugin works correctly when no `data.json` setti
 1. [ ] Execute the command **[Open the plugin folder in system explorer](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=fsmbhs5vqc)**.
 2. [ ] Make sure with git that there are no uncommitted changes to `.obsidian/plugins/obsidian-shellcommand/data.json`.
 3. [ ] Rename `data.json` to `disabled-data.json`.
-4. [ ] Restart Obsidian by pressing Ctrl/Cmd + R.
+4. [ ] Restart Obsidian by pressing Ctrl/Cmd + Shift + R.
 5. [ ] Make sure the plugin loads correctly:
 	- [ ] The settings modal shows *Shell commands* in the left side list.
 	- [ ] There are no shell commands at all shown in the plugin's settings view.
