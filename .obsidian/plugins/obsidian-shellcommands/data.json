@@ -2788,7 +2788,7 @@
         "win32": "# Use printf instead of echo, because echo works in PowerShell and CMD.EXE, but printf doesn't, so it's a good breaker to notice if this command is accidentally executed in PowerShell/CMD.EXE instead of WSL.\nprintf \"Hello from WSL!\\n\" >> TestResults.md\nprintf \"You wanted to output this: \"{{_wsl_test_variable}}\"\\n\" >> TestResults.md\nprintf \"Variable escaping should use unix style escaping: \"{{passthrough:+-*/*}}\"\\n\" >> TestResults.md"
       },
       "shells": {
-        "win32": "k73ibys6zs"
+        "win32": "k73ibys6zx"
       },
       "alias": "WSL test",
       "icon": "activity",
@@ -3210,6 +3210,27 @@
     {
       "id": "k73ibys6zs",
       "name": "Windows Subsystem for Linux (WSL)",
+      "description": "\"WSL is a feature of Windows that allows developers to run a Linux environment without the need for a separate virtual machine or dual booting.\" (from: https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)\n\nThis custom shell configuration allows you to execute Linux/Bash commands from Obsidian on Windows.\n\nInstall WSL: https://learn.microsoft.com/en-us/windows/wsl/install",
+      "binary_path": "C:\\Windows\\System32\\wsl.exe",
+      "shell_arguments": [
+        "--",
+        "{{!shell_command_content}}"
+      ],
+      "host_platform": "win32",
+      "host_platform_configurations": {
+        "win32": {
+          "quote_shell_arguments": false
+        }
+      },
+      "shell_platform": "linux",
+      "escaper": "UnixShell",
+      "path_translator": "const pathParts = absolutePath.match(/^([a-z]):\\/(.+)$/ui);\nconst driveLetter = pathParts[1];\nconst trailingPath = pathParts[2];\nreturn '/mnt/' + driveLetter.toLocaleLowerCase() + '/' + trailingPath;",
+      "shell_command_wrapper": null,
+      "shell_command_test": "echo \"Hello $USER, current working directory is: $(pwd)\""
+    },
+    {
+      "id": "k73ibys6zx",
+      "name": "Windows Subsystem for Linux (WSL) with wrapping test",
       "description": "\"WSL is a feature of Windows that allows developers to run a Linux environment without the need for a separate virtual machine or dual booting.\" (from: https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)\n\nThis custom shell configuration allows you to execute Linux/Bash commands from Obsidian on Windows.\n\nInstall WSL: https://learn.microsoft.com/en-us/windows/wsl/install",
       "binary_path": "C:\\Windows\\System32\\wsl.exe",
       "shell_arguments": [
