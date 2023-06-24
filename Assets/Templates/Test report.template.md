@@ -1,6 +1,6 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.19.0
+test_suite_version: 0.20.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -199,35 +199,24 @@ For the next tests, you need to **only run commands that are designed for your o
 	- [ ] **[Test Linux/Mac shell: Zsh](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=0wuvfv0nzr)**: Uses explicitly Zsh (Z shell) and it should output an absolute path to a Zsh binary file.
 
 # 5. Events
-There a a few shell commands defined for testing events. They are excluded from the command palette, so they cannot be executed the normal way. Some of them have already been executed a few times by the time you'll reach this section. The only thing that these commands do, is echoing text to a notification balloon or to the status bar - they do not write anything to files.
+There a few shell commands defined for testing events. They are excluded from the command palette, so they cannot be executed the normal way.
 
-Check each one of the the following tests whose message you've already seen during this test session:
-1. [ ] *Event: After Obsidian starts*: Displayed every time Obsidian is started/restarted.
-2. [ ] *Event: After switching the active pane*: Displayed every time you switch between files and other panes. As this happens very often, the message is displayed on the status bar, not in a notification balloon! For this reason, the message also includes the time, so that you know that it has been executed recently.
-3. [ ] *Event: Every 180 seconds*: This message is displayed every 180 seconds.
-
-These require you to do something manually to see them executing:
-1. [ ] *Event: Before Obsidian quits*: Displayed **really shortly** every time you close Obsidian. It might be hard to notice this message because Obsidian might quit before the message gets displayed.
-2. [ ] *Event: File menu*: In the left navigation menu, click a *file* with the right button of your mouse. You should see an option named *Event: File menu:* with a file name there. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
-3. [ ] Event: *Folder menu*: In the left navigation menu, click a *folder* with the right button of your mouse. You should see an option named *Event: Folder menu:* with a folder name there. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
-4. [ ] *Event: Editor menu*: In the editor, click text with the right button of your mouse. You should see an option named *Event: Editor menu*. (If the option is not present, do not tick this checkbox). Click the option and you should see the same text appearing in a notification balloon.
-5. [ ] *Event: File created*: Create a new file in *Sandbox*. It will first have the name *Untitled.md*. [[TestResults.md]] should now have a new line saying: *New file created: Untitled.md*.
-6. [ ] *Event: File renamed*: Give the new file another name: *NewNote.md*. [[TestResults.md]] should now have a new line saying: *File renamed from Untitled.md to NewNote.md*.
-7. [ ] *Event: File content modified*: Write something into the *NewNote.md* file. The status bar should show the following message: *File content modified: NewNote.md*. There is a time at the end to indicate when the change happened.
-8. [ ] *Event: Folder created*: Create a new folder in *Sandbox*. It will first have the name *Untitled*. [[TestResults.md]] should now have a new line saying: *New file created: Untitled*.
-9. [ ] *Event: Folder renamed*: Give the new folder another name: *NewFolder*. [[TestResults.md]] should now have a new line saying: *Folder renamed from Untitled to NewFolder*.
-10. [ ] *Event: File moved*: Move *NewNote.md* to *NewFolder*. [[TestResults.md]] should now have a new line saying: *File moved from Sandbox\NewNote.md to Sandbox\NewFolder\NewNote.md*.
-11. [ ] *Event: Folder moved*: Create yet another folder in *Sandbox* and rename it to *ParentFolder*. Move *NewFolder* to *ParentFolder*. [[TestResults.md]] should now have a new line saying: *Folder moved from Sandbox\NewFolder to Sandbox\ParentFolder\NewFolder*.
-12. [ ] *Event: File deleted* and *Event: Folder deleted*: Delete *ParentFolder*. Deleting it should also delete *NewFolder* and *NewNote.md*. [[TestResults.md]] should now have the following new lines (the order may differ):
-	- *Folder deleted: NewFolder*
-	- *File deleted: NewNote.md*
-	- *Folder deleted: ParentFolder*
+1. [ ] Execute **[Trigger event tests](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=wnc4ycj2gv)**. It will trigger certain events automatically, and a group of test shell commands will react to the events. Results are stored in custom variables named like `{{_test_event_*}}`. Wait until the process is finished: You'll see a notification balloon telling that you can continue to the next step.
+2. There are some events that need to be manully triggered from Obsidian:
+	1. [ ] In the _Sandbox_ folder, move _MovableFolder_ to _MoveToHere_ folder.
+	2. [ ] In the same folder, move _MovableNote.md_ file to _MoveToHere_ folder.
+	3. [ ] Rename _RenameableFolder_ to _RenamedFolder_.
+	4. [ ] Rename _RenameableNote.md_ to _RenamedNote.md_.
+	- Please note that these actions need to be done **in Obsidian**, not in your operating system's file explorer. This is because file/folder moving/renaming events are only detected if the actions are performed by Obsidian. External actions would be seens as file/folder deletions and creations.
+3. [ ] Gather up test results by executing **[Finish event tests](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=041i8bhyir)** . (This also removes some temporary files and folders in _Sandbox_).
+4. [ ] All test lines show the word **OK**.
 
 Finally:
-- [ ] Go to settings and turn *Enable events* off in the *Events* tab.
-- [ ] Try to switch panes. See that *Event: After switching the active pane* should **not** work.
-- [ ] Switch the setting back on.
-- [ ] Check that *Event: After switching the active pane* now **works**.
+- [ ] 1. Go to settings and turn *Enable events* off in the *Events* tab.
+- [ ] 2. [Click this to change the value of `{{_test_event_switching_pane}}`](obsidian://shell-commands/?vault=Shell%20commands%20test&_test_event_switching_pane=Switching%20pane%20event%20should%20not%20get%20triggered%20now.). Now you can test that the variable's value should **not** change back to **OK** when events are turned off.
+- [ ] 2. Try to switch panes. See that the variable's value should **not** change to **OK** in the _Custom variables_ side pane.
+- [ ] 3. Switch the setting back on.
+- [ ] 4. Check that *Event: After switching the active pane* now **works**, i.e. now the value should change to **OK** when you switch panes.
 
 # 6. Prompts and custom variables
 ## 6.1. Prompts

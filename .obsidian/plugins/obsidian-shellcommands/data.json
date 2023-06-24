@@ -1146,9 +1146,11 @@
     {
       "id": "uqdzrigs8x",
       "platform_specific_commands": {
-        "default": "echo \"Event: After Obsidian starts\""
+        "default": "xdg-open \"obsidian://shell-commands/?vault=Shell%20commands%20test&_test_event_obsidian_starts=OK\"\necho \"Obsidian starts event triggered.\""
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: After Obsidian starts",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -1184,7 +1186,7 @@
     {
       "id": "lcyj918mbd",
       "platform_specific_commands": {
-        "default": "echo \"Event: Before Obsidian quits\""
+        "default": "echo \"'Obsidian quits' event triggered.\" >> TestResults.md"
       },
       "shells": {
         "win32": "CMD.EXE"
@@ -1212,7 +1214,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "notification",
+          "handler": "ignore",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -1224,10 +1226,11 @@
     {
       "id": "j7ihpidsj5",
       "platform_specific_commands": {
-        "default": "echo \"Event: After switching the active pane: \"{{date:HH:mm:ss}}",
-        "win32": "echo \"Event: After switching the active pane: {{date:HH:mm:ss}}\""
+        "default": "# Only call Obsidian URI if the variable does not yet have a value, because the call will always bring focus to the Obsidian window, which is annoying if it happens regularly. Probably Obsidian has focus when switching panes, but there can be an edge case where user has changed pane and then rapidly switched to another window before the URI call gets completed.\nif [ {{_test_event_switching_pane}} != \"OK\" ]\nthen\n    echo \"Switching active pane event triggered.\"\n    xdg-open \"obsidian://shell-commands/?vault=Shell%20commands%20test&_test_event_switching_pane=OK\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: After switching the active pane",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -1255,7 +1258,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "status-bar",
+          "handler": "notification",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -1267,17 +1270,19 @@
     {
       "id": "xulk3kuuwl",
       "platform_specific_commands": {
-        "default": "echo \"Event: Every 180 seconds\""
+        "default": "# Only call Obsidian URI if the variable does not yet have a value, because the call will always bring focus to the Obsidian window, which is annoying if it happens regularly.\nif [ {{_test_event_every_n_seconds}} != \"OK\" ]\nthen\n    echo \"Every 30 seconds event triggered.\"\n    xdg-open \"obsidian://shell-commands/?vault=Shell%20commands%20test&_test_event_every_n_seconds=OK\"\nfi"
       },
-      "shells": {},
-      "alias": "Event: Every 180 seconds",
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
+      "alias": "Event: Every 30 seconds",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channel_order": "stdout-first",
       "events": {
         "every-n-seconds": {
           "enabled": true,
-          "seconds": 180
+          "seconds": 30
         }
       },
       "command_palette_availability": "disabled",
@@ -1811,10 +1816,11 @@
     {
       "id": "9dcu9qimfz",
       "platform_specific_commands": {
-        "default": "echo \"File created: \"{{event_file_name}} >> TestResults.md",
-        "win32": "echo \"File created: {{event_file_name}}\" >> TestResults.md"
+        "default": "cd ..\nif [ {{event_file_name}} = \"CreatedNote.md\" ]\nthen\n    python3 Assets/Scripts/EventVariableTests.py \"file-created\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: File created",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -1834,7 +1840,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}"
       },
       "output_handlers": {
         "stdout": {
@@ -1850,10 +1856,11 @@
     {
       "id": "q2jo8zkrk2",
       "platform_specific_commands": {
-        "default": "echo \"Folder created: \"{{event_folder_name}} >> TestResults.md",
-        "win32": "echo \"Folder created: {{event_folder_name}}\" >> TestResults.md"
+        "default": "cd ..\nif [ {{event_folder_name}} = \"CreatedFolder\" ]\nthen\n    python3 Assets/Scripts/EventVariableTests.py \"folder-created\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: Folder created",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -1873,7 +1880,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}"
       },
       "output_handlers": {
         "stdout": {
@@ -1889,10 +1896,11 @@
     {
       "id": "pobjjezee1",
       "platform_specific_commands": {
-        "default": "echo \"File deleted: \"{{event_file_name}} >> TestResults.md",
-        "win32": "echo \"File deleted: {{event_file_name}}\" >> TestResults.md"
+        "default": "cd ..\nif [ {{event_file_name}} = \"DeletableNote.md\" ]\nthen\n   python3 Assets/Scripts/EventVariableTests.py \"file-deleted\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: File deleted",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -1912,7 +1920,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{DISABLED-event_folder_name}}\n{{DISABLED-event_folder_path:absolute}}\n{{DISABLED-event_folder_path:relative}}\n{{event_title}}"
       },
       "output_handlers": {
         "stdout": {
@@ -1928,10 +1936,11 @@
     {
       "id": "t6lwbz9l9p",
       "platform_specific_commands": {
-        "default": "echo \"Folder deleted: \"{{event_folder_name}} >> TestResults.md",
-        "win32": "echo \"Folder deleted: {{event_folder_name}}\" >> TestResults.md"
+        "default": "cd ..\nif [ {{event_folder_name}} = \"DeletableFolder\" ]\nthen\n   python3 Assets/Scripts/EventVariableTests.py \"folder-deleted\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: Folder deleted",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -1951,7 +1960,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}"
       },
       "output_handlers": {
         "stdout": {
@@ -1967,10 +1976,11 @@
     {
       "id": "gm9ssow0jg",
       "platform_specific_commands": {
-        "default": "echo \"File content modified: \"{{event_file_name}}\\ \\({{date:HH:mm:ss}}\\)",
-        "win32": "echo \"File content modified: {{event_file_name}} ({{date:HH:mm:ss}})\""
+        "default": "cd ..\nif [ {{event_file_name}} = \"ModifiableNote.md\" ]\nthen\n    python3 Assets/Scripts/EventVariableTests.py \"file-content-modified\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: File content modified",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -1982,7 +1992,12 @@
       },
       "command_palette_availability": "disabled",
       "preactions": [],
-      "variable_default_values": {},
+      "variable_default_values": {
+        "{{event_yaml_value}}": {
+          "type": "value",
+          "value": "NO YAML"
+        }
+      },
       "icon": null,
       "output_wrappers": {
         "stdout": null,
@@ -1990,11 +2005,11 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{DISABLED-event_yaml_value:yaml_test}}\n{{DISABLED-event_file_content}}\n{{DISABLED-event_note_content}}"
       },
       "output_handlers": {
         "stdout": {
-          "handler": "status-bar",
+          "handler": "ignore",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -2006,10 +2021,11 @@
     {
       "id": "s7qrtmjwpa",
       "platform_specific_commands": {
-        "default": "echo \"File moved from \"{{event_old_file_path:relative}}\" to \"{{event_file_path:relative}} >> TestResults.md",
-        "win32": "echo \"File moved from {{event_old_file_path:relative}} to {{event_file_path:relative}}\" >> TestResults.md"
+        "default": "cd ..\nif [ {{event_file_name}} = \"MovableNote.md\" ]\nthen\n    python3 Assets/Scripts/EventVariableTests.py \"file-moved\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: File moved",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -2029,7 +2045,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_old_file_path:absolute}}\n{{event_old_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_old_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_old_folder_path:absolute}}\n{{event_old_folder_path:relative}}\n{{event_title}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2045,10 +2061,11 @@
     {
       "id": "z909n24dh6",
       "platform_specific_commands": {
-        "default": "echo \"Folder moved from \"{{event_old_folder_path:relative}}\" to \"{{event_folder_path:relative}}\" >> TestResults.md",
-        "win32": "echo \"Folder moved from {{event_old_folder_path:relative}} to {{event_folder_path:relative}}\" >> TestResults.md"
+        "default": "cd ..\nif [ {{event_folder_name}} = \"MovableFolder\" ]\nthen\n   python3 Assets/Scripts/EventVariableTests.py \"folder-moved\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: Folder moved",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -2068,7 +2085,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_old_folder_path:absolute}}\n{{event_old_folder_path:relative}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2084,10 +2101,11 @@
     {
       "id": "7njiczc7os",
       "platform_specific_commands": {
-        "default": "echo \"File renamed from \"{{event_old_file_name}}\" to \"{{event_file_name}} >> TestResults.md",
-        "win32": "echo \"File renamed from {{event_old_file_name}} to {{event_file_name}}\" >> TestResults.md"
+        "default": "cd ..\nif [ {{event_file_name}} = \"RenamedNote.md\" ]\nthen\n    python3 Assets/Scripts/EventVariableTests.py \"file-renamed\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: File renamed",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -2107,7 +2125,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_old_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_old_file_path:absolute}}\n{{event_old_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{event_old_title}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2123,10 +2141,11 @@
     {
       "id": "2myyxj8sxk",
       "platform_specific_commands": {
-        "default": "echo \"Folder renamed from \"{{event_old_folder_name}}\" to \"{{event_folder_name}} >> TestResults.md",
-        "win32": "echo \"Folder renamed from {{event_old_folder_name}} to {{event_folder_name}}\" >> TestResults.md"
+        "default": "cd ..\nif [ {{event_folder_name}} = \"RenamedFolder\" ]\nthen\n   python3 Assets/Scripts/EventVariableTests.py \"folder-renamed\"\nfi"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Event: Folder renamed",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -2146,7 +2165,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": null
+        "stdin": "{{event_folder_name}}\n{{event_old_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_old_folder_path:absolute}}\n{{event_old_folder_path:relative}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2979,6 +2998,78 @@
           "convert_ansi_code": true
         }
       }
+    },
+    {
+      "id": "wnc4ycj2gv",
+      "platform_specific_commands": {
+        "default": "# Reset result variables.\nxdg-open 'obsidian://shell-commands/?vault=Shell%20commands%20test&_test_event_file_created=Pending...&_test_event_file_deleted=Pending...&_test_event_file_content_modified=Pending...&_test_event_folder_created=Pending...&_test_event_folder_deleted=Pending...'\nsleep 1\n\n# Make sure test files and folders don't accidentally exist already.\nrm CreatedNote.md DeletableNote.md RenameableNote.md MovableNote.md ModifiableNote.md 2> /dev/null\nrmdir CreatedFolder DeletableFolder RenameableFolder MovableFolder MoveToHere 2> /dev/null\nsleep 1\n\n# Create test files and folders.\ntouch CreatedNote.md\ntouch DeletableNote.md\ntouch RenameableNote.md\ntouch MovableNote.md\ntouch ModifiableNote.md\nmkdir CreatedFolder\nmkdir DeletableFolder\nmkdir RenameableFolder\nmkdir MovableFolder\nmkdir MoveToHere\nsleep 1\n\n# Test deleting.\nrm DeletableNote.md\nrmdir DeletableFolder\n# No need to sleep.\n\n# Test modifying content.\necho -ne \"---\\nyaml_test: testValue\\n---\\nTest content #tag1 #tag2\" > ModifiableNote.md\nsleep 1\n\n# Delete files and folders that are not needed anymore.\nrm CreatedNote.md ModifiableNote.md\nrmdir CreatedFolder\n# No need to sleep.\n\n# The following files and folders are still left in place. User should perform tests with them.\n# - RenameableNote.md\n# - MovableNote.md\n# - RenameableFolder\n# - MovableFolder\n# - MoveToHere\n\necho \"Automatic event tests are complete, now you can do the moving and renaming tests.\""
+      },
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
+      "alias": "Trigger event tests",
+      "icon": "dice",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {},
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      }
+    },
+    {
+      "id": "041i8bhyir",
+      "platform_specific_commands": {
+        "default": "# Delete files and folders left from the previous test.\nrm RenamedNote.md MoveToHere/MovableNote.md 2> /dev/null\nrmdir RenamedFolder MoveToHere/MovableFolder 2> /dev/null\nrmdir MoveToHere 2> /dev/null\n\necho \"\" >> TestResults.md\necho \"> [!SUMMARY] Event tests' results\" >> TestResults.md\necho \"> Obsidian starts: **\"{{_test_event_obsidian_starts}}\"**\" >> TestResults.md\necho \"> Switching active pane: **\"{{_test_event_switching_pane}}\"**\" >> TestResults.md\necho \"> Every n seconds: **\"{{_test_event_every_n_seconds}}\"**\" >> TestResults.md\necho \"> File created: **\"{{_test_event_file_created}}\"**\" >> TestResults.md\necho \"> Folder created: **\"{{_test_event_folder_created}}\"**\" >> TestResults.md\necho \"> File deleted: **\"{{_test_event_file_deleted}}\"**\" >> TestResults.md\necho \"> Folder deleted: **\"{{_test_event_folder_deleted}}\"**\" >> TestResults.md\necho \"> File content modified: **\"{{_test_event_file_content_modified}}\"**\" >> TestResults.md\necho \"> File renamed: **\"{{_test_event_file_renamed}}\"**\" >> TestResults.md\necho \"> Folder renamed: **\"{{_test_event_folder_renamed}}\"**\" >> TestResults.md\necho \"> File moved: **\"{{_test_event_file_moved}}\"**\" >> TestResults.md\necho \"> Folder moved: **\"{{_test_event_folder_moved}}\"**\" >> TestResults.md\necho \"\" >> TestResults.md"
+      },
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
+      "alias": "Finish event tests",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
     }
   ],
   "prompts": [
@@ -3203,6 +3294,114 @@
       "default_value": {
         "type": "value",
         "value": ""
+      }
+    },
+    {
+      "id": "32n69jsmhc",
+      "name": "test_event_obsidian_starts",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "Obsidian start event is not yet triggered."
+      }
+    },
+    {
+      "id": "2iwvy4h5vc",
+      "name": "test_event_switching_pane",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "Pane switching event is not yet triggered."
+      }
+    },
+    {
+      "id": "dwhwikgyal",
+      "name": "test_event_every_n_seconds",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "Every n seconds event is not yet triggered."
+      }
+    },
+    {
+      "id": "zhsg47l6qp",
+      "name": "test_event_file_created",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "File created event is not yet triggered."
+      }
+    },
+    {
+      "id": "3suxqsal91",
+      "name": "test_event_folder_created",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "Folder created event is not yet triggered."
+      }
+    },
+    {
+      "id": "zo24plnqjk",
+      "name": "test_event_file_deleted",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "File deleted event is not yet triggered."
+      }
+    },
+    {
+      "id": "b1c63ddid9",
+      "name": "test_event_folder_deleted",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "Folder deleted event is not yet triggered."
+      }
+    },
+    {
+      "id": "t3sop978mt",
+      "name": "test_event_file_content_modified",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "File content modified event is not yet triggered."
+      }
+    },
+    {
+      "id": "rpbmui8qyx",
+      "name": "test_event_file_renamed",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "File renamed event is not yet triggered."
+      }
+    },
+    {
+      "id": "90v2aawepx",
+      "name": "test_event_folder_renamed",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "Folder renamed event is not yet triggered."
+      }
+    },
+    {
+      "id": "7bv4oyhk6n",
+      "name": "test_event_file_moved",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "File moved event is not yet triggered."
+      }
+    },
+    {
+      "id": "27s82n8pfu",
+      "name": "test_event_folder_moved",
+      "description": "",
+      "default_value": {
+        "type": "value",
+        "value": "Folder moved event is not yet triggered."
       }
     }
   ],
