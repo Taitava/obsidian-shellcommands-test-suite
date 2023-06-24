@@ -2,8 +2,7 @@
   "app:reload": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Mod"
       ],
       "key": "R"
     }
@@ -188,14 +187,6 @@
     {
       "modifiers": [],
       "key": "F11"
-    }
-  ],
-  "obsidian-shellcommands:re-execute-from-command-palette": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "R"
     }
   ]
 }
