@@ -188,5 +188,14 @@
       "modifiers": [],
       "key": "F11"
     }
+  ],
+  "markdown:toggle-preview": [],
+  "obsidian-shellcommands:re-execute-from-command-palette": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "E"
+    }
   ]
 }
