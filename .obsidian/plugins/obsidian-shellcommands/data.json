@@ -180,8 +180,8 @@
       "ignore_error_codes": [],
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "# Copy test results to the end of the test report file.\ncat TestResults.md >> \"../Performed tests/\"{{date:YYYY-MM-DD}}\" (incomplete).md\"\n\n# Sleep one second to make sure TestResults.md is not emptied before it's written to the report file.\nsleep 1\n\n# Clear the test results file's content.\necho -n \"\" > TestResults.md\n\n# Rename the test report file\ncd \"../Performed tests/\"\nmv {{date:YYYY-MM-DD}}\" (incomplete).md\" {{date:YYYY-MM-DD}}\\ \\({{_plugin_version}}\\)\\ {{_operating_system}}\\ {{_test_status}}.md\n\n# Sleep one second, otherwise the file opening may be tried before the file had time to rename.\nsleep 1\n\n# Open the renamed file in Obsidian (:-1 sets caret to the last line).\necho {{date:YYYY-MM-DD}}\\ \\({{_plugin_version}}\\)\\ {{_operating_system}}\\ {{_test_status}}.md:-1",
-        "win32": "# Copy test results to the end of the test report file.\ntype TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\"\n\n# Sleep one second to make sure TestResults.md is not emptied before it's written to the report file.\nsleep 1\n\n# Clear the test results file's content.\nWrite-Host -NoNewLine > TestResults.md\n\n# Rename the test report file\ncd \"..\\Performed tests\\\"\nren \"{{date:YYYY-MM-DD}} (incomplete).md\" \"{{date:YYYY-MM-DD}} ({{_plugin_version}}) {{_operating_system}} {{_test_status}}.md\"\n\n# Sleep one second, otherwise the file opening may be tried before the file had time to rename.\nsleep 1\n\n# Open the renamed file in Obsidian (:-1 sets caret to the last line).\necho \"{{date:YYYY-MM-DD}} ({{_plugin_version}}) {{_operating_system}} {{_test_status}}.md:-1\""
+        "default": "# Copy test results to the end of the test report file.\ncat TestResults.md >> \"../Performed tests/\"{{date:YYYY-MM-DD}}\" (incomplete).md\"\n\n# Sleep one second to make sure TestResults.md is not emptied before it's written to the report file.\nsleep 1\n\n# Clear the test results file's content.\necho -n \"\" > TestResults.md\n\n# Rename the test report file\ncd \"../Performed tests/\"\nmv {{date:YYYY-MM-DD}}\" (incomplete).md\" {{date:YYYY-MM-DD}}\\ \\({{shell_commands_plugin:plugin-version}}\\)\\ {{operating_system:name}}\\ {{_test_status}}.md\n\n# Sleep one second, otherwise the file opening may be tried before the file had time to rename.\nsleep 1\n\n# Open the renamed file in Obsidian (:-1 sets caret to the last line).\necho {{date:YYYY-MM-DD}}\\ \\({{shell_commands_plugin:plugin-version}}\\)\\ {{operating_system:name}}\\ {{_test_status}}.md:-1",
+        "win32": "# Copy test results to the end of the test report file.\ntype TestResults.md >> \"..\\Performed tests\\{{date:YYYY-MM-DD}} (incomplete).md\"\n\n# Sleep one second to make sure TestResults.md is not emptied before it's written to the report file.\nsleep 1\n\n# Clear the test results file's content.\nWrite-Host -NoNewLine > TestResults.md\n\n# Rename the test report file\ncd \"..\\Performed tests\\\"\nren \"{{date:YYYY-MM-DD}} (incomplete).md\" \"{{date:YYYY-MM-DD}} ({{shell_commands_plugin:plugin-version}}) {{operating_system:name}} {{_test_status}}.md\"\n\n# Sleep one second, otherwise the file opening may be tried before the file had time to rename.\nsleep 1\n\n# Open the renamed file in Obsidian (:-1 sets caret to the last line).\necho \"{{date:YYYY-MM-DD}} ({{shell_commands_plugin:plugin-version}}) {{operating_system:name}} {{_test_status}}.md:-1\""
       },
       "shells": {},
       "events": {},
@@ -2970,7 +2970,7 @@
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
-        "stdin": "../Assets/Templates/Test report.template.md\n../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\n{{_test_author_name}}\n{{_operating_system}}\n{{_obsidian_version}}\n{{_plugin_version}}\nnew-tab"
+        "stdin": "../Assets/Templates/Test report.template.md\n../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\n{{_test_author_name}}\n{{operating_system:name}}\n{{obsidian_api:version}}\n{{shell_commands_plugin:plugin-version}}\nnew-tab"
       },
       "output_wrappers": {
         "stdout": null,
@@ -3117,24 +3117,10 @@
       "preview_shell_command": true,
       "fields": [
         {
-          "label": "Plugin version",
-          "description": "E.g. 0.5.0. If you are testing a version that is not yet published as a stable version, please add also a suffix describing the status, e.g. 0.7.0-beta1 (for public betas) or 0.7.0-development (for non-beta development versions, available only to me).",
-          "default_value": "{{_plugin_version}}",
-          "target_variable_id": "ax7fxgrmft",
-          "required": true
-        },
-        {
           "label": "Operating system",
           "description": "Either Windows, Linux or macOS",
           "default_value": "",
-          "target_variable_id": "kk420sww12",
-          "required": true
-        },
-        {
-          "label": "Test status",
-          "description": "Type ok if all tests were successful, or FAILED if even just one test failed.",
-          "default_value": "ok",
-          "target_variable_id": "m6giquj5kc",
+          "target_variable_id": "",
           "required": true
         }
       ],
@@ -3167,27 +3153,6 @@
           "description": "Type you name/nick/link.",
           "default_value": "{{_test_author_name}}",
           "target_variable_id": "1onfw0lws9",
-          "required": true
-        },
-        {
-          "label": "Operating system name and version",
-          "description": "E.g. Windows 10",
-          "default_value": "{{_operating_system}}",
-          "target_variable_id": "kk420sww12",
-          "required": true
-        },
-        {
-          "label": "Obsidian version",
-          "description": "",
-          "default_value": "{{_obsidian_version}}",
-          "target_variable_id": "4hvy83w00o",
-          "required": true
-        },
-        {
-          "label": "Shell commands plugin version",
-          "description": "",
-          "default_value": "{{_plugin_version}}",
-          "target_variable_id": "ax7fxgrmft",
           "required": true
         }
       ],
@@ -3240,24 +3205,6 @@
       "default_value": null
     },
     {
-      "id": "ax7fxgrmft",
-      "name": "plugin_version",
-      "description": "Used in FINISH TEST.",
-      "default_value": {
-        "type": "value",
-        "value": ""
-      }
-    },
-    {
-      "id": "kk420sww12",
-      "name": "operating_system",
-      "description": "Used in FINISH TEST.",
-      "default_value": {
-        "type": "value",
-        "value": ""
-      }
-    },
-    {
       "id": "m6giquj5kc",
       "name": "test_status",
       "description": "Used in FINISH TEST.",
@@ -3277,15 +3224,6 @@
       "name": "wsl_test_variable",
       "description": "",
       "default_value": null
-    },
-    {
-      "id": "4hvy83w00o",
-      "name": "obsidian_version",
-      "description": "",
-      "default_value": {
-        "type": "value",
-        "value": ""
-      }
     },
     {
       "id": "1onfw0lws9",
