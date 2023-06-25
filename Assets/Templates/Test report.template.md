@@ -211,13 +211,6 @@ There a few shell commands defined for testing events. They are excluded from th
 3. [ ] Gather up test results by executing **[Finish event tests](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=041i8bhyir)** . (This also removes some temporary files and folders in _Sandbox_).
 4. [ ] All test lines show the word **OK**.
 
-Finally:
-- [ ] 1. Go to settings and turn *Enable events* off in the *Events* tab.
-- [ ] 2. [Click this to change the value of `{{_test_event_switching_pane}}`](obsidian://shell-commands/?vault=Shell%20commands%20test&_test_event_switching_pane=Switching%20pane%20event%20should%20not%20get%20triggered%20now.). Now you can test that the variable's value should **not** change back to **OK** when events are turned off.
-- [ ] 2. Try to switch panes. See that the variable's value should **not** change to **OK** in the _Custom variables_ side pane.
-- [ ] 3. Switch the setting back on.
-- [ ] 4. Check that *Event: After switching the active pane* now **works**, i.e. now the value should change to **OK** when you switch panes.
-
 # 6. Prompts and custom variables
 ## 6.1. Prompts
 Execute the command **[Test custom variables and a prompt](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=dqnuqf8fo4)**. A prompt will appear to ask a few values.
