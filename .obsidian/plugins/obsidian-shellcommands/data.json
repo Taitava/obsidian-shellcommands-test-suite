@@ -3117,10 +3117,10 @@
       "preview_shell_command": true,
       "fields": [
         {
-          "label": "Operating system",
-          "description": "Either Windows, Linux or macOS",
-          "default_value": "",
-          "target_variable_id": "",
+          "label": "Test status",
+          "description": "Type ok if all tests were successful, or FAILED if even just one test failed.",
+          "default_value": "ok",
+          "target_variable_id": "m6giquj5kc",
           "required": true
         }
       ],
