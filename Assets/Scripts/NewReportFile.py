@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 import datetime
 import os
+import sys
 
 # Receive arguments from stdin.
 # FIXME: Non-ascii characters do not work correctly.
@@ -10,7 +11,12 @@ testAuthorName = input()
 operatingSystem = input()
 obsidianVersion = input()
 pluginVersion = input()
+testSuiteVersion = input()
 openingAttribute = input() # Can be: "current-tab", "new-tab", "new-pane", or "new-window"
+
+if pluginVersion != testSuiteVersion:
+    print("Plugin version is " + pluginVersion + ", but the test suite is aimed for version " + testSuiteVersion + ".", file=sys.stderr)
+    sys.exit(1)
 
 with open(templateFilePath, "r", encoding="utf-8", newline="\n") as templateFile:
     testReportContent = templateFile.read()

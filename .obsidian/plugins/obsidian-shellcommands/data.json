@@ -2970,7 +2970,7 @@
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
-        "stdin": "../Assets/Templates/Test report.template.md\n../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\n{{_test_author_name}}\n{{operating_system:name}}\n{{obsidian_api:version}}\n{{shell_commands_plugin:plugin-version}}\nnew-tab"
+        "stdin": "../Assets/Templates/Test report.template.md\n../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\n{{_test_author_name}}\n{{operating_system:name}}\n{{obsidian_api:version}}\n{{shell_commands_plugin:plugin-version}}\n{{yaml_value:test_suite_version}}\nnew-tab"
       },
       "output_wrappers": {
         "stdout": null,
