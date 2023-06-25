@@ -2251,7 +2251,7 @@
     {
       "id": "y2dtq5wuxy",
       "platform_specific_commands": {
-        "default": "echo Multiline >> TestResults.md\necho shell >> TestResults.md\necho command >> TestResults.md"
+        "default": "echo {{passthrough:```}} >> TestResults.md\necho Multiline >> TestResults.md\necho shell >> TestResults.md\necho command >> TestResults.md\necho {{passthrough:```}} >> TestResults.md"
       },
       "shells": {},
       "alias": "Test multiline shell command",
