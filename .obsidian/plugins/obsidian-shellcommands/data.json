@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.20.0",
+  "settings_version": "0.21.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -3084,28 +3084,32 @@
           "description": "1. Try to submit the prompt without filling this, ensure an error message is shown saying that this field must be filled. 2. Type value: example",
           "default_value": "",
           "target_variable_id": "isv01gr33c",
-          "required": true
+          "required": true,
+          "type": "single-line-text"
         },
         {
           "label": "Field with a default value",
           "description": "Leave as-is.",
           "default_value": "Default",
           "target_variable_id": "4pw77r1izt",
-          "required": true
+          "required": true,
+          "type": "single-line-text"
         },
         {
           "label": "Optional field",
           "description": "Leave empty.",
           "default_value": "",
           "target_variable_id": "a8hvq53otu",
-          "required": false
+          "required": false,
+          "type": "single-line-text"
         },
         {
           "label": "Field using variables",
           "description": "Check that the value is the current year by default, and then add {{file_name}} to the end (using the file_name variable).",
           "default_value": "{{date:YYYY}} ",
           "target_variable_id": "zecw45agxe",
-          "required": true
+          "required": true,
+          "type": "single-line-text"
         }
       ],
       "execute_button_text": "Submit the values"
@@ -3118,10 +3122,15 @@
       "fields": [
         {
           "label": "Test status",
-          "description": "Type ok if all tests were successful, or FAILED if even just one test failed.",
+          "description": "Select ok if all tests were successful, or FAILED if even just one test failed.",
           "default_value": "ok",
           "target_variable_id": "m6giquj5kc",
-          "required": true
+          "required": true,
+          "type": "single-choice",
+          "choices": [
+            "ok",
+            "FAILED"
+          ]
         }
       ],
       "execute_button_text": "Finish test"
@@ -3137,7 +3146,8 @@
           "description": "Type e.g. your name.",
           "default_value": "",
           "target_variable_id": "w9agfa690f",
-          "required": true
+          "required": true,
+          "type": "single-line-text"
         }
       ],
       "execute_button_text": "Execute"
@@ -3150,10 +3160,11 @@
       "fields": [
         {
           "label": "Test author",
-          "description": "Type you name/nick/link.",
+          "description": "Type your name/nick/link.",
           "default_value": "{{_test_author_name}}",
           "target_variable_id": "1onfw0lws9",
-          "required": true
+          "required": true,
+          "type": "single-line-text"
         }
       ],
       "execute_button_text": "Create a new test report file"
