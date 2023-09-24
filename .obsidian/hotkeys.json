@@ -193,7 +193,8 @@
   "obsidian-shellcommands:re-execute-from-command-palette": [
     {
       "modifiers": [
-        "Mod"
+        "Mod",
+        "Shift"
       ],
       "key": "E"
     }
