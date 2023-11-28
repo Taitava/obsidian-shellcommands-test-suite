@@ -3405,6 +3405,7 @@
       "description": "\"WSL is a feature of Windows that allows developers to run a Linux environment without the need for a separate virtual machine or dual booting.\" (from: https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)\n\nThis custom shell configuration allows you to execute Linux/Bash commands from Obsidian on Windows.\n\nInstall WSL: https://learn.microsoft.com/en-us/windows/wsl/install",
       "binary_path": "C:\\Windows\\System32\\wsl.exe",
       "shell_arguments": [
+        "--shell-type login",
         "--",
         "{{!shell_command_content}}"
       ],
@@ -3426,6 +3427,7 @@
       "description": "\"WSL is a feature of Windows that allows developers to run a Linux environment without the need for a separate virtual machine or dual booting.\" (from: https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)\n\nThis custom shell configuration allows you to execute Linux/Bash commands from Obsidian on Windows.\n\nInstall WSL: https://learn.microsoft.com/en-us/windows/wsl/install",
       "binary_path": "C:\\Windows\\System32\\wsl.exe",
       "shell_arguments": [
+        "--shell-type login",
         "--",
         "{{!shell_command_content}}"
       ],
