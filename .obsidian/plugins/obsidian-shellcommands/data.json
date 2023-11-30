@@ -105,13 +105,12 @@
     },
     {
       "id": "cvdgs01k3r",
-      "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} to file",
+      "alias": "Date and time {{date:YYYY-MM-DD HH:mm:ss}} command palette test",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"Date and time: \"{{date:YYYY-MM-DD HH:mm:ss}} >> TestResults.md\n# 2023-03-25: This shell command is nowadays only used for testing variable parsing in Obsidian's command palette. It's not anymore executed in the typical testing process.",
-        "win32": "echo \"Date and time: {{date:YYYY-MM-DD HH:mm:ss}}\" >> TestResults.md"
+        "default": "echo \"No need to execute this shell command, just test the command palette preview.\""
       },
       "shells": {},
       "events": {},
@@ -129,7 +128,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "notification",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -140,13 +139,12 @@
     },
     {
       "id": "kj1jupcn7k",
-      "alias": "File name {{file_name}} to file",
+      "alias": "File name {{file_name}} command palette test",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_channel_order": "stdout-first",
       "platform_specific_commands": {
-        "default": "echo \"File name: \"{{file_name}} >> TestResults.md\n# 2023-03-25: This shell command is nowadays only used for testing variable parsing in Obsidian's command palette. It's not anymore executed in the typical testing process.",
-        "win32": "echo \"File name: {{file_name}}\" >> TestResults.md"
+        "default": "echo \"No need to execute this shell command, just test the command palette preview.\""
       },
       "shells": {},
       "events": {},
@@ -164,7 +162,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "notification",
           "convert_ansi_code": true
         },
         "stderr": {
