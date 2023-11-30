@@ -1773,10 +1773,11 @@
     {
       "id": "dqnuqf8fo4",
       "platform_specific_commands": {
-        "default": "echo \"Day of week: \"{{date:dddd}} >> TestResults.md && echo \"Prompt mandatory field: \"{{_mandatory_field}} >> TestResults.md && echo \"Prompt field with a default value: \"{{_field_with_default_value}} >> TestResults.md && echo \"Prompt optional field: \"{{_optional_field}} >> TestResults.md && echo \"Prompt field using variables: \"{{_field_using_variables}} >> TestResults.md",
-        "win32": "echo \"Day of week: {{date:dddd}}\" >> TestResults.md && echo \"Prompt mandatory field: {{_mandatory_field}}\" >> TestResults.md && echo \"Prompt field with a default value: {{_field_with_default_value}}\" >> TestResults.md && echo \"Prompt optional field: {{_optional_field}}\" >> TestResults.md && echo \"Prompt field using variables: {{_field_using_variables}}\" >> TestResults.md"
+        "default": "echo \"> [!Example] Test custom variables and a prompt\" >> TestResults.md\necho \"> Day of week: \"{{date:dddd}} >> TestResults.md\necho \"> Prompt mandatory field: \"{{_mandatory_field}} >> TestResults.md\necho \"> Prompt field with a default value: \"{{_field_with_default_value}} >> TestResults.md\necho \"> Prompt optional field: \"{{_optional_field}} >> TestResults.md\necho \"> Prompt field using variables: \"{{_field_using_variables}} >> TestResults.md\necho \"\" >> TestResults.md"
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Test custom variables and a prompt",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -2249,7 +2250,7 @@
     {
       "id": "y2dtq5wuxy",
       "platform_specific_commands": {
-        "default": "echo {{passthrough:```}} >> TestResults.md\necho Multiline >> TestResults.md\necho shell >> TestResults.md\necho command >> TestResults.md\necho {{passthrough:```}} >> TestResults.md"
+        "default": "echo \"> [!Note] Test multiline shell command\" >> TestResults.md\necho {{passthrough:> Multiline}} >> TestResults.md\necho {{passthrough:> shell}} >> TestResults.md\necho {{passthrough:> command}} >> TestResults.md\necho \"\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Test multiline shell command",
@@ -2802,7 +2803,7 @@
       "id": "7fn65l4j2m",
       "platform_specific_commands": {
         "default": "",
-        "win32": "# Use printf instead of echo, because echo works in PowerShell and CMD.EXE, but printf doesn't, so it's a good breaker to notice if this command is accidentally executed in PowerShell/CMD.EXE instead of WSL.\nprintf \"Hello from WSL!\\n\" >> TestResults.md\nprintf \"You wanted to output this: \"{{_wsl_test_variable}}\"\\n\" >> TestResults.md\nprintf \"Variable escaping should use unix style escaping: \"{{passthrough:+-*/*}}\"\\n\" >> TestResults.md"
+        "win32": "# Use printf instead of echo, because echo works in PowerShell and CMD.EXE, but printf doesn't, so it's a good breaker to notice if this command is accidentally executed in PowerShell/CMD.EXE instead of WSL.\nprintf \"> Hello from WSL!\\n\" >> TestResults.md\nprintf \"> You wanted to output this: \"{{_wsl_test_variable}}\"\\n\" >> TestResults.md\nprintf \"> Variable escaping should use unix style escaping: \"{{passthrough:+-*/*}}\"\\n\" >> TestResults.md"
       },
       "shells": {
         "win32": "k73ibys6zx"
@@ -3447,7 +3448,7 @@
       "shell_platform": "linux",
       "escaper": "UnixShell",
       "path_translator": "const pathParts = absolutePath.match(/^([a-z]):\\/(.+)$/ui);\nconst driveLetter = pathParts[1];\nconst trailingPath = pathParts[2];\nreturn '/mnt/' + driveLetter.toLocaleLowerCase() + '/' + trailingPath;",
-      "shell_command_wrapper": "echo \"Executing WSL in \\`\"{{vault_path}}\"\\`:\" >> TestResults.md\n{{!shell_command_content}}\necho \"WSL executed.\" >> TestResults.md",
+      "shell_command_wrapper": "echo \"> [!Summary] WSL test\" >> TestResults.md\necho \"> Executing WSL in \\`\"{{vault_path}}\"\\`:\" >> TestResults.md\n{{!shell_command_content}}\necho \"> WSL executed.\" >> TestResults.md\necho \"\" >> TestResults.md",
       "shell_command_test": "echo \"Hello $USER, current working directory is: $(pwd)\""
     },
     {
