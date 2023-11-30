@@ -1,6 +1,5 @@
 ---
 # Do not change these values during testing.
-test_suite_version: 0.21.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice
@@ -20,6 +19,7 @@ Test author: **YOUR_NAME/NICK/LINK_HERE**
 Operating system: **OS_name_here OS_version_here**
 Obsidian version: **Obsidian_version_here**
 Shell commands version: **Shell commands version here**
+Test suite version: **Test suite version here**
 Test date: **{{date:YYYY-MM-DD}}**
 
 # [[1. Preview and execute shell commands]]

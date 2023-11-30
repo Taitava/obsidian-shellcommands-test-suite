@@ -20,7 +20,6 @@ reportFileName = str(dateOnly) + " (incomplete).md"
 reportsFolderName = "Performed tests"
 reportsFolderPath = os.path.join(vaultPath, reportsFolderName)
 yamlContentWithoutDashes = """# Do not change these values during testing.
-test_suite_version: 0.20.0
 tags:
   - frontmatter-tag
   - this-should-not-appear-twice

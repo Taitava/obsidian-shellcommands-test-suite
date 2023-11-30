@@ -2970,7 +2970,7 @@
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
-        "stdin": "../Assets/Templates/Test report.template.md\n../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\n{{_test_author_name}}\n{{operating_system:name}}\n{{obsidian_api:version}}\n{{shell_commands_plugin:plugin-version}}\n{{yaml_value:test_suite_version}}\nnew-tab"
+        "stdin": "../Assets/Templates/Test report.template.md\n../Performed tests/{{date:YYYY-MM-DD}} (incomplete).md\n{{_test_author_name}}\n{{operating_system:name}}\n{{obsidian_api:version}}\n{{shell_commands_plugin:plugin-version}}\n{{_test_suite_version}}\nnew-tab"
       },
       "output_wrappers": {
         "stdout": null,
@@ -3214,6 +3214,15 @@
     }
   },
   "custom_variables": [
+    {
+      "id": "lbbmt5ia4p",
+      "name": "test_suite_version",
+      "description": "Change the default value when creating a new version of the test suite template.",
+      "default_value": {
+        "type": "value",
+        "value": "0.21.0"
+      }
+    },
     {
       "id": "isv01gr33c",
       "name": "mandatory_field",

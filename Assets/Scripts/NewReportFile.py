@@ -33,6 +33,9 @@ with open(templateFilePath, "r", encoding="utf-8", newline="\n") as templateFile
     # Shell command version.
     testReportContent = testReportContent.replace("Shell commands version: **Shell commands version here**", f"Shell commands version: **{pluginVersion}**")
 
+    # Test suite version.
+    testReportContent = testReportContent.replace("Test suite version: **Test suite version here**", f"Test suite version: **{testSuiteVersion}**")
+
     # Date.
     testReportContent = testReportContent.replace("Test date: **{{date:YYYY-MM-DD}}**", f"Test date: **{datetime.datetime.now().date()}**")
 
