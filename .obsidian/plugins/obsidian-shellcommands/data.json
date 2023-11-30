@@ -2388,9 +2388,11 @@
     {
       "id": "morocg0jlo",
       "platform_specific_commands": {
-        "default": "echo \"Output wrapped in code block.\""
+        "default": "echo -n \"Output wrapped in callout.\""
       },
-      "shells": {},
+      "shells": {
+        "win32": "k73ibys6zs"
+      },
       "alias": "Test output wrapping",
       "icon": null,
       "confirm_execution": false,
@@ -2410,7 +2412,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "modal",
+          "handler": "current-file-bottom",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -3499,8 +3501,8 @@
   "output_wrappers": [
     {
       "id": "w85m6up4bg",
-      "title": "Code block",
-      "content": "Executed on {{date:YYYY-MM-DD}}:\n```\n{{output}}\n```\nFile name: {{file_name}}"
+      "title": "Callout",
+      "content": "> [!Info] Test output wrapping\n> Executed on {{date:YYYY-MM-DD}}:\n> {{output}}\n> File name: {{file_name}}\n\n"
     }
   ]
 }
