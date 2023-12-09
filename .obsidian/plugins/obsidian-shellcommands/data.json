@@ -1773,11 +1773,9 @@
     {
       "id": "dqnuqf8fo4",
       "platform_specific_commands": {
-        "default": "echo \"> [!Example] Test custom variables and a prompt\" >> TestResults.md\necho \"> Day of week: \"{{date:dddd}} >> TestResults.md\necho \"> Prompt mandatory field: \"{{_mandatory_field}} >> TestResults.md\necho \"> Prompt field with a default value: \"{{_field_with_default_value}} >> TestResults.md\necho \"> Prompt optional field: \"{{_optional_field}} >> TestResults.md\necho \"> Prompt field using variables: \"{{_field_using_variables}} >> TestResults.md\necho \"\" >> TestResults.md"
+        "default": "python3 ../Assets/Scripts/PromptVariableTests.py {{_mandatory_field}} {{_field_with_default_value}} \"{{_optional_field}}\" {{_field_using_variables}} >> TestResults.md"
       },
-      "shells": {
-        "win32": "k73ibys6zs"
-      },
+      "shells": {},
       "alias": "Test custom variables and a prompt",
       "confirm_execution": false,
       "ignore_error_codes": [],
@@ -1807,7 +1805,7 @@
           "convert_ansi_code": true
         },
         "stderr": {
-          "handler": "notification",
+          "handler": "modal",
           "convert_ansi_code": true
         }
       }
@@ -3112,7 +3110,7 @@
     {
       "id": "ikn3ruchpq",
       "title": "Test prompt {{date:YYYY-MM-DD}}",
-      "description": "Description for the test prompt.\n\nMake sure each of these description sentences appear on separate lines, with empty lines in-between.\n\nEnsure that the shell command preview below contains: Day of week: {{date:dddd}}",
+      "description": "Description for the test prompt.\n\nEnsure that the shell command preview below contains: Day of week: {{date:dddd}}",
       "preview_shell_command": true,
       "fields": [
         {
@@ -3141,7 +3139,7 @@
         },
         {
           "label": "Field using variables",
-          "description": "Check that the value is the current year by default, and then add {{file_name}} to the end (using the file_name variable).",
+          "description": "Check that the value is the current year by default, and then add {{folder_name}} to the end (using the folder_name variable).",
           "default_value": "{{date:YYYY}} ",
           "target_variable_id": "zecw45agxe",
           "required": true,

@@ -220,20 +220,11 @@ Check the following things in the prompt:
 2. [ ] The shell command preview text shows a week day name instead of `{{date:dddd}}`.
 3. [ ] The shell command preview text shows inputted values correctly when you type them. Also, the current field's value is bolded in the shell command.
 4. [ ] The shell command preview text shows variable names correctly when you click the small toggle icon. Also, the current field's variable name is bolded in the shell command.
-5. [ ] *Field using variables* shows the currently active file's name in it's description text.
+5. [ ] *Field using variables* shows the currently active folder's name in it's description text.
 6. [ ] *Field using variables* has the current year as its default value when the prompt is opened.
 7. [ ] Try to submit the prompt values **without** inputting a value to *Mandatory field*. The submission should be **prevented** with an error message requiring the field to be filled.
 8. [ ] After the error message, fill the field and check that submitting the prompt works ok.
-9. [ ] Check that a result similar to the following was written to [[TestResults.md]]:
-	```
-	Day of week: Thursday
-	Prompt mandatory field: example
-	Prompt field with a default value: Default
-	Prompt optional field: 
-	Prompt field using variables: 2022 TestResults.md
-	```
-	Ensure the first line contains a day of week, the second line contains *example*, the third line contains *Default*, the fourth line doesn't contain anything after the colon `:`, and the last line contains the current year and a file name.
-10. [ ] Check that the *Custom variables* pane lists the values of custom variables relevant to the four fields of the prompt. Make sure the values are the same as in the output to [[TestResults.md]].
+9. [ ] After submitting the values, [[TestResults.md]] will contain a table showing test results. Tick this checkbox, if you see the text **ALL PASSED**.
 
 ## 6.2. Custom variables (via Shell commands URI)
 1. *Test Shell commands URI*: This shell command is excluded from Obsidian's command palette, so it can only be executed via the following URI link: [Test Shell commands URI](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=2sb4p6r9b4&_uri_custom_variable_1=Hello&_uri_custom_variable_2=world!). After clicking it, [[TestResults.md]] should have the following new lines:

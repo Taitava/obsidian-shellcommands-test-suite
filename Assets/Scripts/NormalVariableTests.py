@@ -15,7 +15,7 @@ dateOnly = datetime.datetime.now().date()
 dateAndTime = datetime.datetime.now()
 dateAndTimeMinusOneSecond = dateAndTime - datetime.timedelta(seconds=1)
 datetimeFormat = "%Y-%m-%d %H:%M:%S"
-vaultPath = os.path.dirname(os.getcwd()) # dirname() = get the PARENT directory. Need do this because current working directory is 'Sandbox'. TODO: Modify the executor shell command so that cwd is vault root. I tried to use "cd .." before the "python3" command, but then the execution did nothing: no output in stdout nor stderr, and no error in Obsidian's debug console.
+vaultPath = os.path.dirname(os.getcwd()) # dirname() = get the PARENT directory. Need do this because current working directory is 'Sandbox'. TODO: Modify the executor shell command so that cwd is vault root. I tried to use "cd .." before the "python3" command, but then the execution did nothing: no output in stdout nor stderr, and no error in Obsidian's debug console. Edit 2023-12-09: I guess the ending part `>> TestResults.md` was not edited in the executor shell command, so that's probably why no output was received (or actually, it went to a wrong place).
 reportFileName = str(dateOnly) + " (incomplete).md"
 reportsFolderName = "Performed tests"
 reportsFolderPath = os.path.join(vaultPath, reportsFolderName)
@@ -93,6 +93,8 @@ testValues = {
     "Escaping test": arguments.pop(0),
 }
 
+
+# TODO: Extract the functions to a separate file. These are now copied to PromptVariableTests.py.
 def performTests():
     # Print table header.
     print()
