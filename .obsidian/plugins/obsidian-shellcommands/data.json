@@ -1773,7 +1773,7 @@
     {
       "id": "dqnuqf8fo4",
       "platform_specific_commands": {
-        "default": "python3 ../Assets/Scripts/PromptVariableTests.py {{_mandatory_field}} {{_field_with_default_value}} \"{{_optional_field}}\" {{_field_using_variables}} >> TestResults.md"
+        "default": "python3 ../Assets/Scripts/PromptVariableTests.py {{_mandatory_field}} {{_field_with_default_value}} \"{{_optional_field}}\" {{_field_using_variables}} {{_multiline_field}} {{_toggle_field}} {{_dropdown_field}} {{_password_field}} >> TestResults.md"
       },
       "shells": {},
       "alias": "Test custom variables and a prompt",
@@ -3144,6 +3144,53 @@
           "target_variable_id": "zecw45agxe",
           "required": true,
           "type": "single-line-text"
+        },
+        {
+          "type": "multi-line-text",
+          "label": "Multiline field",
+          "description": "Type \"Line1\" and \"Line2\" on separate lines (without quotes).",
+          "default_value": "",
+          "target_variable_id": "vjszr86bp2",
+          "required": true,
+          "on_result": "ON",
+          "off_result": "OFF",
+          "choices": [
+            ""
+          ]
+        },
+        {
+          "type": "toggle",
+          "label": "Toggle field",
+          "description": "Turn this on.",
+          "default_value": "",
+          "target_variable_id": "o2sfy01j4c",
+          "required": true,
+          "on_result": "ON",
+          "off_result": "OFF"
+        },
+        {
+          "type": "single-choice",
+          "label": "Dropdown field",
+          "description": "",
+          "default_value": "",
+          "target_variable_id": "728fxt9jxk",
+          "required": true,
+          "choices": [
+            "",
+            [
+              "Correct selection",
+              "Select this one"
+            ],
+            "Don't select this one"
+          ]
+        },
+        {
+          "type": "password",
+          "label": "Password field",
+          "description": "Type value: 123",
+          "default_value": "",
+          "target_variable_id": "qh23q35oz2",
+          "required": true
         }
       ],
       "execute_button_text": "Submit the values"
@@ -3243,6 +3290,30 @@
     {
       "id": "zecw45agxe",
       "name": "field_using_variables",
+      "description": "",
+      "default_value": null
+    },
+    {
+      "id": "vjszr86bp2",
+      "name": "multiline_field",
+      "description": "",
+      "default_value": null
+    },
+    {
+      "id": "o2sfy01j4c",
+      "name": "toggle_field",
+      "description": "",
+      "default_value": null
+    },
+    {
+      "id": "728fxt9jxk",
+      "name": "dropdown_field",
+      "description": "",
+      "default_value": null
+    },
+    {
+      "id": "qh23q35oz2",
+      "name": "password_field",
       "description": "",
       "default_value": null
     },
