@@ -14,6 +14,7 @@
     "win32": "WindowsExtraPath1\n{{!environment:Path}}\nWindowsExtraPath2",
     "linux": "LinuxAndMacExtraPath"
   },
+  "show_installation_warnings": true,
   "error_message_duration": 20,
   "notification_message_duration": 10,
   "execution_notification_mode": "if-long",
