@@ -217,14 +217,13 @@ Execute the command **[Test custom variables and a prompt](obsidian://shell-comm
 
 Check the following things in the prompt:
 1. [ ] The prompt's description shows a week day name instead of `{{date:dddd}}`.
-2. [ ] The shell command preview text shows a week day name instead of `{{date:dddd}}`.
-3. [ ] The shell command preview text shows inputted values correctly when you type them. Also, the current field's value is bolded in the shell command.
-4. [ ] The shell command preview text shows variable names correctly when you click the small toggle icon. Also, the current field's variable name is bolded in the shell command.
-5. [ ] *Field using variables* shows the currently active folder's name in it's description text.
-6. [ ] *Field using variables* has the current year as its default value when the prompt is opened.
-7. [ ] Try to submit the prompt values **without** inputting a value to *Mandatory field*. The submission should be **prevented** with an error message requiring the field to be filled.
-8. [ ] After the error message, fill the field and check that submitting the prompt works ok.
-9. [ ] After submitting the values, [[TestResults.md]] will contain a table showing test results. Tick this checkbox, if you see the text **ALL PASSED**.
+2. [ ] The shell command preview text shows inputted values correctly when you type them. Also, the current field's value is bolded in the shell command.
+3. [ ] The shell command preview text shows variable names correctly when you click the small toggle icon. Also, the current field's variable name is bolded in the shell command.
+4. [ ] *Field using variables* shows the currently active folder's name in it's description text.
+5. [ ] *Field using variables* has the current year as its default value when the prompt is opened.
+6. [ ] Try to submit the prompt values **without** inputting a value to *Mandatory field*. The submission should be **prevented** with an error message requiring the field to be filled.
+7. [ ] After the error message, fill the field and check that submitting the prompt works ok.
+8. [ ] After submitting the values, [[TestResults.md]] will contain a table showing test results. Tick this checkbox, if you see the text **ALL PASSED**.
 
 ## 6.2. Custom variables (via Shell commands URI)
 1. *Test Shell commands URI*: This shell command is excluded from Obsidian's command palette, so it can only be executed via the following URI link: [Test Shell commands URI](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=2sb4p6r9b4&_uri_custom_variable_1=Hello&_uri_custom_variable_2=world!). After clicking it, [[TestResults.md]] should have the following new lines:
