@@ -1,5 +1,5 @@
 {
-  "settings_version": "0.21.0",
+  "settings_version": "0.22.0",
   "debug": true,
   "obsidian_command_palette_prefix": "Execute: ",
   "preview_variables_in_command_palette": true,
@@ -65,7 +65,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "c5oaftks00",
@@ -102,7 +103,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "cvdgs01k3r",
@@ -136,7 +138,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "kj1jupcn7k",
@@ -170,7 +173,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "796vz9pyd6",
@@ -211,7 +215,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "h1i3hjdujv",
@@ -246,7 +251,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "ozilge8kih",
@@ -280,7 +286,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "qm8y3vwg8k",
@@ -317,7 +324,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "jjzgcfbnf6",
@@ -353,7 +361,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "a3o2jzc1ju",
@@ -387,7 +396,8 @@
           "handler": "modal",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "rejgzfrnyz",
@@ -421,7 +431,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "qsmsyxhep0",
@@ -456,7 +467,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "ieb4t93yvb",
@@ -492,7 +504,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "imsi0fzrit",
@@ -528,7 +541,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "1deq5274qk",
@@ -562,7 +576,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "z7bdfzss6t",
@@ -599,7 +614,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "5w4m6q8d8e",
@@ -633,7 +649,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "5lk1z1h1ds",
@@ -668,7 +685,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "rw1rhziprx",
@@ -705,7 +723,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "1w4y2bpbmk",
@@ -742,7 +761,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "hml8qvuqrs",
@@ -779,7 +799,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "r1erl29mnq",
@@ -816,7 +837,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "cxircsux3k",
@@ -854,7 +876,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "0wuvfv0nzr",
@@ -892,7 +915,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "cenx14cvbj",
@@ -926,7 +950,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "asdmfqbx5d",
@@ -960,7 +985,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "dk2axoxhd0",
@@ -994,7 +1020,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "pm9qf3zrfy",
@@ -1032,7 +1059,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "n6pv34hx2j",
@@ -1069,7 +1097,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "01jk6q6kt5",
@@ -1104,7 +1133,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "fsmbhs5vqc",
@@ -1140,7 +1170,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "uqdzrigs8x",
@@ -1180,7 +1211,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "lcyj918mbd",
@@ -1220,7 +1252,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "j7ihpidsj5",
@@ -1264,7 +1297,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "xulk3kuuwl",
@@ -1305,7 +1339,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "otw4q2sw4g",
@@ -1343,7 +1378,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "moil249jw3",
@@ -1381,7 +1417,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "k09kk76bzr",
@@ -1419,7 +1456,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "3iqc6o9wus",
@@ -1453,7 +1491,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "5hvv4ee88g",
@@ -1487,7 +1526,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "ktaxv4ssfi",
@@ -1521,7 +1561,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "iasi8j8isj",
@@ -1555,7 +1596,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "ciijp65aag",
@@ -1589,7 +1631,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "awn0zh7t5u",
@@ -1623,7 +1666,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "tlq9kj69h5",
@@ -1657,7 +1701,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "sr8mp9lpbb",
@@ -1692,7 +1737,8 @@
           "handler": "modal",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "mx4gwfpu1h",
@@ -1730,7 +1776,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "d9ztrdqonw",
@@ -1769,7 +1816,8 @@
           "handler": "ignore",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "dqnuqf8fo4",
@@ -1809,7 +1857,8 @@
           "handler": "modal",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "9dcu9qimfz",
@@ -1849,7 +1898,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "q2jo8zkrk2",
@@ -1889,7 +1939,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "pobjjezee1",
@@ -1929,7 +1980,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "t6lwbz9l9p",
@@ -1969,7 +2021,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "gm9ssow0jg",
@@ -2014,7 +2067,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "s7qrtmjwpa",
@@ -2054,7 +2108,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "z909n24dh6",
@@ -2094,7 +2149,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "7njiczc7os",
@@ -2134,7 +2190,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "2myyxj8sxk",
@@ -2174,7 +2231,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "2sb4p6r9b4",
@@ -2209,7 +2267,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "g7gauo1ds6",
@@ -2244,7 +2303,8 @@
           "handler": "modal",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "y2dtq5wuxy",
@@ -2278,7 +2338,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "au049jz2sy",
@@ -2313,7 +2374,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "zcxdt1jp1f",
@@ -2348,7 +2410,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "2jk7adqi4s",
@@ -2382,7 +2445,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "morocg0jlo",
@@ -2418,7 +2482,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "tm2ulm7r2m",
@@ -2452,7 +2517,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "st8k313wkf",
@@ -2487,7 +2553,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "9en7d3rlok",
@@ -2521,7 +2588,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "m1o9ar2af9",
@@ -2555,7 +2623,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "hi205zajc3",
@@ -2589,7 +2658,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "x9mb2l65cf",
@@ -2623,7 +2693,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "9a98pvcn6p",
@@ -2657,7 +2728,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "risjcw3y5m",
@@ -2691,7 +2763,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "vn29xcs8xs",
@@ -2725,7 +2798,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "umqymtjrfc",
@@ -2759,7 +2833,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "1d5ti6wqbp",
@@ -2798,7 +2873,8 @@
           "handler": "modal",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "7fn65l4j2m",
@@ -2841,7 +2917,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "a437tpl07p",
@@ -2878,7 +2955,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "9b3bkhu159",
@@ -2917,7 +2995,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "zonkcdyhxn",
@@ -2956,7 +3035,8 @@
           "handler": "modal",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "eazh80xkr2",
@@ -2997,7 +3077,8 @@
           "handler": "modal",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "wnc4ycj2gv",
@@ -3033,7 +3114,8 @@
           "handler": "notification",
           "convert_ansi_code": true
         }
-      }
+      },
+      "debounce": null
     },
     {
       "id": "041i8bhyir",
@@ -3069,7 +3151,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "debounce": null
     },
     {
       "id": "ux2evfgixg",
@@ -3104,7 +3187,8 @@
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
-      "variable_default_values": {}
+      "variable_default_values": {},
+      "debounce": null
     }
   ],
   "prompts": [
@@ -3478,6 +3562,10 @@
       }
     }
   ],
+  "custom_variables_notify_changes_via": {
+    "obsidian_uri": true,
+    "output_assignment": true
+  },
   "custom_shells": [
     {
       "id": "k73ibys6zs",
