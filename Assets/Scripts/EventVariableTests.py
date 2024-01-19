@@ -160,7 +160,7 @@ eventTests = {
                 "actual": input(),
             },
             "{{event_file_content}}": {
-                # "expected": "---\nyaml_test: testValue\n---\nTest content", # FIXME too.
+                # "expected": "---\\nyaml_test: testValue\\n---\\nTest content", # FIXME too.
                 "expected": "{{DISABLED-event_file_content}}",
                 "actual": input(),
             },
@@ -411,8 +411,9 @@ def performTest():
             expectedValueResult = expectedValue
         if not assertionPassed:
             errorMessages.append(variableName + " must be " + expectedValueResult + ". Now it is: " + actualValue)
-    resultText = "OK" if len(errorMessages) == 0 else "\n\n".join(errorMessages)
-    resultText = resultText.replace("\n", "\n> ") # Add a "> " part after every linebreak, because the result text will be used in a callout block.
-    webbrowser.open("obsidian://shell-commands/?vault=Shell%20commands%20test&" + eventTest["resultVariable"] + "=" + urllib.parse.quote(resultText))
+    resultText = "OK" if len(errorMessages) == 0 else "\\n\\n".join(errorMessages)
+    resultText = resultText.replace("\\n", "\\n> ") # Add a "> " part after every linebreak, because the result text will be used in a callout block.
+    # Use \\n instead of \n to produce a literal \n for JSON. JSON parsing in Obsidian will turn it into a real newline.
+    print('{"' + eventTest["resultVariable"] + '": "' + resultText + '"}')
 
 performTest()

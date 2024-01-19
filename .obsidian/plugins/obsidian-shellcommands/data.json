@@ -1176,7 +1176,7 @@
     {
       "id": "uqdzrigs8x",
       "platform_specific_commands": {
-        "default": "xdg-open \"obsidian://shell-commands/?vault=Shell%20commands%20test&_test_event_obsidian_starts=OK\"\necho \"Obsidian starts event triggered.\""
+        "default": "echo '{\"_test_event_obsidian_starts\": \"OK\"}'"
       },
       "shells": {
         "win32": "k73ibys6zs"
@@ -1204,7 +1204,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "notification",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -1258,7 +1258,7 @@
     {
       "id": "j7ihpidsj5",
       "platform_specific_commands": {
-        "default": "# Only call Obsidian URI if event tests are currently being done, and the {{ _test_event_switching_pane }} variable does not yet have a value, because the call will always bring focus to the Obsidian window, which is annoying if it happens regularly. Probably Obsidian has focus when switching panes, but there can be an edge case where user has changed pane and then rapidly switched to another window before the URI call gets completed.\nif [ {{_test_events_running}} = \"YES\" ] && [ {{_test_event_switching_pane}} != \"OK\" ]\nthen\n    echo \"Switching active pane event triggered.\"\n    xdg-open \"obsidian://shell-commands/?vault=Shell%20commands%20test&_test_event_switching_pane=OK\"\nfi"
+        "default": "# Only assign the variable if the {{ _test_event_switching_pane }} variable does not yet have a value, to avoid flooding custom variable change notifications.\nif [ {{_test_event_switching_pane}} != \"OK\" ]\nthen\n    echo '{\"_test_event_switching_pane\": \"OK\"}'\nfi"
       },
       "shells": {
         "win32": "k73ibys6zs"
@@ -1290,7 +1290,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "notification",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -1303,7 +1303,7 @@
     {
       "id": "xulk3kuuwl",
       "platform_specific_commands": {
-        "default": "# Only call Obsidian URI if event tests are currently being done, and if the {{ _test_event_every_n_seconds }} variable does not yet have a value, because the call will always bring focus to the Obsidian window, which is annoying if it happens regularly.\nif [ {{_test_events_running}} = \"YES\" ] && [ {{_test_event_every_n_seconds}} != \"OK\" ]\nthen\n    echo \"Every 30 seconds event triggered.\"\n    xdg-open \"obsidian://shell-commands/?vault=Shell%20commands%20test&_test_event_every_n_seconds=OK\"\nfi"
+        "default": "# Only assign the variable if the {{ _test_event_every_n_seconds }} variable does not yet have a value, to avoid flooding custom variable change notifications.\nif [ {{_test_event_every_n_seconds}} != \"OK\" ]\nthen\n    echo '{\"_test_event_every_n_seconds\": \"OK\"}'\nfi"
       },
       "shells": {
         "win32": "k73ibys6zs"
@@ -1332,7 +1332,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "notification",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -1891,7 +1891,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -1932,7 +1932,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -1973,7 +1973,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -2014,7 +2014,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -2060,7 +2060,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -2101,7 +2101,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -2142,7 +2142,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -2183,7 +2183,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -2224,7 +2224,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -3083,7 +3083,7 @@
     {
       "id": "wnc4ycj2gv",
       "platform_specific_commands": {
-        "default": "# Reset result variables and indicate that event tests are running.\nxdg-open 'obsidian://shell-commands/?vault=Shell%20commands%20test&_test_events_running=YES&_test_event_file_created=Pending...&_test_event_file_deleted=Pending...&_test_event_file_content_modified=Pending...&_test_event_folder_created=Pending...&_test_event_folder_deleted=Pending...'\nsleep 1\n\n# Make sure test files and folders don't accidentally exist already.\nrm CreatedNote.md DeletableNote.md RenameableNote.md MovableNote.md ModifiableNote.md 2> /dev/null\nrmdir CreatedFolder DeletableFolder RenameableFolder MovableFolder MoveToHere 2> /dev/null\nsleep 1\n\n# Create test files and folders.\ntouch CreatedNote.md\ntouch DeletableNote.md\ntouch RenameableNote.md\ntouch MovableNote.md\ntouch ModifiableNote.md\nmkdir CreatedFolder\nmkdir DeletableFolder\nmkdir RenameableFolder\nmkdir MovableFolder\nmkdir MoveToHere\nsleep 1\n\n# Test deleting.\nrm DeletableNote.md\nrmdir DeletableFolder\n# No need to sleep.\n\n# Test modifying content.\necho -ne \"---\\nyaml_test: testValue\\n---\\nTest content #tag1 #tag2\" > ModifiableNote.md\nsleep 1\n\n# Delete files and folders that are not needed anymore.\nrm CreatedNote.md ModifiableNote.md\nrmdir CreatedFolder\n# No need to sleep.\n\n# The following files and folders are still left in place. User should perform tests with them.\n# - RenameableNote.md\n# - MovableNote.md\n# - RenameableFolder\n# - MovableFolder\n# - MoveToHere\n\necho \"Automatic event tests are complete, now you can do the moving and renaming tests.\""
+        "default": "# Reset result variables and indicate that event tests are running.\necho '{\"_test_events_running\": \"YES\", \"_test_event_file_created\": \"Pending...\", \"_test_event_file_deleted\": \"Pending...\", \"_test_event_file_content_modified\": \"Pending...\", \"_test_event_folder_created\": \"Pending...\", \"_test_event_folder_deleted\": \"Pending...\"}'\n# This shell command uses realtime output reading mode, so the variable assignments should happen immeaditely, before the below event triggerings start.\nsleep 1\n\n# Make sure test files and folders don't accidentally exist already.\nrm CreatedNote.md DeletableNote.md RenameableNote.md MovableNote.md ModifiableNote.md 2> /dev/null\nrmdir CreatedFolder DeletableFolder RenameableFolder MovableFolder MoveToHere 2> /dev/null\nsleep 1\n\n# Create test files and folders.\ntouch CreatedNote.md\ntouch DeletableNote.md\ntouch RenameableNote.md\ntouch MovableNote.md\ntouch ModifiableNote.md\nmkdir CreatedFolder\nmkdir DeletableFolder\nmkdir RenameableFolder\nmkdir MovableFolder\nmkdir MoveToHere\nsleep 1\n\n# Test deleting.\nrm DeletableNote.md\nrmdir DeletableFolder\n# No need to sleep.\n\n# Test modifying content.\necho -ne \"---\\nyaml_test: testValue\\n---\\nTest content #tag1 #tag2\" > ModifiableNote.md\nsleep 1\n\n# Delete files and folders that are not needed anymore.\nrm CreatedNote.md ModifiableNote.md\nrmdir CreatedFolder\n# No need to sleep.\n\n# The following files and folders are still left in place. User should perform tests with them.\n# - RenameableNote.md\n# - MovableNote.md\n# - RenameableFolder\n# - MovableFolder\n# - MoveToHere\n\n# Use stderr for the message below, because stdout is used for variable assignments.\necho \"Automatic event tests are complete, now you can do the moving and renaming tests.\" >&2"
       },
       "shells": {
         "win32": "k73ibys6zs"
@@ -3100,14 +3100,14 @@
         "stderr": null
       },
       "output_channel_order": "stdout-first",
-      "output_handling_mode": "buffered",
+      "output_handling_mode": "realtime",
       "events": {},
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
       "output_handlers": {
         "stdout": {
-          "handler": "notification",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -3120,7 +3120,7 @@
     {
       "id": "041i8bhyir",
       "platform_specific_commands": {
-        "default": "# Indicate that test events are not running anymore.\nxdg-open 'obsidian://shell-commands/?vault=Shell%20commands%20test&_test_events_running=NO'\n\n# Delete files and folders left from the previous test.\nrm RenamedNote.md MoveToHere/MovableNote.md 2> /dev/null\nrmdir RenamedFolder MoveToHere/MovableFolder 2> /dev/null\nrmdir MoveToHere 2> /dev/null\n\necho \"\" >> TestResults.md\necho \"> [!SUMMARY] Event tests' results\" >> TestResults.md\necho \"> Obsidian starts: **\"{{_test_event_obsidian_starts}}\"**\" >> TestResults.md\necho \"> Switching active pane: **\"{{_test_event_switching_pane}}\"**\" >> TestResults.md\necho \"> Every n seconds: **\"{{_test_event_every_n_seconds}}\"**\" >> TestResults.md\necho \"> File created: **\"{{_test_event_file_created}}\"**\" >> TestResults.md\necho \"> Folder created: **\"{{_test_event_folder_created}}\"**\" >> TestResults.md\necho \"> File deleted: **\"{{_test_event_file_deleted}}\"**\" >> TestResults.md\necho \"> Folder deleted: **\"{{_test_event_folder_deleted}}\"**\" >> TestResults.md\necho \"> File content modified: **\"{{_test_event_file_content_modified}}\"**\" >> TestResults.md\necho \"> File renamed: **\"{{_test_event_file_renamed}}\"**\" >> TestResults.md\necho \"> Folder renamed: **\"{{_test_event_folder_renamed}}\"**\" >> TestResults.md\necho \"> File moved: **\"{{_test_event_file_moved}}\"**\" >> TestResults.md\necho \"> Folder moved: **\"{{_test_event_folder_moved}}\"**\" >> TestResults.md\necho \"\" >> TestResults.md"
+        "default": "# Indicate that test events are not running anymore.\necho '{\"_test_events_running\": \"NO\"}'\n\n# Delete files and folders left from the previous test.\nrm RenamedNote.md MoveToHere/MovableNote.md 2> /dev/null\nrmdir RenamedFolder MoveToHere/MovableFolder 2> /dev/null\nrmdir MoveToHere 2> /dev/null\n\necho \"\" >> TestResults.md\necho \"> [!SUMMARY] Event tests' results\" >> TestResults.md\necho \"> Obsidian starts: **\"{{_test_event_obsidian_starts}}\"**\" >> TestResults.md\necho \"> Switching active pane: **\"{{_test_event_switching_pane}}\"**\" >> TestResults.md\necho \"> Every n seconds: **\"{{_test_event_every_n_seconds}}\"**\" >> TestResults.md\necho \"> File created: **\"{{_test_event_file_created}}\"**\" >> TestResults.md\necho \"> Folder created: **\"{{_test_event_folder_created}}\"**\" >> TestResults.md\necho \"> File deleted: **\"{{_test_event_file_deleted}}\"**\" >> TestResults.md\necho \"> Folder deleted: **\"{{_test_event_folder_deleted}}\"**\" >> TestResults.md\necho \"> File content modified: **\"{{_test_event_file_content_modified}}\"**\" >> TestResults.md\necho \"> File renamed: **\"{{_test_event_file_renamed}}\"**\" >> TestResults.md\necho \"> Folder renamed: **\"{{_test_event_folder_renamed}}\"**\" >> TestResults.md\necho \"> File moved: **\"{{_test_event_file_moved}}\"**\" >> TestResults.md\necho \"> Folder moved: **\"{{_test_event_folder_moved}}\"**\" >> TestResults.md\necho \"\" >> TestResults.md"
       },
       "shells": {
         "win32": "k73ibys6zs"
@@ -3134,7 +3134,7 @@
       },
       "output_handlers": {
         "stdout": {
-          "handler": "ignore",
+          "handler": "assign-custom-variables",
           "convert_ansi_code": true
         },
         "stderr": {
@@ -3351,7 +3351,7 @@
       "description": "Change the default value when creating a new version of the test suite template.",
       "default_value": {
         "type": "value",
-        "value": "0.21.0"
+        "value": "0.22.0"
       }
     },
     {
