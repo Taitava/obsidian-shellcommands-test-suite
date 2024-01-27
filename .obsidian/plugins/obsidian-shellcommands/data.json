@@ -2482,7 +2482,7 @@
         "default": "sleep 5\necho \"Waited for 5 seconds.\""
       },
       "shells": {},
-      "alias": "A long running shell command",
+      "alias": "A long-running shell command",
       "icon": null,
       "confirm_execution": false,
       "ignore_error_codes": [],
