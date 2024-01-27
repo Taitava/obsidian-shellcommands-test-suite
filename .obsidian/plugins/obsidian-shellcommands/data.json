@@ -66,7 +66,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "c5oaftks00",
@@ -104,7 +105,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "cvdgs01k3r",
@@ -139,7 +141,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "kj1jupcn7k",
@@ -174,7 +177,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "796vz9pyd6",
@@ -216,7 +220,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "h1i3hjdujv",
@@ -252,7 +257,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "ozilge8kih",
@@ -287,7 +293,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "qm8y3vwg8k",
@@ -325,7 +332,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "jjzgcfbnf6",
@@ -362,7 +370,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "a3o2jzc1ju",
@@ -397,7 +406,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "rejgzfrnyz",
@@ -432,7 +442,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "qsmsyxhep0",
@@ -468,7 +479,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "ieb4t93yvb",
@@ -505,7 +517,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "imsi0fzrit",
@@ -542,7 +555,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "1deq5274qk",
@@ -577,7 +591,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "z7bdfzss6t",
@@ -615,7 +630,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "5w4m6q8d8e",
@@ -650,7 +666,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "5lk1z1h1ds",
@@ -686,7 +703,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "rw1rhziprx",
@@ -724,7 +742,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "1w4y2bpbmk",
@@ -762,7 +781,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "hml8qvuqrs",
@@ -800,7 +820,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "r1erl29mnq",
@@ -838,7 +859,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "cxircsux3k",
@@ -877,7 +899,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "0wuvfv0nzr",
@@ -916,7 +939,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "cenx14cvbj",
@@ -951,7 +975,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "asdmfqbx5d",
@@ -986,7 +1011,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "dk2axoxhd0",
@@ -1021,7 +1047,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "pm9qf3zrfy",
@@ -1060,7 +1087,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "n6pv34hx2j",
@@ -1098,7 +1126,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "01jk6q6kt5",
@@ -1134,7 +1163,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "fsmbhs5vqc",
@@ -1171,7 +1201,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "uqdzrigs8x",
@@ -1212,7 +1243,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "lcyj918mbd",
@@ -1253,7 +1285,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "j7ihpidsj5",
@@ -1298,7 +1331,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "xulk3kuuwl",
@@ -1340,7 +1374,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "otw4q2sw4g",
@@ -1379,7 +1414,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "moil249jw3",
@@ -1418,7 +1454,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "k09kk76bzr",
@@ -1457,7 +1494,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "3iqc6o9wus",
@@ -1492,7 +1530,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "5hvv4ee88g",
@@ -1527,7 +1566,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "ktaxv4ssfi",
@@ -1562,7 +1602,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "iasi8j8isj",
@@ -1597,7 +1638,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "ciijp65aag",
@@ -1632,7 +1674,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "awn0zh7t5u",
@@ -1667,7 +1710,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "tlq9kj69h5",
@@ -1702,7 +1746,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "sr8mp9lpbb",
@@ -1738,7 +1783,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "mx4gwfpu1h",
@@ -1777,7 +1823,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "d9ztrdqonw",
@@ -1817,7 +1864,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "dqnuqf8fo4",
@@ -1858,7 +1906,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "9dcu9qimfz",
@@ -1899,7 +1948,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "q2jo8zkrk2",
@@ -1940,7 +1990,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "pobjjezee1",
@@ -1981,7 +2032,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "t6lwbz9l9p",
@@ -2022,7 +2074,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "gm9ssow0jg",
@@ -2068,7 +2121,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "s7qrtmjwpa",
@@ -2109,7 +2163,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "z909n24dh6",
@@ -2150,7 +2205,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "7njiczc7os",
@@ -2191,7 +2247,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "2myyxj8sxk",
@@ -2232,7 +2289,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "2sb4p6r9b4",
@@ -2268,7 +2326,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "g7gauo1ds6",
@@ -2304,7 +2363,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "y2dtq5wuxy",
@@ -2339,7 +2399,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "au049jz2sy",
@@ -2375,7 +2436,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "zcxdt1jp1f",
@@ -2411,7 +2473,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "2jk7adqi4s",
@@ -2446,7 +2509,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "morocg0jlo",
@@ -2483,7 +2547,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "tm2ulm7r2m",
@@ -2518,7 +2583,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "st8k313wkf",
@@ -2554,7 +2620,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "9en7d3rlok",
@@ -2589,7 +2656,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "m1o9ar2af9",
@@ -2624,7 +2692,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "hi205zajc3",
@@ -2659,7 +2728,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "x9mb2l65cf",
@@ -2694,7 +2764,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "9a98pvcn6p",
@@ -2729,7 +2800,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "risjcw3y5m",
@@ -2764,7 +2836,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "vn29xcs8xs",
@@ -2799,7 +2872,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "umqymtjrfc",
@@ -2834,7 +2908,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "1d5ti6wqbp",
@@ -2874,7 +2949,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "7fn65l4j2m",
@@ -2918,7 +2994,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "a437tpl07p",
@@ -2956,7 +3033,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "9b3bkhu159",
@@ -2996,7 +3074,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "zonkcdyhxn",
@@ -3036,7 +3115,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "eazh80xkr2",
@@ -3078,7 +3158,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "wnc4ycj2gv",
@@ -3115,7 +3196,8 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "041i8bhyir",
@@ -3152,7 +3234,8 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     },
     {
       "id": "ux2evfgixg",
@@ -3188,7 +3271,8 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "debounce": null
+      "debounce": null,
+      "execution_notification_mode": null
     }
   ],
   "prompts": [
