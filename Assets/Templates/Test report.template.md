@@ -208,6 +208,7 @@ There a few shell commands defined for testing events. They are excluded from th
 	3. [ ] Rename _RenameableFolder_ to _RenamedFolder_.
 	4. [ ] Rename _RenameableNote.md_ to _RenamedNote.md_.
 	- Please note that these actions need to be done **in Obsidian**, not in your operating system's file explorer. This is because file/folder moving/renaming events are only detected if the actions are performed by Obsidian. External actions would be seen as file/folder deletions and creations.
+  5. [ ] Test [event debouncing](https://publish.obsidian.md/shellcommands/Events/Events+-+debouncing.md) by switching panes rapidly. Check that `Event debounce test at {{date::HH:mm:ss}}` is written to [[TestResults.md]] **not more often** than every **3** seconds. Do not tick the box, if the executions happen in a faster pace.
 3. [ ] Gather test results by executing **[Finish event tests](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=041i8bhyir)** . (This also removes some temporary files and folders in _Sandbox_).
 4. [ ] All test lines show the word **OK**.
 
