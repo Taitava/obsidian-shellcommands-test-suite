@@ -2584,7 +2584,7 @@
         }
       },
       "debounce": null,
-      "execution_notification_mode": "disabled"
+      "execution_notification_mode": "permanent"
     },
     {
       "id": "st8k313wkf",
