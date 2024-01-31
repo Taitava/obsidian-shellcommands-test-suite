@@ -3316,7 +3316,8 @@
       "debounce": {
         "mode": "early-and-late-execution",
         "cooldown": 3
-      }
+      },
+      "execution_notification_mode": null
     }
   ],
   "prompts": [
