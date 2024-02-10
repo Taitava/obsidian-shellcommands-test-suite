@@ -57,6 +57,14 @@ eventTests = {
                 "expected": "CreatedNote",
                 "actual": input(),
             },
+            "{{event_type}}": {
+                "expected": "file-created",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "file",
+                "actual": input(),
+            },
         },
         "resultVariable": "_test_event_file_created",
     },
@@ -105,6 +113,14 @@ eventTests = {
                 "expected": "DeletableNote",
                 "actual": input(),
             },
+            "{{event_type}}": {
+                "expected": "file-deleted",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "file",
+                "actual": input(),
+            },
         },
         "resultVariable": "_test_event_file_deleted",
     },
@@ -148,6 +164,14 @@ eventTests = {
             },
             "{{event_title}}": {
                 "expected": "ModifiableNote",
+                "actual": input(),
+            },
+            "{{event_type}}": {
+                "expected": "file-content-modified",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "file",
                 "actual": input(),
             },
             "{{event_yaml_value:yaml_test}}": {
@@ -235,6 +259,14 @@ eventTests = {
                 "expected": "MovableNote",
                 "actual": input(),
             },
+            "{{event_type}}": {
+                "expected": "file-moved",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "file",
+                "actual": input(),
+            },
         },
         "resultVariable": "_test_event_file_moved",
     },
@@ -292,6 +324,14 @@ eventTests = {
                 "expected": "RenamedNote",
                 "actual": input(),
             },
+            "{{event_type}}": {
+                "expected": "file-renamed",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "file",
+                "actual": input(),
+            },
             "{{event_old_title}}": {
                 "expected": "RenameableNote",
                 "actual": input(),
@@ -315,6 +355,14 @@ eventTests = {
                 "expected": os.path.join(sandboxFolderName, "CreatedFolder"),
                 "actual": input(),
             },
+            "{{event_type}}": {
+                "expected": "folder-created",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "folder",
+                "actual": input(),
+            },
         },
         "resultVariable": "_test_event_folder_created",
     },
@@ -330,6 +378,14 @@ eventTests = {
             },
             "{{event_folder_path:relative}}": {
                 "expected": os.path.join(sandboxFolderName, "DeletableFolder"),
+                "actual": input(),
+            },
+            "{{event_type}}": {
+                "expected": "folder-deleted",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "folder",
                 "actual": input(),
             },
         },
@@ -355,6 +411,14 @@ eventTests = {
             },
             "{{event_old_folder_path:relative}}": {
                 "expected": os.path.join(sandboxFolderName, "MovableFolder"),
+                "actual": input(),
+            },
+            "{{event_type}}": {
+                "expected": "folder-moved",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "folder",
                 "actual": input(),
             },
         },
@@ -384,6 +448,14 @@ eventTests = {
             },
             "{{event_old_folder_path:relative}}": {
                 "expected": os.path.join(sandboxFolderName, "RenameableFolder"),
+                "actual": input(),
+            },
+            "{{event_type}}": {
+                "expected": "folder-renamed",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "folder",
                 "actual": input(),
             },
         },

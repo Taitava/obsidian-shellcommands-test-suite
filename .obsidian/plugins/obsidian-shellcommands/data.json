@@ -1936,7 +1936,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}"
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}"
       },
       "output_handlers": {
         "stdout": {
@@ -1978,7 +1978,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}"
+        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_type}}\n{{event_type:category}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2020,7 +2020,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{DISABLED-event_folder_name}}\n{{DISABLED-event_folder_path:absolute}}\n{{DISABLED-event_folder_path:relative}}\n{{event_title}}"
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{DISABLED-event_folder_name}}\n{{DISABLED-event_folder_path:absolute}}\n{{DISABLED-event_folder_path:relative}}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2062,7 +2062,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}"
+        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_type}}\n{{event_type:category}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2109,7 +2109,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{DISABLED-event_yaml_value:yaml_test}}\n{{DISABLED-event_file_content}}\n{{DISABLED-event_note_content}}"
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}\n{{DISABLED-event_yaml_value:yaml_test}}\n{{DISABLED-event_file_content}}\n{{DISABLED-event_note_content}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2151,7 +2151,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_old_file_path:absolute}}\n{{event_old_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_old_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_old_folder_path:absolute}}\n{{event_old_folder_path:relative}}\n{{event_title}}"
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_old_file_path:absolute}}\n{{event_old_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_old_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_old_folder_path:absolute}}\n{{event_old_folder_path:relative}}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2193,7 +2193,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_old_folder_path:absolute}}\n{{event_old_folder_path:relative}}"
+        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_old_folder_path:absolute}}\n{{event_old_folder_path:relative}}\n{{event_type}}\n{{event_type:category}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2235,7 +2235,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_old_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_old_file_path:absolute}}\n{{event_old_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{event_old_title}}"
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_old_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_old_file_path:absolute}}\n{{event_old_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}\n{{event_old_title}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2277,7 +2277,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_folder_name}}\n{{event_old_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_old_folder_path:absolute}}\n{{event_old_folder_path:relative}}"
+        "stdin": "{{event_folder_name}}\n{{event_old_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_old_folder_path:absolute}}\n{{event_old_folder_path:relative}}\n{{event_type}}\n{{event_type:category}}"
       },
       "output_handlers": {
         "stdout": {
