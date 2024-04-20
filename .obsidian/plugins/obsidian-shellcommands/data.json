@@ -3314,9 +3314,10 @@
       "preactions": [],
       "variable_default_values": {},
       "debounce": {
-        "cooldown": 3,
         "executeEarly": true,
-        "executeLate": true
+        "executeLate": true,
+        "cooldownDuration": 3,
+        "prolongCooldown": false
       },
       "execution_notification_mode": null
     }
