@@ -3310,7 +3310,7 @@
           "enabled": true
         }
       },
-      "command_palette_availability": "enabled",
+      "command_palette_availability": "disabled",
       "preactions": [],
       "variable_default_values": {},
       "debounce": {
