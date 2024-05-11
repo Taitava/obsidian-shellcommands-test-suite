@@ -2872,6 +2872,46 @@
       "execution_notification_mode": null
     },
     {
+      "id": "t7mk0niz10",
+      "platform_specific_commands": {
+        "default": "echo \"Editor menu test: OK (static test, no variables)\" >> TestResults.md"
+      },
+      "shells": {},
+      "alias": "Test editor menu event",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {
+        "editor-menu": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {},
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        }
+      },
+      "debounce": null,
+      "execution_notification_mode": null
+    },
+    {
       "id": "7fn65l4j2m",
       "platform_specific_commands": {
         "default": "",

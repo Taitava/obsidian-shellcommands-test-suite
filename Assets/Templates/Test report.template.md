@@ -98,7 +98,7 @@ Inspect closely that variables have correct values!
 	- [ ] Right-click _Content note_ file in left navigation, and then click **Test file menu event variables**. Check that an OK result appears in [[TestResults.md]].
 	- [ ] Right-click _Test guides_ folder in left navigation, and then click **Test folder menu event variables**. Check that an OK result appears in [[TestResults.md]].
 	- The above aim to test most `{{event_\*}}` variables. E.g. `{{event_tags}}` is not tested by any other test (but I can't remember why).
-- [ ] Editor menu item: TODO
+- [ ] Editor menu test: Right click somewhere in the editor on click *Test editor menu event*. Check that an OK result appears in [[TestResults.md]].
 
 - **Realtime tests**:
 	- Each of these tests should output five lines to their specific output channels. There should always be one second pause between each line appearing. If all the lines appear at once, do not tick a checkbox!
