@@ -2794,16 +2794,15 @@
     {
       "id": "1d5ti6wqbp",
       "platform_specific_commands": {
-        "default": "echo -e \"$(cat)\"",
-        "win32": "$OFS = \"`r`n\"\necho \"$Input\""
+        "default": "cd ..\npython3 Assets/Scripts/EventVariableTests.py {{event_type}} {{event_file_content}} {{event_note_content}} {{event_yaml_content:with-dashes}} {{event_yaml_content:no-dashes}}"
       },
       "shells": {},
-      "alias": "Test file menu event variables (excluding event_file_content and event_note_content)",
+      "alias": "Test file menu event variables",
       "icon": null,
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
-        "stdin": "event_file_extension:with-dot = {{event_file_extension:with-dot}}\nevent_file_name = {{event_file_name}}\nevent_file_path:absolute = {{event_file_path:absolute}}\nevent_file_uri = {{event_file_uri}}\nevent_folder_name = {{event_folder_name}}\nevent_folder_path:absolute = {{event_folder_path:absolute}}\nevent_tags:,  = {{event_tags:, }}\nevent_title = {{event_title}}\nevent_yaml_content:with-dashes = {{event_yaml_content:with-dashes}}\nevent_yaml_value:yaml_test1.first_item = {{event_yaml_value:yaml_test1.first_item}}"
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_tags:, }}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}\n{{event_yaml_content:with-dashes}}\n{{event_yaml_content:without-dashes}}\n{{event_yaml_value:yaml_property}}"
       },
       "output_wrappers": {
         "stdout": null,

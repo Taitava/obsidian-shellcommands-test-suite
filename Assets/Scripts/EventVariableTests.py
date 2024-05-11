@@ -178,7 +178,7 @@ eventTests = {
                 # "expected": "testValue", # FIXME: file-content-modified event is triggered before Obsidian has updated cache, so the contents received would be outdated. I need to plan one of the following solutions:
                 #                 # a) Changing the current event to use MetadataCache's 'changed' event instead of vault's 'modified' event,
                 #                 # b) Creating a completely new event, or
-                #                 # c) Adding a setting to the current event, that chooses which event to use.
+                #                 # c) Adding a setting to the current event, that chooses which event to use. (Edit 2024-05-11: I think this sounds the best, but do research the question below.)
                 #                 # Does the MetadataCache's 'changed' event also get triggered for non-Markdown files, e.g. images?
                 "expected": "{{DISABLED-event_yaml_value:yaml_test}}",
                 "actual": input(),
@@ -461,6 +461,102 @@ eventTests = {
         },
         "resultVariable": "_test_event_folder_renamed",
     },
+
+    # MENU TESTS:
+    "file-menu-item": lambda : {
+        "values": {
+            "{{event_file_content}}": {
+                "expected": """---
+yaml_property: Some value
+tags:
+  - firstTag
+  - secondTag
+  - thirdTag
+---
+This file is used by automated tests.
+It doesn't have much content.
+It has multiple lines.""",
+                "actual": arguments.pop(0),
+            },
+            "{{event_file_extension:no-dot}}": {
+                "expected": "md",
+                "actual": input(),
+            },
+            "{{event_file_extension:with-dot}}": {
+                "expected": ".md",
+                "actual": input(),
+            },
+            "{{event_file_name}}": {
+                "expected": "Content note.md",
+                "actual": input(),
+            },
+            "{{event_file_path:absolute}}": {
+                "expected": os.path.join(vaultPath, "Content note.md"),
+                "actual": input(),
+            },
+            "{{event_file_path:relative}}": {
+                "expected": "Content note.md",
+                "actual": input(),
+            },
+            "{{event_file_uri}}": {
+                "expected": "obsidian://vault/Shell%20commands%20test/Content%20note.md",
+                "actual": input(),
+            },
+            "{{event_folder_name}}": {
+                "expected": ".",
+                "actual": input(),
+            },
+            "{{event_folder_path:absolute}}": {
+                "expected": vaultPath,
+                "actual": input(),
+            },
+            "{{event_folder_path:relative}}": {
+                "expected": ".",
+                "actual": input(),
+            },
+            "{{event_note_content}}": {
+                "expected": """This file is used by automated tests.
+It doesn't have much content.
+It has multiple lines.""",
+                "actual": arguments.pop(0),
+            },
+            "{{event_tags:, }}": {
+                "expected": "firstTag, secondTag, thirdTag",
+                "actual": input(),
+            },
+            "{{event_title}}": {
+                "expected": "Content note",
+                "actual": input(),
+            },
+            "{{event_type}}": {
+                "expected": "file-menu-item",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "menu",
+                "actual": input(),
+            },
+            "{{event_yaml_content:with-dashes}}": {
+                "expected": """---
+yaml_property: Some value
+tags:
+  - firstTag
+  - secondTag
+  - thirdTag
+---""",
+                "actual": arguments.pop(0),
+            },
+            "{{event_yaml_content:no-dashes}}": {
+                "expected": """yaml_property: Some value
+tags:
+  - firstTag
+  - secondTag
+  - thirdTag""",
+                "actual": arguments.pop(0),
+            },
+        },
+        "resultLabel": "File menu test: ",
+    },
 }
 
 def performTest():
@@ -483,9 +579,16 @@ def performTest():
             expectedValueResult = expectedValue
         if not assertionPassed:
             errorMessages.append(variableName + " must be " + expectedValueResult + ". Now it is: " + actualValue)
-    resultText = "OK" if len(errorMessages) == 0 else "\\n\\n".join(errorMessages)
-    resultText = resultText.replace("\\n", "\\n> ") # Add a "> " part after every linebreak, because the result text will be used in a callout block.
-    # Use \\n instead of \n to produce a literal \n for JSON. JSON parsing in Obsidian will turn it into a real newline.
-    print('{"' + eventTest["resultVariable"] + '": "' + resultText + '"}')
+    if "resultVariable" in eventTest:
+        # The result should be stored in a variable.
+        resultText = "OK" if len(errorMessages) == 0 else "\\n\\n".join(errorMessages)
+        resultText = resultText.replace("\\n", "\\n> ") # Add a "> " part after every linebreak, because the result text will be used in a callout block.
+        # Use \\n instead of \n to produce a literal \n for JSON. JSON parsing in Obsidian will turn it into a real newline.
+        print('{"' + eventTest["resultVariable"] + '": "' + resultText + '"}')
+    elif "resultLabel" in eventTest:
+        # The result should be written into a file.
+        resultText = "OK" if len(errorMessages) == 0 else "\n".join(errorMessages)
+        with open(os.path.join('Sandbox', 'TestResults.md'), 'a') as testResultsFile:
+            testResultsFile.write(eventTest["resultLabel"] + resultText + "\n")
 
 performTest()
