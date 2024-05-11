@@ -2832,6 +2832,46 @@
       "execution_notification_mode": null
     },
     {
+      "id": "t7mk0niz09",
+      "platform_specific_commands": {
+        "default": "cd ..\npython3 Assets/Scripts/EventVariableTests.py {{event_type}}"
+      },
+      "shells": {},
+      "alias": "Test folder menu event variables",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": "{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_type}}\n{{event_type:category}}"
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {
+        "folder-menu": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "disabled",
+      "preactions": [],
+      "variable_default_values": {},
+      "output_handlers": {
+        "stdout": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "modal",
+          "convert_ansi_code": true
+        }
+      },
+      "debounce": null,
+      "execution_notification_mode": null
+    },
+    {
       "id": "7fn65l4j2m",
       "platform_specific_commands": {
         "default": "",

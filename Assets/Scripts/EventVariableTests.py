@@ -557,6 +557,31 @@ tags:
         },
         "resultLabel": "File menu test: ",
     },
+    "folder-menu-item": lambda : {
+        "values": {
+            "{{event_folder_name}}": {
+                "expected": "Test guides",
+                "actual": input(),
+            },
+            "{{event_folder_path:absolute}}": {
+                "expected": os.path.join(vaultPath, "Test guides"),
+                "actual": input(),
+            },
+            "{{event_folder_path:relative}}": {
+                "expected": "Test guides",
+                "actual": input(),
+            },
+            "{{event_type}}": {
+                "expected": "folder-menu-item",
+                "actual": input(),
+            },
+            "{{event_type:category}}": {
+                "expected": "menu",
+                "actual": input(),
+            },
+        },
+        "resultLabel": "Folder menu test: ",
+    },
 }
 
 def performTest():

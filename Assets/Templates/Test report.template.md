@@ -96,7 +96,7 @@ Inspect closely that variables have correct values!
 	- Make sure the command outputs the default values like they are presented above.
 - File/folder menu items:
 	- [ ] Right-click _Content note_ file in left navigation, and then click **Test file menu event variables**. Check that an OK result appears in [[TestResults.md]].
-	- [ ] TODO: Add folder menu test.
+	- [ ] Right-click _Test guides_ folder in left navigation, and then click **Test folder menu event variables**. Check that an OK result appears in [[TestResults.md]].
 	- The above aim to test most `{{event_\*}}` variables. E.g. `{{event_tags}}` is not tested by any other test (but I can't remember why).
 - [ ] Editor menu item: TODO
 
