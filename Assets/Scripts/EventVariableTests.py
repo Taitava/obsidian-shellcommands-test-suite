@@ -190,10 +190,10 @@ eventTests = {
             },
             "{{event_file_content}}": {
                 "expected": "---\\nyaml_test: testValue\\nyaml_list:\\n  - val1\\n  - val2\\n  - val3\\n---\\nTest content #tag1 #tag2", # FIXME too.
-                "actual": input(),
+                "actual": input()+"\\n"+input()+"\\n"+input()+"\\n"+input()+"\\n"+input()+"\\n"+input()+"\\n"+input()+"\\n"+input(), # 8 lines.
             },
             "{{event_note_content}}": {
-                "expected": "Test content", # FIXME too.
+                "expected": "Test content #tag1 #tag2", # FIXME too.
                 "actual": input(),
             },
             # TODO: Add also a test for {{event_tags:, }}. The result should be "tag1, tag2".
