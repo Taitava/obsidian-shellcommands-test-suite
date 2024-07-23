@@ -1989,7 +1989,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}\n{{DISABLED-event_yaml_value:yaml_test}}\n{{DISABLED-event_yaml_values:yaml_test2:!}}\n{{DISABLED-event_file_content}}\n{{DISABLED-event_note_content}}"
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}\n{{event_yaml_value:yaml_test}}\n{{event_yaml_values:yaml_test2:!}}\n{{event_file_content}}\n{{event_note_content}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2001,7 +2001,12 @@
           "convert_ansi_code": true
         }
       },
-      "debounce": null,
+      "debounce": {
+        "executeEarly": false,
+        "executeLate": true,
+        "cooldownDuration": 1,
+        "prolongCooldown": false
+      },
       "execution_notification_mode": null
     },
     {
@@ -3049,7 +3054,7 @@
     {
       "id": "wnc4ycj2gv",
       "platform_specific_commands": {
-        "default": "# Reset result variables and indicate that event tests are running.\necho '{\"_test_events_running\": \"YES\", \"_test_event_file_created\": \"Pending...\", \"_test_event_file_deleted\": \"Pending...\", \"_test_event_file_content_modified\": \"Pending...\", \"_test_event_folder_created\": \"Pending...\", \"_test_event_folder_deleted\": \"Pending...\"}'\n# This shell command uses realtime output reading mode, so the variable assignments should happen immeaditely, before the below event triggerings start.\nsleep 1\n\n# Make sure test files and folders don't accidentally exist already.\nrm CreatedNote.md DeletableNote.md RenameableNote.md MovableNote.md ModifiableNote.md 2> /dev/null\nrmdir CreatedFolder DeletableFolder RenameableFolder MovableFolder MoveToHere 2> /dev/null\nsleep 1\n\n# Create test files and folders.\ntouch CreatedNote.md\ntouch DeletableNote.md\ntouch RenameableNote.md\ntouch MovableNote.md\ntouch ModifiableNote.md\nmkdir CreatedFolder\nmkdir DeletableFolder\nmkdir RenameableFolder\nmkdir MovableFolder\nmkdir MoveToHere\nsleep 1\n\n# Test deleting.\nrm DeletableNote.md\nrmdir DeletableFolder\n# No need to sleep.\n\n# Test modifying content.\necho -ne \"---\\nyaml_test: testValue\\n---\\nTest content #tag1 #tag2\" > ModifiableNote.md\nsleep 1\n\n# Delete files and folders that are not needed anymore.\nrm CreatedNote.md ModifiableNote.md\nrmdir CreatedFolder\n# No need to sleep.\n\n# The following files and folders are still left in place. User should perform tests with them.\n# - RenameableNote.md\n# - MovableNote.md\n# - RenameableFolder\n# - MovableFolder\n# - MoveToHere\n\n# Use stderr for the message below, because stdout is used for variable assignments.\necho \"Automatic event tests are complete, now you can do the moving and renaming tests.\" >&2"
+        "default": "# Reset result variables and indicate that event tests are running.\necho '{\"_test_events_running\": \"YES\", \"_test_event_file_created\": \"Pending...\", \"_test_event_file_deleted\": \"Pending...\", \"_test_event_file_content_modified\": \"Pending...\", \"_test_event_folder_created\": \"Pending...\", \"_test_event_folder_deleted\": \"Pending...\"}'\n# This shell command uses realtime output reading mode, so the variable assignments should happen immeaditely, before the below event triggerings start.\nsleep 1\n\n# Make sure test files and folders don't accidentally exist already.\nrm CreatedNote.md DeletableNote.md RenameableNote.md MovableNote.md ModifiableNote.md 2> /dev/null\nrmdir CreatedFolder DeletableFolder RenameableFolder MovableFolder MoveToHere 2> /dev/null\nsleep 1\n\n# Create test files and folders.\ntouch CreatedNote.md\ntouch DeletableNote.md\ntouch RenameableNote.md\ntouch MovableNote.md\ntouch ModifiableNote.md\nmkdir CreatedFolder\nmkdir DeletableFolder\nmkdir RenameableFolder\nmkdir MovableFolder\nmkdir MoveToHere\nsleep 1\n\n# Test deleting.\nrm DeletableNote.md\nrmdir DeletableFolder\n# No need to sleep.\n\n# Test modifying content.\necho -ne \"---\\nyaml_test: testValue\\n---\\nTest content #tag1 #tag2\" > ModifiableNote.md\nsleep 1 \nsleep 1 # Sleep extra time because the shell command reacting to this event has been configured to use debouncing.\n\n# Delete files and folders that are not needed anymore.\nrm CreatedNote.md ModifiableNote.md\nrmdir CreatedFolder\n# No need to sleep.\n\n# The following files and folders are still left in place. User should perform tests with them.\n# - RenameableNote.md\n# - MovableNote.md\n# - RenameableFolder\n# - MovableFolder\n# - MoveToHere\n\n# Use stderr for the message below, because stdout is used for variable assignments.\necho \"Automatic event tests are complete, now you can do the moving and renaming tests.\" >&2"
       },
       "shells": {
         "win32": "k73ibys6zs"

@@ -174,29 +174,26 @@ eventTests = {
                 "expected": "file",
                 "actual": input(),
             },
+            # TODO: Add a test for {{event_yaml_content}}.
             "{{event_yaml_value:yaml_test}}": {
-                # "expected": "testValue", # FIXME: file-content-modified event is triggered before Obsidian has updated cache, so the contents received would be outdated. I need to plan one of the following solutions:
+                "expected": "testValue",
+                                  # FIXME: file-content-modified event is triggered before Obsidian has updated cache, so the contents received would be outdated, BUT the test vault has been configured to use event debouncing for a temporary fix. I need to plan later one of the following more stable solutions:
                 #                 # a) Changing the current event to use MetadataCache's 'changed' event instead of vault's 'modified' event,
                 #                 # b) Creating a completely new event, or
                 #                 # c) Adding a setting to the current event, that chooses which event to use. (Edit 2024-05-11: I think this sounds the best, but do research the question below.)
                 #                 # Does the MetadataCache's 'changed' event also get triggered for non-Markdown files, e.g. images?
-                #                 # MAYBE a temporary fix would be to use event debouncing now that it's available?
-                "expected": "{{DISABLED-event_yaml_value:yaml_test}}",
                 "actual": input(),
             },
             "{{event_yaml_values:yaml_test2:!}}": {
-                # "expected": "first-item!second-item!last-item", # FIXME: Same as above.
-                "expected": "{{DISABLED-event_yaml_values:yaml_test2:!}}",
+                "expected": "first-item!second-item!last-item", # FIXME: Same as above.
                 "actual": input(),
             },
             "{{event_file_content}}": {
-                # "expected": "---\\nyaml_test: testValue\\n---\\nTest content", # FIXME too.
-                "expected": "{{DISABLED-event_file_content}}",
+                "expected": "---\\nyaml_test: testValue\\n---\\nTest content", # FIXME too.
                 "actual": input(),
             },
             "{{event_note_content}}": {
-                # "expected": "Test content", # FIXME too.
-                "expected": "{{DISABLED-event_note_content}}",
+                "expected": "Test content", # FIXME too.
                 "actual": input(),
             },
             # TODO: Add also a test for {{event_tags:, }}. The result should be "tag1, tag2".
