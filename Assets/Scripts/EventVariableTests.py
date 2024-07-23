@@ -184,12 +184,12 @@ eventTests = {
                 #                 # Does the MetadataCache's 'changed' event also get triggered for non-Markdown files, e.g. images?
                 "actual": input(),
             },
-            "{{event_yaml_values:yaml_test2:!}}": {
-                "expected": "first-item!second-item!last-item", # FIXME: Same as above.
+            "{{event_yaml_values:yaml_list:!}}": {
+                "expected": "val1!val2!val3", # FIXME: Same as above.
                 "actual": input(),
             },
             "{{event_file_content}}": {
-                "expected": "---\\nyaml_test: testValue\\n---\\nTest content", # FIXME too.
+                "expected": "---\\nyaml_test: testValue\\nyaml_list:\\n  - val1\\n  - val2\\n  - val3\\n---\\nTest content #tag1 #tag2", # FIXME too.
                 "actual": input(),
             },
             "{{event_note_content}}": {
