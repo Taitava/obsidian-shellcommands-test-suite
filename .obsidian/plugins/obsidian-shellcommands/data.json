@@ -1989,7 +1989,7 @@
       },
       "output_handling_mode": "buffered",
       "input_contents": {
-        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}\n{{DISABLED-event_yaml_value:yaml_test}}\n{{DISABLED-event_file_content}}\n{{DISABLED-event_note_content}}"
+        "stdin": "{{event_file_extension:no-dot}}\n{{event_file_extension:with-dot}}\n{{event_file_name}}\n{{event_file_path:absolute}}\n{{event_file_path:relative}}\n{{event_file_uri}}\n{{event_folder_name}}\n{{event_folder_path:absolute}}\n{{event_folder_path:relative}}\n{{event_title}}\n{{event_type}}\n{{event_type:category}}\n{{DISABLED-event_yaml_value:yaml_test}}\n{{DISABLED-event_yaml_values:yaml_test2:!}}\n{{DISABLED-event_file_content}}\n{{DISABLED-event_note_content}}"
       },
       "output_handlers": {
         "stdout": {
@@ -2965,7 +2965,7 @@
     {
       "id": "zonkcdyhxn",
       "platform_specific_commands": {
-        "default": "python3 ../Assets/Scripts/NormalVariableTests.py {{caret_paragraph}} {{clipboard}} {{date:YYYY-MM-DD HH:mm:ss}} {{file_extension:no-dot}} {{file_extension:with-dot}} {{file_name}} {{file_path:absolute}} {{file_path:relative}} {{file_uri}} {{folder_name}} {{folder_path:absolute}} {{folder_path:relative}} {{new_note_folder_name}} {{new_note_folder_path:absolute}} {{new_note_folder_path:relative}} {{selection}} {{tags:, }} {{title}} {{vault_path}} {{workspace}} {{yaml_content:no-dashes}} {{yaml_content:with-dashes}} {{yaml_value:yaml_test1.first_item}}.{{yaml_value:yaml_test1.middle_item.inner_item}}.{{yaml_value:yaml_test1.last_item}}.{{yaml_value:yaml_test2.0}}.{{yaml_value:yaml_test2.1}}.{{yaml_value:yaml_test2.-1}}.count:{{yaml_value:yaml_test2.length}} {{passthrough:>,.-;:§+´½!'\"#¤%&/()|=?`@`£$€{[]}\\\\¨^~*åäö*}} >> TestResults.md"
+        "default": "python3 ../Assets/Scripts/NormalVariableTests.py {{caret_paragraph}} {{clipboard}} {{date:YYYY-MM-DD HH:mm:ss}} {{file_extension:no-dot}} {{file_extension:with-dot}} {{file_name}} {{file_path:absolute}} {{file_path:relative}} {{file_uri}} {{folder_name}} {{folder_path:absolute}} {{folder_path:relative}} {{new_note_folder_name}} {{new_note_folder_path:absolute}} {{new_note_folder_path:relative}} {{selection}} {{tags:, }} {{title}} {{vault_path}} {{workspace}} {{yaml_content:no-dashes}} {{yaml_content:with-dashes}} {{yaml_value:yaml_test1.first_item}}.{{yaml_value:yaml_test1.middle_item.inner_item}}.{{yaml_value:yaml_test1.last_item}}.{{yaml_value:yaml_test2.0}}.{{yaml_value:yaml_test2.1}}.{{yaml_value:yaml_test2.-1}}.count:{{yaml_value:yaml_test2.length}} {{yaml_values:yaml_test2:!}} {{passthrough:>,.-;:§+´½!'\"#¤%&/()|=?`@`£$€{[]}\\\\¨^~*åäö*}} >> TestResults.md"
       },
       "shells": {},
       "alias": "Normal variable tests",
@@ -3367,7 +3367,7 @@
       "description": "Change the default value when creating a new version of the test suite template.",
       "default_value": {
         "type": "value",
-        "value": "0.22.0"
+        "value": "0.23.0"
       }
     },
     {

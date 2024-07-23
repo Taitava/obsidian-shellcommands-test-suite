@@ -63,6 +63,7 @@ expectedValues = {
 {yamlContentWithoutDashes}
 ---""",
     "{{yaml_value}}": "first value.inner value.last value.first-item.second-item.last-item.count:3",
+    "{{yaml_values}}": "first-item!second-item!last-item",
     "Escaping test": """>,.-;:§+´½!'"#¤%&/()|=?`@`£$€{[]}\\\\¨^~*åäö*""", # No < because it brokw Markdown table for some reason. # FIXME: This test kinda works, but the output looks very different in Obsidian: `` <\>,.-;:º+┤¢!'"#ñ%&/()=?`@`ú$Ç{[]}\\¿^~*Õõ÷* `` I.e. look really different. That said, I assume the equality test still works - just input or output encoding is wrong.
 }
 testValues = {
@@ -89,6 +90,7 @@ testValues = {
     "{{yaml_content:no-dashes}}": arguments.pop(0),
     "{{yaml_content:with-dashes}}": arguments.pop(0),
     "{{yaml_value}}": arguments.pop(0),
+    "{{yaml_values}}": arguments.pop(0),
     "Escaping test": arguments.pop(0),
 }
 
