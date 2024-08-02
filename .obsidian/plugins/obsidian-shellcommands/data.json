@@ -1144,7 +1144,7 @@
       "command_palette_availability": "enabled",
       "preactions": [],
       "variable_default_values": {},
-      "icon": "activity",
+      "icon": "lucide-activity",
       "output_wrappers": {
         "stdout": null,
         "stderr": null
@@ -2368,7 +2368,7 @@
       },
       "shells": {},
       "alias": "Realtime test: Notification balloon",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2405,7 +2405,7 @@
       },
       "shells": {},
       "alias": "Realtime test: Error balloon",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2441,7 +2441,7 @@
       },
       "shells": {},
       "alias": "Realtime test: Current file: caret position",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2477,7 +2477,7 @@
       },
       "shells": {},
       "alias": "Realtime test: Current file: top",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2513,7 +2513,7 @@
       },
       "shells": {},
       "alias": "Realtime test: Current file: bottom",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2549,7 +2549,7 @@
       },
       "shells": {},
       "alias": "Realtime test: Open files",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2585,7 +2585,7 @@
       },
       "shells": {},
       "alias": "Realtime test: Status bar",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2621,7 +2621,7 @@
       },
       "shells": {},
       "alias": "Realtime test: Clipboard",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2657,7 +2657,7 @@
       },
       "shells": {},
       "alias": "Realtime test: Ask after execution",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2852,7 +2852,7 @@
         "win32": "k73ibys6zx"
       },
       "alias": "WSL test",
-      "icon": "activity",
+      "icon": "lucide-activity",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "output_wrappers": {
@@ -2974,7 +2974,7 @@
       },
       "shells": {},
       "alias": "Normal variable tests",
-      "icon": "table",
+      "icon": "lucide-table",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
@@ -3016,7 +3016,7 @@
       },
       "shells": {},
       "alias": "BEGIN TEST",
-      "icon": "star",
+      "icon": "lucide-star",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
@@ -3135,7 +3135,7 @@
       },
       "shells": {},
       "alias": "Open current file in WebStorm",
-      "icon": "edit",
+      "icon": "lucide-edit",
       "confirm_execution": false,
       "ignore_error_codes": [],
       "input_contents": {
