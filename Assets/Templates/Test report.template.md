@@ -22,6 +22,10 @@ Shell commands version: **Shell commands version here**
 Test suite version: **Test suite version here**
 Test date: **{{date:YYYY-MM-DD}}**
 
+# 0. Preparations
+
+- [ ] Please open up error console and keep it open during the whole test. It can show problems that would otherwise go unnoticed. You only need to monitor _errors_, not _messages_. The console can be opened up by pressing `Ctrl` + `Shift` + `I` (Windows and Linux) or `Cmd` + `Option` + `I` (macOS).
+
 # [[1. Preview and execute shell commands]]
 ## 1.1. Preview shell commands
 Inspect closely that variables have correct values!
