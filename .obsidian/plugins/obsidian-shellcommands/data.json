@@ -2693,7 +2693,8 @@
     {
       "id": "umqymtjrfc",
       "platform_specific_commands": {
-        "default": "echo \"Builtin variable's global default value: {{event_title}}\" >> TestResults.md\necho \"Custom variable's global default value: {{_variable_with_default_value}}\" >> TestResults.md"
+        "default": "echo \"Builtin variable's global default value: \"{{event_title}} >> TestResults.md\necho \"Custom variable's global default value: \"{{_variable_with_default_value}} >> TestResults.md",
+        "win32": "echo \"Builtin variable's global default value: {{event_title}}\" >> TestResults.md\necho \"Custom variable's global default value: {{_variable_with_default_value}}\" >> TestResults.md"
       },
       "shells": {},
       "alias": "Test globally default values",
