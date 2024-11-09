@@ -69,7 +69,7 @@ Inspect closely that variables have correct values!
 	- [ ] Finally, delete the file. You can now close the newly created tab, it's not needed anymore.
 - [ ] **[Test output using Open a file 5](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=awn0zh7t5u)**: This should open [[Welcome.md]] in a new **tab**. No selections are made.
 - [ ] **[Test output using Open a file 6](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=tlq9kj69h5)**: This should open [[Welcome.md]] in a new **window**. No selections are made.
-- [ ] **[Test $& variable](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=asdmfqbx5d)**: Symbol pair `$&` has caused problems in variable parsing when they appear in the variable's value (and some other `$` combinations too). Outputs:
+- [ ] **[Test $& variable](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=asdmfqbx5d)**: Symbol pair `$&` has caused problems in variable parsing when they appear in a variable's value (and some other `$` combinations too). Outputs:
 	- `Test $& variable: $&` when the test is correct. (Tick the checkbox).
 	- `Test $& variable: {{!passthrough:$&}}` when the test fails. Do not tick, leave a comment.
 - [ ] **[Two 🐓 emojis](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=sr8mp9lpbb)**: This test should output two 🐓 emojis correctly. The first one has been written directly in the shell command, while the second one comes via a `{{passthrough:🐓}}` variable, which might break the emoji if variable parsing regular expressions fail. [Relates to bug #171](https://github.com/Taitava/obsidian-shellcommands/issues/171)
@@ -82,7 +82,7 @@ Inspect closely that variables have correct values!
 		2. *WindowsExtraPath2* should be present **at the end** of the output.
 	- On linux (and macOS) the output should contain one additional directory:
 		- *LinuxAndMacExtraPath* should be present **at the end** of the output.
-	- The reason for outputs being different in different operating systems is that in order to test to different appending mechanisms, I needed to use two different operating system settings fields. I can't make separate test shell commands for these, because the `PATH` additions are implemented to happen for all shell commands, and no shell command specific settings exist for them.
+	- The reason for outputs being different in different operating systems is that in order to test two different appending mechanisms, I needed to use two different operating system settings fields. I can't make separate test shell commands for these, because the `PATH` additions are implemented to happen for all shell commands, and no shell command specific settings exist for them.
 - [ ] **Remove PATH additions temporarily** in the settings (cut the text in the field to make it empty, you need to re-insert it afterward). Then execute [Test PATH additions](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=g7gauo1ds6) again and see that shell command execution works even when there's no PATH additions defined. `0.19.0` had a bug that caused execution to fail silently in this case. Finally, **add the PATH additions back**.
 - [ ] **[Test multiline shell command](obsidian://shell-commands/?vault=Shell%20commands%20test&execute=y2dtq5wuxy)**: This should output the following, each word on its own line:
 	```markdown
