@@ -1980,6 +1980,10 @@
         "{{event_yaml_value}}": {
           "type": "value",
           "value": "NO YAML"
+        },
+        "{{event_yaml_values}}": {
+          "type": "value",
+          "value": "NO YAML"
         }
       },
       "icon": null,
