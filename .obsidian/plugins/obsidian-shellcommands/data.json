@@ -3365,7 +3365,7 @@
     {
       "id": "ikn3ruchpq",
       "title": "Test prompt {{date:YYYY-MM-DD}}",
-      "description": "Description for the test prompt.\n\nEnsure that the shell command preview below contains: Day of week: {{date:dddd}}",
+      "description": "Description for the test prompt.\n\nDay of week: {{date:dddd}}",
       "preview_shell_command": true,
       "fields": [
         {
